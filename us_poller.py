@@ -758,6 +758,14 @@ def slow_poll():
             log.warning(f"Position {symbol} has invalid quantity {qty}, skipping")
             continue
         
+        # Helper to record cycle exit
+        def _record_cycle_exit(sym, exit_price, gain_pct):
+            try:
+                from us_cycle_manager import record_exit
+                record_exit(sym, exit_price, gain_pct)
+            except Exception:
+                pass
+        
         # Hard stop
         with _alerted_lock:
             hard_stop_allowed = key_stop not in _alerted
@@ -766,6 +774,7 @@ def slow_poll():
             result = auto_sell(symbol, qty, f"🛑 Hard stop {int(-hard_stop_pct*100)}% | Entry: {entry:.2f} | Now: {price:.2f}")
             if result:
                 close_trade(symbol, price, f"Hard stop {int(-hard_stop_pct*100)}%", regime=regime_name)
+                _record_cycle_exit(symbol, price, gain_pct)
             with _alerted_lock:
                 _alerted.add(key_stop)
             cycles_today[symbol] = 999
@@ -778,6 +787,7 @@ def slow_poll():
             result = auto_sell(symbol, qty, f"🎯 Target +{int(win_pct*100)}% | Entry: {entry:.2f} | Now: {price:.2f}")
             if result:
                 close_trade(symbol, price, f"Target +{int(win_pct*100)}%", regime=regime_name)
+                _record_cycle_exit(symbol, price, gain_pct)
             with _alerted_lock:
                 _alerted.add(key_target)
         
@@ -959,20 +969,40 @@ def slow_poll():
                     capital = load_capital()
                     qty = int((capital * use_pct) / price) if price > 0 else 0
                     if qty > 0 and capital > 0 and use_pct > 0:
-                        # Reset tier tracking on new entry
-                        try:
-                            from us_tier_exits import reset_tier_tracking
-                            reset_tier_tracking(base)
-                        except Exception:
-                            pass
-                        
-                        tg_send(f"📈 <b>ENTRY {base}</b>\nPrice: {price:.2f} | Zone: {e_lo}-{e_hi}\nSize: {int(use_pct*100)}% | Regime: {regime_name}")
-                        with _alerted_lock:
-                            _alerted.add(key_gap)
-                        result = auto_buy(symbol, qty, price, 1, max_positions)
-                        if result:
-                            log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
-                        open_count += 1
+                # Check cycle availability (v4.12)
+                cycle_ok = True
+                cycle_msg = ""
+                try:
+                    from us_cycle_manager import can_enter_cycle
+                    cycle_ok, cycle_msg = can_enter_cycle(base, regime_name)
+                except Exception as e:
+                    log.debug(f"Cycle check failed: {e}")
+                
+                if not cycle_ok:
+                    log.info(f"Cycle check failed for {base}: {cycle_msg}")
+                    continue
+                
+                # Reset tier tracking on new entry
+                try:
+                    from us_tier_exits import reset_tier_tracking
+                    reset_tier_tracking(base)
+                except Exception:
+                    pass
+                
+                # Record cycle entry
+                try:
+                    from us_cycle_manager import record_entry
+                    record_entry(base, price, qty)
+                except Exception:
+                    pass
+                
+                tg_send(f"📈 <b>ENTRY {base}</b>\nPrice: {price:.2f} | Zone: {e_lo}-{e_hi}\nSize: {int(use_pct*100)}% | Regime: {regime_name}\nCycle: {cycle_msg}")
+                with _alerted_lock:
+                    _alerted.add(key_gap)
+                result = auto_buy(symbol, qty, price, 1, max_positions)
+                if result:
+                    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+                open_count += 1
         
         # VWAP reclaim
         vwap = calc_vwap(df)
