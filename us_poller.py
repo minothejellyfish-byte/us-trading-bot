@@ -574,9 +574,50 @@ def fast_poll():
         # Buy detected
         elif was_closed and not is_closed:
             _reset_symbol_alerts(symbol)
-            log.info(f"Buy detected: {symbol}")
+            
+            # Confirm with bookkeeper before logging (v4.12)
+            try:
+                from us_bookkeeper import get_positions, get_position
+                bk_positions = get_positions()
+                bk_pos = bk_positions.get(symbol, {})
+                
+                # Only log if bookkeeper confirms the position
+                if bk_pos and not bk_pos.get("closed", True):
+                    qty = bk_pos.get("qty", 0)
+                    entry = bk_pos.get("entry_price", 0)
+                    entry_time = bk_pos.get("entry_time", "")
+                    
+                    # Deduplicate with _alerted set
+                    key_bought = f"{symbol}_bookkeeper_confirmed"
+                    with _alerted_lock:
+                        already_alerted = key_bought in _alerted
+                    
+                    if not already_alerted:
+                        log.info(f"Buy detected: {symbol} (bookkeeper confirmed: {qty} @ ${entry:.2f})")
+                        tg_send(f"📈 <b>ENTRY CONFIRMED</b>\n{symbol}: {qty} @ ${entry:.2f}\nBookkeeper: ✅")
+                        with _alerted_lock:
+                            _alerted.add(key_bought)
+                else:
+                    log.debug(f"Buy detected: {symbol} — bookkeeper not confirmed yet, skipping alert")
+            except Exception as e:
+                log.warning(f"Bookkeeper confirmation failed for {symbol}: {e}")
+                # Fallback: just log without bookkeeper confirmation
+                log.info(f"Buy detected: {symbol} (no bookkeeper confirmation)")
     
-    _prev_positions = {k: dict(v) if isinstance(v, dict) else {} for k, v in positions.items()}
+    # Update _prev_positions with full position state for next comparison
+    try:
+        _prev_positions = {
+            k: {
+                "closed": v.get("closed", False) if isinstance(v, dict) else False,
+                "entry_price": v.get("entry_price", 0) if isinstance(v, dict) else 0,
+                "qty": v.get("qty", 0) if isinstance(v, dict) else 0,
+                "entry_time": v.get("entry_time", "") if isinstance(v, dict) else "",
+            }
+            for k, v in positions.items()
+        }
+    except Exception as e:
+        log.warning(f"Failed to update _prev_positions: {e}")
+        _prev_positions = {}
 
 
 def slow_poll():

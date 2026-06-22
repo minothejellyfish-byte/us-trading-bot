@@ -227,9 +227,10 @@ class ExitDecision:
                 return True, self.reason
         
         # 5. Recovery score (if DataFrame available)
+        # Paper trading — only exit on very weak recovery (score < 15, was 20)
         if self.df is not None:
             score, desc = calc_recovery_score(self.df)
-            if score < 20:  # Very weak recovery
+            if score < 15:  # Very weak recovery (softened from 20)
                 self.signals.append(f"Recovery score: {score}/100 — {desc}")
                 self.should_exit = True
                 self.reason = f"Weak recovery: {desc}"
@@ -240,31 +241,40 @@ class ExitDecision:
         return False, reasons
     
     def _get_hard_stop_pct(self) -> float:
-        """Get hard stop percentage based on regime."""
+        """Get hard stop percentage based on regime.
+        
+        Paper trading — softer than TASI to allow more learning.
+        """
         stops = {
-            "TRENDING": 0.07,
-            "NEUTRAL": 0.05,
-            "DEFENSIVE": 0.04,
+            "TRENDING": 0.10,   # Was 7%, now 10% (more room in trending)
+            "NEUTRAL": 0.08,    # Was 5%, now 8%
+            "DEFENSIVE": 0.06,  # Was 4%, now 6%
         }
-        return stops.get(self.regime, 0.05)
+        return stops.get(self.regime, 0.08)
     
     def _get_target_pct(self) -> float:
-        """Get target percentage based on regime."""
+        """Get target percentage based on regime.
+        
+        Paper trading — softer targets to ride winners longer.
+        """
         targets = {
-            "TRENDING": 0.15,
-            "NEUTRAL": 0.12,
-            "DEFENSIVE": 0.10,
+            "TRENDING": 0.20,   # Was 15%, now 20%
+            "NEUTRAL": 0.15,    # Was 12%, now 15%
+            "DEFENSIVE": 0.12,  # Was 10%, now 12%
         }
-        return targets.get(self.regime, 0.12)
+        return targets.get(self.regime, 0.15)
     
     def _get_trail_pct(self) -> float:
-        """Get trailing stop percentage based on regime."""
+        """Get trailing stop percentage based on regime.
+        
+        Paper trading — wider trails to avoid getting shaken out.
+        """
         trails = {
-            "TRENDING": 0.02,
-            "NEUTRAL": 0.03,
-            "DEFENSIVE": 0.04,
+            "TRENDING": 0.05,   # Was 2%, now 5%
+            "NEUTRAL": 0.06,    # Was 3%, now 6%
+            "DEFENSIVE": 0.07,  # Was 4%, now 7%
         }
-        return trails.get(self.regime, 0.03)
+        return trails.get(self.regime, 0.06)
 
 
 # ─── Integration Helpers ────────────────────────────────────────────────────
