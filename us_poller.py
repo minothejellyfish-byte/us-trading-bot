@@ -228,10 +228,27 @@ def _extract_scalar(val):
 
 
 def fetch_data(symbol: str) -> tuple[float | None, pd.DataFrame | None]:
-    """Fetch price and recent data for a symbol."""
+    """Fetch price and recent data for a symbol.
+    
+    Priority:
+    1. Alpaca WebSocket (real-time, ~20ms latency)
+    2. Alpaca REST API (polling, ~200ms latency)
+    3. yfinance (fallback, ~15min delay)
+    """
     base = symbol.replace(".SR", "").replace("-", ".")
     
-    # 1. Try Alpaca real-time first
+    # 1. Try Alpaca WebSocket first (v4.12)
+    try:
+        from us_alpaca_ws import get_ws_price
+        ws_price = get_ws_price(base)
+        if ws_price and ws_price > 0:
+            # Still need DataFrame for VWAP calculation
+            df = yf.download(symbol, period="1d", interval="1m", progress=False)
+            return ws_price, df
+    except Exception as e:
+        log.debug(f"WS price fetch failed for {base}: {e}")
+    
+    # 2. Try Alpaca REST API
     try:
         trader = get_trader()
         trade = trader.get_last_trade(base)
@@ -708,6 +725,44 @@ def slow_poll():
                 close_trade(symbol, price, f"Time stop {int(mins_held)}min", regime=regime_name)
             with _alerted_lock:
                 _alerted.add(key_time)
+        
+        # VWAP breakdown exit (NEW in v4.12)
+        key_vwap_exit = f"{symbol}_vwap_exit"
+        with _alerted_lock:
+            vwap_exit_allowed = key_vwap_exit not in _alerted
+        
+        if df is not None and vwap_exit_allowed:
+            try:
+                from us_exit_triggers import check_vwap_breakdown
+                vwap = calc_vwap(df)
+                if vwap:
+                    should_exit, reason = check_vwap_breakdown(df, vwap, bars_required=3)
+                    if should_exit:
+                        result = auto_sell(symbol, qty, f"📉 VWAP breakdown | {reason}")
+                        if result:
+                            close_trade(symbol, price, f"VWAP breakdown: {reason}", regime=regime_name)
+                        with _alerted_lock:
+                            _alerted.add(key_vwap_exit)
+            except Exception as e:
+                log.debug(f"VWAP exit check failed for {symbol}: {e}")
+        
+        # Recovery score exit (NEW in v4.12)
+        key_recovery = f"{symbol}_recovery"
+        with _alerted_lock:
+            recovery_exit_allowed = key_recovery not in _alerted
+        
+        if df is not None and recovery_exit_allowed:
+            try:
+                from us_exit_triggers import calc_recovery_score
+                score, desc = calc_recovery_score(df)
+                if score < 20:  # Very weak recovery
+                    result = auto_sell(symbol, qty, f"📉 Weak recovery | Score: {score:.0f}/100 — {desc}")
+                    if result:
+                        close_trade(symbol, price, f"Weak recovery: {desc}", regime=regime_name)
+                    with _alerted_lock:
+                        _alerted.add(key_recovery)
+            except Exception as e:
+                log.debug(f"Recovery score check failed for {symbol}: {e}")
     
     if updated:
         save_positions(positions)
