@@ -27,22 +27,22 @@ BASE_DIR = Path("/home/mino/us-exec")
 
 # ─── Tier Configuration ─────────────────────────────────────────────────────
 
-# Paper trading — softer than TASI
+# Paper trading — much softer than TASI for learning
 TIER_CONFIG = {
     "TRENDING": {
-        "tier1": {"drawdown": 0.025, "reduce": 0.25},  # -2.5% → reduce 25%
-        "tier2": {"drawdown": 0.05, "reduce": 0.50},     # -5.0% → reduce 50%
-        "tier3": {"drawdown": 0.10, "reduce": 1.00},     # -10.0% → full exit
+        "tier1": {"drawdown": 0.04, "reduce": 0.20},  # -4.0% → reduce 20% (was -2.5%)
+        "tier2": {"drawdown": 0.08, "reduce": 0.40},   # -8.0% → reduce 40% (was -5.0%)
+        "tier3": {"drawdown": 0.12, "reduce": 1.00},   # -12.0% → full exit (was -10.0%)
     },
     "NEUTRAL": {
-        "tier1": {"drawdown": 0.020, "reduce": 0.25},   # -2.0% → reduce 25%
-        "tier2": {"drawdown": 0.04, "reduce": 0.50},     # -4.0% → reduce 50%
-        "tier3": {"drawdown": 0.08, "reduce": 1.00},     # -8.0% → full exit
+        "tier1": {"drawdown": 0.03, "reduce": 0.20},   # -3.0% → reduce 20% (was -2.0%)
+        "tier2": {"drawdown": 0.06, "reduce": 0.40},   # -6.0% → reduce 40% (was -4.0%)
+        "tier3": {"drawdown": 0.10, "reduce": 1.00},   # -10.0% → full exit (was -8.0%)
     },
     "DEFENSIVE": {
-        "tier1": {"drawdown": 0.015, "reduce": 0.25},  # -1.5% → reduce 25%
-        "tier2": {"drawdown": 0.03, "reduce": 0.50},     # -3.0% → reduce 50%
-        "tier3": {"drawdown": 0.06, "reduce": 1.00},     # -6.0% → full exit
+        "tier1": {"drawdown": 0.02, "reduce": 0.20},   # -2.0% → reduce 20% (was -1.5%)
+        "tier2": {"drawdown": 0.04, "reduce": 0.40},   # -4.0% → reduce 40% (was -3.0%)
+        "tier3": {"drawdown": 0.08, "reduce": 1.00},   # -8.0% → full exit (was -6.0%)
     },
 }
 
