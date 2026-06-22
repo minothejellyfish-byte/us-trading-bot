@@ -830,16 +830,29 @@ def slow_poll():
         except Exception as e:
             log.debug(f"Tier exit check failed for {symbol}: {e}")
         
-        # Time stop
+        # Time stop (v4.12) — use dynamic time stops
         with _alerted_lock:
             time_stop_allowed = key_time not in _alerted
         
-        if mins_held >= time_stop_mins and gain_pct <= -time_stop_pct and time_stop_allowed:
-            result = auto_sell(symbol, qty, f"⏱ Time stop | Held {int(mins_held)} min | Entry: {entry:.2f} | Now: {price:.2f}")
-            if result:
-                close_trade(symbol, price, f"Time stop {int(mins_held)}min", regime=regime_name)
-            with _alerted_lock:
-                _alerted.add(key_time)
+        if time_stop_allowed and entry_time:
+            try:
+                from us_time_stops import check_time_stop
+                should_exit, reason = check_time_stop(entry_time, regime_name, now, gain_pct)
+                if should_exit:
+                    result = auto_sell(symbol, qty, f"⏱ Time stop | {reason}")
+                    if result:
+                        close_trade(symbol, price, f"Time stop: {reason}", regime=regime_name)
+                    with _alerted_lock:
+                        _alerted.add(key_time)
+            except Exception as e:
+                log.debug(f"Dynamic time stop failed for {symbol}: {e}")
+                # Fallback to legacy time stop
+                if mins_held >= time_stop_mins and gain_pct <= -time_stop_pct:
+                    result = auto_sell(symbol, qty, f"⏱ Time stop | Held {int(mins_held)} min | Entry: {entry:.2f} | Now: {price:.2f}")
+                    if result:
+                        close_trade(symbol, price, f"Time stop {int(mins_held)}min", regime=regime_name)
+                    with _alerted_lock:
+                        _alerted.add(key_time)
         
         # VWAP breakdown exit (NEW in v4.12)
         key_vwap_exit = f"{symbol}_vwap_exit"
@@ -967,19 +980,31 @@ def slow_poll():
         with _alerted_lock:
             vwap_entry_allowed = key_vwap not in _alerted
         
-        if vwap and check_vwap_reclaim(df, vwap) and vwap_entry_allowed:
+        # VWAP direction check (v4.12) — prevent entering falling VWAP
+        vwap_direction_ok = True
+        vwap_direction_msg = ""
+        try:
+            from us_vwap_filter import should_enter_vwap_direction
+            vwap_direction_ok, vwap_direction_msg = should_enter_vwap_direction(df, regime_name)
+        except Exception as e:
+            log.debug(f"VWAP direction check failed: {e}")
+        
+        if vwap and check_vwap_reclaim(df, vwap) and vwap_entry_allowed and vwap_direction_ok:
             if open_count >= max_positions:
                 continue
             capital = load_capital()
             qty = int((capital * use_pct) / price) if price > 0 else 0
             if qty > 0 and capital > 0 and use_pct > 0:
-                tg_send(f"📈 <b>VWAP ENTRY {base}</b>\nVWAP: {vwap:.2f} | Price: {price:.2f} | Regime: {regime_name}")
+                direction_note = f" | {vwap_direction_msg}" if vwap_direction_msg else ""
+                tg_send(f"📈 <b>VWAP ENTRY {base}</b>\nVWAP: {vwap:.2f} | Price: {price:.2f} | Regime: {regime_name}{direction_note}")
                 with _alerted_lock:
                     _alerted.add(key_vwap)
                 result = auto_buy(symbol, qty, price, 1, max_positions)
                 if result:
                     log_trade(symbol, "BUY", qty, price, signal="vwap_reclaim", regime=regime_name)
                 open_count += 1
+        elif not vwap_direction_ok:
+            log.info(f"VWAP entry blocked for {base}: {vwap_direction_msg}")
         
         # Breakout
         key_break = f"{base}_breakout"
