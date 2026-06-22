@@ -273,7 +273,7 @@ class USBot:
             lines.append(f"\n📋 Picks: {len(picks)} (updated {picks_data.get('time', '?')})")
         
         lines.append("")
-        lines.append("Commands: /us_status /us_positions /us_picks /us_stand_down /us_resume")
+        lines.append("Commands: /us_status /us_positions /us_picks /us_history /us_pnl /us_closeall /us_stand_down /us_resume")
         
         return "\n".join(lines)
     
@@ -309,6 +309,63 @@ class USBot:
                     lines.append(f"{i}. {p['symbol']} @ ${p['price']:.2f} (score: {p['score']})")
                 return "\n".join(lines)
             return "📋 No picks file found"
+        
+        elif cmd == "/us_history":
+            """Show recent trade history."""
+            try:
+                from us_order_history import get_order_history
+                orders = get_order_history(limit=10)
+                if not orders:
+                    return "📜 No trade history"
+                lines = ["📜 <b>US TRADE HISTORY</b> (last 10)"]
+                for o in orders:
+                    side = "🟢 BUY" if o.get('side') == 'BUY' else "🔴 SELL"
+                    lines.append(f"{side} {o['symbol']} {o['qty']} @ ${o.get('price', 0):.2f} ({o.get('date', '?')})")
+                return "\n".join(lines)
+            except Exception as e:
+                return f"❌ Error loading history: {e}"
+        
+        elif cmd == "/us_pnl":
+            """Show PnL summary."""
+            try:
+                from us_order_history import get_pnl_summary
+                pnl = get_pnl_summary()
+                total_pnl = pnl.get('total_pnl', 0)
+                total_trades = pnl.get('total_trades', 0)
+                win_rate = pnl.get('win_rate', 0)
+                
+                emoji = "🟢" if total_pnl >= 0 else "🔴"
+                lines = [
+                    f"{emoji} <b>US PnL SUMMARY</b>",
+                    f"Total PnL: ${total_pnl:.2f}",
+                    f"Trades: {total_trades}",
+                    f"Win Rate: {win_rate:.1f}%",
+                ]
+                return "\n".join(lines)
+            except Exception as e:
+                return f"❌ Error loading PnL: {e}"
+        
+        elif cmd == "/us_closeall":
+            """Emergency close all positions."""
+            try:
+                if not self.trader:
+                    return "❌ Not connected to broker"
+                
+                positions = self.trader.get_positions()
+                if not positions:
+                    return "📈 No open positions to close"
+                
+                closed = []
+                for p in positions:
+                    sym = p['symbol']
+                    qty = p['qty']
+                    if qty > 0:
+                        order = self.trader.sell(sym, qty)
+                        closed.append(f"{sym} x{qty}")
+                
+                return f"🔴 <b>CLOSED ALL POSITIONS</b>\n" + "\n".join(closed)
+            except Exception as e:
+                return f"❌ Error closing positions: {e}"
         
         elif cmd == "/us_stand_down":
             with open(STAND_DOWN_FILE, "w") as f:
