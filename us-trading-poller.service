@@ -1,0 +1,18 @@
+[Unit]
+Description=US Trading Poller — Entry/Exit Signals
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/mino/us-exec
+Environment=HOME=/home/mino
+Environment=PYTHONPATH=/home/mino/us-exec
+ExecStart=/usr/bin/python3 /home/mino/us-exec/us_poller.py --daemon
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/home/mino/us-exec/logs/poller.log
+StandardError=append:/home/mino/us-exec/logs/poller.log
+
+[Install]
+WantedBy=default.target

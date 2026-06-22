@@ -1,0 +1,91 @@
+2026-06-03 18:15:32,372 [INFO] US Price poller started.
+2026-06-03 18:15:32,706 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot7725987063:AAH9x8vL5wQ3xN7yT4hB6cF1aE0dG2iJ8mR/sendMessage
+2026-06-03 18:15:35,089 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot7725987063:AAH9x8vL5wQ3xN7yT4hB6cF1aE0dG2iJ8mR/sendMessage
+2026-06-03 18:15:37,479 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot7725987063:AAH9x8vL5wQ3xN7yT4hB6cF1aE0dG2iJ8mR/sendMessage
+2026-06-03 18:15:37,482 [INFO] Buy detected: positions
+2026-06-03 18:15:37,482 [ERROR] fast_poll error: 'str' object has no attribute 'get'
+2026-06-03 18:15:37,483 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-03 18:15:39,616 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: POSITIONS"}}}
+2026-06-03 18:15:40,937 [ERROR] $POSITIONS: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:15:40,943 [ERROR] 
+1 Failed download:
+2026-06-03 18:15:40,943 [ERROR] ['POSITIONS']: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:15:40,950 [ERROR] slow_poll error: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 584, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 402, in slow_poll
+    if pos.get("closed"):
+       ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2026-06-03 18:15:50,951 [INFO] Buy detected: positions
+2026-06-03 18:15:50,951 [ERROR] fast_poll error: 'str' object has no attribute 'get'
+2026-06-03 18:15:52,064 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: POSITIONS"}}}
+2026-06-03 18:15:52,895 [ERROR] $POSITIONS: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:15:52,900 [ERROR] 
+1 Failed download:
+2026-06-03 18:15:52,901 [ERROR] ['POSITIONS']: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:15:52,911 [ERROR] slow_poll error: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 584, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 402, in slow_poll
+    if pos.get("closed"):
+       ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2026-06-03 18:16:02,912 [INFO] Buy detected: positions
+2026-06-03 18:16:02,912 [ERROR] fast_poll error: 'str' object has no attribute 'get'
+2026-06-03 18:16:04,066 [ERROR] $POSITIONS: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:16:04,067 [ERROR] 
+1 Failed download:
+2026-06-03 18:16:04,068 [ERROR] ['POSITIONS']: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:16:04,073 [ERROR] slow_poll error: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 584, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 402, in slow_poll
+    if pos.get("closed"):
+       ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2026-06-03 18:16:14,074 [INFO] Buy detected: positions
+2026-06-03 18:16:14,074 [ERROR] fast_poll error: 'str' object has no attribute 'get'
+2026-06-03 18:16:15,115 [ERROR] $POSITIONS: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:16:15,116 [ERROR] 
+1 Failed download:
+2026-06-03 18:16:15,117 [ERROR] ['POSITIONS']: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:16:15,127 [ERROR] slow_poll error: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 584, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 402, in slow_poll
+    if pos.get("closed"):
+       ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2026-06-03 18:16:25,129 [INFO] Buy detected: positions
+2026-06-03 18:16:25,129 [ERROR] fast_poll error: 'str' object has no attribute 'get'
+2026-06-03 18:16:26,169 [ERROR] $POSITIONS: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:16:26,169 [ERROR] 
+1 Failed download:
+2026-06-03 18:16:26,171 [ERROR] ['POSITIONS']: possibly delisted; no price data found  (period=1d) (Yahoo error = "No data found, symbol may be delisted")
+2026-06-03 18:16:26,185 [ERROR] slow_poll error: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 584, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 402, in slow_poll
+    if pos.get("closed"):
+       ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2026-06-04 08:12:01,740 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-04 08:12:02,756 [WARNING] yfinance fetch failed for AAPL: float() argument must be a string or a real number, not 'Series'
+2026-06-04 08:12:18,234 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-04 08:12:27,004 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-04 21:25:22,446 [INFO] Regime stale (>2h) — reclassifying
+2026-06-04 21:25:23,750 [INFO] Regime: NEUTRAL — SPY +0.2% over 5 days, VIX 15.4 (moderate)
+2026-06-04 21:25:23,750 [INFO] US Price poller started.
+2026-06-04 21:25:24,196 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-04 21:25:24,197 [INFO] Slow poll done.

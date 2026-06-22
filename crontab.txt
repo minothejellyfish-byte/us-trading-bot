@@ -1,0 +1,30 @@
+# US Trading System — Cron Jobs
+# Add to crontab: crontab -e
+# IMPORTANT: DO NOT use systemctl --user in cron - fails silently without DBUS env
+
+# === Pre-market screener — 09:20 ET (16:20 GMT+3) ===
+20 16 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_screener.py >> /home/mino/us-exec/logs/screener.log 2>&1
+
+# === Start poller — 09:30 ET (16:30 GMT+3) ===
+30 16 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_poller.py --daemon >> /home/mino/us-exec/logs/poller.log 2>&1
+
+# === Mid-screen 1 — 10:00 ET (17:00 GMT+3) ===
+0 17 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_midscreen.py >> /home/mino/us-exec/logs/midscreen.log 2>&1
+
+# === Mid-screen 2 — 11:30 ET (18:30 GMT+3) ===
+30 18 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_midscreen.py >> /home/mino/us-exec/logs/midscreen.log 2>&1
+
+# === Re-screen — 13:30 ET (20:30 GMT+3) ===
+30 20 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_midscreen.py >> /home/mino/us-exec/logs/midscreen.log 2>&1
+
+# === Stop poller — 16:00 ET (23:00 GMT+3) ===
+0 23 * * 1-5 cd /home/mino/us-exec && /usr/bin/python3 /home/mino/us-exec/stop_us_poller.py >> /home/mino/us-exec/logs/poller.log 2>&1
+
+# === Post-market report — 16:05 ET (23:05 GMT+3) ===
+5 23 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 -c "from alpaca_api import AlpacaTrader; t = AlpacaTrader(); print(t.get_account())" >> /home/mino/us-exec/logs/daily.log 2>&1
+
+# === Daily P&L report to Telegram — 23:10 GMT+3 ===
+10 23 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_daily_report.py >> /home/mino/us-exec/logs/report.log 2>&1
+
+# === Daily cleanup — reset cycles at midnight ET (07:00 GMT+3) ===
+0 7 * * 1-5 rm -f /home/mino/us-exec/us_positions.json && echo '{"positions": {}, "updated_at": "'$(date -Iseconds)'"}' > /home/mino/us-exec/us_positions.json

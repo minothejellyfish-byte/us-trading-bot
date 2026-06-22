@@ -1,0 +1,133 @@
+2026-06-04 23:10:01 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Thursday, Jun 04
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯...
+2026-06-04 23:10:01 [ERROR] Send failed: asyncio.run() cannot be called from a running event loop
+/home/mino/us-exec/shared/us_telegram_handler.py:110: RuntimeWarning: coroutine 'Bot.send_message' was never awaited
+  return False
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 119, in <module>
+    asyncio.run(send_daily_report())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 114, in send_daily_report
+    await bot.send_message(msg)
+TypeError: object bool can't be used in 'await' expression
+2026-06-05 23:10:01 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Friday, Jun 05
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+2026-06-05 23:10:01 [ERROR] Send failed: asyncio.run() cannot be called from a running event loop
+/home/mino/us-exec/shared/us_telegram_handler.py:110: RuntimeWarning: coroutine 'Bot.send_message' was never awaited
+  return False
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 119, in <module>
+    asyncio.run(send_daily_report())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 114, in send_daily_report
+    await bot.send_message(msg)
+TypeError: object bool can't be used in 'await' expression
+2026-06-08 23:10:02 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Monday, Jun 08
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+Invalid capital data schema, using default capital
+[2026-06-08T16:10:02.391141-04:00] Daily report sent: True
+2026-06-15 23:15:05 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Monday, Jun 15
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+Invalid capital data schema, using default capital
+[2026-06-15T16:15:05.981287-04:00] Daily report sent: True
+2026-06-16 23:15:04 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Tuesday, Jun 16
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 ...
+Invalid capital data schema, using default capital
+[2026-06-16T16:15:04.893059-04:00] Daily report sent: True
+2026-06-17 23:15:05 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Wednesday, Jun 17
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+...
+Invalid capital data schema, using default capital
+[2026-06-17T16:15:05.578596-04:00] Daily report sent: True
+2026-06-18 23:15:04 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Thursday, Jun 18
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯...
+Invalid capital data schema, using default capital
+[2026-06-18T16:15:04.903097-04:00] Daily report sent: True
+2026-06-19 23:15:05 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Friday, Jun 19
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+Invalid capital data schema, using default capital
+[2026-06-19T16:15:05.991428-04:00] Daily report sent: True
+2026-06-19 23:18:10 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Friday, Jun 19
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+Invalid capital data schema, using default capital
+[2026-06-19T16:18:11.081002-04:00] Daily report sent: True
+2026-06-19 23:18:44 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Friday, Jun 19
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+[2026-06-19T16:18:44.530943-04:00] Daily report sent: True
+2026-06-22 23:16:21 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 1 of 10 — Monday, Jun 22
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+2026-06-22 23:16:22 [ERROR] Send failed: httpx.ConnectError: 
+Invalid trades data schema, using empty data
+[2026-06-22T16:16:22.783866-04:00] Daily report sent: False
