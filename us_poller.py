@@ -14,6 +14,7 @@ import os
 import sys
 import threading
 import time as time_mod
+import fcntl  # File locking (v4.12)
 from datetime import datetime, time
 from pathlib import Path
 
@@ -62,6 +63,7 @@ ALT_POSITION_PCT = 0.25        # 25% for 3rd+ positions
 
 HARD_CLOSE_TIME = time(15, 45)  # 15:45 ET hard close
 ENTRY_CUTOFF    = time(14, 30)  # No new entries after 14:30
+MARKET_OPEN_COOLDOWN = time(9, 45)  # No entries first 15 min (v4.12)
 MARKET_OPEN     = time(9, 30)
 MARKET_CLOSE    = time(16, 0)
 
@@ -159,7 +161,12 @@ def load_positions() -> dict:
         return {}
     try:
         with open(POSITIONS_FILE) as f:
-            data = json.load(f)
+            # Advisory lock for read (shared)
+            fcntl.flock(f.fileno(), fcntl.LOCK_SH | fcntl.LOCK_NB)
+            try:
+                data = json.load(f)
+            finally:
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
             positions = data.get("positions", {})
             if not isinstance(positions, dict):
                 log.warning(f"Invalid positions data format in {POSITIONS_FILE}")
@@ -177,7 +184,12 @@ def save_positions(positions: dict):
     
     try:
         with open(POSITIONS_FILE, "w") as f:
-            json.dump({"positions": positions, "updated_at": datetime.now(ET).isoformat()}, f, indent=2)
+            # Advisory lock for write (exclusive)
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+            try:
+                json.dump({"positions": positions, "updated_at": datetime.now(ET).isoformat()}, f, indent=2)
+            finally:
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
     except Exception as e:
         log.error(f"Failed to save positions to {POSITIONS_FILE}: {e}")
         import traceback
@@ -374,7 +386,11 @@ def check_breakout(df: pd.DataFrame) -> bool:
 # ─── Order execution ─────────────────────────────────────────────────────────
 
 def auto_buy(symbol: str, qty: int, price: float, cycle_n: int = 1, max_cyc: int = 2):
-    """Execute buy order via Alpaca."""
+    """Execute buy order via Alpaca.
+    
+    Includes deduplication check — won't submit duplicate order for same symbol
+    within 60 seconds.
+    """
     base = symbol.replace(".SR", "").replace("-", ".")
     
     try:
@@ -382,6 +398,21 @@ def auto_buy(symbol: str, qty: int, price: float, cycle_n: int = 1, max_cyc: int
         if qty <= 0 or price <= 0:
             log.error(f"Invalid buy parameters for {base}: qty={qty}, price={price}")
             return False
+        
+        # DEDUPLICATION CHECK (v4.12)
+        positions = load_positions()
+        existing_pos = positions.get(base, {})
+        if existing_pos and not existing_pos.get("closed", True):
+            last_entry = existing_pos.get("entry_time", "")
+            if last_entry:
+                try:
+                    entry_dt = datetime.fromisoformat(last_entry)
+                    seconds_since_entry = (datetime.now(ET) - entry_dt).total_seconds()
+                    if seconds_since_entry < 60:
+                        log.info(f"DEDUP: {base} already entered {seconds_since_entry:.0f}s ago — skipping")
+                        return False
+                except:
+                    pass
         
         trader = get_trader()
         
@@ -862,6 +893,11 @@ def slow_poll():
     
     if now_time >= HARD_CLOSE_TIME:
         log.info("Hard close active — no new entries")
+        return
+    
+    # Market open cooldown (v4.12) — no entries 09:30-09:45
+    if now_time < MARKET_OPEN_COOLDOWN:
+        log.info(f"Market open cooldown active ({now_time} < 09:45) — no new entries")
         return
     
     if now_time >= ENTRY_CUTOFF:
