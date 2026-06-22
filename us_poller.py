@@ -756,6 +756,44 @@ def slow_poll():
             with _alerted_lock:
                 _alerted.add(key_trail)
         
+        # Tiered exits (NEW v4.12) — softer than TASI for paper trading
+        try:
+            from us_tier_exits import check_tier_exit, reset_tier_tracking
+            
+            # Only check tier exits if we haven't hit hard stop or target
+            tier_keys = [key_stop, key_target]
+            with _alerted_lock:
+                tier_exit_blocked = any(k in _alerted for k in tier_keys)
+            
+            if not tier_exit_blocked:
+                qty_to_sell, tier_reason = check_tier_exit(
+                    symbol, entry, price, regime_name, qty
+                )
+                
+                if qty_to_sell and qty_to_sell > 0:
+                    # Check if we've already done this tier
+                    tier_key = f"{symbol}_tier_exit"
+                    with _alerted_lock:
+                        tier_already_done = tier_key in _alerted
+                    
+                    if not tier_already_done:
+                        result = auto_sell(symbol, qty_to_sell, tier_reason)
+                        if result:
+                            log.info(f"Tier exit executed: {tier_reason}")
+                            tg_send(f"📊 <b>Tier Exit</b>\n{tier_reason}")
+                            
+                            # If full exit, mark as complete
+                            if qty_to_sell >= qty:
+                                close_trade(symbol, price, tier_reason, regime=regime_name)
+                                with _alerted_lock:
+                                    _alerted.add(tier_key)
+                            else:
+                                # Partial exit — update position qty
+                                pos["qty"] = qty - qty_to_sell
+                                updated = True
+        except Exception as e:
+            log.debug(f"Tier exit check failed for {symbol}: {e}")
+        
         # Time stop
         with _alerted_lock:
             time_stop_allowed = key_time not in _alerted
@@ -872,6 +910,13 @@ def slow_poll():
                     capital = load_capital()
                     qty = int((capital * use_pct) / price) if price > 0 else 0
                     if qty > 0 and capital > 0 and use_pct > 0:
+                        # Reset tier tracking on new entry
+                        try:
+                            from us_tier_exits import reset_tier_tracking
+                            reset_tier_tracking(base)
+                        except Exception:
+                            pass
+                        
                         tg_send(f"📈 <b>ENTRY {base}</b>\nPrice: {price:.2f} | Zone: {e_lo}-{e_hi}\nSize: {int(use_pct*100)}% | Regime: {regime_name}")
                         with _alerted_lock:
                             _alerted.add(key_gap)
