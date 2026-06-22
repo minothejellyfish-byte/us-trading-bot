@@ -63,7 +63,6 @@ ALT_POSITION_PCT = 0.25        # 25% for 3rd+ positions
 
 HARD_CLOSE_TIME = time(15, 45)  # 15:45 ET hard close
 ENTRY_CUTOFF    = time(14, 30)  # No new entries after 14:30
-MARKET_OPEN_COOLDOWN = time(9, 45)  # No entries first 15 min (v4.12)
 MARKET_OPEN     = time(9, 30)
 MARKET_CLOSE    = time(16, 0)
 
@@ -893,11 +892,6 @@ def slow_poll():
     
     if now_time >= HARD_CLOSE_TIME:
         log.info("Hard close active — no new entries")
-        return
-    
-    # Market open cooldown (v4.12) — no entries 09:30-09:45
-    if now_time < MARKET_OPEN_COOLDOWN:
-        log.info(f"Market open cooldown active ({now_time} < 09:45) — no new entries")
         return
     
     if now_time >= ENTRY_CUTOFF:
