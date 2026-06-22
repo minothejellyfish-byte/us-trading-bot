@@ -265,22 +265,38 @@ def calc_vwap(df: pd.DataFrame) -> float | None:
         if not isinstance(df, pd.DataFrame) or df.empty:
             return None
         
+        # Handle multi-column yfinance format
+        if isinstance(df.columns, pd.MultiIndex):
+            # Extract columns with the ticker symbol
+            df_flat = pd.DataFrame()
+            for col in ["High", "Low", "Close", "Volume"]:
+                if col in df.columns.get_level_values(0):
+                    # Get the first sub-column (actual data)
+                    df_flat[col] = df[col].iloc[:, 0] if isinstance(df[col], pd.DataFrame) else df[col]
+            df = df_flat
+        
         # Validate required columns exist
         required_cols = ["High", "Low", "Close", "Volume"]
         if not all(col in df.columns for col in required_cols):
             log.warning("Missing required columns for VWAP calculation")
             return None
         
-        df = df.copy()
-        # Handle yfinance Series returns for each column
+        # Ensure all values are scalar floats
         for col in required_cols:
-            df[col] = df[col].apply(lambda x: _extract_scalar(x) if isinstance(x, pd.Series) else x)
+            df[col] = pd.to_numeric(df[col], errors='coerce')
         
-        df["tp"] = (df["High"] + df["Low"] + df["Close"]) / 3
+        # Drop rows with NaN values
+        df = df.dropna(subset=required_cols)
+        if df.empty:
+            return None
+        
+        tp = (df["High"] + df["Low"] + df["Close"]) / 3
         cum_vol = df["Volume"].cumsum()
         if cum_vol.iloc[-1] == 0:
             return None
-        return float((df["tp"] * df["Volume"]).cumsum().iloc[-1] / cum_vol.iloc[-1])
+        
+        vwap = (tp * df["Volume"]).cumsum().iloc[-1] / cum_vol.iloc[-1]
+        return float(vwap)
     except Exception as e:
         log.warning(f"VWAP calculation failed: {e}")
         return None
