@@ -80,6 +80,9 @@ class AlpacaWSLogger:
         # In-memory price cache for fast lookups
         self._price_cache: Dict[str, float] = {}
         
+        # In-memory bar cache for VWAP calculation
+        self._bar_cache: Dict[str, List[Dict]] = {}
+        
     def _get_ws_url(self) -> str:
         """Get WebSocket URL."""
         if self.paper:
@@ -138,6 +141,18 @@ class AlpacaWSLogger:
             "close": float(bar.close) if hasattr(bar, 'close') else 0,
             "volume": int(bar.volume) if hasattr(bar, 'volume') else 0,
         }
+        
+        # Cache bar for VWAP calculation
+        sym = tick["symbol"]
+        if sym:
+            with self._lock:
+                if sym not in self._bar_cache:
+                    self._bar_cache[sym] = []
+                self._bar_cache[sym].append(tick)
+                # Keep last 390 bars (full trading day)
+                if len(self._bar_cache[sym]) > 390:
+                    self._bar_cache[sym] = self._bar_cache[sym][-390:]
+        
         self._log_tick(tick)
         print(f"📊 Bar: {tick['symbol']} O:{tick['open']:.2f} H:{tick['high']:.2f} L:{tick['low']:.2f} C:{tick['close']:.2f} V:{tick['volume']}")
     
@@ -253,6 +268,43 @@ def get_ws_price_fast(symbol: str) -> float:
         with _global_logger._lock:
             return _global_logger._price_cache.get(symbol.upper(), 0.0)
     return 0.0
+
+
+def get_ws_bars(symbol: str, limit: int = 100) -> List[Dict]:
+    """Get cached bars from WebSocket for VWAP calculation.
+    
+    Returns empty list if WebSocket is not running.
+    """
+    global _global_logger
+    if _global_logger and _global_logger.is_running():
+        with _global_logger._lock:
+            bars = _global_logger._bar_cache.get(symbol.upper(), [])
+            return bars[-limit:] if len(bars) > limit else bars
+    return []
+
+
+def get_ws_df(symbol: str) -> Optional[pd.DataFrame]:
+    """Get DataFrame from cached WS bars.
+    
+    Returns None if no WS data available.
+    """
+    try:
+        import pandas as pd
+        bars = get_ws_bars(symbol)
+        if not bars:
+            return None
+        
+        df = pd.DataFrame(bars)
+        df = df.rename(columns={
+            "open": "Open",
+            "high": "High",
+            "low": "Low",
+            "close": "Close",
+            "volume": "Volume",
+        })
+        return df
+    except:
+        return None
 
 
 # ─── Integration with Poller ─────────────────────────────────────────────────

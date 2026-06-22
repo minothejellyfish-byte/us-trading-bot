@@ -230,50 +230,56 @@ def _extract_scalar(val):
 def fetch_data(symbol: str) -> tuple[float | None, pd.DataFrame | None]:
     """Fetch price and recent data for a symbol.
     
-    Priority:
-    1. Alpaca WebSocket (real-time, ~20ms latency)
-    2. Alpaca REST API (polling, ~200ms latency)
-    3. yfinance (fallback, ~15min delay)
+    Priority (v4.12):
+    1. Alpaca WebSocket (real-time, ~20ms latency) — PRIMARY
+    2. Alpaca REST API (polling, ~200ms latency) — FALLBACK
+    3. yfinance (fallback, ~15min delay) — LAST RESORT
     """
     base = symbol.replace(".SR", "").replace("-", ".")
     
-    # 1. Try Alpaca WebSocket first (v4.12)
+    # 1. Try WebSocket FIRST (primary source)
     try:
-        from us_alpaca_ws import get_ws_price
-        ws_price = get_ws_price(base)
-        if ws_price and ws_price > 0:
-            # Still need DataFrame for VWAP calculation
-            df = yf.download(symbol, period="1d", interval="1m", progress=False)
-            return ws_price, df
+        from us_alpaca_ws import get_ws_price_fast, get_ws_df
+        ws_price = get_ws_price_fast(base)
+        ws_df = get_ws_df(base)
+        
+        if ws_price > 0 and ws_df is not None and not ws_df.empty:
+            log.debug(f"WS primary: {base} @ ${ws_price:.2f} ({len(ws_df)} bars)")
+            return ws_price, ws_df
     except Exception as e:
-        log.debug(f"WS price fetch failed for {base}: {e}")
+        log.debug(f"WS primary failed for {base}: {e}")
     
-    # 2. Try Alpaca REST API
+    # 2. Try Alpaca REST API (fallback)
     try:
         trader = get_trader()
         trade = trader.get_last_trade(base)
         if trade:
             price = _extract_scalar(trade.get("price", 0))
             if price > 0:
-                # Get recent bars for VWAP calc
-                df = yf.download(base, period="1d", interval="1m", progress=False)
-                if isinstance(df, pd.DataFrame) and not df.empty:
-                    return price, df
+                # Get recent bars for VWAP calc from REST
+                bars = trader.get_bars(base, timeframe="1Min", limit=100)
+                if bars:
+                    df = pd.DataFrame(bars)
+                    if not df.empty:
+                        df = df.rename(columns={"o": "Open", "h": "High", "l": "Low", "c": "Close", "v": "Volume"})
+                        log.debug(f"REST fallback: {base} @ ${price:.2f}")
+                        return price, df
     except Exception as e:
-        log.debug(f"Alpaca fetch failed for {base}: {e}")
+        log.debug(f"REST fallback failed for {base}: {e}")
     
-    # 2. Fallback to yfinance
+    # 3. yfinance (last resort)
     try:
         df = yf.download(base, period="1d", interval="1m", progress=False)
         if isinstance(df, pd.DataFrame) and not df.empty:
             close_val = df["Close"].iloc[-1]
             price = _extract_scalar(close_val)
-            return price, df
-        else:
-            log.warning(f"yfinance returned empty dataframe for {base}")
+            if price > 0:
+                log.debug(f"yfinance last resort: {base} @ ${price:.2f}")
+                return price, df
     except Exception as e:
         log.warning(f"yfinance fetch failed for {base}: {e}")
     
+    log.warning(f"All price sources failed for {base}")
     return None, None
 
 
