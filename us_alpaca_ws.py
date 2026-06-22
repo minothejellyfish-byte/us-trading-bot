@@ -77,6 +77,9 @@ class AlpacaWSLogger:
         # Track subscribed symbols
         self.subscribed_symbols = set()
         
+        # In-memory price cache for fast lookups
+        self._price_cache: Dict[str, float] = {}
+        
     def _get_ws_url(self) -> str:
         """Get WebSocket URL."""
         if self.paper:
@@ -100,6 +103,13 @@ class AlpacaWSLogger:
             "size": int(trade.size) if hasattr(trade, 'size') else 0,
             "exchange": trade.exchange if hasattr(trade, 'exchange') else "",
         }
+        # Cache the price for fast lookups
+        sym = tick["symbol"]
+        price = tick["price"]
+        if sym and price > 0:
+            with self._lock:
+                self._price_cache[sym] = price
+        
         self._log_tick(tick)
         print(f"💰 Trade: {tick['symbol']} @ ${tick['price']:.2f} x{tick['size']}")
     
@@ -200,6 +210,8 @@ class AlpacaWSLogger:
 
 def start_alpaca_ws(symbols: List[str] = None):
     """Start Alpaca WebSocket logger."""
+    global _global_logger
+    
     if symbols is None:
         symbols = ["AAPL", "MSFT", "AMD", "AVGO"]
     
@@ -216,7 +228,31 @@ def start_alpaca_ws(symbols: List[str] = None):
     logger = AlpacaWSLogger(api_key, secret_key, paper)
     logger.start(symbols)
     
+    # Store globally for fast access
+    _global_logger = logger
+    
     return logger
+
+
+# ─── Global logger instance for fast access ──────────────────────────────────
+
+_global_logger: Optional[AlpacaWSLogger] = None
+
+def get_global_logger() -> Optional[AlpacaWSLogger]:
+    """Get the global WebSocket logger instance."""
+    return _global_logger
+
+
+def get_ws_price_fast(symbol: str) -> float:
+    """Get latest price from in-memory cache (fastest).
+    
+    Returns 0 if WebSocket is not running.
+    """
+    global _global_logger
+    if _global_logger and _global_logger.is_running():
+        with _global_logger._lock:
+            return _global_logger._price_cache.get(symbol.upper(), 0.0)
+    return 0.0
 
 
 # ─── Integration with Poller ─────────────────────────────────────────────────

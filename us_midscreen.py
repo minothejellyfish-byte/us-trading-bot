@@ -133,7 +133,21 @@ def get_intraday_data(symbol: str, trader: AlpacaTrader) -> Optional[Dict]:
         open_price = float(df["o"].iloc[0])
         high = float(df["h"].max())
         low = float(df["l"].min())
-        current = float(df["c"].iloc[-1])
+        
+        # Try WebSocket for real-time current price (v4.12)
+        ws_current = 0.0
+        try:
+            from us_alpaca_ws import get_ws_price_fast
+            ws_current = get_ws_price_fast(symbol)
+        except Exception:
+            pass
+        
+        # Use WS price if available and reasonable, otherwise use last bar close
+        if ws_current > 0 and low <= ws_current <= high * 1.02:
+            current = ws_current
+        else:
+            current = float(df["c"].iloc[-1])
+        
         volume = int(df["v"].sum())
         
         # VWAP calculation
@@ -279,9 +293,20 @@ def screen_stock(data: Dict, regime_name: str = "NEUTRAL") -> Optional[Dict]:
     entry_low = round(current * 0.995, 2)
     entry_high = round(current * 1.005, 2)
     
+    # Check WS volume surge (v4.12)
+    ws_volume_boost = 0
+    try:
+        from us_alpaca_ws import get_ws_metrics
+        ws_metrics = get_ws_metrics(symbol)
+        if ws_metrics and ws_metrics.get("trades_5min", 0) > 10:
+            # Boost score if high WS trade activity
+            ws_volume_boost = 5
+    except Exception:
+        pass
+    
     return {
         "symbol": data["symbol"],
-        "score": round(score, 1),
+        "score": round(score + ws_volume_boost, 1),
         "price": round(current, 2),
         "entry_low": entry_low,
         "entry_high": entry_high,
