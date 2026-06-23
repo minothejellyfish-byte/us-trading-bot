@@ -287,6 +287,7 @@ def get_ws_df(symbol: str) -> Optional[pd.DataFrame]:
     """Get DataFrame from cached WS bars.
     
     Returns None if no WS data available.
+    Ensures required columns (Open, High, Low, Close, Volume) are present.
     """
     try:
         import pandas as pd
@@ -295,6 +296,13 @@ def get_ws_df(symbol: str) -> Optional[pd.DataFrame]:
             return None
         
         df = pd.DataFrame(bars)
+        
+        # Ensure all required columns exist
+        required = ["open", "high", "low", "close", "volume"]
+        for col in required:
+            if col not in df.columns:
+                return None
+        
         df = df.rename(columns={
             "open": "Open",
             "high": "High",
@@ -302,6 +310,14 @@ def get_ws_df(symbol: str) -> Optional[pd.DataFrame]:
             "close": "Close",
             "volume": "Volume",
         })
+        
+        # Ensure numeric types
+        for col in ["Open", "High", "Low", "Close", "Volume"]:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+        
+        # Drop rows with NaN
+        df = df.dropna(subset=["Open", "High", "Low", "Close", "Volume"])
+        
         return df
     except:
         return None

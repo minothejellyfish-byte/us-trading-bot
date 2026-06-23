@@ -49,6 +49,21 @@ def get_vwap_direction(df: pd.DataFrame, lookback: int = 5) -> Tuple[str, float,
         if df is None or len(df) < lookback + 1:
             return "flat", 0.0, "Insufficient data"
         
+        # Ensure required columns exist
+        required = ["High", "Low", "Close", "Volume"]
+        if not all(col in df.columns for col in required):
+            return "flat", 0.0, f"Missing columns: {[c for c in required if c not in df.columns]}"
+        
+        # Ensure numeric types
+        for col in required:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+        
+        # Drop rows with NaN
+        df = df.dropna(subset=required)
+        
+        if len(df) < lookback:
+            return "flat", 0.0, f"Not enough valid bars ({len(df)} < {lookback})"
+        
         # Calculate VWAP for each bar
         df = df.copy()
         df["tp"] = (df["High"] + df["Low"] + df["Close"]) / 3
@@ -65,7 +80,7 @@ def get_vwap_direction(df: pd.DataFrame, lookback: int = 5) -> Tuple[str, float,
         first_vwap = float(recent_vwap.iloc[0])
         last_vwap = float(recent_vwap.iloc[-1])
         
-        if first_vwap <= 0:
+        if first_vwap <= 0 or pd.isna(first_vwap) or pd.isna(last_vwap):
             return "flat", 0.0, "Invalid VWAP values"
         
         slope_pct = (last_vwap - first_vwap) / first_vwap * 100
