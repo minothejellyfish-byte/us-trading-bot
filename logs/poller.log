@@ -13867,3 +13867,76 @@ Poller 141670 stopped
 2026-06-22 23:00:01,429 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
 2026-06-23 06:48:43,850 [INFO] Outside market hours (23:48:43.850122) — not starting daemon.
 2026-06-23 12:21:39,130 [INFO] Outside market hours (05:21:39.130415) — not starting daemon.
+2026-06-23 16:30:27,959 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-06-23 16:30:27,959 [INFO] Poller starting in daemon mode
+2026-06-23 16:30:27,960 [INFO] Regime stale (>30min) — reclassifying
+2026-06-23 16:30:39,816 [INFO] Regime: DEFENSIVE — SPY -2.0% over 5 days, VIX 20.1 (elevated fear), 0% sector breadth
+2026-06-23 16:30:39,816 [INFO] US Price poller started.
+2026-06-23 16:30:40,219 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 16:30:40 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-23 16:30:40,471 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-23 16:30:41,226 [INFO] VWAP entry blocked for INTC: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:30:41,631 [INFO] VWAP entry blocked for AMD: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:30:42,276 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:30:42,777 [INFO] VWAP entry blocked for TXN: DEFENSIVE: VWAP falling: -0.11% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:30:43,353 [INFO] VWAP entry blocked for KLAC: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:30:43,353 [INFO] Slow poll done.
+2026-06-23 16:35:43,612 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-23 16:35:44,465 [INFO] VWAP entry blocked for INTC: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:35:44,879 [INFO] VWAP entry blocked for AMD: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:35:45,266 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:35:45,675 [INFO] VWAP entry blocked for TXN: DEFENSIVE: VWAP falling: -0.12% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:35:46,053 [INFO] VWAP entry blocked for KLAC: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:35:46,053 [INFO] Slow poll done.
+2026-06-23 16:40:46,068 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 16:40:58 [INFO] Order submitted: buy 150 INTC @ market → pending_new
+2026-06-23 16:40:58,062 [INFO] Order submitted: buy 150 INTC @ market → pending_new
+2026-06-23 16:40:58,425 [INFO] Bought INTC: 150@132.73 cycle=1/2
+2026-06-23 16:40:58,429 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1269, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1131, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-06-23 16:41:08,439 [WARNING] Bookkeeper confirmation failed for INTC: cannot import name 'get_positions' from 'us_bookkeeper' (/home/mino/us-exec/us_bookkeeper.py)
+2026-06-23 16:41:08,439 [INFO] Buy detected: INTC (no bookkeeper confirmation)
+2026-06-23 16:41:08,439 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 16:41:09,216 [INFO] VWAP entry blocked for AMD: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:41:09,623 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:41:09,992 [INFO] VWAP entry blocked for TXN: DEFENSIVE: VWAP falling: -0.14% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:41:10,393 [INFO] VWAP entry blocked for KLAC: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:41:10,393 [INFO] Slow poll done.
+2026-06-23 16:46:10,411 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 16:46:11,287 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 16:46:11,686 [INFO] VWAP entry blocked for AMD: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:46:12,074 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:46:12,734 [INFO] VWAP entry blocked for TXN: DEFENSIVE: VWAP falling: -1.76% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:46:13,120 [INFO] VWAP entry blocked for KLAC: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:46:13,120 [INFO] Slow poll done.
+2026-06-23 16:51:13,136 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 16:51:13,916 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 16:51:14,350 [INFO] VWAP entry blocked for AMD: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:51:14,742 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:51:15,169 [INFO] VWAP entry blocked for TXN: DEFENSIVE: VWAP falling: -0.39% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:51:15,556 [INFO] VWAP entry blocked for KLAC: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:51:15,556 [INFO] Slow poll done.
+2026-06-23 16:56:15,572 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 16:56:16,337 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 16:56:16,706 [INFO] VWAP entry blocked for AMD: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:56:17,073 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:56:17,437 [INFO] VWAP entry blocked for TXN: DEFENSIVE: VWAP falling: -0.43% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:56:17,807 [INFO] VWAP entry blocked for KLAC: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-06-23 16:56:17,808 [INFO] Slow poll done.
