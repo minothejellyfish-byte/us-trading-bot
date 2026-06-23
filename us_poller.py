@@ -472,6 +472,13 @@ def auto_sell(symbol: str, qty: int, reason: str):
     """Execute sell order via Alpaca."""
     base = symbol.replace(".SR", "").replace("-", ".")
     
+    # DEDUPLICATION: Check if position already closed (v1.0 fix)
+    positions = load_positions()
+    pos = positions.get(base, {})
+    if pos.get("closed", False):
+        log.info(f"DEDUP SELL: {base} already closed — skipping duplicate sell")
+        return True  # Return True to prevent retry
+    
     try:
         # Validate inputs
         if qty <= 0:
@@ -483,7 +490,6 @@ def auto_sell(symbol: str, qty: int, reason: str):
         
         if result.get("status") in ("pending_new", "accepted", "filled", "partially_filled"):
             # Update position
-            positions = load_positions()
             if base in positions:
                 positions[base]["closed"] = True
                 positions[base]["close_price"] = result.get("price", 0)
@@ -611,34 +617,47 @@ def fast_poll():
         elif was_closed and not is_closed:
             _reset_symbol_alerts(symbol)
             
-            # Confirm with bookkeeper before logging (v4.12)
-            try:
-                from us_bookkeeper import get_positions, get_position
-                bk_positions = get_positions()
-                bk_pos = bk_positions.get(symbol, {})
+            # Use file-based persistent dedup (v1.0 fix)
+            dedup_file = os.path.join(os.path.dirname(POSITIONS_FILE), f".dedup_{symbol}")
+            dedup_expiry = 60  # 60 seconds
+            
+            should_alert = True
+            if os.path.exists(dedup_file):
+                try:
+                    mtime = os.path.getmtime(dedup_file)
+                    if (time_mod.time() - mtime) < dedup_expiry:
+                        should_alert = False
+                except:
+                    pass
+            
+            if should_alert:
+                # Create dedup file
+                try:
+                    with open(dedup_file, 'w') as f:
+                        f.write(datetime.now(ET).isoformat())
+                except:
+                    pass
                 
-                # Only log if bookkeeper confirms the position
-                if bk_pos and not bk_pos.get("closed", True):
-                    qty = bk_pos.get("qty", 0)
-                    entry = bk_pos.get("entry_price", 0)
-                    entry_time = bk_pos.get("entry_time", "")
+                # Confirm with bookkeeper before logging
+                try:
+                    from us_bookkeeper import get_positions, get_position
+                    bk_positions = get_positions()
+                    bk_pos = bk_positions.get(symbol, {})
                     
-                    # Deduplicate with _alerted set
-                    key_bought = f"{symbol}_bookkeeper_confirmed"
-                    with _alerted_lock:
-                        already_alerted = key_bought in _alerted
-                    
-                    if not already_alerted:
+                    # Only log if bookkeeper confirms the position
+                    if bk_pos and not bk_pos.get("closed", True):
+                        qty = bk_pos.get("qty", 0)
+                        entry = bk_pos.get("entry_price", 0)
+                        entry_time = bk_pos.get("entry_time", "")
+                        
                         log.info(f"Buy detected: {symbol} (bookkeeper confirmed: {qty} @ ${entry:.2f})")
                         tg_send(f"📈 <b>ENTRY CONFIRMED</b>\n{symbol}: {qty} @ ${entry:.2f}\nBookkeeper: ✅")
-                        with _alerted_lock:
-                            _alerted.add(key_bought)
-                else:
-                    log.debug(f"Buy detected: {symbol} — bookkeeper not confirmed yet, skipping alert")
-            except Exception as e:
-                log.warning(f"Bookkeeper confirmation failed for {symbol}: {e}")
-                # Fallback: just log without bookkeeper confirmation
-                log.info(f"Buy detected: {symbol} (no bookkeeper confirmation)")
+                    else:
+                        log.debug(f"Buy detected: {symbol} — bookkeeper not confirmed yet, skipping alert")
+                except Exception as e:
+                    log.warning(f"Bookkeeper confirmation failed for {symbol}: {e}")
+                    # Fallback: just log without bookkeeper confirmation
+                    log.info(f"Buy detected: {symbol} (no bookkeeper confirmation)")
     
     # Update _prev_positions with full position state for next comparison
     try:
