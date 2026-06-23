@@ -14402,3 +14402,33 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-23 21:59:07,335 [WARNING] Position INTC has invalid entry price, skipping
 2026-06-23 21:59:07,335 [INFO] Entry cutoff passed — no new entries
 2026-06-23 21:59:07,335 [INFO] Slow poll done.
+2026-06-23 22:04:07,670 [INFO] Regime stale (>30min) — reclassifying
+2026-06-23 22:04:10,771 [INFO] Regime: DEFENSIVE — SPY -1.8% over 5 days, VIX 19.6 (elevated fear), 9% sector breadth
+2026-06-23 22:04:10,771 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-23 22:04:11,591 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:04:11,591 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:04:11,591 [INFO] Slow poll done.
+2026-06-23 22:09:11,608 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:09:12,424 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:09:12,425 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:09:12,425 [INFO] Slow poll done.
+2026-06-23 22:14:12,441 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:14:13,287 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:14:13,287 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:14:13,287 [INFO] Slow poll done.
+2026-06-23 22:19:13,308 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:19:14,166 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:19:14,166 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:19:14,166 [INFO] Slow poll done.
+2026-06-23 22:24:14,183 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:24:14,962 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:24:14,962 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:24:14,962 [INFO] Slow poll done.
+2026-06-23 22:29:14,978 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:29:15,798 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:29:15,798 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:29:15,798 [INFO] Slow poll done.
