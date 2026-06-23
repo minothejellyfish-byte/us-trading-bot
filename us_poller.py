@@ -977,6 +977,50 @@ def slow_poll():
         except Exception as e:
             log.debug(f"Position upgrade evaluation failed: {e}")
     
+    # ── CAPITAL RECYCLING (US v1.0) ──────────────────────────────────────────
+    # If we have open positions but NO new picks available (all blocked),
+    # consider recycling stale positions to free up slots
+    if open_count > 0 and open_count >= max_positions:
+        try:
+            from us_cycle_manager import recycle_capital
+            recycle_actions = recycle_capital(positions, picks, regime_name)
+            
+            for sym, reason in recycle_actions:
+                # Check if position is stale (held too long without profit)
+                pos = positions.get(sym, {})
+                if pos.get("closed", True):
+                    continue
+                
+                entry_time = pos.get("entry_time", "")
+                entry_price = pos.get("entry_price", 0)
+                
+                if not entry_time or entry_price <= 0:
+                    continue
+                
+                # Only recycle if position is not profitable
+                try:
+                    price, _ = fetch_data(sym)
+                    if price and entry_price > 0:
+                        gain_pct = (price - entry_price) / entry_price
+                        if gain_pct < 0:  # Only recycle losers
+                            qty = pos.get("qty", 1)
+                            auto_sell(sym, qty, f"🔄 {reason} | Recycling capital")
+                            close_trade(sym, price, f"Capital recycling: {reason}", regime=regime_name)
+                            
+                            # Record cycle exit
+                            try:
+                                from us_cycle_manager import record_exit
+                                record_exit(sym, price, gain_pct)
+                            except:
+                                pass
+                            
+                            log.info(f"Recycled {sym}: {reason} (gain={gain_pct*100:.1f}%)")
+                            open_count -= 1
+                except:
+                    pass
+        except Exception as e:
+            log.debug(f"Capital recycling failed: {e}")
+    
     if now_time >= HARD_CLOSE_TIME:
         log.info("Hard close active — no new entries")
         return
