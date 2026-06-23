@@ -920,6 +920,62 @@ def slow_poll():
         return
     
     open_count = sum(1 for p in positions.values() if not p.get("closed"))
+    max_positions = r_params.get("max_positions", 3)
+    
+    # ── POSITION UPGRADE (US v1.0 — TASI-style) ─────────────────────────────
+    if open_count >= max_positions:
+        try:
+            from us_cycle_manager import evaluate_position_upgrade
+            upgrade_plan = evaluate_position_upgrade(positions, picks, regime_name, r_params)
+            
+            if upgrade_plan:
+                current_sym = upgrade_plan["current_symbol"]
+                new_sym = upgrade_plan["new_symbol"]
+                new_pick = upgrade_plan["new_pick"]
+                reason = upgrade_plan["reason"]
+                
+                # Check if new pick is in entry zone
+                e_lo = new_pick.get("entry_low", 0)
+                e_hi = new_pick.get("entry_high", 0)
+                new_price, new_df = fetch_data(new_sym)
+                
+                if new_price and e_lo and e_hi and e_lo <= new_price <= e_hi:
+                    # Sell current position
+                    current_qty = positions[current_sym].get("qty", 1)
+                    auto_sell(current_sym, current_qty, f"🔄 Position upgrade — switching to better momentum")
+                    close_trade(current_sym, new_price, "Position upgrade", regime=regime_name)
+                    
+                    # Calculate new qty
+                    capital = load_capital()
+                    use_pct = r_params.get("position_pct", 0.30)
+                    new_qty = int((capital * use_pct) / new_price) if new_price > 0 else 0
+                    
+                    if new_qty > 0:
+                        tg_send(
+                            f"🔄 <b>Position Upgrade</b>\n"
+                            f"Closing {current_sym} → Opening {new_sym}\n"
+                            f"{reason}\n"
+                            f"New pick zone: ${e_lo:.2f}-${e_hi:.2f}"
+                        )
+                        
+                        # Record cycle exit for old position
+                        try:
+                            from us_cycle_manager import record_exit
+                            record_exit(current_sym, new_price, 0)
+                        except:
+                            pass
+                        
+                        # Buy new position
+                        result = auto_buy(new_sym, new_qty, new_price, 1, max_positions)
+                        if result:
+                            log_trade(new_sym, "BUY", new_qty, new_price, signal="position_upgrade", regime=regime_name)
+                            open_count += 1
+                        
+                        log.info(f"Position upgrade: {current_sym} → {new_sym} ({reason})")
+                else:
+                    log.info(f"Position upgrade BLOCKED: {new_sym} outside zone ${e_lo:.2f}-${e_hi:.2f}, price=${new_price:.2f}")
+        except Exception as e:
+            log.debug(f"Position upgrade evaluation failed: {e}")
     
     if now_time >= HARD_CLOSE_TIME:
         log.info("Hard close active — no new entries")

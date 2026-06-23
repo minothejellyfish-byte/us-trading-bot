@@ -247,41 +247,255 @@ def reset_all_cycles():
     unblock_all_symbols()
 
 
+# ─── Position Upgrade Thresholds (TASI v4.9 style) ────────────────────────
+
+POSITION_UPGRADE_THRESHOLDS = {
+    "TRENDING":  1.4,  # 40% better - stick with strong momentum
+    "NEUTRAL":   1.3,  # 30% better - balanced
+    "DEFENSIVE": 1.2,  # 20% better - cut losers faster
+}
+
+
+def _calculate_drop_score(symbol: str, pos: Dict, price: float, df,
+                         regime_params: Dict, picks_all: List[Dict]) -> float:
+    """Calculate drop score — lower = weaker position, candidate for upgrade.
+    
+    Components:
+    - PnL (30%): Current gain/loss
+    - Recovery (25%): Candle recovery score
+    - Profit rate (20%): Progress toward target vs time held
+    - Momentum (15%): Score vs best available picks
+    - Liquidity (10%): Current volume vs average
+    """
+    entry = pos.get("entry_price", 0)
+    entry_time = pos.get("entry_time", "")
+    
+    # PnL component (30%)
+    if entry and price and entry > 0:
+        pnl_pct = (price - entry) / entry
+        pnl_score = 50 + pnl_pct * 1000  # 0% = 50, +5% = 100, -5% = 0
+        pnl_score = max(0, min(100, pnl_score))
+    else:
+        pnl_score = 50
+    
+    # Recovery component (25%)
+    recovery_score = 50  # default neutral
+    if df is not None and len(df) >= 10:
+        try:
+            recent = df.tail(10)
+            closes = []
+            for i in range(len(recent)):
+                c = recent["Close"].iloc[i]
+                if hasattr(c, 'iloc'):
+                    c = float(c.iloc[0])
+                else:
+                    c = float(c)
+                closes.append(c)
+            
+            rising = sum(1 for i in range(1, len(closes)) if closes[i] > closes[i-1])
+            recovery_prob = rising / (len(closes) - 1) if len(closes) > 1 else 0.5
+            recovery_score = recovery_prob * 100
+        except:
+            pass
+    
+    # Profit rate component (20%)
+    target_pct = regime_params.get("target_pct", 0.02)
+    if entry_time and entry and price:
+        try:
+            et = datetime.fromisoformat(entry_time)
+            if et.tzinfo is None:
+                et = et.replace(tzinfo=ET)
+            mins_held = (datetime.now(ET) - et).total_seconds() / 60
+            pnl_pct = (price - entry) / entry
+            progress = pnl_pct / target_pct if target_pct else 0
+            time_efficiency = progress / max(mins_held / 60, 0.5)
+            profit_rate_score = max(0, min(100, 50 + time_efficiency * 50))
+        except:
+            profit_rate_score = 50
+    else:
+        profit_rate_score = 50
+    
+    # Momentum component (15%)
+    current_pick = next((p for p in picks_all if p.get("symbol", "").replace(".SR", "") == symbol.replace(".SR", "")), None)
+    current_score = current_pick.get("score", 0) if current_pick else 0
+    best_score = max((p.get("score", 0) for p in picks_all), default=current_score)
+    momentum_score = (current_score / max(best_score, 1)) * 100
+    
+    # Liquidity component (10%) — simplified for US
+    liquidity_score = 50  # default
+    if df is not None and len(df) >= 2:
+        try:
+            avg_vol = float(df["Volume"].mean())
+            last_vol = float(df["Volume"].iloc[-1])
+            if hasattr(last_vol, 'iloc'):
+                last_vol = float(last_vol.iloc[0])
+            liq_ratio = last_vol / avg_vol if avg_vol > 0 else 1.0
+            liquidity_score = min(100, liq_ratio * 50)
+        except:
+            pass
+    
+    # Weighted composite
+    drop_score = (
+        pnl_score * 0.30 +
+        recovery_score * 0.25 +
+        profit_rate_score * 0.20 +
+        momentum_score * 0.15 +
+        liquidity_score * 0.10
+    )
+    
+    return drop_score
+
+
+def _calculate_upgrade_qty(symbol: str, price: float, capital: Dict,
+                            position_pct: float) -> int:
+    """Calculate qty for upgrade based on position_pct of total capital.
+    
+    Validates against available cash.
+    """
+    total_capital = capital.get("grand_total", capital.get("available_capital", 0))
+    available = capital.get("money_transfer", capital.get("available_capital", 0))
+    
+    if total_capital <= 0 or price <= 0:
+        return 1
+    
+    target_value = total_capital * position_pct
+    qty = max(1, int(target_value / price))
+    
+    # Validate against available cash (95% buffer)
+    order_value = qty * price
+    if order_value > available * 0.95:
+        qty = max(1, int((available * 0.95) / price))
+    
+    return qty
+
+
 # ─── Position Upgrade Logic ─────────────────────────────────────────────────
 
 def should_upgrade_position(current_symbol: str, current_score: float,
                            candidate_symbol: str, candidate_score: float,
-                           regime: str = "NEUTRAL") -> Tuple[bool, str]:
-    """Check if we should upgrade to a better pick.
+                           regime: str = "NEUTRAL",
+                           current_price: Optional[float] = None,
+                           entry_price: Optional[float] = None) -> Tuple[bool, str, Dict]:
+    """Check if we should upgrade to a better pick (TASI v4.9 style).
     
-    Upgrade rules:
-    - Candidate score must be significantly higher (>15% better)
-    - Only upgrade if current position is young (<10 min)
-    - DEFENSIVE: stricter upgrade threshold
+    Returns:
+        (should_upgrade, reason, details)
     """
-    # Score improvement threshold
-    if regime == "TRENDING":
-        min_improvement = 0.15  # 15% better
-    elif regime == "NEUTRAL":
-        min_improvement = 0.20  # 20% better
-    else:
-        min_improvement = 0.25  # 25% better (DEFENSIVE)
+    details = {}
     
-    # Calculate improvement
+    # Get regime-aware threshold
+    pu_thresh = POSITION_UPGRADE_THRESHOLDS.get(regime, 1.3)
+    
+    # Check if candidate is significantly better
     if current_score <= 0:
-        return False, "Current score invalid"
+        return False, "Current score invalid", details
     
-    improvement = (candidate_score - current_score) / current_score
+    improvement = candidate_score / current_score
     
-    if improvement < min_improvement:
-        return False, f"Improvement {improvement*100:.0f}% < {min_improvement*100:.0f}%"
+    if improvement < pu_thresh:
+        return False, f"Improvement {improvement:.1f}x < {pu_thresh}x threshold", details
     
-    # Check cycle availability
+    # Check if current position is NOT deep underwater
+    if current_price and entry_price and entry_price > 0:
+        gain_pct = (current_price - entry_price) / entry_price
+        if gain_pct < -0.02:  # Don't switch if down >2%
+            return False, f"Current position underwater {gain_pct*100:.1f}% (threshold: -2%)", details
+        details["current_gain_pct"] = gain_pct
+    
+    # Check cycle availability for candidate
     can_enter, reason = can_enter_cycle(candidate_symbol, regime)
     if not can_enter:
-        return False, f"Cannot enter {candidate_symbol}: {reason}"
+        return False, f"Cannot enter {candidate_symbol}: {reason}", details
     
-    return True, f"Upgrade: {improvement*100:.0f}% improvement ({current_score:.0f} → {candidate_score:.0f})"
+    details["improvement"] = improvement
+    details["threshold"] = pu_thresh
+    
+    return True, f"Upgrade: {improvement:.1f}x improvement ({current_score:.0f} → {candidate_score:.0f})", details
+
+
+def evaluate_position_upgrade(positions: Dict, picks: List[Dict],
+                               regime: str = "NEUTRAL", regime_params: Dict = None) -> Optional[Dict]:
+    """Evaluate if any position should be upgraded.
+    
+    Returns upgrade plan or None if no upgrade needed.
+    """
+    if regime_params is None:
+        regime_params = {}
+    
+    # Get open positions
+    open_positions = [(s, p) for s, p in positions.items() if not p.get("closed", True)]
+    if not open_positions:
+        return None
+    
+    # Calculate drop score for each open position
+    scored_positions = []
+    for sym, pos in open_positions:
+        # Simplified: we don't have df here, use basic metrics
+        entry = pos.get("entry_price", 0)
+        # Use a simplified drop score based on time held
+        entry_time = pos.get("entry_time", "")
+        if entry_time:
+            try:
+                et = datetime.fromisoformat(entry_time)
+                if et.tzinfo is None:
+                    et = et.replace(tzinfo=ET)
+                mins_held = (datetime.now(ET) - et).total_seconds() / 60
+                # Simple drop score: older = higher drop score (weaker)
+                drop_score = mins_held / 10  # Simple linear
+            except:
+                drop_score = 50
+        else:
+            drop_score = 50
+        
+        scored_positions.append((sym, pos, drop_score))
+    
+    # Sort by drop score (weakest first)
+    scored_positions.sort(key=lambda x: x[2])
+    
+    # Get weakest position
+    if not scored_positions:
+        return None
+    
+    current_sym, current_pos, drop_score = scored_positions[0]
+    
+    # Find best available pick that's NOT currently held
+    held_symbols = [s for s, _ in open_positions]
+    best_new = None
+    for p in sorted(picks, key=lambda x: x.get("score", 0), reverse=True):
+        sym = p.get("symbol", "").replace(".SR", "").replace("-", ".")
+        if sym not in held_symbols:
+            best_new = p
+            break
+    
+    if not best_new:
+        return None
+    
+    # Get scores
+    current_pick = next((p for p in picks if p.get("symbol", "").replace(".SR", "").replace("-", ".") == current_sym.replace(".SR", "").replace("-", ".")), None)
+    current_score = current_pick.get("score", 0) if current_pick else 0
+    candidate_score = best_new.get("score", 0)
+    candidate_sym = best_new.get("symbol", "").replace(".SR", "").replace("-", ".")
+    
+    # Check upgrade
+    current_price = current_pos.get("current_price") or current_pos.get("entry_price", 0)
+    entry_price = current_pos.get("entry_price", 0)
+    
+    should_upgrade, reason, details = should_upgrade_position(
+        current_sym, current_score, candidate_sym, candidate_score,
+        regime, current_price, entry_price
+    )
+    
+    if not should_upgrade:
+        return None
+    
+    return {
+        "current_symbol": current_sym,
+        "current_pos": current_pos,
+        "new_symbol": candidate_sym,
+        "new_pick": best_new,
+        "reason": reason,
+        "details": details,
+    }
 
 
 def find_best_available_pick(picks: List[Dict], regime: str = "NEUTRAL",
