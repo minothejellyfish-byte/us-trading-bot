@@ -778,6 +778,14 @@ def slow_poll():
             with _alerted_lock:
                 _alerted.add(key_stop)
             cycles_today[symbol] = 999
+            
+            # Block symbol immediately (TASI style)
+            try:
+                from us_cycle_manager import record_hard_stop
+                record_hard_stop(symbol)
+                log.info(f"Symbol {symbol} blocked after hard stop")
+            except Exception:
+                pass
         
         # Target
         with _alerted_lock:

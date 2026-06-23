@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-US Cycle Manager — v4.12
-==========================
-Position cycling and upgrade system for US paper trading.
+US Cycle Manager — v4.12 (Enforced)
+======================================
+Position cycling and upgrade system with TASI-style enforcement.
 
 Features:
 - Cycle tracking per symbol (entry → exit → re-entry)
+- Symbol blocking (2 scratches or hard stop)
 - Position upgrade (better pick available → switch)
 - Capital recycling (close scratch, enter new pick)
-- Cycle limits per regime
 
 Author: Mino (kimi-k2.6)
 Version: 4.12
@@ -27,11 +27,11 @@ ET = pytz.timezone("America/New_York")
 BASE_DIR = Path("/home/mino/us-exec")
 CYCLE_FILE = BASE_DIR / "us_cycles.json"
 
-# Cycle limits per regime
+# Cycle limits per regime (v4.12 updated)
 CYCLE_LIMITS = {
-    "TRENDING": 3,    # More cycles in trending (opportunities)
-    "NEUTRAL": 2,
-    "DEFENSIVE": 1,   # Fewer in defensive (preservation)
+    "TRENDING": 4,    # 4 cycles in trending (more opportunities)
+    "NEUTRAL": 3,
+    "DEFENSIVE": 2,   # 2 cycles in defensive (preservation)
 }
 
 # Minimum time between cycles (minutes)
@@ -40,6 +40,9 @@ CYCLE_COOLDOWN = {
     "NEUTRAL": 45,
     "DEFENSIVE": 60,
 }
+
+# Blocked symbols (cycles exceeded or 2 scratches) — TASI style
+_blocked_symbols: set = set()
 
 
 def load_cycles() -> Dict:
@@ -71,8 +74,31 @@ def get_symbol_cycles(symbol: str) -> Dict:
         "last_exit": "",
         "scratch_count": 0,
         "win_count": 0,
-        "status": "available",  # available, active, cooling
+        "status": "available",
     })
+
+
+def is_symbol_blocked(symbol: str) -> bool:
+    """Check if symbol is blocked (2 scratches or hard stop)."""
+    return symbol in _blocked_symbols
+
+
+def block_symbol(symbol: str, reason: str = ""):
+    """Block a symbol from further entries."""
+    _blocked_symbols.add(symbol)
+    log_event = f"BLOCKED {symbol}: {reason}"
+    try:
+        from us_watchdog import USWatchdog
+        wd = USWatchdog()
+        wd.log_event("BLOCK", log_event)
+    except:
+        pass
+
+
+def unblock_all_symbols():
+    """Unblock all symbols (new day)."""
+    global _blocked_symbols
+    _blocked_symbols = set()
 
 
 def can_enter_cycle(symbol: str, regime: str = "NEUTRAL") -> Tuple[bool, str]:
@@ -81,19 +107,25 @@ def can_enter_cycle(symbol: str, regime: str = "NEUTRAL") -> Tuple[bool, str]:
     Returns:
         (can_enter, reason)
     """
+    # Check if explicitly blocked (TASI style)
+    if is_symbol_blocked(symbol):
+        return False, f"{symbol} is blocked for today"
+    
     cycle_data = get_symbol_cycles(symbol)
     cycle_count = cycle_data.get("cycle_count", 0)
     last_exit = cycle_data.get("last_exit", "")
     scratch_count = cycle_data.get("scratch_count", 0)
     
-    # Check cycle limit
-    limit = CYCLE_LIMITS.get(regime, 2)
-    if cycle_count >= limit:
-        return False, f"Cycle limit reached ({cycle_count}/{limit}) for {regime}"
-    
-    # Check scratch limit (2 scratches = stop for day)
+    # Check scratch limit (2 scratches = stop for day) — TASI style
     if scratch_count >= 2:
+        block_symbol(symbol, "2 scratches")
         return False, f"2 scratches — {symbol} stopped for today"
+    
+    # Check cycle limit
+    limit = CYCLE_LIMITS.get(regime, 3)
+    if cycle_count >= limit:
+        block_symbol(symbol, f"cycle limit {cycle_count}/{limit}")
+        return False, f"Cycle limit reached ({cycle_count}/{limit}) for {regime}"
     
     # Check cooldown
     if last_exit:
@@ -150,12 +182,18 @@ def record_exit(symbol: str, exit_price: float, pnl_pct: float):
     cycles[symbol]["last_exit"] = datetime.now(ET).isoformat()
     cycles[symbol]["status"] = "cooling"
     
-    # Update win/scratch count
+    # Update win/scratch count — TASI style
     if pnl_pct > 0:
+        # Win — reset scratch count
         cycles[symbol]["win_count"] = cycles[symbol].get("win_count", 0) + 1
-        cycles[symbol]["scratch_count"] = 0  # Reset on win
+        cycles[symbol]["scratch_count"] = 0
     else:
+        # Scratch — increment
         cycles[symbol]["scratch_count"] = cycles[symbol].get("scratch_count", 0) + 1
+        
+        # Check if we need to block after 2 scratches (TASI style)
+        if cycles[symbol]["scratch_count"] >= 2:
+            block_symbol(symbol, "2 scratches")
     
     # Update last entry with exit info
     entries = cycles[symbol].get("entries", [])
@@ -167,12 +205,46 @@ def record_exit(symbol: str, exit_price: float, pnl_pct: float):
     save_cycles(cycles)
 
 
+def record_hard_stop(symbol: str):
+    """Record hard stop — blocks symbol immediately (TASI style: cycles_today[symbol] = 999)."""
+    block_symbol(symbol, "hard stop")
+    
+    # Also record in cycles
+    cycles = load_cycles()
+    if symbol not in cycles:
+        cycles[symbol] = {
+            "cycle_count": 0,
+            "last_entry": "",
+            "last_exit": "",
+            "scratch_count": 999,  # Like TASI's 999
+            "win_count": 0,
+        }
+    else:
+        cycles[symbol]["scratch_count"] = 999
+    
+    save_cycles(cycles)
+
+
 def reset_symbol(symbol: str):
     """Reset cycle data for a symbol (new day)."""
     cycles = load_cycles()
     if symbol in cycles:
         del cycles[symbol]
     save_cycles(cycles)
+    
+    # Also unblock
+    if symbol in _blocked_symbols:
+        _blocked_symbols.discard(symbol)
+
+
+def reset_all_cycles():
+    """Reset all cycles and blocks (new day)."""
+    if CYCLE_FILE.exists():
+        try:
+            CYCLE_FILE.unlink()
+        except:
+            pass
+    unblock_all_symbols()
 
 
 # ─── Position Upgrade Logic ─────────────────────────────────────────────────
@@ -284,7 +356,7 @@ def recycle_capital(current_positions: Dict, available_picks: List[Dict],
 # ─── Test ───────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("=== US Cycle Manager Test ===\n")
+    print("=== US Cycle Manager (Enforced) Test ===\n")
     
     # Test cycle tracking
     symbol = "AAPL"
@@ -310,19 +382,17 @@ if __name__ == "__main__":
     record_entry(symbol, 174.00, 10)
     record_exit(symbol, 172.50, -0.86)
     
-    # Check after 2 scratches
+    # Check after 2 scratches (should be BLOCKED)
     can_enter, reason = can_enter_cycle(symbol, "NEUTRAL")
     print(f"After 2 scratches: {can_enter} — {reason}")
+    print(f"Is {symbol} blocked? {is_symbol_blocked(symbol)}")
     
-    print()
-    
-    # Test upgrade logic
-    print("Upgrade Logic:")
-    should_upgrade, reason = should_upgrade_position("AMD", 65.0, "AAPL", 85.0, "NEUTRAL")
-    print(f"  AMD(65) → AAPL(85): {should_upgrade} — {reason}")
-    
-    should_upgrade, reason = should_upgrade_position("AMD", 65.0, "AAPL", 70.0, "NEUTRAL")
-    print(f"  AMD(65) → AAPL(70): {should_upgrade} — {reason}")
+    # Test hard stop
+    reset_symbol("AMD")
+    record_hard_stop("AMD")
+    can_enter, reason = can_enter_cycle("AMD", "TRENDING")
+    print(f"After hard stop: {can_enter} — {reason}")
+    print(f"Is AMD blocked? {is_symbol_blocked('AMD')}")
     
     print()
     print("=== Test Complete ===")
