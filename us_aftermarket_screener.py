@@ -310,12 +310,12 @@ def calculate_aftermarket_score(data: Dict, regime: str = "NEUTRAL") -> float:
     4. Intraday range (volatility/expansion)
     """
     
-    daily_change = data["daily_change_pct"]
-    volume = data["volume_today"]
-    price = data["price_now"]
-    mkt_cap = data["market_cap"]
-    close_to_high = data["close_to_high_pct"]
-    intraday_range = data["intraday_range_pct"]
+    daily_change = data.get("daily_change_pct", 0)
+    volume = data.get("volume_today", 0)
+    price = data.get("price_now", 0)
+    mkt_cap = data.get("market_cap", 0)
+    close_to_high = data.get("close_to_high_pct", -0.05)
+    intraday_range = data.get("intraday_range_pct", 0.02)
     
     # Regime-based weight adjustment
     if regime == "TRENDING":
