@@ -13988,3 +13988,51 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-23 17:26:34,308 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
 2026-06-23 17:26:34,701 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
 2026-06-23 17:26:34,701 [INFO] Slow poll done.
+2026-06-23 17:30:54,715 [INFO] Regime stale (>30min) — reclassifying
+2026-06-23 17:30:57,320 [INFO] Regime: DEFENSIVE — SPY -1.3% over 5 days, VIX 19.2 (elevated fear), 27% sector breadth
+2026-06-23 17:31:37,322 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-23 17:31:38,132 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 17:31:38,537 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:31:38,901 [INFO] VWAP entry blocked for GOOG: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:31:39,273 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:31:39,651 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:31:39,652 [INFO] Slow poll done.
+2026-06-23 17:36:39,668 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 17:36:40,409 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 17:36:40,770 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:36:41,136 [INFO] VWAP entry blocked for GOOG: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:36:41,524 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:36:41,887 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:36:41,888 [INFO] Slow poll done.
+2026-06-23 17:41:41,906 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 17:41:42,692 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 17:41:43,105 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:41:43,489 [INFO] VWAP entry blocked for GOOG: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:41:43,882 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:41:44,264 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:41:44,264 [INFO] Slow poll done.
+2026-06-23 17:46:44,282 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 17:46:45,047 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 17:46:45,419 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:46:45,788 [INFO] VWAP entry blocked for GOOG: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:46:46,168 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:46:46,531 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:46:46,531 [INFO] Slow poll done.
+2026-06-23 17:51:46,548 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 17:51:47,314 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 17:51:47,667 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:51:48,045 [INFO] VWAP entry blocked for GOOG: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:51:48,418 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:51:48,771 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:51:48,771 [INFO] Slow poll done.
+2026-06-23 17:56:48,789 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 17:56:49,600 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 17:56:49,979 [INFO] VWAP entry blocked for AVGO: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:56:50,363 [INFO] VWAP entry blocked for GOOG: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:56:50,744 [INFO] VWAP entry blocked for META: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:56:51,132 [INFO] VWAP entry blocked for GOOGL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-06-23 17:56:51,133 [INFO] Slow poll done.
