@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Logs
+*.log
+logs/
+
+# State / Runtime
+*.pid
+*.pid.lock
+
+# Secrets
+.env
+
+# Data
+history/
+*.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup
+backup_*/
+*.backup.*
+
+# Generated
+reports/*.html
+*.png
+*.jpg
