@@ -24,9 +24,10 @@ import asyncio
 import threading
 from datetime import datetime, date
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import pytz
+import pandas as pd
 
 # Alpaca imports
 try:
