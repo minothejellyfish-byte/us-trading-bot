@@ -14432,3 +14432,68 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-23 22:29:15,798 [WARNING] Position INTC has invalid entry price, skipping
 2026-06-23 22:29:15,798 [INFO] Entry cutoff passed — no new entries
 2026-06-23 22:29:15,798 [INFO] Slow poll done.
+2026-06-23 22:34:16,166 [INFO] Regime stale (>30min) — reclassifying
+2026-06-23 22:34:18,613 [INFO] Regime: DEFENSIVE — SPY -1.8% over 5 days, VIX 19.7 (elevated fear), 9% sector breadth
+2026-06-23 22:34:18,613 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-23 22:34:19,458 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:34:19,459 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:34:19,459 [INFO] Slow poll done.
+2026-06-23 22:39:19,477 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:39:20,309 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:39:20,309 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:39:20,309 [INFO] Slow poll done.
+2026-06-23 22:44:20,327 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:44:21,173 [WARNING] Position INTC has invalid entry price, skipping
+2026-06-23 22:44:21,173 [INFO] Entry cutoff passed — no new entries
+2026-06-23 22:44:21,174 [INFO] Slow poll done.
+2026-06-23 22:45:02 [INFO] Order submitted: sell 150 INTC @ market → pending_new
+2026-06-23 22:45:02,369 [INFO] Order submitted: sell 150 INTC @ market → pending_new
+2026-06-23 22:45:02,713 [INFO] Sold INTC: 150 — ⏰ 15:45 hard close
+2026-06-23 22:45:02,715 [ERROR] fast_poll error: 'dict' object has no attribute 'append'
+2026-06-23 22:45:12,717 [INFO] 15:45 — no open positions
+2026-06-23 22:45:22,718 [INFO] Sell detected (scratch): INTC pct=+0.0%
+2026-06-23 22:49:22,729 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:49:22,730 [INFO] Hard close active — no new entries
+2026-06-23 22:49:22,730 [INFO] Slow poll done.
+2026-06-23 22:54:22,745 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:54:22,745 [INFO] Hard close active — no new entries
+2026-06-23 22:54:22,745 [INFO] Slow poll done.
+2026-06-23 22:55:02,747 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:55:12,749 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:55:22,750 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:55:32,751 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:55:42,753 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:55:52,754 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:56:02,756 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:56:12,758 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:56:22,760 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:56:32,762 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:56:42,765 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:56:52,768 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:57:02,771 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:57:12,772 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:57:22,774 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:57:32,777 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:57:42,778 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:57:52,779 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:58:02,780 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:58:12,782 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:58:22,784 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:58:32,788 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:58:42,790 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:58:52,792 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:59:02,793 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:59:12,795 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:59:22,799 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-23 22:59:22,800 [INFO] Hard close active — no new entries
+2026-06-23 22:59:22,800 [INFO] Slow poll done.
+2026-06-23 22:59:22,800 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:59:32,802 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:59:42,803 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 22:59:52,806 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-23 23:00:02,807 [INFO] Market closed — poller exiting.
+2026-06-23 23:00:03,205 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
