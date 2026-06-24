@@ -86,6 +86,20 @@ class USBot:
         self._last_positions_data = None
         self._setup_signal_handlers()
     
+    def _trigger_bookkeeper_sync(self):
+        """Trigger us_bookkeeper quick_refresh in background to sync with Alpaca truth."""
+        try:
+            import subprocess
+            subprocess.Popen(
+                ["/usr/bin/python3", "-c",
+                 "import sys; sys.path.insert(0, '/home/mino/us-exec'); import us_bookkeeper; us_bookkeeper.quick_refresh()"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+            log.info("Bookkeeper sync triggered (background)")
+        except Exception as e:
+            log.warning(f"Failed to trigger bookkeeper sync: {e}")
+
     def _is_valid_symbol(self, symbol: str) -> bool:
         """Validate symbol format: [A-Z]{1,5}"""
         if not isinstance(symbol, str):
@@ -216,11 +230,26 @@ class USBot:
         lines = ["📊 <b>US SYSTEM STATUS</b>"]
         lines.append("")
         
+        # Sync with bookkeeper first for fresh data
+        sync_msg = ""
+        try:
+            import subprocess
+            subprocess.run(
+                ["/usr/bin/python3", "-c",
+                 "import sys; sys.path.insert(0, '/home/mino/us-exec'); import us_bookkeeper; us_bookkeeper.quick_refresh()"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                timeout=10,
+            )
+            sync_msg = " (synced)"
+        except Exception:
+            sync_msg = " (sync failed)"
+        
         # Market status
         now = datetime.now(ET)
         market_open = self.is_market_open()
         lines.append(f"Market: {'🟢 OPEN' if market_open else '🔴 CLOSED'}")
-        lines.append(f"Time (ET): {now.strftime('%H:%M:%S')}")
+        lines.append(f"Time (ET): {now.strftime('%H:%M:%S')}{sync_msg}")
         lines.append(f"Day: {now.strftime('%A')}")
         lines.append("")
         
@@ -393,6 +422,8 @@ class USBot:
             if self.trader:
                 try:
                     order = self.trader.buy(symbol, qty)
+                    # Trigger bookkeeper sync for truth
+                    self._trigger_bookkeeper_sync()
                     return f"🟢 Buy order submitted: {symbol} x{qty} → {order['status']}"
                 except Exception as e:
                     return f"❌ Buy failed: {e}"
@@ -414,6 +445,8 @@ class USBot:
             if self.trader:
                 try:
                     order = self.trader.sell(symbol, qty)
+                    # Trigger bookkeeper sync for truth
+                    self._trigger_bookkeeper_sync()
                     return f"🔴 Sell order submitted: {symbol} x{qty} → {order['status']}"
                 except Exception as e:
                     return f"❌ Sell failed: {e}"
@@ -536,6 +569,9 @@ class USBot:
                     
                     # Save positions
                     self.save_positions()
+                    
+                    # Trigger bookkeeper sync for truth (every 60s)
+                    self._trigger_bookkeeper_sync()
                     
                     # Hard close check
                     if now.time() >= HARD_CLOSE and not self.is_stand_down():
