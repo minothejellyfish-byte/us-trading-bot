@@ -1,23 +1,23 @@
 {
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Conservative",
-    "max_positions": 2,
-    "position_pct": 0.2,
-    "alt_position_pct": 0.2,
-    "target_pct": 0.015,
-    "trail_trigger": 0.015,
-    "trail_stop": 0.02,
-    "hard_stop": 0.04,
-    "time_stop_mins": 20,
-    "time_stop_pct": 0.005,
-    "midscreen": false
+    "strategy": "Standard",
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
+    "trail_stop": 0.03,
+    "hard_stop": 0.05,
+    "time_stop_mins": 30,
+    "time_stop_pct": 0.01,
+    "midscreen": true
   },
-  "reason": "SPY -2.0% over 5 days, VIX 19.5 (elevated fear), 9% sector breadth",
-  "spy_5d_change": -1.98,
-  "spy_10d_change": -0.21,
-  "vix": 19.49,
-  "sector_breadth": 9.1,
-  "top_sectors": "Utilities (0.7%), Healthcare (-0.1%), Real Estate (-0.2%)",
-  "classified_at": "2026-06-23T23:36:28.067208"
+  "reason": "SPY -0.6% over 5 days, VIX 19.2 (moderate), 45% sector breadth",
+  "spy_5d_change": -0.58,
+  "spy_10d_change": 1.55,
+  "vix": 19.24,
+  "sector_breadth": 45.5,
+  "top_sectors": "Real Estate (2.8%), Utilities (2.6%), Healthcare (2.2%)",
+  "classified_at": "2026-06-24T16:30:17.911469"
 }
