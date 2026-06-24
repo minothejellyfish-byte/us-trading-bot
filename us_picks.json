@@ -9,7 +9,7 @@
     {
       "symbol": "INTC",
       "score": 85.3,
-      "price": 134.64,
+      "price": 132.57,
       "entry_low": 132.58,
       "entry_high": 136.6,
       "gap_pct": 8.78,
@@ -28,15 +28,15 @@
         "intraday_range_pct": 5.75,
         "close_to_high_pct": -1.15
       },
-      "change_pct": -4.47,
-      "volume": 24048418,
-      "vwap": 131.34,
-      "above_vwap": true
+      "change_pct": 0.22,
+      "volume": 13685609,
+      "vwap": 132.81,
+      "above_vwap": false
     },
     {
       "symbol": "AVGO",
       "score": 83.6,
-      "price": 386.46,
+      "price": 383.48,
       "entry_low": 407.24,
       "entry_high": 419.58,
       "gap_pct": 3.88,
@@ -55,15 +55,15 @@
         "intraday_range_pct": 1.79,
         "close_to_high_pct": -0.33
       },
-      "change_pct": -1.45,
-      "volume": 3870582,
-      "vwap": 381.11,
-      "above_vwap": true
+      "change_pct": 0.87,
+      "volume": 5757229,
+      "vwap": 384.35,
+      "above_vwap": false
     },
     {
       "symbol": "GOOG",
       "score": 81.9,
-      "price": 347.0,
+      "price": 348.18,
       "entry_low": 363.32,
       "entry_high": 374.33,
       "gap_pct": 0.38,
@@ -82,15 +82,15 @@
         "intraday_range_pct": 3.31,
         "close_to_high_pct": -0.45
       },
-      "change_pct": -0.51,
-      "volume": 3265606,
-      "vwap": 343.14,
-      "above_vwap": true
+      "change_pct": 0.05,
+      "volume": 2144020,
+      "vwap": 349.36,
+      "above_vwap": false
     },
     {
       "symbol": "META",
       "score": 81.9,
-      "price": 569.12,
+      "price": 562.35,
       "entry_low": 571.23,
       "entry_high": 588.54,
       "gap_pct": 0.78,
@@ -109,15 +109,15 @@
         "intraday_range_pct": 2.99,
         "close_to_high_pct": -0.55
       },
-      "change_pct": 0.93,
-      "volume": 1796306,
-      "vwap": 564.92,
-      "above_vwap": true
+      "change_pct": 0.03,
+      "volume": 1380983,
+      "vwap": 563.83,
+      "above_vwap": false
     },
     {
       "symbol": "GOOGL",
       "score": 81.6,
-      "price": 347.39,
+      "price": 348.51,
       "entry_low": 364.14,
       "entry_high": 375.18,
       "gap_pct": 0.41,
@@ -136,15 +136,15 @@
         "intraday_range_pct": 2.96,
         "close_to_high_pct": -0.45
       },
-      "change_pct": -0.65,
-      "volume": 6493044,
-      "vwap": 343.71,
-      "above_vwap": true
+      "change_pct": 0.69,
+      "volume": 4524658,
+      "vwap": 349.58,
+      "above_vwap": false
     },
     {
       "symbol": "NVDA",
       "score": 81.2,
-      "price": 203.12,
+      "price": 200.66,
       "entry_low": 208.1,
       "entry_high": 214.4,
       "gap_pct": 1.24,
@@ -163,15 +163,15 @@
         "intraday_range_pct": 2.36,
         "close_to_high_pct": -0.56
       },
-      "change_pct": -2.65,
-      "volume": 24641706,
-      "vwap": 201.94,
+      "change_pct": 0.31,
+      "volume": 14221924,
+      "vwap": 200.58,
       "above_vwap": true
     },
     {
       "symbol": "MSFT",
       "score": 81.1,
-      "price": 373.3,
+      "price": 374.71,
       "entry_low": 376.25,
       "entry_high": 387.65,
       "gap_pct": -0.48,
@@ -190,38 +190,49 @@
         "intraday_range_pct": 2.14,
         "close_to_high_pct": -0.35
       },
-      "change_pct": 1.62,
-      "volume": 6107128,
-      "vwap": 372.57,
-      "above_vwap": true
+      "change_pct": 0.21,
+      "volume": 3559057,
+      "vwap": 374.88,
+      "above_vwap": false
     },
     {
       "symbol": "IQV",
       "score": 37.4,
-      "price": 170.46,
+      "price": 181.15,
       "entry_low": 169.61,
       "entry_high": 171.31,
-      "change_pct": 1.58,
-      "volume": 65301,
+      "change_pct": 5.76,
+      "volume": 155249,
       "avg_volume": 65301,
       "rel_volume": 1.0,
-      "vwap": 170.23,
+      "vwap": 180.41,
       "above_vwap": true,
       "source": "midscreen",
       "time": "10:06:20"
+    },
+    {
+      "symbol": "RIOT",
+      "score": 45.0,
+      "price": 28.19,
+      "entry_low": 28.05,
+      "entry_high": 28.33,
+      "change_pct": -1.74,
+      "volume": 1693597,
+      "avg_volume": 1693597,
+      "rel_volume": 1.0,
+      "vwap": 28.14,
+      "above_vwap": true,
+      "source": "midscreen",
+      "time": "10:05:51"
     }
   ],
-  "last_midscreen": "10:06:59",
-  "midscreen_count": 1,
-  "regime": "DEFENSIVE",
+  "last_midscreen": "10:06:48",
+  "midscreen_count": 2,
+  "regime": "NEUTRAL",
   "validation": {
-    "valid_count": 7,
-    "removed_count": 3,
-    "removed_symbols": [
-      "AMD",
-      "TXN",
-      "KLAC"
-    ],
+    "valid_count": 8,
+    "removed_count": 0,
+    "removed_symbols": [],
     "new_count": 1
   }
 }

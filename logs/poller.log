@@ -14554,3 +14554,51 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-24 16:55:32,491 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
 2026-06-24 16:55:32,859 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
 2026-06-24 16:55:32,859 [INFO] Slow poll done.
+2026-06-24 17:00:22,877 [INFO] Regime stale (>30min) — reclassifying
+2026-06-24 17:00:26,547 [INFO] Regime: NEUTRAL — SPY -0.4% over 5 days, VIX 19.3 (moderate), 55% sector breadth
+2026-06-24 17:00:36,548 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-24 17:00:37,367 [INFO] VWAP entry blocked for INTC: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:00:37,760 [INFO] VWAP entry blocked for AVGO: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:00:38,133 [INFO] VWAP entry blocked for GOOG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-06-24 17:00:38,519 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:00:38,896 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:00:38,897 [INFO] Slow poll done.
+2026-06-24 17:05:38,914 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-24 17:05:39,720 [INFO] VWAP entry blocked for INTC: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:05:40,097 [INFO] VWAP entry blocked for AVGO: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:05:40,479 [INFO] VWAP entry blocked for GOOG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-06-24 17:05:40,861 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:05:41,248 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:05:41,248 [INFO] Slow poll done.
+2026-06-24 17:10:41,263 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-24 17:10:42,046 [INFO] VWAP entry blocked for INTC: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:10:42,409 [INFO] VWAP entry blocked for AVGO: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:10:42,797 [INFO] VWAP entry blocked for GOOG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-06-24 17:10:43,159 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:10:43,519 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:10:43,520 [INFO] Slow poll done.
+2026-06-24 17:15:43,535 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-24 17:15:44,345 [INFO] VWAP entry blocked for INTC: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:15:44,728 [INFO] VWAP entry blocked for AVGO: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:15:45,122 [INFO] VWAP entry blocked for GOOG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-06-24 17:15:45,484 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:15:45,864 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:15:45,864 [INFO] Slow poll done.
+2026-06-24 17:20:45,879 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-24 17:20:46,681 [INFO] VWAP entry blocked for INTC: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:20:47,045 [INFO] VWAP entry blocked for AVGO: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:20:47,415 [INFO] VWAP entry blocked for GOOG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-06-24 17:20:47,782 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:20:48,172 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:20:48,172 [INFO] Slow poll done.
+2026-06-24 17:25:48,187 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-24 17:25:49,040 [INFO] VWAP entry blocked for INTC: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:25:49,427 [INFO] VWAP entry blocked for AVGO: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:25:49,833 [INFO] VWAP entry blocked for GOOG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-06-24 17:25:50,242 [INFO] VWAP entry blocked for META: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:25:50,651 [INFO] VWAP entry blocked for GOOGL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-06-24 17:25:50,651 [INFO] Slow poll done.
