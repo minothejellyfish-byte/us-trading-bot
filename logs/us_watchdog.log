@@ -5931,3 +5931,73 @@ data websocket error, restarting connection: no close fram
 [2026-06-25 08:00:10 EDT] [INFO] Off-duty (08:00), waiting for 09:25
 [2026-06-25 08:00:40 EDT] [INFO] Off-duty (08:00), waiting for 09:25
 [2026-06-25 09:00:10 EDT] [INFO] Off-duty (09:00), waiting for 09:25
+[2026-06-25 09:00:40 EDT] [INFO] Off-duty (09:00), waiting for 09:25
+[2026-06-25 09:25:11 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:25:11 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48184 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:25:11 EDT] [INFO] ✅ us-poller: OK — 465289
+[2026-06-25 09:25:11 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:25:11 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:25:11 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (658.1ms)
+[2026-06-25 09:25:11 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:25:11 EDT] [INFO] 📝 Changed: picks, positions, capital, regime
+[2026-06-25 09:25:11 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:25:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:25:11 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:25:11 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:25:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:25:42 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:25:42 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:26:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:26:14 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:26:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:26:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:26:45 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:26:45 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:27:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:27:16 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:27:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:27:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:27:47 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:27:47 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:28:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:28:18 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:28:18 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:28:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:28:50 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:28:50 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:29:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:29:21 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:29:21 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:29:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:29:52 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:29:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
