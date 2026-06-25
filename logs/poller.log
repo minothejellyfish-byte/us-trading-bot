@@ -15080,3 +15080,20 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-06-24 23:00:05,739 [INFO] Market closed — poller exiting.
 2026-06-24 23:00:06,123 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-06-25 16:30:37,737 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-06-25 16:30:37,738 [INFO] Poller starting in daemon mode
+2026-06-25 16:30:37,738 [INFO] US Price poller started.
+2026-06-25 16:30:38,199 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-25 16:30:38,199 [INFO] Slow poll done.
+2026-06-25 16:35:39,573 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-25 16:35:39,573 [INFO] Slow poll done.
+2026-06-25 16:40:39,582 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-25 16:40:39,582 [INFO] Slow poll done.
+2026-06-25 16:45:39,590 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-25 16:45:39,591 [INFO] Slow poll done.
+2026-06-25 16:50:39,599 [INFO] Regime stale (>30min) — reclassifying
+2026-06-25 16:50:42,094 [INFO] Regime: DEFENSIVE — SPY -1.8% over 5 days, VIX 18.0 (elevated fear), 73% sector breadth
+2026-06-25 16:50:42,094 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-25 16:50:42,095 [INFO] Slow poll done.
+2026-06-25 16:55:42,103 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-25 16:55:42,103 [INFO] Slow poll done.

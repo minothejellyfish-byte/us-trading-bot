@@ -6001,3 +6001,284 @@ data websocket error, restarting connection: no close fram
 [2026-06-25 09:29:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-06-24 22:59:55,
+[2026-06-25 09:30:23 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:30:23 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48184 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:30:23 EDT] [INFO] ✅ us-poller: OK — 466695
+[2026-06-25 09:30:23 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:30:23 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:30:23 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (552.2ms)
+[2026-06-25 09:30:23 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:30:23 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:30:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:30:23 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:30:23 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:30:55 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:30:55 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:30:55 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:31:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:31:26 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:31:26 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:31:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:31:57 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:31:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:32:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:32:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:32:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:32:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:32:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:32:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:33:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:33:31 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:33:31 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:34:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:34:02 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:34:02 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:34:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:34:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:34:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:35:05 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:35:05 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48184 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:35:05 EDT] [INFO] ✅ us-poller: OK — 466732
+467512
+[2026-06-25 09:35:05 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:35:05 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:35:05 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (701.0ms)
+[2026-06-25 09:35:05 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:35:05 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-25 09:35:05 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:35:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:35:05 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:35:05 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:35:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:35:36 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:35:36 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:35,731 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:45,734 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-24 22:59:55,
+[2026-06-25 09:36:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:36:07 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:36:07 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:36:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:36:38 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:36:38 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:37:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:37:09 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:37:09 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:37:41 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:37:41 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:37:41 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:38:12 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:38:12 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:38:12 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:38:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:38:43 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:38:43 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:39:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:39:14 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:39:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:39:46 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:39:46 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:39:46 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:40:17 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:40:17 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48184 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:40:17 EDT] [INFO] ✅ us-poller: OK — 466732
+468363
+[2026-06-25 09:40:17 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:40:17 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:40:17 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (641.3ms)
+[2026-06-25 09:40:17 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:40:17 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:40:17 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:40:17 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:40:17 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-24 22:59:55,737 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-25 09:40:48 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:40:48 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:41:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:41:19 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:41:51 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:41:51 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:42:22 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:42:22 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:42:53 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:42:53 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:43:24 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:43:24 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:43:55 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:43:55 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:44:27 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:44:27 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:44:58 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:44:58 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:45:29 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:45:29 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48188 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:45:29 EDT] [INFO] ✅ us-poller: OK — 466732
+469172
+[2026-06-25 09:45:29 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:45:29 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:45:29 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (576.5ms)
+[2026-06-25 09:45:29 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:45:29 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:45:29 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:45:29 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:46:00 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:46:00 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:46:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:46:31 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:47:03 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:47:03 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:47:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:47:34 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:48:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:48:05 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:48:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:48:36 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:49:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:49:08 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:49:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:49:39 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:50:11 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:50:11 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48192 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:50:11 EDT] [INFO] ✅ us-poller: OK — 466732
+469938
+[2026-06-25 09:50:11 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:50:11 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:50:11 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (588.8ms)
+[2026-06-25 09:50:11 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:50:11 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-25 09:50:11 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:50:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:50:11 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:50:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:50:42 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:51:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:51:13 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:51:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:51:45 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:52:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:52:16 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:52:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:52:47 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:53:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:53:18 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:53:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:53:49 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:54:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:54:21 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:54:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:54:52 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:55:23 EDT] [INFO] --- Component Check ---
+[2026-06-25 09:55:23 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48192 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 09:55:23 EDT] [INFO] ✅ us-poller: OK — 466732
+470564
+[2026-06-25 09:55:23 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 09:55:23 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 09:55:23 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (835.4ms)
+[2026-06-25 09:55:23 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 09:55:23 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 09:55:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:55:23 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:55:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:55:54 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:56:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:56:26 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:56:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:56:57 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:57:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:57:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:57:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:57:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:58:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:58:30 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:59:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:59:02 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 09:59:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 09:59:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 10:00:06 EDT] [INFO] --- Component Check ---
+[2026-06-25 10:00:06 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48196 ?        Ssl  Jun23   0:43 /usr/bin/pyth
+[2026-06-25 10:00:06 EDT] [INFO] ✅ us-poller: OK — 466732
+471315
+[2026-06-25 10:00:06 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 10:00:06 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 10:00:06 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (1515.9ms)
+[2026-06-25 10:00:06 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 10:00:06 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-25 10:00:06 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 10:00:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 10:00:06 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
