@@ -19,8 +19,23 @@ def calc_vwap(df: pd.DataFrame) -> Optional[float]:
         if df is None or df.empty:
             return None
         
+        # Handle multi-column yfinance format (MultiIndex)
+        if isinstance(df.columns, pd.MultiIndex):
+            df_flat = pd.DataFrame()
+            for col in ["High", "Low", "Close", "Volume"]:
+                if col in df.columns.get_level_values(0):
+                    df_flat[col] = df[col].iloc[:, 0] if isinstance(df[col], pd.DataFrame) else df[col]
+            df = df_flat
+        
         required_cols = ["High", "Low", "Close", "Volume"]
         if not all(col in df.columns for col in required_cols):
+            return None
+        
+        # Ensure numeric
+        for col in required_cols:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+        df = df.dropna(subset=required_cols)
+        if df.empty:
             return None
         
         tp = (df["High"] + df["Low"] + df["Close"]) / 3
@@ -49,6 +64,14 @@ def get_vwap_direction(df: pd.DataFrame, lookback: int = 5) -> Tuple[str, float,
         if df is None or len(df) < lookback + 1:
             return "flat", 0.0, "Insufficient data"
         
+        # Handle multi-column yfinance format (MultiIndex)
+        if isinstance(df.columns, pd.MultiIndex):
+            df_flat = pd.DataFrame()
+            for col in ["High", "Low", "Close", "Volume"]:
+                if col in df.columns.get_level_values(0):
+                    df_flat[col] = df[col].iloc[:, 0] if isinstance(df[col], pd.DataFrame) else df[col]
+            df = df_flat
+        
         # Ensure required columns exist
         required = ["High", "Low", "Close", "Volume"]
         if not all(col in df.columns for col in required):
@@ -57,6 +80,12 @@ def get_vwap_direction(df: pd.DataFrame, lookback: int = 5) -> Tuple[str, float,
         # Ensure numeric types
         for col in required:
             df[col] = pd.to_numeric(df[col], errors="coerce")
+        
+        # Drop rows with NaN
+        df = df.dropna(subset=required)
+        
+        if len(df) < lookback:
+            return "flat", 0.0, f"Not enough valid bars ({len(df)} < {lookback})"
         
         # Drop rows with NaN
         df = df.dropna(subset=required)

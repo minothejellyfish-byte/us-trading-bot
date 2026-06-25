@@ -36,6 +36,22 @@ from us_sharia_universe import get_sharia_universe
 from us_market_regime import classify_premarket
 
 # Simple cache for yfinance data
+# ── Telegram Config ──────────────────────────────────────────────────────────
+BOT_TOKEN = os.environ.get("US_BOT_TOKEN", "")
+CHAT_ID = os.environ.get("US_CHAT_ID", "5529987063")
+
+def tg_send(msg: str) -> None:
+    """Send a message via Telegram bot."""
+    if not BOT_TOKEN:
+        return
+    try:
+        url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+        payload = {"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"}
+        requests.post(url, json=payload, timeout=10)
+    except Exception:
+        pass
+
+
 class YFinanceCache:
     def __init__(self, max_age_seconds=300):  # 5 minutes cache
         self.cache = {}
@@ -582,6 +598,16 @@ def main():
     for i, p in enumerate(picks, 1):
         print(f"{i:<5} {p['symbol']:<8} {p['score']:<8.1f} ${p['price']:<9.2f} {p['gap_pct']:<7.2f}% {p['sector']}")
     print(f"{'='*60}")
+    
+    # Send picks to Telegram
+    if picks and BOT_TOKEN:
+        emoji_regime = {"TRENDING": "🚀", "NEUTRAL": "⚖️", "DEFENSIVE": "🛡️"}.get(regime_name, "📊")
+        lines = [f"{emoji_regime} <b>US Pre-Market Picks</b>\n📅 {date.today().isoformat()} | Regime: {regime_name} | {len(picks)} stocks"]
+        for i, p in enumerate(picks, 1):
+            gap_emoji = "📈" if p.get('gap_pct', 0) > 0 else "📉"
+            lines.append(f"{i}. <b>{p['symbol']}</b> ${p['price']:.2f} | Score: {p['score']:.1f} | Gap: {gap_emoji}{p['gap_pct']:.2f}%")
+        tg_send("\n".join(lines))
+        log.info(f"Sent {len(picks)} picks to Telegram")
     
     return picks
 

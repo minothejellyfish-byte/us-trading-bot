@@ -225,6 +225,28 @@ def sync_positions() -> Dict:
         return _load_json(POSITIONS_FILE)
 
 
+# ── 2b. get_positions / get_position (poller-compatible) ────────────────────
+
+def get_positions() -> Dict:
+    """Return current positions dict (symbol -> position data).
+    
+    Called by us_poller.py for bookkeeper confirmation.
+    Returns empty dict if file doesn't exist.
+    """
+    data = _load_json(POSITIONS_FILE, {"positions": {}})
+    return data.get("positions", {})
+
+
+def get_position(symbol: str) -> Optional[Dict]:
+    """Return position data for a specific symbol.
+    
+    Called by us_poller.py for single-position lookup.
+    Returns None if symbol not found.
+    """
+    positions = get_positions()
+    return positions.get(symbol)
+
+
 # ── 3. quick_refresh ────────────────────────────────────────────────────────
 
 def quick_refresh() -> Dict:
