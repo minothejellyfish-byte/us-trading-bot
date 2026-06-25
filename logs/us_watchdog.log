@@ -6954,3 +6954,15 @@ data websocket error, restarting connection: no close fram
 [2026-06-25 11:29:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
 [2026-06-25 11:29:34 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
 2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
+[2026-06-25 11:30:05 EDT] [INFO] --- Component Check ---
+[2026-06-25 11:30:05 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.5 396536 48200 ?        Ssl  Jun23   0:44 /usr/bin/pyth
+[2026-06-25 11:30:05 EDT] [INFO] ✅ us-poller: OK — 466732
+485969
+[2026-06-25 11:30:05 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-25 11:30:05 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-25 11:30:05 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (624.1ms)
+[2026-06-25 11:30:05 EDT] [INFO] --- Tracked Files ---
+[2026-06-25 11:30:05 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-25 11:30:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-25 11:30:05 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-24 12:33:34 [ERROR] Save capital failed: 500 Server Error: Internal Server Error for url: https://paper-api.alpaca.markets/v2/account
+2026-06-24 12:33:36 [ERROR] Save positions failed: 500 Ser
