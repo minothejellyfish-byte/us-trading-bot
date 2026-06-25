@@ -31,6 +31,23 @@ import numpy as np
 from us_sharia_universe import get_sharia_universe
 from us_market_regime import classify_premarket
 
+# ── Telegram Config ─────────────────────────────────────────────────────────
+BOT_TOKEN = ***"US_BOT_TOKEN", "")
+CHAT_ID = os.environ.get("US_CHAT_ID", "5529987063")
+ET = pytz.timezone("America/New_York")
+
+def tg_send(msg: str) -> None:
+    """Send a message via Telegram bot."""
+    if not BOT_TOKEN:
+        ***
+    try:
+        url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+        payload = {"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"}
+        requests.post(url, json=payload, timeout=10)
+    except Exception:
+        pass
+
+
 # ── Logging ─────────────────────────────────────────────────────────────────
 log = logging.getLogger("us_aftermarket")
 if not log.handlers:
@@ -550,6 +567,16 @@ def main():
         vol_str = f"{p['volume_today']:,}"
         print(f"{i:<5} {p['symbol']:<8} {p['score']:<8.1f} ${p['price']:<9.2f} {p['daily_change_pct']:>+6.2f}%{'':<5} {vol_str:<15} {p['sector']}")
     print(f"{'='*70}")
+    
+    # Send picks to Telegram
+    if picks and BOT_TOKEN:
+        *** = {"TRENDING": "🚀", "NEUTRAL": "⚖️", "DEFENSIVE": "🛡️"}.get(regime_name, "📊")
+        lines = [f"{emoji_regime} <b>US After-Market Picks</b>\n📅 For {tomorrow.strftime('%Y-%m-%d')} | Regime: {regime_name} | {len(picks)} stocks"]
+        for i, p in enumerate(picks, 1):
+            change_emoji = "📈" if p.get('daily_change_pct', 0) > 0 else "📉"
+            lines.append(f"{i}. <b>{p['symbol']}</b> ${p['price']:.2f} | Score: {p['score']:.1f} | Day: {change_emoji}{p['daily_change_pct']:+.2f}%")
+        tg_send("\n".join(lines))
+        log.info(f"Sent {len(picks)} picks to Telegram")
     
     return picks
 

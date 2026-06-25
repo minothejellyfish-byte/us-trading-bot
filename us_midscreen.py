@@ -33,6 +33,23 @@ from alpaca_api import AlpacaTrader
 from us_sharia_universe import get_sharia_universe, is_sharia_compliant
 from us_market_regime import get_current_regime
 
+# ── Telegram Config ─────────────────────────────────────────────────────────
+BOT_TOKEN = ***"US_BOT_TOKEN", "")
+CHAT_ID = os.environ.get("US_CHAT_ID", "5529987063")
+ET = pytz.timezone("America/New_York")
+
+def tg_send(msg: str) -> None:
+    """Send a message via Telegram bot."""
+    if not BOT_TOKEN:
+        ***
+    try:
+        url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+        payload = {"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"}
+        requests.post(url, json=payload, timeout=10)
+    except Exception:
+        pass
+
+
 # Simple cache for yfinance data
 class YFinanceCache:
     def __init__(self, max_age_seconds=300):  # 5 minutes cache
@@ -563,6 +580,20 @@ def main():
         rv = p.get('rel_volume', 0)
         print(f"{i:<5} {p['symbol']:<8} {p['score']:<8.1f} ${p['price']:<9.2f} {p['change_pct']:<9.2f}% {rv:<7.1f}x")
     print(f"{'='*60}")
+    
+    # Send to Telegram
+    if data['picks'] and BOT_TOKEN:
+        *** = {"midscreen1": "🌅", "midscreen2": "📈", "rescreen": "🔄"}.get(mode, "📊")
+        lines = [f"{emoji} <b>US Mid-Screen: {label}</b>\n📅 {date.today().isoformat()} | Regime: {regime_name} | {len(data['picks'])} stocks"]
+        # Show top 5 picks
+        for i, p in enumerate(data['picks'][:5], 1):
+            change_emoji = "📈" if p.get('change_pct', 0) > 0 else "📉"
+            rv = p.get('rel_volume', 0)
+            lines.append(f"{i}. <b>{p['symbol']}</b> ${p['price']:.2f} | Score: {p['score']:.1f} | {change_emoji}{p['change_pct']:+.2f}% | Vol: {rv:.1f}x")
+        if len(data['picks']) > 5:
+            lines.append(f"...and {len(data['picks']) - 5} more")
+        tg_send("\n".join(lines))
+        log.info(f"Sent {len(data['picks'])} picks to Telegram")
     
     return data["picks"]
 
