@@ -34,14 +34,14 @@ from us_sharia_universe import get_sharia_universe, is_sharia_compliant
 from us_market_regime import get_current_regime
 
 # ── Telegram Config ─────────────────────────────────────────────────────────
-BOT_TOKEN = ***"US_BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("US_BOT_TOKEN", "")
 CHAT_ID = os.environ.get("US_CHAT_ID", "5529987063")
 ET = pytz.timezone("America/New_York")
 
 def tg_send(msg: str) -> None:
     """Send a message via Telegram bot."""
     if not BOT_TOKEN:
-        ***
+        return
     try:
         url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
         payload = {"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"}
@@ -583,7 +583,7 @@ def main():
     
     # Send to Telegram
     if data['picks'] and BOT_TOKEN:
-        *** = {"midscreen1": "🌅", "midscreen2": "📈", "rescreen": "🔄"}.get(mode, "📊")
+        emoji = {"midscreen1": "🌅", "midscreen2": "📈", "rescreen": "🔄"}.get(mode, "📊")
         lines = [f"{emoji} <b>US Mid-Screen: {label}</b>\n📅 {date.today().isoformat()} | Regime: {regime_name} | {len(data['picks'])} stocks"]
         # Show top 5 picks
         for i, p in enumerate(data['picks'][:5], 1):
