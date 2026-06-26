@@ -234,6 +234,95 @@ def get_premarket_data(ticker: str) -> Optional[Dict]:
         return None
 
 
+def get_premarket_data_twelve_data(ticker: str) -> Optional[Dict]:
+    """
+    Fetch pre-market data using Twelve Data API.
+    Uses yesterday's close + current pre-market quote for gap calculation.
+    Returns same format as get_premarket_data() for compatibility.
+    """
+    TD_API_KEY = "cdeed1…5b93"
+    
+    if not TD_API_KEY:
+        log.debug("Twelve Data API key not available")
+        return None
+    
+    try:
+        yesterday = datetime.now(ET).date() - timedelta(days=1)
+        
+        # 1. Get yesterday's daily bar for previous close
+        prev_url = f"https://api.twelvedata.com/time_series"
+        prev_params = {
+            "symbol": ticker,
+            "interval": "1day",
+            "start_date": str(yesterday),
+            "end_date": str(yesterday),
+            "apikey": TD_API_KEY,
+            "outputsize": 1
+        }
+        
+        prev_response = requests.get(prev_url, params=prev_params, timeout=10)
+        prev_close = 0
+        prev_high = 0
+        prev_low = 0
+        
+        if prev_response.status_code == 200:
+            prev_data = prev_response.json()
+            if prev_data.get("status") == "ok":
+                values = prev_data.get("values", [])
+                if values:
+                    prev_bar = values[0]
+                    prev_close = float(prev_bar.get("close", 0))
+                    prev_high = float(prev_bar.get("high", 0))
+                    prev_low = float(prev_bar.get("low", 0))
+        
+        if prev_close <= 0:
+            log.debug(f"{ticker}: No previous close from Twelve Data")
+            return None
+        
+        # 2. Get current quote for pre-market/current price
+        quote_url = "https://api.twelvedata.com/quote"
+        quote_params = {
+            "symbol": ticker,
+            "apikey": TD_API_KEY
+        }
+        
+        quote_response = requests.get(quote_url, params=quote_params, timeout=10)
+        current_price = 0
+        current_volume = 0
+        
+        if quote_response.status_code == 200:
+            quote_data = quote_response.json()
+            if quote_data:
+                current_price = float(quote_data.get("price", 0))
+                current_volume = int(quote_data.get("volume", 0))
+        
+        if current_price <= 0:
+            log.debug(f"{ticker}: No current quote from Twelve Data")
+            return None
+        
+        gap_pct = (current_price - prev_close) / prev_close
+        
+        result = {
+            "symbol": ticker,
+            "close_prev": prev_close,
+            "open_today": current_price,  # Use current as proxy for pre-market open
+            "high_premarket": max(prev_high, current_price),
+            "low_premarket": min(prev_low, current_price),
+            "volume_premarket": current_volume,
+            "gap_pct": gap_pct,
+            "price_now": current_price,
+            "market_cap": 0,  # Twelve Data free tier doesn't provide market cap
+            "sector": "Unknown",
+        }
+        
+        log.info(f"  ✅ {ticker}: Twelve Data (gap={gap_pct*100:.2f}%, price={current_price})")
+        return result
+        
+    except Exception as e:
+        log.warning(f"  ❌ {ticker}: Twelve Data error: {e}")
+        return None
+
+
 def get_premarket_data_alpaca(ticker: str) -> Optional[Dict]:
     """
     Fetch pre-market data using Alpaca API (IEX free tier).
@@ -493,10 +582,12 @@ def run_premarket_screen(max_stocks: int = None, top_n: int = 10, regime: str = 
     alpaca_failures = 0
     
     for ticker in screen_universe:
-        # Use Alpaca ONLY for all data
-        data = get_premarket_data_alpaca(ticker)
+        # Use Twelve Data primary, Alpaca fallback
+        data = get_premarket_data_twelve_data(ticker)
         if not data:
-            alpaca_failures += 1
+            data = get_premarket_data_alpaca(ticker)
+            if not data:
+                alpaca_failures += 1
         screened += 1
         
         if data:
