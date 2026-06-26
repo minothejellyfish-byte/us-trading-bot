@@ -15404,3 +15404,55 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-26 16:56:41,490 [INFO] Sold ABT: 210 — 🔄 Position upgrade — switching to better momentum
 2026-06-26 16:56:41,491 [INFO] Slow poll done.
 2026-06-26 16:56:51,491 [INFO] Sell detected (scratch): ABT pct=-100.0%
+2026-06-26 17:01:42,293 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-26 17:01:43,100 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:01:43,535 [INFO] Cycle check failed for ABT: Cycle limit reached (2/2) for DEFENSIVE
+2026-06-26 17:01:45 [INFO] Order submitted: buy 157 ACN @ market → pending_new
+2026-06-26 17:01:45,073 [INFO] Order submitted: buy 157 ACN @ market → pending_new
+2026-06-26 17:01:45,426 [INFO] Bought ACN: 157@126.98 cycle=1/2
+2026-06-26 17:01:45,428 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1155, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-06-26 17:01:55,429 [INFO] Buy detected: ACN (bookkeeper confirmed: 157 @ $126.98)
+2026-06-26 17:02:06,218 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 17:02:06,633 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:02:07,001 [WARNING] Position ACN has invalid entry price, skipping
+2026-06-26 17:02:07,002 [INFO] Slow poll done.
+2026-06-26 17:06:57,021 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 17:06:57,817 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:06:58,206 [WARNING] Position ACN has invalid entry price, skipping
+2026-06-26 17:06:58,207 [INFO] Slow poll done.
+2026-06-26 17:11:58,227 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 17:11:59,610 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:11:59,984 [WARNING] Position ACN has invalid entry price, skipping
+2026-06-26 17:11:59,985 [INFO] Slow poll done.
+2026-06-26 17:17:00,006 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 17:17:01,891 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:17:02,273 [WARNING] Position ACN has invalid entry price, skipping
+2026-06-26 17:17:02,274 [INFO] Slow poll done.
+2026-06-26 17:22:02,291 [INFO] Regime stale (>30min) — reclassifying
+2026-06-26 17:22:05,057 [INFO] Regime: DEFENSIVE — SPY -1.4% over 5 days, VIX 19.3 (elevated fear), 64% sector breadth
+2026-06-26 17:22:05,057 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-26 17:22:05,849 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:22:06,210 [WARNING] Position ACN has invalid entry price, skipping
+2026-06-26 17:22:06,211 [INFO] Slow poll done.
+2026-06-26 17:27:06,232 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 17:27:07,437 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 17:27:07,792 [WARNING] Position ACN has invalid entry price, skipping
+2026-06-26 17:27:07,793 [INFO] Slow poll done.
