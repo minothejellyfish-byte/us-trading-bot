@@ -145,18 +145,18 @@ def get_premarket_data_twelve_data_batch(tickers: List[str]) -> Dict[str, Dict]:
     
     results = {}
     
-    # Process in batches of 10 (conservative for rate limits)
-    # Rate limit: 8 requests/minute max = 1 request per 7.5 seconds
-    # Use 8 second sleep between batches for safety
+    # Process in batches of 8 (max 8 credits/minute on free tier)
+    # Rate limit: 8 credits/minute = 1 batch per minute max
+    # 194 stocks / 8 = ~24 batches = ~24 minutes (OK for pre-market)
     import time
-    batch_size = 10
+    batch_size = 8
     for i in range(0, len(tickers), batch_size):
         batch = tickers[i:i+batch_size]
         symbols_str = ",".join(batch)
         
-        # Rate limit: wait 8 seconds between API calls
+        # Rate limit: wait 60 seconds between batches (max 8 credits/minute)
         if i > 0:
-            time.sleep(8)
+            time.sleep(60)
         
         try:
             # Use curl via subprocess
