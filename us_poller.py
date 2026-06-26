@@ -280,10 +280,10 @@ def fetch_data(symbol: str) -> tuple[float | None, pd.DataFrame | None]:
     
     # 3. Twelve Data REST API (fallback — free, official, pre-market data)
     try:
-        TD_API_KEY = "cdeed1929bd543109faf451dcfb95b93"
+        TD_API_KEY = "776515d7feef4a7b968072f61f286d60"
         if TD_API_KEY:
             url = f"https://api.twelvedata.com/quote?symbol={base}&apikey={TD_API_KEY}"
-            resp = requests.get(url, timeout=10)
+            resp = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
             data = resp.json()
             if data and "price" in data:
                 price = float(data["price"])

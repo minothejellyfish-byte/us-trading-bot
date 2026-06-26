@@ -237,67 +237,49 @@ def get_premarket_data(ticker: str) -> Optional[Dict]:
 def get_premarket_data_twelve_data(ticker: str) -> Optional[Dict]:
     """
     Fetch pre-market data using Twelve Data API.
-    Uses yesterday's close + current pre-market quote for gap calculation.
+    Uses quote endpoint (includes previous_close) for gap calculation.
     Returns same format as get_premarket_data() for compatibility.
     """
-    TD_API_KEY = "cdeed1…5b93"
+    TD_API_KEY = "776515d7feef4a7b968072f61f286d60"
     
     if not TD_API_KEY:
         log.debug("Twelve Data API key not available")
         return None
     
     try:
-        yesterday = datetime.now(ET).date() - timedelta(days=1)
+        # Use curl via subprocess (Twelve Data blocks Python requests)
+        import subprocess
+        import json
         
-        # 1. Get yesterday's daily bar for previous close
-        prev_url = f"https://api.twelvedata.com/time_series"
-        prev_params = {
-            "symbol": ticker,
-            "interval": "1day",
-            "start_date": str(yesterday),
-            "end_date": str(yesterday),
-            "apikey": TD_API_KEY,
-            "outputsize": 1
-        }
+        quote_url = f"https://api.twelvedata.com/quote?symbol={ticker}&apikey=776515d7feef4a7b968072f61f286d60"
         
-        prev_response = requests.get(prev_url, params=prev_params, timeout=10)
-        prev_close = 0
-        prev_high = 0
-        prev_low = 0
+        result = subprocess.run(
+            ['curl', '-s', '--connect-timeout', '10', '--max-time', '30', '-A', 'Mozilla/5.0', quote_url],
+            capture_output=True, text=True, timeout=35
+        )
         
-        if prev_response.status_code == 200:
-            prev_data = prev_response.json()
-            if prev_data.get("status") == "ok":
-                values = prev_data.get("values", [])
-                if values:
-                    prev_bar = values[0]
-                    prev_close = float(prev_bar.get("close", 0))
-                    prev_high = float(prev_bar.get("high", 0))
-                    prev_low = float(prev_bar.get("low", 0))
-        
-        if prev_close <= 0:
-            log.debug(f"{ticker}: No previous close from Twelve Data")
+        if result.returncode != 0:
+            log.debug(f"{ticker}: curl failed with return code {result.returncode}")
             return None
         
-        # 2. Get current quote for pre-market/current price
-        quote_url = "https://api.twelvedata.com/quote"
-        quote_params = {
-            "symbol": ticker,
-            "apikey": TD_API_KEY
-        }
+        data = json.loads(result.stdout)
         
-        quote_response = requests.get(quote_url, params=quote_params, timeout=10)
-        current_price = 0
-        current_volume = 0
+        if data.get("status") == "error":
+            log.debug(f"{ticker}: Twelve Data API error: {data.get('message')}")
+            return None
         
-        if quote_response.status_code == 200:
-            quote_data = quote_response.json()
-            if quote_data:
-                current_price = float(quote_data.get("price", 0))
-                current_volume = int(quote_data.get("volume", 0))
+        if "symbol" not in data:
+            log.debug(f"{ticker}: Invalid Twelve Data response")
+            return None
         
-        if current_price <= 0:
-            log.debug(f"{ticker}: No current quote from Twelve Data")
+        current_price = float(data.get("price", 0) or data.get("close", 0))
+        prev_close = float(data.get("previous_close", 0))
+        prev_high = float(data.get("high", 0))
+        prev_low = float(data.get("low", 0))
+        volume = int(data.get("volume", 0))
+        
+        if current_price <= 0 or prev_close <= 0:
+            log.debug(f"{ticker}: Twelve Data missing price data")
             return None
         
         gap_pct = (current_price - prev_close) / prev_close
@@ -305,13 +287,13 @@ def get_premarket_data_twelve_data(ticker: str) -> Optional[Dict]:
         result = {
             "symbol": ticker,
             "close_prev": prev_close,
-            "open_today": current_price,  # Use current as proxy for pre-market open
+            "open_today": current_price,
             "high_premarket": max(prev_high, current_price),
             "low_premarket": min(prev_low, current_price),
-            "volume_premarket": current_volume,
+            "volume_premarket": volume,
             "gap_pct": gap_pct,
             "price_now": current_price,
-            "market_cap": 0,  # Twelve Data free tier doesn't provide market cap
+            "market_cap": 0,
             "sector": "Unknown",
         }
         
