@@ -15322,3 +15322,85 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-06-25 23:00:02,071 [INFO] Market closed — poller exiting.
 2026-06-25 23:00:02,492 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-06-26 16:30:35,445 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-06-26 16:30:35,446 [INFO] Poller starting in daemon mode
+2026-06-26 16:30:35,446 [INFO] US Price poller started.
+2026-06-26 16:30:35,858 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:30:35,858 [INFO] Slow poll done.
+2026-06-26 16:35:36,901 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:35:36,901 [INFO] Slow poll done.
+2026-06-26 16:40:36,910 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:40:36,910 [INFO] Slow poll done.
+2026-06-26 16:45:36,919 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:45:36,919 [INFO] Slow poll done.
+2026-06-26 16:50:36,936 [INFO] Regime stale (>30min) — reclassifying
+2026-06-26 16:50:39,809 [INFO] Regime: DEFENSIVE — SPY -2.1% over 5 days, VIX 20.4 (elevated fear), 55% sector breadth
+2026-06-26 16:50:39,810 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:50:40 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 16:50:40,111 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-26 16:50:52 [INFO] Order submitted: buy 80 ABBV @ market → pending_new
+2026-06-26 16:50:52,213 [INFO] Order submitted: buy 80 ABBV @ market → pending_new
+2026-06-26 16:51:02,605 [INFO] Bought ABBV: 80@247.26 cycle=1/2
+2026-06-26 16:51:02,609 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1155, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-06-26 16:51:12,617 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:51:12,973 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 16:51:14 [INFO] Order submitted: buy 211 ABT @ market → pending_new
+2026-06-26 16:51:14,123 [INFO] Order submitted: buy 211 ABT @ market → pending_new
+2026-06-26 16:51:14,504 [INFO] Bought ABT: 211@94.77 cycle=1/2
+2026-06-26 16:51:14,508 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1155, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-06-26 16:51:24,509 [INFO] Buy detected: ABT (bookkeeper confirmed: 211 @ $94.77)
+2026-06-26 16:51:24,879 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:51:25,247 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 16:51:26 [INFO] Order submitted: sell 211 ABT @ market → pending_new
+2026-06-26 16:51:26,235 [INFO] Order submitted: sell 211 ABT @ market → pending_new
+2026-06-26 16:51:26,635 [INFO] Sold ABT: 211 — 🔄 Position upgrade — switching to better momentum
+2026-06-26 16:51:26,637 [INFO] Slow poll done.
+2026-06-26 16:51:36,638 [INFO] Sell detected (scratch): ABT pct=-100.0%
+2026-06-26 16:56:26,658 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:56:27,444 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 16:56:29 [INFO] Order submitted: buy 210 ABT @ market → pending_new
+2026-06-26 16:56:29,066 [INFO] Order submitted: buy 210 ABT @ market → pending_new
+2026-06-26 16:56:29,415 [INFO] Bought ABT: 210@94.88 cycle=1/2
+2026-06-26 16:56:29,418 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1155, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-06-26 16:56:39,420 [INFO] Buy detected: ABT (bookkeeper confirmed: 210 @ $94.88)
+2026-06-26 16:56:39,783 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-06-26 16:56:40,152 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-26 16:56:41 [INFO] Order submitted: sell 210 ABT @ market → pending_new
+2026-06-26 16:56:41,119 [INFO] Order submitted: sell 210 ABT @ market → pending_new
+2026-06-26 16:56:41,490 [INFO] Sold ABT: 210 — 🔄 Position upgrade — switching to better momentum
+2026-06-26 16:56:41,491 [INFO] Slow poll done.
+2026-06-26 16:56:51,491 [INFO] Sell detected (scratch): ABT pct=-100.0%

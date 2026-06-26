@@ -9429,3 +9429,288 @@ data websocket error, restarting connection: no close fram
 [2026-06-26 09:29:54 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-06-25 22:59:52,
+[2026-06-26 09:30:26 EDT] [INFO] --- Component Check ---
+[2026-06-26 09:30:26 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28296 ?        Ssl  Jun23   0:53 /usr/bin/pyth
+[2026-06-26 09:30:26 EDT] [INFO] ✅ us-poller: OK — 676912
+[2026-06-26 09:30:26 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 09:30:26 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 09:30:26 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (699.9ms)
+[2026-06-26 09:30:26 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 09:30:26 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 09:30:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:30:26 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:30:26 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:30:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:30:57 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:30:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:31:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:31:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:31:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:31:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:31:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:31:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:32:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:32:30 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:32:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:33:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:33:02 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:33:02 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:33:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:33:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:33:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:34:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:34:04 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:34:04 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:34:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:34:35 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:34:35 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:35:07 EDT] [INFO] --- Component Check ---
+[2026-06-26 09:35:07 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28296 ?        Ssl  Jun23   0:53 /usr/bin/pyth
+[2026-06-26 09:35:07 EDT] [INFO] ✅ us-poller: OK — 676961
+677757
+[2026-06-26 09:35:07 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 09:35:07 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 09:35:07 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (561.9ms)
+[2026-06-26 09:35:07 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 09:35:07 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 09:35:07 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 09:35:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:35:07 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:35:07 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:32,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:42,069 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-25 22:59:52,
+[2026-06-26 09:35:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:35:38 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:35:38 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:36:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:36:09 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:36:09 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:36:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:36:40 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:36:40 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:37:12 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:37:12 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:37:12 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:37:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:37:43 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:37:43 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:38:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:38:14 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:38:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:38:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:38:45 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:38:45 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:39:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:39:16 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:39:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:39:48 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:39:48 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:39:48 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:40:19 EDT] [INFO] --- Component Check ---
+[2026-06-26 09:40:19 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28296 ?        Ssl  Jun23   0:53 /usr/bin/pyth
+[2026-06-26 09:40:19 EDT] [INFO] ✅ us-poller: OK — 676961
+678323
+[2026-06-26 09:40:19 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 09:40:19 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 09:40:19 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (549.1ms)
+[2026-06-26 09:40:19 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 09:40:19 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 09:40:19 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 09:40:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:40:19 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:40:19 EDT] [ALERT] LOG ALERT [poller.log]: 2026-06-25 22:59:52,070 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+[2026-06-26 09:40:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:40:50 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:41:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:41:21 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:41:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:41:52 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:42:24 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:42:24 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:42:55 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:42:55 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:43:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:43:26 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:43:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:43:57 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:44:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:44:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:45:00 EDT] [INFO] --- Component Check ---
+[2026-06-26 09:45:00 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28296 ?        Ssl  Jun23   0:53 /usr/bin/pyth
+[2026-06-26 09:45:00 EDT] [INFO] ✅ us-poller: OK — 676961
+679067
+[2026-06-26 09:45:00 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 09:45:00 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 09:45:00 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (535.5ms)
+[2026-06-26 09:45:00 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 09:45:00 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 09:45:00 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 09:45:00 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:45:00 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:45:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:45:31 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:46:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:46:02 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:46:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:46:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:47:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:47:05 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:47:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:47:36 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:48:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:48:07 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:48:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:48:38 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:49:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:49:10 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:49:41 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:49:41 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:50:12 EDT] [INFO] --- Component Check ---
+[2026-06-26 09:50:12 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28296 ?        Ssl  Jun23   0:53 /usr/bin/pyth
+[2026-06-26 09:50:12 EDT] [INFO] ✅ us-poller: OK — 676961
+679857
+[2026-06-26 09:50:12 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 09:50:12 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 09:50:12 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (574.0ms)
+[2026-06-26 09:50:12 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 09:50:12 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 09:50:12 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 09:50:12 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:50:12 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:50:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:50:44 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:51:15 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:51:15 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:51:15 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:51:46 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:51:46 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:51:46 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:52:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:52:18 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:52:18 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:52:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:52:49 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:52:49 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:53:20 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:53:20 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:53:20 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:53:51 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:53:51 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:53:51 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:54:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:54:23 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:54:23 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:54:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:54:54 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:54:54 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:55:25 EDT] [INFO] --- Component Check ---
+[2026-06-26 09:55:25 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28336 ?        Ssl  Jun23   0:53 /usr/bin/pyth
+[2026-06-26 09:55:25 EDT] [INFO] ✅ us-poller: OK — 676961
+680666
+[2026-06-26 09:55:25 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 09:55:25 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 09:55:25 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (729.9ms)
+[2026-06-26 09:55:25 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 09:55:25 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 09:55:25 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 09:55:25 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:55:25 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:55:25 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:55:56 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:55:56 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:55:56 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:56:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:56:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:56:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:56:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:56:59 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:57:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:57:30 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:57:30 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:58:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:58:01 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:58:01 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:58:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:58:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:58:33 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:59:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:59:04 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:59:04 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
+[2026-06-26 09:59:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 09:59:35 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 09:59:35 EDT] [ALERT] LOG ALERT [poller.log]: AttributeError: 'dict' object has no attribute 'append'
