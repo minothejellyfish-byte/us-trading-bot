@@ -206,3 +206,45 @@ Alpaca P&L: $0.00 (0W/0L)
 Alpaca capital: $98871.33
 Stats built from: local-fallback | P&L=$0.00 | Trades=0
 [2026-06-25T16:15:06.986382-04:00] Daily report sent: True
+2026-06-26 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 23:15:06 [INFO] get_alpaca_trades: querying 2026-06-26 (2026-06-26T04:56:00Z to 2026-06-27T04:55:59Z)
+2026-06-26 23:15:07 [INFO] get_alpaca_trades: found 8 filled orders
+2026-06-26 23:15:07 [WARNING] reconcile_trades: 8 Alpaca fills missing from local file
+2026-06-26 23:15:07 [INFO]   Added missing trade: SELL 157 ACN @ $128.10
+2026-06-26 23:15:07 [INFO]   Added missing trade: SELL 80 ABBV @ $247.93
+2026-06-26 23:15:07 [INFO]   Added missing trade: BUY 157 ACN @ $127.06
+2026-06-26 23:15:07 [INFO]   Added missing trade: SELL 210 ABT @ $94.84
+2026-06-26 23:15:07 [INFO]   Added missing trade: BUY 210 ABT @ $94.85
+2026-06-26 23:15:07 [INFO]   Added missing trade: SELL 211 ABT @ $94.69
+2026-06-26 23:15:07 [INFO]   Added missing trade: BUY 211 ABT @ $94.77
+2026-06-26 23:15:07 [INFO]   Added missing trade: BUY 80 ABBV @ $247.40
+2026-06-26 23:15:07 [INFO] reconcile_trades: wrote 13 trades to /home/mino/us-exec/us_trades.json
+2026-06-26 23:15:07 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 23:15:07 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 23:15:07 [INFO] get_alpaca_trades: querying 2026-06-26 (2026-06-26T04:56:00Z to 2026-06-27T04:55:59Z)
+2026-06-26 23:15:08 [INFO] get_alpaca_trades: found 8 filled orders
+2026-06-26 23:15:08 [INFO] get_daily_pnl: 2026-06-26 — P&L=$+186.70 (2W/2L, 50.0% WR)
+2026-06-26 23:15:08 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 23:15:08 [INFO] AlpacaTrader initialized (PAPER)
+2026-06-26 23:15:08 [INFO] sync_capital: cash=$99,057.04 equity=$99,057.04
+2026-06-26 23:15:08 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 2 of 10 — Friday, Jun 26
+
+💰 P&L: $186.70 (0.19%)
+📈 Win Rate: 50.0%
+...
+2026-06-26 23:15:08 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 2 of 10 — Friday, Jun 26
+
+💰 P&L: $186.70 (0.19%)
+📈 Win Rate: 50.0%
+...
+2026-06-26 23:15:09 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-06-26', 'alpaca_count': 8, 'local_count': 8, 'missing_found': 8, 'corrections_made': 8, 'in_sync': False}
+Alpaca P&L: $186.70 (2W/2L)
+Alpaca capital: $99057.04
+Stats built from: alpaca-api | P&L=$186.70 | Trades=4
+[2026-06-26T16:15:09.447444-04:00] Daily report sent: True
