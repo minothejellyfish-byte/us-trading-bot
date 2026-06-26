@@ -278,7 +278,31 @@ def fetch_data(symbol: str) -> tuple[float | None, pd.DataFrame | None]:
     except Exception as e:
         log.debug(f"REST fallback failed for {base}: {e}")
     
-    # 3. yfinance (last resort)
+    # 3. Twelve Data REST API (fallback — free, official, pre-market data)
+    try:
+        TD_API_KEY = "cdeed1929bd543109faf451dcfb95b93"
+        if TD_API_KEY:
+            url = f"https://api.twelvedata.com/quote?symbol={base}&apikey={TD_API_KEY}"
+            resp = requests.get(url, timeout=10)
+            data = resp.json()
+            if data and "price" in data:
+                price = float(data["price"])
+                if price > 0:
+                    # Build minimal DataFrame for VWAP calc
+                    df_data = {
+                        "Open": [float(data.get("open", price))],
+                        "High": [float(data.get("high", price))],
+                        "Low": [float(data.get("low", price))],
+                        "Close": [price],
+                        "Volume": [int(data.get("volume", 0))]
+                    }
+                    df = pd.DataFrame(df_data)
+                    log.debug(f"Twelve Data fallback: {base} @ ${price:.2f}")
+                    return price, df
+    except Exception as e:
+        log.debug(f"Twelve Data fallback failed for {base}: {e}")
+    
+    # 4. yfinance (absolute last resort — 15min delay)
     try:
         df = yf.download(base, period="1d", interval="1m", progress=False)
         if isinstance(df, pd.DataFrame) and not df.empty:

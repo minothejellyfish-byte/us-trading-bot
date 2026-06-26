@@ -112,17 +112,85 @@ def cleanup_logs():
         BASE_DIR / "logs" / "screener.log",
         BASE_DIR / "logs" / "ws.log",
         BASE_DIR / "logs" / "us_watchdog.log",
+        BASE_DIR / "logs" / "us_watchdog_state.jsonl",
         BASE_DIR / "logs" / "daily.log",
     ]
+    
+    # Also check for any .log file in BASE_DIR that exceeds threshold
+    for extra_log in BASE_DIR.glob("*.log"):
+        if extra_log not in log_files:
+            log_files.append(extra_log)
+    
+    # Check logs/ subdir for any .log or .jsonl files
+    logs_dir = BASE_DIR / "logs"
+    if logs_dir.exists():
+        for extra in logs_dir.glob("*.log"):
+            if extra not in log_files:
+                log_files.append(extra)
+        for extra in logs_dir.glob("*.jsonl"):
+            if extra not in log_files:
+                log_files.append(extra)
     
     for log_file in log_files:
         if log_file.exists():
             size_mb = log_file.stat().st_size / (1024 * 1024)
-            if size_mb > 100:
+            # Lower threshold for JSONL files (they grow fast)
+            threshold = 50 if log_file.suffix == '.jsonl' else 100
+            if size_mb > threshold:
                 log(f"  Rotating {log_file.name} ({size_mb:.0f}MB)")
                 rotate_log(log_file, keep_hours=48)
             else:
-                log(f"  Skipped {log_file.name} ({size_mb:.1f}MB — under 100MB threshold)")
+                log(f"  Skipped {log_file.name} ({size_mb:.1f}MB — under {threshold}MB threshold)")
+
+
+def cleanup_ws_history():
+    """Rule 1b: WS history JSONL files — delete >7 days old, rotate >500MB recent."""
+    log("=== WS History Cleanup ===")
+    deleted = 0
+    rotated = 0
+    kept = 0
+    
+    history_dir = BASE_DIR / "history"
+    if not history_dir.exists():
+        log("  History directory not found")
+        return
+    
+    for f in history_dir.glob("alpaca_ws_*.jsonl"):
+        age = get_file_age_days(f)
+        size_mb = f.stat().st_size / (1024 * 1024)
+        
+        if age > 7:
+            try:
+                f.unlink()
+                deleted += 1
+                log(f"  DELETED {f.name} ({age} days old)")
+            except Exception as e:
+                log(f"  ERROR deleting {f.name}: {e}")
+        elif size_mb > 500:
+            # Even recent files: rotate if over 500MB (keep last 48h)
+            log(f"  Rotating {f.name} ({size_mb:.0f}MB, {age} days old)")
+            try:
+                cutoff = datetime.now(ET) - timedelta(hours=48)
+                cutoff_str = cutoff.strftime("%Y-%m-%d")
+                
+                tmp_file = f.with_suffix('.tmp')
+                kept_lines = 0
+                with open(f, 'r') as fin:
+                    with open(tmp_file, 'w') as fout:
+                        for line in fin:
+                            if len(line) >= 10 and line[:10] >= cutoff_str:
+                                fout.write(line)
+                                kept_lines += 1
+                
+                os.replace(tmp_file, f)
+                rotated += 1
+                log(f"  Rotated {f.name}: kept {kept_lines} lines (last 48h)")
+            except Exception as e:
+                log(f"  Error rotating {f.name}: {e}")
+        else:
+            kept += 1
+    
+    log(f"  Result: {deleted} deleted, {rotated} rotated, {kept} kept")
 
 
 def cleanup_picks():
@@ -381,6 +449,7 @@ def main():
     show_disk_usage()
     
     cleanup_logs()
+    cleanup_ws_history()
     cleanup_picks()
     cleanup_positions_trades()
     cleanup_csv_protection()

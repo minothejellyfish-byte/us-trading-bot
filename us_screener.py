@@ -236,7 +236,8 @@ def get_premarket_data(ticker: str) -> Optional[Dict]:
 
 def get_premarket_data_alpaca(ticker: str) -> Optional[Dict]:
     """
-    Fetch pre-market data using Alpaca API.
+    Fetch pre-market data using Alpaca API (IEX free tier).
+    Uses yesterday's daily bar + current quote instead of SIP pre-market bars.
     Returns same format as get_premarket_data() for compatibility.
     """
     if not ALPACA_API_KEY or not ALPACA_SECRET_KEY:
@@ -244,85 +245,80 @@ def get_premarket_data_alpaca(ticker: str) -> Optional[Dict]:
         return None
     
     try:
-        today = datetime.now(ET).date()
-        yesterday = today - timedelta(days=1)
-        
-        # Format dates for Alpaca API
-        start_str = f"{today}T04:00:00-04:00"
-        end_str = f"{today}T09:30:00-04:00"
+        yesterday = datetime.now(ET).date() - timedelta(days=1)
         
         headers = {
             "APCA-API-KEY-ID": ALPACA_API_KEY,
             "APCA-API-SECRET-KEY": ALPACA_SECRET_KEY
         }
         
-        url = f"{ALPACA_DATA_URL}/stocks/{ticker}/bars"
-        params = {
-            "timeframe": "1Min",
-            "start": start_str,
-            "end": end_str,
-            "limit": 1000,
-            "feed": "sip"
-        }
-        
-        response = requests.get(url, headers=headers, params=params, timeout=10)
-        
-        if response.status_code != 200:
-            log.debug(f"{ticker}: Alpaca API returned {response.status_code}")
-            return None
-        
-        data = response.json()
-        bars = data.get("bars", [])
-        
-        if not bars:
-            log.debug(f"{ticker}: No pre-market bars from Alpaca")
-            return None
-        
-        opens = [b["o"] for b in bars]
-        highs = [b["h"] for b in bars]
-        lows = [b["l"] for b in bars]
-        closes = [b["c"] for b in bars]
-        volumes = [b["v"] for b in bars]
-        
-        # Get previous close
-        yesterday_end = f"{yesterday}T16:00:00-04:00"
-        yesterday_start = f"{yesterday}T15:55:00-04:00"
-        
+        # 1. Get yesterday's daily bar for previous close
         prev_url = f"{ALPACA_DATA_URL}/stocks/{ticker}/bars"
         prev_params = {
-            "timeframe": "1Min",
-            "start": yesterday_start,
-            "end": yesterday_end,
+            "timeframe": "1Day",
+            "start": f"{yesterday}T00:00:00-04:00",
+            "end": f"{yesterday}T23:59:00-04:00",
             "limit": 10,
-            "feed": "sip"
+            "feed": "iex"
         }
         
         prev_response = requests.get(prev_url, headers=headers, params=prev_params, timeout=10)
-        prev_close = closes[0]
+        prev_close = 0
+        prev_high = 0
+        prev_low = 0
+        prev_volume = 0
         
         if prev_response.status_code == 200:
             prev_data = prev_response.json()
             prev_bars = prev_data.get("bars", [])
             if prev_bars:
-                prev_close = prev_bars[-1]["c"]
+                last_bar = prev_bars[-1]
+                prev_close = last_bar["c"]
+                prev_high = last_bar["h"]
+                prev_low = last_bar["l"]
+                prev_volume = last_bar["v"]
         
-        open_today = opens[0]
-        gap_pct = (open_today - prev_close) / prev_close if prev_close > 0 else 0
+        if prev_close <= 0:
+            log.debug(f"{ticker}: No previous close from Alpaca IEX")
+            return None
+        
+        # 2. Get current quote for pre-market price
+        quote_url = f"{ALPACA_DATA_URL}/stocks/quotes/latest"
+        quote_params = {"symbols": ticker}
+        
+        quote_response = requests.get(quote_url, headers=headers, params=quote_params, timeout=10)
+        current_price = 0
+        
+        if quote_response.status_code == 200:
+            quote_data = quote_response.json()
+            quote = quote_data.get("quotes", {}).get(ticker, {})
+            ap = quote.get("ap", 0)  # ask price
+            bp = quote.get("bp", 0)  # bid price
+            if ap > 0:
+                current_price = ap
+            elif bp > 0:
+                current_price = bp
+        
+        if current_price <= 0:
+            log.debug(f"{ticker}: No current quote from Alpaca")
+            return None
+        
+        gap_pct = (current_price - prev_close) / prev_close
         
         result = {
             "symbol": ticker,
             "close_prev": prev_close,
-            "open_today": open_today,
-            "high_premarket": max(highs),
-            "low_premarket": min(lows),
-            "volume_premarket": sum(volumes),
+            "open_today": current_price,  # Use current as proxy
+            "high_premarket": max(prev_high, current_price),
+            "low_premarket": min(prev_low, current_price),
+            "volume_premarket": 0,  # IEX quote doesn't have volume
             "gap_pct": gap_pct,
-            "price_now": closes[-1],
-            "market_cap": 0,  # Alpaca doesn't provide market cap
+            "price_now": current_price,
+            "market_cap": 0,
             "sector": "Unknown",
         }
         
-        log.info(f"  ✅ {ticker}: Alpaca premarket (gap={gap_pct*100:.2f}%, vol={sum(volumes)})")
+        log.info(f"  ✅ {ticker}: Alpaca IEX (gap={gap_pct*100:.2f}%, price={current_price})")
         return result
         
     except Exception as e:
