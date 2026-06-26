@@ -132,6 +132,101 @@ WEIGHT_TREND = 0.25       # EXTREME: Reduced (was 0.30)
 WEIGHT_MOMENTUM = 0.25    # Same (was 0.25)
 
 
+def get_premarket_data_twelve_data_batch(tickers: List[str]) -> Dict[str, Dict]:
+    """
+    Fetch pre-market data for multiple tickers using Twelve Data batch API.
+    Returns dict mapping ticker -> data.
+    """
+    TD_API_KEY = "776515d7feef4a7b968072f61f286d60"
+    
+    if not TD_API_KEY:
+        log.warning("Twelve Data API key not available")
+        return {}
+    
+    results = {}
+    
+    # Process in batches of 10 (conservative for rate limits)
+    # Rate limit: 8 requests/minute max = 1 request per 7.5 seconds
+    # Use 8 second sleep between batches for safety
+    import time
+    batch_size = 10
+    for i in range(0, len(tickers), batch_size):
+        batch = tickers[i:i+batch_size]
+        symbols_str = ",".join(batch)
+        
+        # Rate limit: wait 8 seconds between API calls
+        if i > 0:
+            time.sleep(8)
+        
+        try:
+            # Use curl via subprocess
+            import subprocess
+            import json
+            
+            quote_url = f"https://api.twelvedata.com/quote?symbol={symbols_str}&apikey=776515d7feef4a7b968072f61f286d60"
+            
+            result = subprocess.run(
+                ['curl', '-s', '--connect-timeout', '10', '--max-time', '30', '-A', 'Mozilla/5.0', quote_url],
+                capture_output=True, text=True, timeout=35
+            )
+            
+            if result.returncode != 0:
+                log.debug(f"Batch curl failed: {result.returncode}")
+                continue
+            
+            data = json.loads(result.stdout)
+            
+            # Handle nested format: {"AAPL": {...}, "MSFT": {...}}
+            if isinstance(data, dict):
+                quotes = []
+                for sym, quote in data.items():
+                    if isinstance(quote, dict):
+                        quote["symbol"] = sym  # Ensure symbol is set
+                        quotes.append(quote)
+            elif isinstance(data, list):
+                quotes = data
+            else:
+                log.debug(f"Unexpected response format: {type(data)}")
+                continue
+            
+            for quote in quotes:
+                symbol = quote.get("symbol", "")
+                if not symbol:
+                    continue
+                
+                current_price = float(quote.get("price", 0) or quote.get("close", 0))
+                prev_close = float(quote.get("previous_close", 0))
+                prev_high = float(quote.get("high", 0))
+                prev_low = float(quote.get("low", 0))
+                volume = int(quote.get("volume", 0))
+                
+                if current_price <= 0 or prev_close <= 0:
+                    continue
+                
+                gap_pct = (current_price - prev_close) / prev_close
+                
+                results[symbol] = {
+                    "symbol": symbol,
+                    "close_prev": prev_close,
+                    "open_today": current_price,
+                    "high_premarket": max(prev_high, current_price),
+                    "low_premarket": min(prev_low, current_price),
+                    "volume_premarket": volume,
+                    "gap_pct": gap_pct,
+                    "price_now": current_price,
+                    "market_cap": 0,
+                    "sector": "Unknown",
+                }
+                
+                log.info(f"  ✅ {symbol}: Twelve Data (gap={gap_pct*100:.2f}%, price={current_price})")
+            
+        except Exception as e:
+            log.warning(f"Twelve Data batch error: {e}")
+            continue
+    
+    return results
+
+
 def get_premarket_data(ticker: str) -> Optional[Dict]:
     """
     Fetch pre-market data for a ticker.
@@ -557,19 +652,22 @@ def run_premarket_screen(max_stocks: int = None, top_n: int = 10, regime: str = 
     else:
         screen_universe = universe
     
-    log.info(f"Screening {len(screen_universe)} stocks with Alpaca ONLY...")
+    log.info(f"Screening {len(screen_universe)} stocks with Twelve Data batch API...")
+    
+    # Fetch all data in batches
+    premarket_data = get_premarket_data_twelve_data_batch(screen_universe)
     
     picks = []
     screened = 0
-    alpaca_failures = 0
+    failures = 0
     
     for ticker in screen_universe:
-        # Use Twelve Data primary, Alpaca fallback
-        data = get_premarket_data_twelve_data(ticker)
+        data = premarket_data.get(ticker)
         if not data:
+            # Fallback to individual Alpaca
             data = get_premarket_data_alpaca(ticker)
             if not data:
-                alpaca_failures += 1
+                failures += 1
         screened += 1
         
         if data:
@@ -580,15 +678,11 @@ def run_premarket_screen(max_stocks: int = None, top_n: int = 10, regime: str = 
         
         # Progress every 10
         if screened % 10 == 0:
-            log.info(f"  Progress: {screened}/{len(screen_universe)} screened, {len(picks)} picks, {alpaca_failures} Alpaca failures")
+            log.info(f"  Progress: {screened}/{len(screen_universe)} screened, {len(picks)} picks, {failures} failures")
     
-    # Sort by score
-    picks.sort(key=lambda x: x["score"], reverse=True)
-    top_picks = picks[:top_n]
+    log.info(f"Screen complete: {len(picks)} picks from {screened} screened ({failures} failures)")
     
-    log.info(f"Screen complete: {len(top_picks)} picks from {screened} screened ({alpaca_failures} Alpaca failures)")
-    
-    return top_picks
+    return picks
 
 
 def save_picks(picks: List[Dict], filepath: str = OUTPUT_FILE):
