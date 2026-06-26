@@ -10872,3 +10872,222 @@ data websocket error, restarting connection: no close fram
 [2026-06-26 12:29:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
 [2026-06-26 12:29:57 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:30:28 EDT] [INFO] --- Component Check ---
+[2026-06-26 12:30:28 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28356 ?        Ssl  Jun23   0:55 /usr/bin/pyth
+[2026-06-26 12:30:28 EDT] [INFO] ✅ us-poller: OK — 676961
+704434
+[2026-06-26 12:30:28 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 12:30:28 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 12:30:28 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (550.3ms)
+[2026-06-26 12:30:28 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 12:30:28 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 12:30:28 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 12:30:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:30:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:30:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:30:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:31:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:31:31 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:32:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:32:02 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:32:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:32:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:33:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:33:04 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:33:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:33:36 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:34:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:34:07 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:34:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:34:39 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:35:10 EDT] [INFO] --- Component Check ---
+[2026-06-26 12:35:10 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28356 ?        Ssl  Jun23   0:55 /usr/bin/pyth
+[2026-06-26 12:35:10 EDT] [INFO] ✅ us-poller: OK — 676961
+705251
+[2026-06-26 12:35:10 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 12:35:10 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 12:35:10 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (552.1ms)
+[2026-06-26 12:35:10 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 12:35:10 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 12:35:10 EDT] [INFO] 📊 Open positions: 2 | Unrealized PnL: $0.00
+[2026-06-26 12:35:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:35:10 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:35:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:35:42 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:36:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:36:13 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:36:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:36:44 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:37:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:37:16 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:37:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:37:47 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:38:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:38:18 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:38:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:38:50 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:39:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:39:21 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:39:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:39:52 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:40:23 EDT] [INFO] --- Component Check ---
+[2026-06-26 12:40:23 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28356 ?        Ssl  Jun23   0:55 /usr/bin/pyth
+[2026-06-26 12:40:23 EDT] [INFO] ✅ us-poller: OK — 676961
+706056
+[2026-06-26 12:40:23 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 12:40:23 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 12:40:23 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (546.2ms)
+[2026-06-26 12:40:23 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 12:40:23 EDT] [INFO] 📝 Changed: positions, capital
+[2026-06-26 12:40:23 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 12:40:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:40:23 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:40:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:40:54 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:41:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:41:26 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:41:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:41:57 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:42:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:42:28 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:42:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:42:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:43:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:43:31 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:44:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:44:02 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:44:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:44:33 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:45:05 EDT] [INFO] --- Component Check ---
+[2026-06-26 12:45:05 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28356 ?        Ssl  Jun23   0:55 /usr/bin/pyth
+[2026-06-26 12:45:05 EDT] [INFO] ✅ us-poller: OK — 676961
+706588
+[2026-06-26 12:45:05 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 12:45:05 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 12:45:05 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (646.6ms)
+[2026-06-26 12:45:05 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 12:45:05 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 12:45:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:45:05 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:45:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:45:36 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:46:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:46:08 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:46:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:46:39 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:47:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:47:10 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:47:41 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:47:41 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:48:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:48:13 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:48:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:48:44 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:49:15 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:49:15 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:49:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:49:47 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:50:18 EDT] [INFO] --- Component Check ---
+[2026-06-26 12:50:18 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28360 ?        Ssl  Jun23   0:56 /usr/bin/pyth
+[2026-06-26 12:50:18 EDT] [INFO] ✅ us-poller: OK — 676961
+707350
+[2026-06-26 12:50:18 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-06-26 12:50:18 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-06-26 12:50:18 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (585.6ms)
+[2026-06-26 12:50:18 EDT] [INFO] --- Tracked Files ---
+[2026-06-26 12:50:18 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-06-26 12:50:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:50:18 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:50:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:50:49 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:51:20 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:51:20 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:51:51 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:51:51 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:52:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:52:23 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:52:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:52:54 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:53:25 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:53:25 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:53:56 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:53:56 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:54:27 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:54:27 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:54:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:54:59 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:55:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:55:30 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:56:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:56:01 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:56:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:56:32 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:57:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:57:04 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:57:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:57:35 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:58:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:58:06 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:58:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:58:37 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:59:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:59:09 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
+[2026-06-26 12:59:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-06-26 12:59:40 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-25 20:51:36 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-26 12:46:06 [ERROR] Save capital failed: ('Connect
