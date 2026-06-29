@@ -1,23 +1,23 @@
 {
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Conservative",
-    "max_positions": 2,
-    "position_pct": 0.2,
-    "alt_position_pct": 0.2,
-    "target_pct": 0.015,
-    "trail_trigger": 0.015,
-    "trail_stop": 0.02,
-    "hard_stop": 0.04,
-    "time_stop_mins": 20,
-    "time_stop_pct": 0.005,
-    "midscreen": false
+    "strategy": "Standard",
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
+    "trail_stop": 0.03,
+    "hard_stop": 0.05,
+    "time_stop_mins": 30,
+    "time_stop_pct": 0.01,
+    "midscreen": true
   },
-  "reason": "SPY -2.1% over 5 days, VIX 18.2 (elevated fear), 36% sector breadth",
-  "spy_5d_change": -2.07,
-  "spy_10d_change": -1.47,
-  "vix": 18.21,
-  "sector_breadth": 36.4,
-  "top_sectors": "Healthcare (6.9%), Utilities (3.3%), Consumer Staples (3.1%)",
-  "classified_at": "2026-06-29T16:25:43.937160"
+  "reason": "SPY +0.3% over 5 days, VIX 18.2 (moderate), 73% sector breadth",
+  "spy_5d_change": 0.29,
+  "spy_10d_change": -2.28,
+  "vix": 18.2,
+  "sector_breadth": 72.7,
+  "top_sectors": "Healthcare (5.5%), Industrials (2.7%), Utilities (2.6%)",
+  "classified_at": "2026-06-29T17:05:45.105392"
 }
