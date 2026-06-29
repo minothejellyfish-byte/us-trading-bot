@@ -154,9 +154,10 @@ def get_premarket_data_twelve_data_batch(tickers: List[str]) -> Dict[str, Dict]:
         batch = tickers[i:i+batch_size]
         symbols_str = ",".join(batch)
         
-        # Rate limit: wait 60 seconds between batches (max 8 credits/minute)
+        # Rate limit: wait 8 seconds between batches (max 8 credits/minute = 1 per 7.5s)
+        # Using 8s to be safe. Total time: ~194/8 * 8s = ~200s = ~3.5 minutes
         if i > 0:
-            time.sleep(60)
+            time.sleep(8)
         
         try:
             # Use curl via subprocess
