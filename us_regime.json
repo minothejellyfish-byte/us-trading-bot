@@ -1,23 +1,23 @@
 {
-  "regime": "NEUTRAL",
+  "regime": "TRENDING",
   "params": {
-    "strategy": "Standard",
+    "strategy": "Aggressive",
     "max_positions": 3,
-    "position_pct": 0.3,
-    "alt_position_pct": 0.3,
-    "target_pct": 0.02,
-    "trail_trigger": 0.02,
+    "position_pct": 0.4,
+    "alt_position_pct": 0.25,
+    "target_pct": 0.025,
+    "trail_trigger": 0.025,
     "trail_stop": 0.03,
     "hard_stop": 0.05,
     "time_stop_mins": 30,
     "time_stop_pct": 0.01,
     "midscreen": true
   },
-  "reason": "SPY +1.9% over 5 days, VIX 16.7 (moderate), 55% sector breadth",
-  "spy_5d_change": 1.91,
-  "spy_10d_change": -0.15,
-  "vix": 16.69,
-  "sector_breadth": 54.5,
-  "top_sectors": "Healthcare (4.0%), Technology (4.0%), Industrials (2.7%)",
-  "classified_at": "2026-06-30T21:53:45.582898"
+  "reason": "SPY +2.0% over 5 days, VIX 16.5 (low fear), 64% sector breadth",
+  "spy_5d_change": 1.98,
+  "spy_10d_change": -0.09,
+  "vix": 16.46,
+  "sector_breadth": 63.6,
+  "top_sectors": "Technology (4.1%), Healthcare (3.9%), Industrials (2.7%)",
+  "classified_at": "2026-06-30T22:23:57.985656"
 }
