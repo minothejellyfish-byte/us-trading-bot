@@ -16457,3 +16457,77 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-06-30 22:29:01,101 [WARNING] Position ABT has invalid entry price, skipping
 2026-06-30 22:29:01,102 [INFO] Entry cutoff passed — no new entries
 2026-06-30 22:29:01,102 [INFO] Slow poll done.
+2026-06-30 22:34:01,483 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-06-30 22:34:02,301 [WARNING] Position AAPL has invalid entry price, skipping
+2026-06-30 22:34:02,691 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-30 22:34:03,103 [WARNING] Position ABT has invalid entry price, skipping
+2026-06-30 22:34:03,103 [INFO] Entry cutoff passed — no new entries
+2026-06-30 22:34:03,103 [INFO] Slow poll done.
+2026-06-30 22:39:03,125 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-06-30 22:39:03,978 [WARNING] Position AAPL has invalid entry price, skipping
+2026-06-30 22:39:04,390 [WARNING] Position ABBV has invalid entry price, skipping
+2026-06-30 22:39:04,780 [WARNING] Position ABT has invalid entry price, skipping
+2026-06-30 22:39:04,780 [INFO] Entry cutoff passed — no new entries
+2026-06-30 22:39:04,780 [INFO] Slow poll done.
+2026-06-30 22:44:04,805 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-06-30 22:44:06 [INFO] Order submitted: sell 188 ABBV @ market → pending_new
+2026-06-30 22:44:06,588 [INFO] Order submitted: sell 188 ABBV @ market → pending_new
+2026-06-30 22:44:07,029 [INFO] Sold ABBV: 188 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $252.39
+2026-06-30 22:44:07 [INFO] Order submitted: sell 156 ABT @ market → pending_new
+2026-06-30 22:44:07,579 [INFO] Order submitted: sell 156 ABT @ market → pending_new
+2026-06-30 22:44:08,067 [INFO] Sold ABT: 156 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $91.88
+2026-06-30 22:44:08,432 [INFO] DEDUP SELL: ABT already closed — skipping duplicate sell
+2026-06-30 22:44:08,433 [INFO] Entry cutoff passed — no new entries
+2026-06-30 22:44:08,433 [INFO] Slow poll done.
+2026-06-30 22:45:08 [INFO] Order submitted: sell 282 AAPL @ market → pending_new
+2026-06-30 22:45:08,961 [INFO] Order submitted: sell 282 AAPL @ market → pending_new
+2026-06-30 22:45:09,376 [INFO] Sold AAPL: 282 — ⏰ 15:45 hard close
+2026-06-30 22:45:09,378 [ERROR] fast_poll error: 'dict' object has no attribute 'append'
+2026-06-30 22:45:19,382 [INFO] 15:45 — no open positions
+2026-06-30 22:49:09,399 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-06-30 22:49:09,401 [INFO] Hard close active — no new entries
+2026-06-30 22:49:09,401 [INFO] Slow poll done.
+2026-06-30 22:54:09,423 [INFO] Regime stale (>30min) — reclassifying
+2026-06-30 22:54:12,261 [INFO] Regime: NEUTRAL — SPY +1.9% over 5 days, VIX 16.5 (moderate), 45% sector breadth
+2026-06-30 22:54:12,261 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-30 22:54:12,261 [INFO] Hard close active — no new entries
+2026-06-30 22:54:12,261 [INFO] Slow poll done.
+2026-06-30 22:55:02,265 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:55:12,267 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:55:22,270 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:55:32,274 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:55:42,277 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:55:52,280 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:56:02,283 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:56:12,285 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:56:22,287 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:56:32,290 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:56:42,294 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:56:52,297 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:57:02,301 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:57:12,303 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:57:22,307 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:57:32,310 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:57:42,313 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:57:52,316 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:58:02,319 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:58:12,322 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:58:22,325 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:58:32,328 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:58:42,332 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:58:52,334 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:59:02,337 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:59:12,339 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-06-30 22:59:12,341 [INFO] Hard close active — no new entries
+2026-06-30 22:59:12,341 [INFO] Slow poll done.
+2026-06-30 22:59:12,341 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:59:22,344 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:59:32,347 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:59:42,350 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 22:59:52,354 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-06-30 23:00:02,356 [INFO] Market closed — poller exiting.
+2026-06-30 23:00:02,777 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
