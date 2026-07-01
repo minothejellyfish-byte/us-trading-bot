@@ -16894,3 +16894,45 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-01 19:58:13,516 [WARNING] Position ACN has invalid entry price, skipping
 2026-07-01 19:58:13,924 [WARNING] Position ADBE has invalid entry price, skipping
 2026-07-01 19:58:13,924 [INFO] Slow poll done.
+2026-07-01 20:03:14,337 [INFO] Regime stale (>30min) — reclassifying
+2026-07-01 20:03:17,924 [INFO] Regime: NEUTRAL — SPY +1.8% over 5 days, VIX 16.0 (moderate), 55% sector breadth
+2026-07-01 20:03:17,924 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-01 20:03:18,730 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 20:03:19,125 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 20:03:19,486 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 20:03:19,914 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 20:03:19,914 [INFO] Slow poll done.
+2026-07-01 20:08:19,936 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 20:08:20,692 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 20:08:21,089 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 20:08:21,443 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 20:08:21,850 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 20:08:21,850 [INFO] Slow poll done.
+2026-07-01 20:13:21,876 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 20:13:22,716 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 20:13:23,093 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 20:13:23,470 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 20:13:23,881 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 20:13:23,881 [INFO] Slow poll done.
+2026-07-01 20:18:23,904 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 20:18:24,701 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 20:18:25,086 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 20:18:25,460 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 20:18:25,850 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 20:18:25,851 [INFO] Slow poll done.
+2026-07-01 20:23:25,877 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 20:23:26,652 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 20:23:27,015 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 20:23:27,403 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 20:23:27,761 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 20:23:27,761 [INFO] Slow poll done.
+2026-07-01 20:28:27,787 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 20:28:28,565 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 20:28:28,936 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 20:28:29,296 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 20:28:29,663 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 20:28:29,664 [INFO] Slow poll done.
