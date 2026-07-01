@@ -17020,3 +17020,51 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-01 21:29:03,600 [WARNING] Position ACN has invalid entry price, skipping
 2026-07-01 21:29:03,989 [WARNING] Position ADBE has invalid entry price, skipping
 2026-07-01 21:29:03,989 [INFO] Slow poll done.
+2026-07-01 21:34:04,412 [INFO] Regime stale (>30min) — reclassifying
+2026-07-01 21:34:07,774 [INFO] Regime: NEUTRAL — SPY +1.7% over 5 days, VIX 16.5 (moderate), 45% sector breadth
+2026-07-01 21:34:07,774 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-01 21:34:08,544 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 21:34:08,948 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 21:34:09,308 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 21:34:09,658 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 21:34:09,659 [INFO] Entry cutoff passed — no new entries
+2026-07-01 21:34:09,659 [INFO] Slow poll done.
+2026-07-01 21:39:09,684 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 21:39:10,489 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 21:39:10,842 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 21:39:11,196 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 21:39:11,551 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 21:39:11,551 [INFO] Entry cutoff passed — no new entries
+2026-07-01 21:39:11,552 [INFO] Slow poll done.
+2026-07-01 21:44:11,574 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 21:44:12,421 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 21:44:12,791 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 21:44:13,156 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 21:44:13,514 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 21:44:13,514 [INFO] Entry cutoff passed — no new entries
+2026-07-01 21:44:13,514 [INFO] Slow poll done.
+2026-07-01 21:49:13,540 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 21:49:14,321 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 21:49:14,690 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 21:49:15,080 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 21:49:15,433 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 21:49:15,433 [INFO] Entry cutoff passed — no new entries
+2026-07-01 21:49:15,433 [INFO] Slow poll done.
+2026-07-01 21:54:15,457 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 21:54:16,252 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 21:54:16,607 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 21:54:17,001 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 21:54:17,357 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 21:54:17,357 [INFO] Entry cutoff passed — no new entries
+2026-07-01 21:54:17,357 [INFO] Slow poll done.
+2026-07-01 21:59:17,382 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-01 21:59:18,145 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-01 21:59:18,520 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-01 21:59:18,904 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-01 21:59:19,256 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-01 21:59:19,257 [INFO] Entry cutoff passed — no new entries
+2026-07-01 21:59:19,257 [INFO] Slow poll done.
