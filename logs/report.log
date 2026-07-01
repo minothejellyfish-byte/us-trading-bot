@@ -321,3 +321,43 @@ Alpaca P&L: $604.99 (2W/3L)
 Alpaca capital: $99662.33
 Stats built from: alpaca-api | P&L=$604.99 | Trades=5
 [2026-06-30T16:15:07.736193-04:00] Daily report sent: True
+2026-07-01 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-01 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-01 23:15:09 [INFO] get_alpaca_trades: querying 2026-07-01 (2026-07-01T04:56:00Z to 2026-07-02T04:55:59Z)
+2026-07-01 23:15:09 [INFO] get_alpaca_trades: found 8 filled orders
+2026-07-01 23:15:09 [WARNING] reconcile_trades: 8 Alpaca fills missing from local file
+2026-07-01 23:15:09 [INFO]   Added missing trade: SELL 100 ADBE @ $211.38
+2026-07-01 23:15:09 [INFO]   Added missing trade: SELL 237 ACN @ $131.26
+2026-07-01 23:15:09 [INFO]   Added missing trade: SELL 83 ABBV @ $251.18
+2026-07-01 23:15:09 [INFO]   Added missing trade: SELL 102 AAPL @ $294.26
+2026-07-01 23:15:09 [INFO]   Added missing trade: BUY 100 ADBE @ $209.63
+2026-07-01 23:15:09 [INFO]   Added missing trade: BUY 237 ACN @ $127.26
+2026-07-01 23:15:09 [INFO]   Added missing trade: BUY 83 ABBV @ $250.68
+2026-07-01 23:15:09 [INFO]   Added missing trade: BUY 102 AAPL @ $292.79
+2026-07-01 23:15:09 [INFO] reconcile_trades: wrote 29 trades to /home/mino/us-exec/us_trades.json
+2026-07-01 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-01 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-01 23:15:09 [INFO] get_alpaca_trades: querying 2026-07-01 (2026-07-01T04:56:00Z to 2026-07-02T04:55:59Z)
+2026-07-01 23:15:10 [INFO] get_alpaca_trades: found 8 filled orders
+2026-07-01 23:15:10 [INFO] get_daily_pnl: 2026-07-01 — P&L=$+1314.44 (4W/0L, 100.0% WR)
+2026-07-01 23:15:10 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-01 23:15:10 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-01 23:15:11 [INFO] sync_capital: cash=$100,976.38 equity=$100,976.38
+2026-07-01 23:15:11 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 4 of 10 — Wednesday, Jul 01
+
+💰 P&L: $1314.44 (1.31%)
+📈 Win Rate: 10...
+2026-07-01 23:15:11 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 4 of 10 — Wednesday, Jul 01
+
+💰 P&L: $1314.44 (1.31%)
+📈 Win Rate: 10...
+2026-07-01 23:15:11 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-01', 'alpaca_count': 8, 'local_count': 8, 'missing_found': 8, 'corrections_made': 8, 'in_sync': False}
+Alpaca P&L: $1314.44 (4W/0L)
+Alpaca capital: $100976.38
+Stats built from: alpaca-api | P&L=$1314.44 | Trades=4
+[2026-07-01T16:15:11.567894-04:00] Daily report sent: True
