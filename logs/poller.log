@@ -17762,3 +17762,81 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-02 22:28:49,055 [WARNING] Position ADBE has invalid entry price, skipping
 2026-07-02 22:28:49,055 [INFO] Entry cutoff passed — no new entries
 2026-07-02 22:28:49,055 [INFO] Slow poll done.
+2026-07-02 22:33:49,462 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 22:33:50,412 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 22:33:50,825 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 22:33:51,245 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 22:33:51,246 [INFO] Entry cutoff passed — no new entries
+2026-07-02 22:33:51,246 [INFO] Slow poll done.
+2026-07-02 22:38:51,268 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 22:38:52,075 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 22:38:52,468 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 22:38:52,840 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 22:38:52,841 [INFO] Entry cutoff passed — no new entries
+2026-07-02 22:38:52,841 [INFO] Slow poll done.
+2026-07-02 22:43:52,865 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 22:43:53,771 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 22:43:54,198 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 22:43:54,565 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 22:43:54,565 [INFO] Entry cutoff passed — no new entries
+2026-07-02 22:43:54,565 [INFO] Slow poll done.
+2026-07-02 22:45:16 [INFO] Order submitted: sell 118 ABBV @ market → pending_new
+2026-07-02 22:45:16,038 [INFO] Order submitted: sell 118 ABBV @ market → pending_new
+2026-07-02 22:45:18,537 [ERROR] tg_send failed (attempt 1/3): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-02 22:45:32,327 [INFO] Sold ABBV: 118 — ⏰ 15:45 hard close
+2026-07-02 22:45:32 [INFO] Order submitted: sell 222 ACN @ market → pending_new
+2026-07-02 22:45:32,848 [INFO] Order submitted: sell 222 ACN @ market → pending_new
+2026-07-02 22:45:34,885 [INFO] Sold ACN: 222 — ⏰ 15:45 hard close
+2026-07-02 22:45:34,887 [ERROR] fast_poll error: 'dict' object has no attribute 'append'
+2026-07-02 22:45:45 [INFO] Order submitted: sell 97 ADBE @ market → pending_new
+2026-07-02 22:45:45,594 [INFO] Order submitted: sell 97 ADBE @ market → pending_new
+2026-07-02 22:45:45,987 [INFO] Sold ADBE: 97 — ⏰ 15:45 hard close
+2026-07-02 22:45:45,988 [ERROR] fast_poll error: 'dict' object has no attribute 'append'
+2026-07-02 22:45:55,989 [INFO] 15:45 — no open positions
+2026-07-02 22:46:05,991 [INFO] Sell detected (scratch): ACN pct=+0.0%
+2026-07-02 22:46:05,991 [INFO] Sell detected (scratch): ADBE pct=+0.0%
+2026-07-02 22:48:56,004 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 22:48:56,006 [INFO] Hard close active — no new entries
+2026-07-02 22:48:56,006 [INFO] Slow poll done.
+2026-07-02 22:53:56,027 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 22:53:56,029 [INFO] Hard close active — no new entries
+2026-07-02 22:53:56,029 [INFO] Slow poll done.
+2026-07-02 22:55:06,035 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:55:16,039 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:55:26,042 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:55:36,045 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:55:46,047 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:55:56,049 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:56:06,051 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:56:16,054 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:56:26,057 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:56:36,060 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:56:46,063 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:56:56,065 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:57:06,068 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:57:16,072 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:57:26,075 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:57:36,078 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:57:46,081 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:57:56,085 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:58:06,088 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:58:16,091 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:58:26,094 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:58:36,096 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:58:46,100 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:58:56,102 [INFO] Regime stale (>30min) — reclassifying
+2026-07-02 22:58:58,708 [INFO] Regime: TRENDING — SPY +2.2% over 5 days, VIX 16.5 (low fear), 64% sector breadth
+2026-07-02 22:58:58,708 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-07-02 22:58:58,709 [INFO] Hard close active — no new entries
+2026-07-02 22:58:58,709 [INFO] Slow poll done.
+2026-07-02 22:58:58,709 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:08,711 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:18,714 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:28,718 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:38,721 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:48,724 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:58,728 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
