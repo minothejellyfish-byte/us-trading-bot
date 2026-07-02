@@ -17670,3 +17670,49 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-02 21:28:21,257 [WARNING] Position ACN has invalid entry price, skipping
 2026-07-02 21:28:21,625 [WARNING] Position ADBE has invalid entry price, skipping
 2026-07-02 21:28:21,625 [INFO] Slow poll done.
+2026-07-02 21:33:22,128 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 21:33:23,040 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 21:33:23,415 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 21:33:23,866 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 21:33:23,866 [INFO] Entry cutoff passed — no new entries
+2026-07-02 21:33:23,866 [INFO] Slow poll done.
+2026-07-02 21:38:23,890 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 21:38:24,694 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 21:38:25,080 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 21:38:25,438 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 21:38:25,438 [INFO] Entry cutoff passed — no new entries
+2026-07-02 21:38:25,438 [INFO] Slow poll done.
+2026-07-02 21:43:25,461 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 21:43:26,304 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 21:43:26,687 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 21:43:27,232 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 21:43:27,233 [INFO] Entry cutoff passed — no new entries
+2026-07-02 21:43:27,233 [INFO] Slow poll done.
+2026-07-02 21:48:27,257 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 21:48:28,128 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 21:48:28,512 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 21:48:28,924 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 21:48:28,925 [INFO] Entry cutoff passed — no new entries
+2026-07-02 21:48:28,925 [INFO] Slow poll done.
+2026-07-02 21:53:28,950 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 21:53:30,055 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 21:53:30,454 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 21:53:30,847 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 21:53:30,847 [INFO] Entry cutoff passed — no new entries
+2026-07-02 21:53:30,847 [INFO] Slow poll done.
+2026-07-02 21:58:30,873 [INFO] Regime stale (>30min) — reclassifying
+2026-07-02 21:58:33,774 [INFO] Regime: TRENDING — SPY +1.9% over 5 days, VIX 16.5 (low fear), 64% sector breadth
+2026-07-02 21:58:33,774 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 21:58:34,634 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 21:58:35,004 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 21:58:35,375 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 21:58:35,375 [INFO] Entry cutoff passed — no new entries
+2026-07-02 21:58:35,375 [INFO] Slow poll done.
