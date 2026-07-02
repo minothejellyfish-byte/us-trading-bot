@@ -17201,3 +17201,112 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-01 22:59:58,281 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-07-01 23:00:08,283 [INFO] Market closed — poller exiting.
 2026-07-01 23:00:08,685 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-07-02 16:30:22,833 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-02 16:30:22,834 [INFO] Poller starting in daemon mode
+2026-07-02 16:30:22,834 [INFO] US Price poller started.
+2026-07-02 16:30:23,257 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:30:23 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 16:30:23,493 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 16:30:24,450 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-02 16:30:26 [INFO] Order submitted: buy 118 ABBV @ market → pending_new
+2026-07-02 16:30:26,397 [INFO] Order submitted: buy 118 ABBV @ market → pending_new
+2026-07-02 16:30:26,772 [INFO] Bought ABBV: 118@252.58 cycle=1/3
+2026-07-02 16:30:26,778 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1155, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-02 16:30:37,886 [INFO] Buy detected: ABBV (bookkeeper confirmed: 118 @ $252.58)
+2026-07-02 16:30:38,296 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 16:30:39,012 [INFO] Cycle check failed for AAPL: Cycle limit reached (3/3) for NEUTRAL
+2026-07-02 16:30:39,429 [INFO] Cycle check failed for ABT: Cycle limit reached (3/3) for NEUTRAL
+2026-07-02 16:30:39,828 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-07-02 16:30:40 [INFO] Order submitted: buy 97 ADBE @ market → pending_new
+2026-07-02 16:30:40,922 [INFO] Order submitted: buy 97 ADBE @ market → pending_new
+2026-07-02 16:30:41,335 [INFO] Bought ADBE: 97@215.25 cycle=1/3
+2026-07-02 16:30:41,339 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1155, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-02 16:30:51,341 [INFO] Buy detected: ADBE (bookkeeper confirmed: 97 @ $215.25)
+2026-07-02 16:30:51,737 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:30:52,893 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-02 16:30:53,284 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-02 16:30:53,744 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-07-02 16:30:53,744 [INFO] Slow poll done.
+2026-07-02 16:35:53,768 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:35:54,544 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 16:35:54,911 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 16:35:55,290 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-02 16:35:55,661 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-02 16:35:56,019 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-07-02 16:35:56,019 [INFO] Slow poll done.
+2026-07-02 16:40:56,044 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:40:56,952 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 16:40:57,342 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 16:40:57,766 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-02 16:40:58,170 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-02 16:40:58,566 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.07% over 5 bars (entry blocked — not rising)
+2026-07-02 16:40:58,566 [INFO] Slow poll done.
+2026-07-02 16:45:58,589 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:45:59,638 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 16:46:00,015 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 16:46:00,517 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-02 16:46:00,915 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-02 16:46:02 [INFO] Order submitted: buy 222 ACN @ market → pending_new
+2026-07-02 16:46:02,526 [INFO] Order submitted: buy 222 ACN @ market → pending_new
+2026-07-02 16:46:02,922 [INFO] Bought ACN: 222@135.07 cycle=1/3
+2026-07-02 16:46:02,925 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1293, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1206, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="breakout", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-02 16:46:12,927 [INFO] Buy detected: ACN (bookkeeper confirmed: 222 @ $135.07)
+2026-07-02 16:46:13,315 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:46:13,841 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 16:46:14,238 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 16:46:14,972 [INFO] Position upgrade BLOCKED: CG outside zone $39.71-$43.37, price=$44.02
+2026-07-02 16:46:14,973 [INFO] Slow poll done.
+2026-07-02 16:51:14,998 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-02 16:51:15,896 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 16:51:16,264 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 16:51:16,626 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 16:51:16,626 [INFO] Slow poll done.
+2026-07-02 16:56:16,650 [INFO] Regime stale (>30min) — reclassifying
+2026-07-02 16:56:19,180 [INFO] Regime: NEUTRAL — SPY +2.9% over 5 days, VIX 16.0 (moderate), 55% sector breadth
+2026-07-02 16:56:19,180 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 16:56:19,982 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 16:56:20,353 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 16:56:20,718 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 16:56:20,719 [INFO] Slow poll done.
