@@ -361,3 +361,41 @@ Alpaca P&L: $1314.44 (4W/0L)
 Alpaca capital: $100976.38
 Stats built from: alpaca-api | P&L=$1314.44 | Trades=4
 [2026-07-01T16:15:11.567894-04:00] Daily report sent: True
+2026-07-02 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 23:15:05 [INFO] get_alpaca_trades: querying 2026-07-02 (2026-07-02T04:56:00Z to 2026-07-03T04:55:59Z)
+2026-07-02 23:15:06 [INFO] get_alpaca_trades: found 6 filled orders
+2026-07-02 23:15:06 [WARNING] reconcile_trades: 6 Alpaca fills missing from local file
+2026-07-02 23:15:06 [INFO]   Added missing trade: SELL 97 ADBE @ $220.61
+2026-07-02 23:15:06 [INFO]   Added missing trade: SELL 222 ACN @ $137.66
+2026-07-02 23:15:06 [INFO]   Added missing trade: SELL 118 ABBV @ $259.74
+2026-07-02 23:15:06 [INFO]   Added missing trade: BUY 222 ACN @ $135.20
+2026-07-02 23:15:06 [INFO]   Added missing trade: BUY 97 ADBE @ $217.05
+2026-07-02 23:15:06 [INFO]   Added missing trade: BUY 118 ABBV @ $252.25
+2026-07-02 23:15:06 [INFO] reconcile_trades: wrote 35 trades to /home/mino/us-exec/us_trades.json
+2026-07-02 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 23:15:06 [INFO] get_alpaca_trades: querying 2026-07-02 (2026-07-02T04:56:00Z to 2026-07-03T04:55:59Z)
+2026-07-02 23:15:06 [INFO] get_alpaca_trades: found 6 filled orders
+2026-07-02 23:15:06 [INFO] get_daily_pnl: 2026-07-02 — P&L=$+1775.26 (3W/0L, 100.0% WR)
+2026-07-02 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-02 23:15:07 [INFO] sync_capital: cash=$102,751.15 equity=$102,751.15
+2026-07-02 23:15:07 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 5 of 10 — Thursday, Jul 02
+
+💰 P&L: $1775.26 (1.78%)
+📈 Win Rate: 100...
+2026-07-02 23:15:07 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 5 of 10 — Thursday, Jul 02
+
+💰 P&L: $1775.26 (1.78%)
+📈 Win Rate: 100...
+2026-07-02 23:15:07 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-02', 'alpaca_count': 6, 'local_count': 6, 'missing_found': 6, 'corrections_made': 6, 'in_sync': False}
+Alpaca P&L: $1775.26 (3W/0L)
+Alpaca capital: $102751.15
+Stats built from: alpaca-api | P&L=$1775.26 | Trades=3
+[2026-07-02T16:15:07.841803-04:00] Daily report sent: True
