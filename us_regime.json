@@ -1,23 +1,23 @@
 {
-  "regime": "NEUTRAL",
+  "regime": "TRENDING",
   "params": {
-    "strategy": "Standard",
+    "strategy": "Aggressive",
     "max_positions": 3,
-    "position_pct": 0.3,
-    "alt_position_pct": 0.3,
-    "target_pct": 0.02,
-    "trail_trigger": 0.02,
+    "position_pct": 0.4,
+    "alt_position_pct": 0.25,
+    "target_pct": 0.025,
+    "trail_trigger": 0.025,
     "trail_stop": 0.03,
     "hard_stop": 0.05,
     "time_stop_mins": 30,
     "time_stop_pct": 0.01,
     "midscreen": true
   },
-  "reason": "SPY +2.8% over 5 days, VIX 15.9 (moderate), 55% sector breadth",
-  "spy_5d_change": 2.83,
-  "spy_10d_change": 0.39,
-  "vix": 15.93,
-  "sector_breadth": 54.5,
-  "top_sectors": "Financials (3.1%), Communication Services (2.9%), Consumer Discretionary (2.4%)",
-  "classified_at": "2026-07-02T17:26:32.196847"
+  "reason": "SPY +2.5% over 5 days, VIX 16.2 (low fear), 64% sector breadth",
+  "spy_5d_change": 2.51,
+  "spy_10d_change": 0.07,
+  "vix": 16.21,
+  "sector_breadth": 63.6,
+  "top_sectors": "Financials (3.2%), Communication Services (3.0%), Consumer Discretionary (2.4%)",
+  "classified_at": "2026-07-02T17:56:45.329945"
 }
