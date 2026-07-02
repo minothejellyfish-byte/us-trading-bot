@@ -17510,3 +17510,43 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-02 19:27:24,952 [WARNING] Position ACN has invalid entry price, skipping
 2026-07-02 19:27:25,366 [WARNING] Position ADBE has invalid entry price, skipping
 2026-07-02 19:27:25,367 [INFO] Slow poll done.
+2026-07-02 19:32:25,732 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 19:32:26,510 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 19:32:26,865 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 19:32:27,243 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 19:32:27,243 [INFO] Slow poll done.
+2026-07-02 19:37:27,266 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-07-02 19:37:28,076 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 19:37:28,469 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 19:37:28,841 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 19:37:28,842 [INFO] Slow poll done.
+2026-07-02 19:42:28,866 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-07-02 19:42:29,960 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 19:42:30,319 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 19:42:30,674 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 19:42:30,674 [INFO] Slow poll done.
+2026-07-02 19:47:30,698 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-07-02 19:47:31,593 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 19:47:31,980 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 19:47:32,347 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 19:47:32,347 [INFO] Slow poll done.
+2026-07-02 19:52:32,371 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-07-02 19:52:33,201 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 19:52:33,562 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 19:52:33,946 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 19:52:33,947 [INFO] Slow poll done.
+2026-07-02 19:57:33,971 [INFO] Regime stale (>30min) — reclassifying
+2026-07-02 19:57:36,382 [INFO] Regime: NEUTRAL — SPY +1.8% over 5 days, VIX 16.7 (moderate), 55% sector breadth
+2026-07-02 19:57:36,382 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-02 19:57:37,172 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-02 19:57:37,559 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-02 19:57:37,919 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-02 19:57:37,920 [INFO] Slow poll done.
