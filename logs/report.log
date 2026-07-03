@@ -399,3 +399,36 @@ Alpaca P&L: $1775.26 (3W/0L)
 Alpaca capital: $102751.15
 Stats built from: alpaca-api | P&L=$1775.26 | Trades=3
 [2026-07-02T16:15:07.841803-04:00] Daily report sent: True
+2026-07-03 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-03 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-03 23:15:06 [INFO] get_alpaca_trades: querying 2026-07-03 (2026-07-03T04:56:00Z to 2026-07-04T04:55:59Z)
+2026-07-03 23:15:07 [INFO] get_alpaca_trades: found 0 filled orders
+2026-07-03 23:15:07 [INFO] reconcile_trades: local file in sync with Alpaca
+2026-07-03 23:15:07 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-03 23:15:07 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-03 23:15:07 [INFO] get_alpaca_trades: querying 2026-07-03 (2026-07-03T04:56:00Z to 2026-07-04T04:55:59Z)
+2026-07-03 23:15:07 [INFO] get_alpaca_trades: found 0 filled orders
+2026-07-03 23:15:07 [INFO] get_daily_pnl: 2026-07-03 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-03 23:15:07 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-03 23:15:07 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-03 23:15:08 [INFO] sync_capital: cash=$102,751.06 equity=$102,751.06
+2026-07-03 23:15:08 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 5 of 10 — Friday, Jul 03
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+2026-07-03 23:15:08 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 5 of 10 — Friday, Jul 03
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 T...
+2026-07-03 23:15:08 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-03', 'alpaca_count': 0, 'local_count': 0, 'missing_found': 0, 'corrections_made': 0, 'in_sync': True}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $102751.06
+Stats built from: local-fallback | P&L=$0.00 | Trades=0
+[2026-07-03T16:15:08.945830-04:00] Daily report sent: True
