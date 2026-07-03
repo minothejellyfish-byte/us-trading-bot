@@ -36804,3 +36804,18 @@ data websocket error, restarting connection: no close fram
 [2026-07-03 12:59:48 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-02 22:59:38,721 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-07-02 22:59:48,724 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
 2026-07-02 22:59:58,
+[2026-07-03 13:00:19 EDT] [INFO] --- Component Check ---
+[2026-07-03 13:00:19 EDT] [INFO] ✅ us-bot: OK — mino        4628  0.0  0.3 397196 28784 ?        Ssl  Jun23   2:53 /usr/bin/pyth
+[2026-07-03 13:00:19 EDT] [INFO] ✅ us-poller: OK — 1621056
+[2026-07-03 13:00:19 EDT] [INFO] ✅ us-alpaca-ws: OK — active
+[2026-07-03 13:00:19 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-03 13:00:19 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (639.3ms)
+[2026-07-03 13:00:19 EDT] [INFO] --- Tracked Files ---
+[2026-07-03 13:00:19 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-03 13:00:19 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-03 13:00:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-03 13:00:19 EDT] [ALERT] LOG ALERT [bot.log]: 2026-06-28 10:55:01 [ERROR] Save capital failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 14:50:04 [ERROR] Save capital failed: ('Connect
+[2026-07-03 13:00:19 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-02 22:59:38,721 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:48,724 [ERROR] Daily summary failed: 'str' object has no attribute 'get'
+2026-07-02 22:59:58,
