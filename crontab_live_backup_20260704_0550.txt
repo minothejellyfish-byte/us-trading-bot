@@ -1,0 +1,86 @@
+# TASI Trading System Crontab
+# Fixed: */5 instead of **/5, hours 9-15 (market hours), Chrome stop at 16:00
+# NOTE: systemctl --user requires DBUS_SESSION_BUS_ADDRESS in cron environment
+
+# RAM cleanup at 04:00
+0 4 * * * /home/mino/.openclaw-mino/workspace/scripts/auto_ram_cleanup.sh >> /home/mino/.openclaw-mino/workspace/logs/cleanup-v2.log 2>&1
+
+# Derayah session refresh — every 5 min during market hours (09:00-15:59)
+*/5 9-15 * * 0-4 /home/mino/tasi-exec/derayah_refresh_cron.sh >> /home/mino/tasi-exec/refresh_cron.log 2>&1
+
+# Stop Chrome after market close (16:00)
+0 16 * * 0-4 /home/mino/tasi-exec/stop-chrome.sh >> /home/mino/tasi-exec/logs/chrome-stop.log 2>&1 || true
+
+# Cleanup stand-down at 09:00
+0 9 * * 0-4 /home/mino/tasi-exec/cleanup_stand_down.sh >> /home/mino/tasi-exec/cleanup.log 2>&1
+
+# Integrity monitor every hour
+0 * * * * cd /home/mino/tasi-exec && ./.integrity_monitor.sh >> /tmp/integrity_check.log 2>&1
+
+# cleanup_system.py — daily disk cleanup
+0 4 * * 0-4 /usr/bin/python3 /home/mino/tasi-exec/cleanup_system.py >> /home/mino/tasi-exec/logs/cleanup_system.log 2>&1
+
+# TASI Screener — 09:50 premarket (sources env for TELEGRAM_BOT_TOKEN)
+50 9 * * 0-4 . /home/mino/.config/tasi/env && /usr/bin/python3 /home/mino/tasi-exec/screener.py >> /home/mino/tasi-exec/screener.log 2>&1
+
+# TASI Midscreen passes (sources env for TELEGRAM_BOT_TOKEN)
+30 10 * * 0-4 . /home/mino/.config/tasi/env && /usr/bin/python3 /home/mino/tasi-exec/midscreen_ws.py midscreen1 /home/mino/tasi-exec/picks_1030.json >> /home/mino/tasi-exec/midscreen.log 2>&1
+0 12 * * 0-4 . /home/mino/.config/tasi/env && /usr/bin/python3 /home/mino/tasi-exec/midscreen_ws.py midscreen2 /home/mino/tasi-exec/picks_1200.json >> /home/mino/tasi-exec/midscreen.log 2>&1
+30 13 * * 0-4 . /home/mino/.config/tasi/env && /usr/bin/python3 /home/mino/tasi-exec/midscreen_ws.py rescreen /home/mino/tasi-exec/picks_1330.json >> /home/mino/tasi-exec/midscreen.log 2>&1
+
+# TASI Post-market analysis — 15:35
+35 15 * * 0-4 . /home/mino/.config/tasi/env && /usr/bin/python3 /home/mino/tasi-exec/post_market.py >> /home/mino/tasi-exec/post_market.log 2>&1
+
+# TASI WS Keepalive — start before market open, stop after close
+45 9 * * 0-4 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user start tasi-ws-keepalive.service >> /home/mino/tasi-exec/logs/ws_keepalive.log 2>&1
+5 16 * * 0-4 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user stop tasi-ws-keepalive.service >> /home/mino/tasi-exec/logs/ws_keepalive.log 2>&1
+
+# TASI Bookkeeper sync — every 5 min during market hours
+*/5 9-15 * * 0-4 cd /home/mino/tasi-exec && /usr/bin/python3 -c "import bookkeeper; bookkeeper.quick_refresh()" >> /home/mino/tasi-exec/bookkeeper.log 2>&1
+
+# US Bookkeeper sync — every 5 min during US market hours (09:30-16:00 ET = 16:30-23:00 KSA)
+*/5 16-23 * * 1-5 cd /home/mino/us-exec && /usr/bin/python3 -c "import us_bookkeeper; us_bookkeeper.quick_refresh()" >> /home/mino/us-exec/bookkeeper.log 2>&1
+
+# TASI watchdog start (market open)
+25 9 * * 0-4 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user start tasi-watchdog >> /home/mino/tasi-exec/logs/cron.log 2>&1
+# TASI watchdog stop (market close)
+35 16 * * 0-4 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user stop tasi-watchdog >> /home/mino/tasi-exec/logs/cron.log 2>&1
+
+# TASI Price Poller — 10:00 market open (fixed: added DBUS env)
+0 10 * * 0-4 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && . /home/mino/.config/tasi/env && systemctl --user start tasi-poller >> /home/mino/tasi-exec/logs/cron.log 2>&1
+
+# TASI Evaluator — every 30 min during market hours (sources env for TELEGRAM_BOT_TOKEN)
+10,40 10-14 * * 0-4 cd /home/mino/tasi-exec && . /home/mino/.config/tasi/env && /usr/bin/python3 evaluator.py >> /home/mino/tasi-exec/evaluator.log 2>&1
+# Sharia list refresh — Thursday after market close
+# Start Chrome first (it may be stopped after 16:00), then refresh
+55 21 * * 4 /home/mino/tasi-exec/start-chrome.sh >> /home/mino/tasi-exec/logs/sharia_refresh.log 2>&1
+0 22 * * 4 cd /home/mino/tasi-exec && /usr/bin/python3 -c "from screener import refresh_sharia_list; refresh_sharia_list()" >> /home/mino/tasi-exec/logs/sharia_refresh.log 2>&1
+
+# US Trading System — systemd start/stop (reliable fallback)
+# US market: 09:30-16:00 ET = 16:30-23:00 KSA
+30 9 * * 1-5 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user start us-trading-poller.service >> /home/mino/us-exec/logs/cron.log 2>&1
+35 9 * * 1-5 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user start us-alpaca-ws.service >> /home/mino/us-exec/logs/cron.log 2>&1
+0 17 * * 1-5 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user stop us-trading-poller.service >> /home/mino/us-exec/logs/cron.log 2>&1
+5 17 * * 1-5 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus && systemctl --user stop us-alpaca-ws.service >> /home/mino/us-exec/logs/cron.log 2>&1
+
+# === US Pre-market Screener — 09:20 ET (16:20 GMT+3) ===
+20 16 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_screener.py >> /home/mino/us-exec/logs/screener.log 2>&1
+
+# === US Evaluator — 10:40, 11:40, 12:40, 13:40 ET (17:40, 18:40, 19:40, 20:40 GMT+3) ===
+40 17-20 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_evaluator.py >> /home/mino/us-exec/logs/evaluator.log 2>&1
+
+# === US Mid-screen 1 — 10:00 ET (17:00 GMT+3) ===
+0 17 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_midscreen.py >> /home/mino/us-exec/logs/midscreen.log 2>&1
+
+# === US Mid-screen 2 — 11:30 ET (18:30 GMT+3) ===
+30 18 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_midscreen.py >> /home/mino/us-exec/logs/midscreen.log 2>&1
+
+# === US Re-screen — 13:30 ET (20:30 GMT+3) ===
+30 20 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_midscreen.py >> /home/mino/us-exec/logs/midscreen.log 2>&1
+
+# === US Daily P&L report — 16:10 ET (23:10 GMT+3) ===
+10 23 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_daily_report.py >> /home/mino/us-exec/logs/report.log 2>&1
+
+# === US Daily cleanup — reset positions at midnight ET (07:00 GMT+3) ===
+0 7 * * 1-5 rm -f /home/mino/us-exec/us_positions.json && echo '{"positions": {}, "updated_at": "'$(date -Iseconds)'"}' > /home/mino/us-exec/us_positions.json
+
