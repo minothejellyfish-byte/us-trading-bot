@@ -2,6 +2,33 @@
 
 Last updated: 2026-07-04
 
+## Fix Applied (2026-07-05)
+
+**Problem:** US screener, midscreen, evaluator, and daily report were NOT sending Telegram notifications because `US_BOT_TOKEN` was not loaded in the cron environment.
+
+**Root Cause:** The crontab entries didn't source the `.env` file before running the scripts. The scripts use `os.environ.get("US_BOT_TOKEN")` which returns empty string when the variable isn't exported in cron's minimal environment.
+
+**Fix:** Updated all US cron entries to source `. /home/mino/us-exec/.env` before running the Python scripts:
+
+```bash
+# Before (broken — no env vars loaded):
+20 16 * * 1-5 cd /home/mino/us-exec && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_screener.py
+
+# After (fixed — env vars loaded):
+20 16 * * 1-5 cd /home/mino/us-exec && . /home/mino/us-exec/.env && PYTHONPATH=/home/mino/us-exec /usr/bin/python3 us_screener.py
+```
+
+**Affected Jobs:**
+- US Pre-market Screener
+- US Evaluator  
+- US Mid-screen 1 & 2
+- US Re-screen
+- US Daily P&L Report
+
+**Verification:** `.env` contains `US_BOT_TOKEN=8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws` and `US_CHAT_ID=5529987063`.
+
+---
+
 ## System Crontab (All US Jobs)
 
 | # | Schedule (KSA) | Schedule (ET) | Job | Script | Log File |
