@@ -553,6 +553,7 @@ _alerted_lock = threading.Lock()  # Thread-safe lock for _alerted set
 cycles_today: dict = {}
 consec_scratches: dict = {}
 _prev_positions: dict = {}
+_upgrade_target_this_cycle: str | None = None  # TASI v4.9 dedup tracker
 
 
 def _reset_symbol_alerts(symbol: str):
@@ -965,60 +966,148 @@ def slow_poll():
     open_count = sum(1 for p in positions.values() if not p.get("closed"))
     max_positions = r_params.get("max_positions", 3)
     
-    # ── POSITION UPGRADE (US v1.0 — TASI-style) ─────────────────────────────
+    # ── POSITION UPGRADE (TASI v4.9 — Full Logic) ───────────────────────────
+    global _upgrade_target_this_cycle
+    _upgrade_target_this_cycle = None
+    
     if open_count >= max_positions:
         try:
-            from us_cycle_manager import evaluate_position_upgrade
-            upgrade_plan = evaluate_position_upgrade(positions, picks, regime_name, r_params)
+            from us_cycle_manager import (
+                evaluate_position_upgrade, 
+                _calculate_drop_score,
+                POSITION_UPGRADE_THRESHOLDS
+            )
             
-            if upgrade_plan:
-                current_sym = upgrade_plan["current_symbol"]
-                new_sym = upgrade_plan["new_symbol"]
-                new_pick = upgrade_plan["new_pick"]
-                reason = upgrade_plan["reason"]
-                
-                # Check if new pick is in entry zone
-                e_lo = new_pick.get("entry_low", 0)
-                e_hi = new_pick.get("entry_high", 0)
-                new_price, new_df = fetch_data(new_sym)
-                
-                if new_price and e_lo and e_hi and e_lo <= new_price <= e_hi:
-                    # Sell current position
-                    current_qty = positions[current_sym].get("qty", 1)
-                    auto_sell(current_sym, current_qty, f"🔄 Position upgrade — switching to better momentum")
-                    close_trade(current_sym, new_price, "Position upgrade", regime=regime_name)
-                    
-                    # Calculate new qty
-                    capital = load_capital()
-                    use_pct = r_params.get("position_pct", 0.30)
-                    new_qty = int((capital * use_pct) / new_price) if new_price > 0 else 0
-                    
-                    if new_qty > 0:
-                        tg_send(
-                            f"🔄 <b>Position Upgrade</b>\n"
-                            f"Closing {current_sym} → Opening {new_sym}\n"
-                            f"{reason}\n"
-                            f"New pick zone: ${e_lo:.2f}-${e_hi:.2f}"
-                        )
-                        
-                        # Record cycle exit for old position
-                        try:
-                            from us_cycle_manager import record_exit
-                            record_exit(current_sym, new_price, 0)
-                        except:
-                            pass
-                        
-                        # Buy new position
-                        result = auto_buy(new_sym, new_qty, new_price, 1, max_positions)
-                        if result:
-                            log_trade(new_sym, "BUY", new_qty, new_price, signal="position_upgrade", regime=regime_name)
-                            open_count += 1
-                        
-                        log.info(f"Position upgrade: {current_sym} → {new_sym} ({reason})")
+            # Calculate drop score for each open position (TASI v4.9)
+            open_positions_list = [
+                (s, p) for s, p in positions.items() if not p.get("closed")
+            ]
+            
+            scored_positions = []
+            for sym, pos in open_positions_list:
+                # Fetch current price and df for drop score calculation
+                price, df = fetch_data(sym)
+                if price:
+                    drop_score = _calculate_drop_score(sym, pos, price, df, r_params, picks)
+                    scored_positions.append((sym, pos, drop_score))
+                    log.info(f"v4.9 drop score: {sym} = {drop_score:.1f}")
                 else:
-                    log.info(f"Position upgrade BLOCKED: {new_sym} outside zone ${e_lo:.2f}-${e_hi:.2f}, price=${new_price:.2f}")
+                    scored_positions.append((sym, pos, 50.0))  # default neutral
+            
+            # Sort by drop score ascending — weakest first
+            scored_positions.sort(key=lambda x: x[2])
+            
+            if scored_positions:
+                current_sym, current_pos, drop_score = scored_positions[0]
+                current_pick = next((p for p in picks if p.get("symbol", "").replace(".SR", "").replace("-", ".") == current_sym), None)
+                current_score = current_pick.get("score", 0) if current_pick else 0
+                
+                # Find best available pick that's NOT currently held
+                held_symbols = [s for s, _ in open_positions_list]
+                best_new = None
+                for p in sorted(picks, key=lambda x: x.get("score", 0), reverse=True):
+                    sym = p.get("symbol", "").replace(".SR", "").replace("-", ".")
+                    if sym not in held_symbols:
+                        best_new = p
+                        break
+                
+                if best_new:
+                    pu_thresh = POSITION_UPGRADE_THRESHOLDS.get(regime_name, 1.3)
+                    new_score = best_new.get("score", 0)
+                    
+                    if new_score > current_score * pu_thresh:
+                        bn_sym = best_new["symbol"].replace(".SR", "").replace("-", ".")
+                        bn_price, bn_df = fetch_data(best_new["symbol"])
+                        
+                        # TASI v4.9 DEDUP: skip if already upgrading to this symbol this cycle
+                        if _upgrade_target_this_cycle == bn_sym:
+                            log.info(f"v4.9 dedup: {current_sym} skipped — {bn_sym} already targeted this cycle")
+                        else:
+                            # Entry zone check
+                            e_lo = best_new.get("entry_low", 0)
+                            e_hi = best_new.get("entry_high", 0)
+                            
+                            zone_passed = True
+                            if e_lo and e_hi and bn_price:
+                                if bn_price < e_lo or bn_price > e_hi:
+                                    log.info(f"Position upgrade BLOCKED: {best_new['symbol']} OUTSIDE zone [{e_lo:.2f}-{e_hi:.2f}], price=${bn_price:.2f}")
+                                    zone_passed = False
+                            
+                            if zone_passed:
+                                # TASI: VWAP direction check for NEUTRAL/DEFENSIVE
+                                vwap_passed = True
+                                if regime_name in ["NEUTRAL", "DEFENSIVE"] and bn_df is not None:
+                                    try:
+                                        from us_vwap_filter import get_vwap_direction
+                                        direction, slope_pct, reason = get_vwap_direction(bn_df, lookback=5)
+                                        if direction == "falling":
+                                            log.info(f"Position upgrade BLOCKED: {best_new['symbol']} VWAP falling in {regime_name} regime (slope={slope_pct:.4f}%)")
+                                            vwap_passed = False
+                                    except Exception as e:
+                                        log.debug(f"VWAP direction check failed: {e}")
+                                
+                                if vwap_passed:
+                                    # TASI: Gain check — don't switch if underwater
+                                    current_price, _, = fetch_data(current_sym)
+                                    entry = current_pos.get("entry_price", 0)
+                                    
+                                    if current_price and entry:
+                                        gain_pct = (current_price - entry) / entry
+                                        
+                                        if gain_pct >= -0.02:  # Don't switch if down >2%
+                                            log.info(
+                                                f"Position upgrade: {current_sym}(score={current_score:.0f}, drop={drop_score:.1f}) → "
+                                                f"{best_new['symbol']}(score={new_score:.0f}). Current P&L: {gain_pct*100:+.1f}%"
+                                            )
+                                            tg_send(
+                                                f"🔄 <b>Position Upgrade</b>\n"
+                                                f"Closing {current_sym} (score {current_score:.0f}, P&L {gain_pct*100:+.1f}%, drop {drop_score:.1f})\n"
+                                                f"Opening {best_new['symbol']} (score {new_score:.0f})\n"
+                                                f"New pick has {new_score/max(current_score,1):.1f}x momentum"
+                                            )
+                                            
+                                            # Sell current position
+                                            current_qty = current_pos.get("qty", 1)
+                                            auto_sell(current_sym, current_qty, 
+                                                      f"🔄 Position upgrade — switching to better momentum pick")
+                                            open_count -= 1
+                                            
+                                            # Deduplication tracker
+                                            _upgrade_target_this_cycle = bn_sym
+                                            
+                                            # Calculate new qty (TASI-style capital-based)
+                                            from us_cycle_manager import _calculate_upgrade_qty
+                                            capital = load_capital()
+                                            new_qty = _calculate_upgrade_qty(
+                                                best_new["symbol"], bn_price, capital, position_pct
+                                            )
+                                            
+                                            if bn_price and e_lo and e_hi and e_lo <= bn_price <= e_hi:
+                                                # Cash validation
+                                                available = capital.get("money_transfer", capital.get("available_capital", 0))
+                                                order_value = new_qty * bn_price
+                                                
+                                                if order_value > available * 0.95:
+                                                    new_qty = max(1, int((available * 0.95) / bn_price))
+                                                    log.info(f"v4.9 cash: {bn_sym} qty reduced to {new_qty} due to limit")
+                                                
+                                                if new_qty >= 1:
+                                                    result = auto_buy(best_new["symbol"], new_qty, bn_price, 
+                                                                     cycle_n=1, max_cyc=max_positions,
+                                                                     price=bn_price)
+                                                    if result:
+                                                        log_trade(best_new["symbol"], "BUY", new_qty, bn_price, 
+                                                                 signal="position_upgrade", regime=regime_name)
+                                                        open_count += 1
+                                                    
+                                                    # Clear alert for new pick
+                                                    _reset_symbol_alerts(bn_sym)
+                                        else:
+                                            log.info(f"Position upgrade BLOCKED: {current_sym} down {gain_pct*100:.1f}% > 2%, not switching underwater position")
         except Exception as e:
-            log.debug(f"Position upgrade evaluation failed: {e}")
+            log.error(f"Position upgrade failed: {e}")
+            import traceback
+            log.debug(f"Position upgrade traceback: {traceback.format_exc()}")
     
     # ── CAPITAL RECYCLING (US v1.0) ──────────────────────────────────────────
     # If we have open positions but NO new picks available (all blocked),
