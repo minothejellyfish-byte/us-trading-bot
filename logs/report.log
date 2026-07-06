@@ -432,3 +432,59 @@ Alpaca P&L: $0.00 (0W/0L)
 Alpaca capital: $102751.06
 Stats built from: local-fallback | P&L=$0.00 | Trades=0
 [2026-07-03T16:15:08.945830-04:00] Daily report sent: True
+2026-07-06 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-06 (2026-07-06T04:56:00Z to 2026-07-07T04:55:59Z)
+2026-07-06 23:10:03 [INFO] get_alpaca_trades: found 3 filled orders
+2026-07-06 23:10:03 [WARNING] reconcile_trades: 3 Alpaca fills missing from local file
+2026-07-06 23:10:03 [INFO]   Added missing trade: BUY 262 ABT @ $93.60
+2026-07-06 23:10:03 [INFO]   Added missing trade: BUY 92 ABBV @ $257.74
+2026-07-06 23:10:03 [INFO]   Added missing trade: BUY 130 AAPL @ $309.06
+2026-07-06 23:10:03 [INFO] reconcile_trades: wrote 38 trades to /home/mino/us-exec/us_trades.json
+2026-07-06 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:10:03 [INFO] get_alpaca_trades: querying 2026-07-06 (2026-07-06T04:56:00Z to 2026-07-07T04:55:59Z)
+2026-07-06 23:10:03 [INFO] get_alpaca_trades: found 3 filled orders
+2026-07-06 23:10:03 [INFO] get_daily_pnl: 2026-07-06 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-06 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:10:04 [INFO] sync_capital: cash=$14,338.63 equity=$103,466.17
+Reconciliation: {'date': '2026-07-06', 'alpaca_count': 3, 'local_count': 3, 'missing_found': 3, 'corrections_made': 3, 'in_sync': False}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $14338.63
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 209, in <module>
+    send_daily_report_sync()
+  File "/home/mino/us-exec/us_daily_report.py", line 161, in send_daily_report_sync
+    stats = get_daily_stats()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 146, in get_daily_stats
+    "best_trade": f"{best_trade['symbol']} +${best_trade['pnl']:.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade['symbol']} ${best_trade['pnl']:.2f}" if best_trade else "None"),
+                                              ~~~~~~~~~~^^^^^^^
+KeyError: 'pnl'
+2026-07-06 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:15:05 [INFO] get_alpaca_trades: querying 2026-07-06 (2026-07-06T04:56:00Z to 2026-07-07T04:55:59Z)
+2026-07-06 23:15:06 [INFO] get_alpaca_trades: found 3 filled orders
+2026-07-06 23:15:06 [INFO] reconcile_trades: local file in sync with Alpaca
+2026-07-06 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:15:06 [INFO] get_alpaca_trades: querying 2026-07-06 (2026-07-06T04:56:00Z to 2026-07-07T04:55:59Z)
+2026-07-06 23:15:06 [INFO] get_alpaca_trades: found 3 filled orders
+2026-07-06 23:15:06 [INFO] get_daily_pnl: 2026-07-06 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-06 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 23:15:07 [INFO] sync_capital: cash=$14,338.63 equity=$103,544.81
+Reconciliation: {'date': '2026-07-06', 'alpaca_count': 3, 'local_count': 3, 'missing_found': 0, 'corrections_made': 0, 'in_sync': True}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $14338.63
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 209, in <module>
+    send_daily_report_sync()
+  File "/home/mino/us-exec/us_daily_report.py", line 161, in send_daily_report_sync
+    stats = get_daily_stats()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 146, in get_daily_stats
+    "best_trade": f"{best_trade['symbol']} +${best_trade['pnl']:.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade['symbol']} ${best_trade['pnl']:.2f}" if best_trade else "None"),
+                                              ~~~~~~~~~~^^^^^^^
+KeyError: 'pnl'
