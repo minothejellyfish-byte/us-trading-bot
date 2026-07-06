@@ -12125,3 +12125,24 @@ Picks: 0
 Rank  Symbol   Score    Price      Change%    Vol(x)  
 ------------------------------------------------------------
 ============================================================
+2026-07-06 17:00:02 [INFO] US Mid-Screen: Early Momentum (midscreen1)
+2026-07-06 17:00:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-06 17:00:02 [INFO] Step 1: Checking existing picks...
+2026-07-06 17:00:02 [INFO] Found 16 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-06 17:00:04 [INFO]   ✅ AAPL: Still valid (change=0.3%, vol=4438804)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-06 17:00:05 [INFO]   ✅ ABBV: Still valid (change=-2.1%, vol=387646)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-06 17:00:05 [INFO]   ✅ ABT: Still valid (change=-1.8%, vol=631201)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-06 17:00:06 [INFO]   ✅ ACN: Still valid (change=-1.2%, vol=553445)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-06 17:00:07 [INFO]   ✅ ADBE: Still valid (change=-1.8%, vol=550288)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
