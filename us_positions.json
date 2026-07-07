@@ -1,88 +1,42 @@
 {
   "date": "2026-07-07",
-  "time": "14:30:04",
+  "time": "14:59:48",
   "positions": {
     "AAPL": {
       "symbol": "AAPL",
-      "entry_price": 309.055385,
       "qty": 130,
-      "entry_time": "2026-07-07T14:30:04.689297-04:00",
-      "peak_price": 312.6,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 309.055385,
-        "market_value": 40638.0,
-        "unrealized_pl": 460.79995,
-        "unrealized_plpc": 0.01147,
-        "current_price": 312.6,
-        "qty": 130
-      }
+      "avg_entry_price": 309.055385,
+      "market_value": 40561.3,
+      "unrealized_pl": 384.09995,
+      "unrealized_plpc": 0.00956,
+      "current_price": 312.01
     },
     "ABBV": {
       "symbol": "ABBV",
-      "entry_price": 257.738478,
       "qty": 92,
-      "entry_time": "2026-07-07T14:30:04.689351-04:00",
-      "peak_price": 254.55,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 257.738478,
-        "market_value": 23418.6,
-        "unrealized_pl": -293.339976,
-        "unrealized_plpc": -0.01237,
-        "current_price": 254.55,
-        "qty": 92
-      }
+      "avg_entry_price": 257.738478,
+      "market_value": 23432.86,
+      "unrealized_pl": -279.079976,
+      "unrealized_plpc": -0.01177,
+      "current_price": 254.705
     },
     "ACN": {
       "symbol": "ACN",
-      "entry_price": 141.78,
       "qty": 212,
-      "entry_time": "2026-07-07T14:30:04.689377-04:00",
-      "peak_price": 143.44,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 141.78,
-        "market_value": 30409.28,
-        "unrealized_pl": 351.92,
-        "unrealized_plpc": 0.01171,
-        "current_price": 143.44,
-        "qty": 212
-      }
+      "avg_entry_price": 141.78,
+      "market_value": 30375.36,
+      "unrealized_pl": 318.0,
+      "unrealized_plpc": 0.01058,
+      "current_price": 143.28
     },
     "ADBE": {
       "symbol": "ADBE",
-      "entry_price": 222.919186,
       "qty": 135,
-      "entry_time": "2026-07-07T14:30:04.689397-04:00",
-      "peak_price": 225.585,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 222.919186,
-        "market_value": 30453.975,
-        "unrealized_pl": 359.88489,
-        "unrealized_plpc": 0.01196,
-        "current_price": 225.585,
-        "qty": 135
-      }
+      "avg_entry_price": 222.919186,
+      "market_value": 30337.2,
+      "unrealized_pl": 243.10989,
+      "unrealized_plpc": 0.00808,
+      "current_price": 224.72
     }
-  },
-  "count": 4,
-  "source": "alpaca-api"
+  }
 }
