@@ -17946,3 +17946,147 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-06 17:00:01,077 [INFO] Received signal 15 — shutting down
 2026-07-06 17:00:01,077 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
 2026-07-07 09:30:02,811 [INFO] Outside market hours (02:30:02.811217) — not starting daemon.
+2026-07-07 16:30:08,741 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-07 16:30:08,742 [INFO] Poller starting in daemon mode
+2026-07-07 16:30:08,742 [INFO] US Price poller started.
+2026-07-07 16:30:10,683 [INFO] Buy detected: AAPL (bookkeeper confirmed: 130 @ $309.06)
+2026-07-07 16:30:11,063 [INFO] Buy detected: ABBV (bookkeeper confirmed: 92 @ $257.74)
+2026-07-07 16:30:11,461 [INFO] Buy detected: ABT (bookkeeper confirmed: 262 @ $93.60)
+2026-07-07 16:30:11,839 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:30:12 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-07 16:30:12,075 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-07 16:30:14 [INFO] Order submitted: sell 262 ABT @ market → pending_new
+2026-07-07 16:30:14,614 [INFO] Order submitted: sell 262 ABT @ market → pending_new
+2026-07-07 16:30:15,040 [INFO] Sold ABT: 262 — 🎯 Target +2% | Entry: 93.60 | Now: 97.72
+2026-07-07 16:30:15,045 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 841, in slow_poll
+    close_trade(symbol, price, f"Target +{int(win_pct*100)}%", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 121, in close_trade
+    trades.append(closed_trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-07 16:30:25,883 [INFO] Sell detected (scratch): ABT pct=-100.0%
+2026-07-07 16:30:25,884 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-07 16:30:27,424 [INFO] Cycle check failed for ABT: Cycle limit reached (4/3) for NEUTRAL
+2026-07-07 16:30:28 [INFO] Order submitted: buy 212 ACN @ market → pending_new
+2026-07-07 16:30:28,715 [INFO] Order submitted: buy 212 ACN @ market → pending_new
+2026-07-07 16:30:29,169 [INFO] Bought ACN: 212@141.47 cycle=1/3
+2026-07-07 16:30:29,173 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-07 16:30:39,175 [INFO] Buy detected: ACN (bookkeeper confirmed: 212 @ $141.47)
+2026-07-07 16:30:39,804 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:30:41,877 [INFO] v4.9 drop score: AAPL = 57.6
+2026-07-07 16:30:42,371 [INFO] v4.9 drop score: ABBV = 55.5
+2026-07-07 16:30:42,735 [INFO] v4.9 drop score: ACN = 47.2
+2026-07-07 16:30:43,596 [INFO] Position upgrade: ACN(score=25, drop=47.2) → MC(score=44). Current P&L: +0.1%
+2026-07-07 16:30:54,146 [ERROR] auto_sell error for ACN: potential wash trade detected. use complex orders
+2026-07-07 16:30:54,536 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-07 16:30:54,938 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-07 16:30:56 [INFO] Order submitted: buy 135 ADBE @ market → pending_new
+2026-07-07 16:30:56,087 [INFO] Order submitted: buy 135 ADBE @ market → pending_new
+2026-07-07 16:30:56,477 [INFO] Bought ADBE: 135@221.28 cycle=1/3
+2026-07-07 16:30:56,480 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-07 16:31:06,482 [INFO] Buy detected: ADBE (bookkeeper confirmed: 135 @ $221.28)
+2026-07-07 16:31:07,280 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:31:07,693 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-07 16:31:08,057 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-07 16:31:08,412 [WARNING] Position ABT has invalid entry price, skipping
+2026-07-07 16:31:09,251 [INFO] v4.9 drop score: AAPL = 42.3
+2026-07-07 16:31:09,713 [INFO] v4.9 drop score: ABBV = 53.8
+2026-07-07 16:31:10,077 [INFO] v4.9 drop score: ABT = 51.4
+2026-07-07 16:31:10,496 [INFO] v4.9 drop score: ADBE = 41.1
+2026-07-07 16:31:11,643 [INFO] Position upgrade: ADBE(score=25, drop=41.1) → MC(score=44). Current P&L: +0.1%
+2026-07-07 16:31:12,229 [ERROR] auto_sell error for ADBE: potential wash trade detected. use complex orders
+2026-07-07 16:31:12,638 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-07 16:31:12,640 [INFO] Slow poll done.
+2026-07-07 16:36:12,667 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:36:13,480 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-07 16:36:13,867 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-07 16:36:14,235 [WARNING] Position ABT has invalid entry price, skipping
+2026-07-07 16:36:14,624 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-07 16:36:14,982 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-07 16:36:15,416 [INFO] v4.9 drop score: AAPL = 42.3
+2026-07-07 16:36:15,801 [INFO] v4.9 drop score: ABBV = 52.1
+2026-07-07 16:36:16,154 [INFO] v4.9 drop score: ABT = 61.2
+2026-07-07 16:36:16,512 [INFO] v4.9 drop score: ACN = 54.7
+2026-07-07 16:36:16,880 [INFO] v4.9 drop score: ADBE = 39.5
+2026-07-07 16:36:17,627 [INFO] Slow poll done.
+2026-07-07 16:41:17,651 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:41:18,861 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-07 16:41:19,238 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-07 16:41:19,595 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-07 16:41:19,984 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-07 16:41:20,338 [INFO] v4.9 drop score: AAPL = 42.3
+2026-07-07 16:41:20,710 [INFO] v4.9 drop score: ABBV = 57.5
+2026-07-07 16:41:21,099 [INFO] v4.9 drop score: ACN = 53.0
+2026-07-07 16:41:21,459 [INFO] v4.9 drop score: ADBE = 39.5
+2026-07-07 16:41:22,176 [INFO] Slow poll done.
+2026-07-07 16:46:22,201 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:46:23,312 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-07 16:46:23,663 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-07 16:46:24,000 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-07 16:46:24,343 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-07 16:46:24,708 [INFO] v4.9 drop score: AAPL = 42.3
+2026-07-07 16:46:25,066 [INFO] v4.9 drop score: ABBV = 54.7
+2026-07-07 16:46:25,448 [INFO] v4.9 drop score: ACN = 63.0
+2026-07-07 16:46:25,794 [INFO] v4.9 drop score: ADBE = 39.5
+2026-07-07 16:46:26,523 [INFO] Slow poll done.
+2026-07-07 16:51:26,546 [INFO] Regime stale (>30min) — reclassifying
+2026-07-07 16:51:29,141 [INFO] Regime: NEUTRAL — SPY +0.4% over 5 days, VIX 15.9 (moderate), 82% sector breadth
+2026-07-07 16:51:29,141 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-07 16:51:29,926 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-07 16:51:30,313 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-07 16:51:30,679 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-07 16:51:31,056 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-07 16:51:31,439 [INFO] v4.9 drop score: AAPL = 42.3
+2026-07-07 16:51:31,816 [INFO] v4.9 drop score: ABBV = 54.7
+2026-07-07 16:51:32,183 [INFO] v4.9 drop score: ACN = 57.5
+2026-07-07 16:51:32,560 [INFO] v4.9 drop score: ADBE = 39.5
+2026-07-07 16:51:33,274 [INFO] Slow poll done.
+2026-07-07 16:56:33,300 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-07 16:56:34,494 [WARNING] Position AAPL has invalid entry price, skipping
+2026-07-07 16:56:34,862 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-07 16:56:35,225 [WARNING] Position ACN has invalid entry price, skipping
+2026-07-07 16:56:35,614 [WARNING] Position ADBE has invalid entry price, skipping
+2026-07-07 16:56:35,976 [INFO] v4.9 drop score: AAPL = 42.3
+2026-07-07 16:56:36,353 [INFO] v4.9 drop score: ABBV = 54.2
+2026-07-07 16:56:36,728 [INFO] v4.9 drop score: ACN = 51.9
+2026-07-07 16:56:37,131 [INFO] v4.9 drop score: ADBE = 39.5
+2026-07-07 16:56:37,866 [INFO] Slow poll done.
+2026-07-07 17:00:01,253 [INFO] Received signal 15 — shutting down
+2026-07-07 17:00:01,253 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
