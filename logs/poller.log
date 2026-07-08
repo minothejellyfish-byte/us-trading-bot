@@ -18091,3 +18091,87 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-07 17:00:01,253 [INFO] Received signal 15 — shutting down
 2026-07-07 17:00:01,253 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
 2026-07-08 09:30:02,908 [INFO] Outside market hours (02:30:02.908686) — not starting daemon.
+2026-07-08 16:30:11,950 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-08 16:30:11,950 [INFO] Poller starting in daemon mode
+2026-07-08 16:30:11,951 [INFO] US Price poller started.
+2026-07-08 16:30:12,402 [INFO] Buy detected: AAPL (bookkeeper confirmed: 130 @ $309.06)
+2026-07-08 16:30:12,825 [INFO] Buy detected: ABBV (bookkeeper confirmed: 92 @ $257.74)
+2026-07-08 16:30:23,242 [INFO] Buy detected: ACN (bookkeeper confirmed: 212 @ $141.78)
+2026-07-08 16:30:23,642 [INFO] Buy detected: ADBE (bookkeeper confirmed: 135 @ $222.92)
+2026-07-08 16:30:24,063 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-08 16:30:24 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 16:30:24,359 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-08 16:30:26 [INFO] Order submitted: sell 130 AAPL @ market → pending_new
+2026-07-08 16:30:26,174 [INFO] Order submitted: sell 130 AAPL @ market → pending_new
+2026-07-08 16:30:26,576 [INFO] Sold AAPL: 130 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $310.03
+2026-07-08 16:30:27 [INFO] Order submitted: sell 92 ABBV @ market → pending_new
+2026-07-08 16:30:27,424 [INFO] Order submitted: sell 92 ABBV @ market → pending_new
+2026-07-08 16:30:37,766 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:30:40,090 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:30:42,473 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:30:42,474 [INFO] Sold ABBV: 92 — ⏱ Time stop | Time stop loss: -2.0% (<= -1.5%) | NEUTRAL: Early entry → exit by 14:30
+2026-07-08 16:30:44,137 [INFO] v4.9 drop score: AAPL = 40.5
+2026-07-08 16:30:44,697 [INFO] v4.9 drop score: ABBV = 23.3
+2026-07-08 16:30:45,119 [INFO] v4.9 drop score: ACN = 27.7
+2026-07-08 16:30:45,670 [INFO] v4.9 drop score: ADBE = 36.2
+2026-07-08 16:30:46,233 [INFO] Position upgrade BLOCKED: LYB VWAP falling in NEUTRAL regime (slope=-0.1052%)
+2026-07-08 16:30:46,233 [INFO] Slow poll done.
+2026-07-08 16:35:17,314 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-08 16:35:18 [INFO] Order submitted: sell 1 ABBV @ market → pending_new
+2026-07-08 16:35:18,868 [INFO] Order submitted: sell 1 ABBV @ market → pending_new
+2026-07-08 16:35:19,187 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:35:21,507 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:35:23,851 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:35:23,852 [INFO] Sold ABBV: 1 — ⏱ Time stop | Time stop loss: -2.4% (<= -1.5%) | NEUTRAL: Early entry → exit by 14:30
+2026-07-08 16:35:24 [INFO] Order submitted: sell 212 ACN @ market → pending_new
+2026-07-08 16:35:24,412 [INFO] Order submitted: sell 212 ACN @ market → pending_new
+2026-07-08 16:35:24,745 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:35:27,060 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:35:29,381 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:35:29,382 [INFO] Sold ACN: 212 — ⏱ Time stop | Time stop loss: -1.7% (<= -1.5%) | NEUTRAL: Early entry → exit by 14:30
+2026-07-08 16:35:30,328 [INFO] v4.9 drop score: ABBV = 29.5
+2026-07-08 16:35:30,685 [INFO] v4.9 drop score: ACN = 25.0
+2026-07-08 16:35:31,150 [INFO] v4.9 drop score: ADBE = 33.2
+2026-07-08 16:35:31,612 [INFO] Position upgrade BLOCKED: LYB VWAP falling in NEUTRAL regime (slope=-0.1052%)
+2026-07-08 16:35:31,613 [INFO] Slow poll done.
+2026-07-08 16:40:21,632 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-08 16:40:22,539 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-08 16:40:23,267 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:40:23,636 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:40:24,005 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:40:24,005 [INFO] Slow poll done.
+2026-07-08 16:45:24,030 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-08 16:45:24,957 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-08 16:45:25 [INFO] Order submitted: sell 135 ADBE @ market → pending_new
+2026-07-08 16:45:25,989 [INFO] Order submitted: sell 135 ADBE @ market → pending_new
+2026-07-08 16:45:27,317 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:45:29,626 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:45:31,950 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-08 16:45:31,953 [INFO] Sold ADBE: 135 — ⏱ Time stop | Time stop loss: -2.0% (<= -1.5%) | NEUTRAL: Early entry → exit by 14:30
+2026-07-08 16:45:32,412 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:45:32,832 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -1.46% over 5 bars (entry blocked — not rising)
+2026-07-08 16:45:33,225 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-08 16:45:33,226 [INFO] Slow poll done.
+2026-07-08 16:50:33,249 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-08 16:50:34,057 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-08 16:50:34,460 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:50:34,841 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-08 16:50:35,233 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.10% over 5 bars (entry blocked — not rising)
+2026-07-08 16:50:35,623 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:50:35,624 [INFO] Slow poll done.
+2026-07-08 16:55:35,641 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-08 16:55:36,492 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-08 16:55:36,870 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:55:37,297 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-08 16:55:38,069 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-08 16:55:38,069 [INFO] Slow poll done.
+2026-07-08 17:00:02,014 [INFO] Received signal 15 — shutting down
+2026-07-08 17:00:02,015 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid

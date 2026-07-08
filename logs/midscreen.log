@@ -16279,3 +16279,9 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 40    D        33.7     $70.37     1.60     % 0.8    x
 41    RIOT     45.0     $21.96     -3.96    % 0.5    x
 ============================================================
+2026-07-08 17:00:03 [INFO] US Mid-Screen: Early Momentum (midscreen1)
+2026-07-08 17:00:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 17:00:03 [INFO] Step 1: Checking existing picks...
+2026-07-08 17:00:03 [INFO] Found 34 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
