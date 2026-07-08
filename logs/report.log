@@ -544,3 +544,61 @@ Traceback (most recent call last):
     "best_trade": f"{best_trade['symbol']} +${best_trade['pnl']:.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade['symbol']} ${best_trade['pnl']:.2f}" if best_trade else "None"),
                                               ~~~~~~~~~~^^^^^^^
 KeyError: 'pnl'
+2026-07-08 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-08 (2026-07-08T04:56:00Z to 2026-07-09T04:55:59Z)
+2026-07-08 23:10:03 [INFO] get_alpaca_trades: found 5 filled orders
+2026-07-08 23:10:03 [WARNING] reconcile_trades: 5 Alpaca fills missing from local file
+2026-07-08 23:10:03 [INFO]   Added missing trade: SELL 135 ADBE @ $218.19
+2026-07-08 23:10:03 [INFO]   Added missing trade: SELL 212 ACN @ $139.19
+2026-07-08 23:10:03 [INFO]   Added missing trade: SELL 1 ABBV @ $250.72
+2026-07-08 23:10:03 [INFO]   Added missing trade: SELL 92 ABBV @ $251.23
+2026-07-08 23:10:03 [INFO]   Added missing trade: SELL 130 AAPL @ $310.17
+2026-07-08 23:10:03 [INFO] reconcile_trades: wrote 46 trades to /home/mino/us-exec/us_trades.json
+2026-07-08 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:10:03 [INFO] get_alpaca_trades: querying 2026-07-08 (2026-07-08T04:56:00Z to 2026-07-09T04:55:59Z)
+2026-07-08 23:10:03 [INFO] get_alpaca_trades: found 5 filled orders
+2026-07-08 23:10:03 [INFO] get_daily_pnl: 2026-07-08 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-08 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:10:04 [INFO] sync_capital: cash=$102,474.99 equity=$102,222.25
+Reconciliation: {'date': '2026-07-08', 'alpaca_count': 5, 'local_count': 5, 'missing_found': 5, 'corrections_made': 5, 'in_sync': False}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $102474.99
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 209, in <module>
+    send_daily_report_sync()
+  File "/home/mino/us-exec/us_daily_report.py", line 161, in send_daily_report_sync
+    stats = get_daily_stats()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 146, in get_daily_stats
+    "best_trade": f"{best_trade['symbol']} +${best_trade['pnl']:.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade['symbol']} ${best_trade['pnl']:.2f}" if best_trade else "None"),
+                                              ~~~~~~~~~~^^^^^^^
+KeyError: 'pnl'
+2026-07-08 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:15:05 [INFO] get_alpaca_trades: querying 2026-07-08 (2026-07-08T04:56:00Z to 2026-07-09T04:55:59Z)
+2026-07-08 23:15:06 [INFO] get_alpaca_trades: found 5 filled orders
+2026-07-08 23:15:06 [INFO] reconcile_trades: local file in sync with Alpaca
+2026-07-08 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:15:06 [INFO] get_alpaca_trades: querying 2026-07-08 (2026-07-08T04:56:00Z to 2026-07-09T04:55:59Z)
+2026-07-08 23:15:06 [INFO] get_alpaca_trades: found 5 filled orders
+2026-07-08 23:15:06 [INFO] get_daily_pnl: 2026-07-08 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-08 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-08 23:15:07 [INFO] sync_capital: cash=$102,474.99 equity=$102,222.99
+Reconciliation: {'date': '2026-07-08', 'alpaca_count': 5, 'local_count': 5, 'missing_found': 0, 'corrections_made': 0, 'in_sync': True}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $102474.99
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 209, in <module>
+    send_daily_report_sync()
+  File "/home/mino/us-exec/us_daily_report.py", line 161, in send_daily_report_sync
+    stats = get_daily_stats()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 146, in get_daily_stats
+    "best_trade": f"{best_trade['symbol']} +${best_trade['pnl']:.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade['symbol']} ${best_trade['pnl']:.2f}" if best_trade else "None"),
+                                              ~~~~~~~~~~^^^^^^^
+KeyError: 'pnl'
