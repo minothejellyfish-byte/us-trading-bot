@@ -1,239 +1,784 @@
 {
-  "generated_at": "2026-07-07T16:34:47.144074-04:00",
-  "for_date": "2026-07-08",
+  "date": "2026-07-08",
+  "time": "09:28:59",
   "timezone": "America/New_York",
-  "mode": "aftermarket",
+  "mode": "premarket",
+  "regime": "NEUTRAL",
   "universe_size": 194,
-  "pick_count": 10,
+  "screened_count": 43,
   "picks": [
     {
-      "symbol": "XOM",
-      "score": 77.2,
-      "price": 141.58,
-      "entry_low": 140.16,
-      "entry_high": 144.41,
-      "gap_pct": 1.55,
-      "daily_change_pct": 3.77,
-      "volume_today": 25859556,
-      "market_cap": 587297587200,
-      "sector": "Energy",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 136.44,
-        "open_today": 138.56,
-        "high_today": 141.75,
-        "low_today": 138.13,
-        "close_today": 141.58,
-        "intraday_range_pct": 2.61,
-        "close_to_high_pct": -0.12
+      "symbol": "ALLY",
+      "score": 30.4,
+      "price": 47.5,
+      "entry_low": 44.45,
+      "entry_high": 48.93,
+      "gap_pct": 4.72,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 45.36,
+        "open_today": 47.5,
+        "high_pm": 47.5,
+        "low_pm": 45.27
       }
     },
     {
-      "symbol": "NET",
-      "score": 76.9,
-      "price": 268.83,
-      "entry_low": 266.14,
-      "entry_high": 274.21,
-      "gap_pct": 4.7,
-      "daily_change_pct": 8.6,
-      "volume_today": 11910538,
-      "market_cap": 95418392576,
-      "sector": "Technology",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 247.55,
-        "open_today": 259.17,
-        "high_today": 274.0,
-        "low_today": 254.0,
-        "close_today": 268.83,
-        "intraday_range_pct": 7.72,
-        "close_to_high_pct": -1.89
+      "symbol": "BMY",
+      "score": 25.5,
+      "price": 61.18,
+      "entry_low": 56.81,
+      "entry_high": 63.02,
+      "gap_pct": 5.54,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 57.97,
+        "open_today": 61.18,
+        "high_pm": 61.18,
+        "low_pm": 57.6
       }
     },
     {
-      "symbol": "JNJ",
-      "score": 75.2,
-      "price": 267.24,
-      "entry_low": 264.57,
-      "entry_high": 272.58,
-      "gap_pct": 2.14,
-      "daily_change_pct": 3.05,
-      "volume_today": 8794085,
-      "market_cap": 643304587264,
-      "sector": "Healthcare",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 259.33,
-        "open_today": 264.89,
-        "high_today": 269.43,
-        "low_today": 264.05,
-        "close_today": 267.24,
-        "intraday_range_pct": 2.03,
-        "close_to_high_pct": -0.81
+      "symbol": "CG",
+      "score": 30.1,
+      "price": 46.49,
+      "entry_low": 43.13,
+      "entry_high": 47.88,
+      "gap_pct": 5.64,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 44.01,
+        "open_today": 46.49,
+        "high_pm": 46.49,
+        "low_pm": 43.55
       }
     },
     {
-      "symbol": "META",
-      "score": 75.2,
-      "price": 614.02,
-      "entry_low": 607.88,
-      "entry_high": 626.3,
-      "gap_pct": 1.28,
-      "daily_change_pct": 2.29,
-      "volume_today": 17661036,
-      "market_cap": 1562602635264,
-      "sector": "Communication Services",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 600.29,
-        "open_today": 608.0,
-        "high_today": 625.37,
-        "low_today": 592.43,
-        "close_today": 614.02,
-        "intraday_range_pct": 5.42,
-        "close_to_high_pct": -1.81
+      "symbol": "CNP",
+      "score": 33.8,
+      "price": 49.25,
+      "entry_low": 43.6,
+      "entry_high": 50.73,
+      "gap_pct": 10.7,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 44.49,
+        "open_today": 49.25,
+        "high_pm": 49.25,
+        "low_pm": 44.39
       }
     },
     {
-      "symbol": "UNH",
-      "score": 75.1,
-      "price": 428.4,
-      "entry_low": 424.12,
-      "entry_high": 436.97,
-      "gap_pct": 1.43,
-      "daily_change_pct": 2.49,
-      "volume_today": 4808381,
-      "market_cap": 388858347520,
-      "sector": "Healthcare",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 417.99,
-        "open_today": 423.95,
-        "high_today": 428.62,
-        "low_today": 422.13,
-        "close_today": 428.4,
-        "intraday_range_pct": 1.53,
-        "close_to_high_pct": -0.05
+      "symbol": "CNX",
+      "score": 29.9,
+      "price": 38.79,
+      "entry_low": 32.6,
+      "entry_high": 39.95,
+      "gap_pct": 16.61,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 33.27,
+        "open_today": 38.79,
+        "high_pm": 38.79,
+        "low_pm": 33.13
+      }
+    },
+    {
+      "symbol": "CSX",
+      "score": 31.6,
+      "price": 51.45,
+      "entry_low": 47.53,
+      "entry_high": 52.99,
+      "gap_pct": 6.08,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 48.5,
+        "open_today": 51.45,
+        "high_pm": 51.45,
+        "low_pm": 48.12
+      }
+    },
+    {
+      "symbol": "CTVA",
+      "score": 33.1,
+      "price": 86.75,
+      "entry_low": 84.66,
+      "entry_high": 89.35,
+      "gap_pct": 0.42,
+      "volume_premarket": 3089695,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 86.39,
+        "open_today": 86.75,
+        "high_pm": 87.69,
+        "low_pm": 86.1
       }
     },
     {
       "symbol": "CVX",
-      "score": 74.9,
+      "score": 26.4,
       "price": 174.01,
-      "entry_low": 172.27,
-      "entry_high": 177.49,
-      "gap_pct": 1.21,
-      "daily_change_pct": 3.52,
-      "volume_today": 15760926,
-      "market_cap": 346557906944,
-      "sector": "Energy",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
+      "entry_low": 164.74,
+      "entry_high": 179.23,
+      "gap_pct": 3.52,
+      "volume_premarket": 8941713,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
         "close_prev": 168.1,
-        "open_today": 170.14,
-        "high_today": 174.95,
-        "low_today": 170.0,
-        "close_today": 174.01,
-        "intraday_range_pct": 2.91,
-        "close_to_high_pct": -0.54
+        "open_today": 174.01,
+        "high_pm": 174.6,
+        "low_pm": 170.1
       }
     },
     {
-      "symbol": "NVDA",
-      "score": 74.6,
-      "price": 197.0,
-      "entry_low": 195.03,
-      "entry_high": 200.94,
-      "gap_pct": -1.55,
-      "daily_change_pct": 0.82,
-      "volume_today": 107233048,
-      "market_cap": 4769841152000,
-      "sector": "Technology",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 195.39,
-        "open_today": 192.37,
-        "high_today": 198.41,
-        "low_today": 191.15,
-        "close_today": 197.0,
-        "intraday_range_pct": 3.77,
-        "close_to_high_pct": -0.71
+      "symbol": "D",
+      "score": 43.4,
+      "price": 69.83,
+      "entry_low": 67.87,
+      "entry_high": 71.92,
+      "gap_pct": 0.82,
+      "volume_premarket": 13908428,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 69.26,
+        "open_today": 69.83,
+        "high_pm": 70.59,
+        "low_pm": 69.67
       }
     },
     {
-      "symbol": "GILD",
-      "score": 74.3,
-      "price": 136.36,
-      "entry_low": 135.0,
-      "entry_high": 139.09,
-      "gap_pct": 2.32,
-      "daily_change_pct": 5.21,
-      "volume_today": 8180451,
-      "market_cap": 169300475904,
-      "sector": "Healthcare",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 129.61,
-        "open_today": 132.62,
-        "high_today": 137.37,
-        "low_today": 132.0,
-        "close_today": 136.36,
-        "intraday_range_pct": 4.05,
-        "close_to_high_pct": -0.74
+      "symbol": "DDOG",
+      "score": 25.2,
+      "price": 256.81,
+      "entry_low": 250.26,
+      "entry_high": 264.51,
+      "gap_pct": 0.56,
+      "volume_premarket": 5365561,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 255.37,
+        "open_today": 256.81,
+        "high_pm": 269.95,
+        "low_pm": 254.97
       }
     },
     {
-      "symbol": "COP",
-      "score": 73.9,
-      "price": 108.44,
-      "entry_low": 107.36,
-      "entry_high": 110.61,
-      "gap_pct": 1.08,
-      "daily_change_pct": 4.69,
-      "volume_today": 6511716,
-      "market_cap": 132111802368,
-      "sector": "Energy",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 103.58,
-        "open_today": 104.7,
-        "high_today": 108.9,
-        "low_today": 104.55,
-        "close_today": 108.44,
-        "intraday_range_pct": 4.15,
-        "close_to_high_pct": -0.42
+      "symbol": "DE",
+      "score": 25.0,
+      "price": 603.61,
+      "entry_low": 622.54,
+      "entry_high": 621.72,
+      "gap_pct": -4.98,
+      "volume_premarket": 1427397,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 635.24,
+        "open_today": 603.61,
+        "high_pm": 634.94,
+        "low_pm": 592.5
+      }
+    },
+    {
+      "symbol": "DECK",
+      "score": 25.2,
+      "price": 106.08,
+      "entry_low": 103.56,
+      "entry_high": 109.26,
+      "gap_pct": 0.39,
+      "volume_premarket": 1564183,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 105.67,
+        "open_today": 106.08,
+        "high_pm": 107.34,
+        "low_pm": 105.0
+      }
+    },
+    {
+      "symbol": "DG",
+      "score": 25.0,
+      "price": 115.43,
+      "entry_low": 113.94,
+      "entry_high": 118.89,
+      "gap_pct": -0.72,
+      "volume_premarket": 2326380,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 116.27,
+        "open_today": 115.43,
+        "high_pm": 117.71,
+        "low_pm": 115.15
+      }
+    },
+    {
+      "symbol": "DHR",
+      "score": 25.1,
+      "price": 194.19,
+      "entry_low": 189.75,
+      "entry_high": 200.02,
+      "gap_pct": 0.29,
+      "volume_premarket": 2567716,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 193.62,
+        "open_today": 194.19,
+        "high_pm": 197.88,
+        "low_pm": 192.24
+      }
+    },
+    {
+      "symbol": "DVN",
+      "score": 30.0,
+      "price": 45.4,
+      "entry_low": 41.57,
+      "entry_high": 46.76,
+      "gap_pct": 7.02,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 42.42,
+        "open_today": 45.4,
+        "high_pm": 45.4,
+        "low_pm": 40.86
+      }
+    },
+    {
+      "symbol": "EQT",
+      "score": 29.5,
+      "price": 55.12,
+      "entry_low": 50.71,
+      "entry_high": 56.77,
+      "gap_pct": 6.51,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 51.75,
+        "open_today": 55.12,
+        "high_pm": 55.12,
+        "low_pm": 51.3
+      }
+    },
+    {
+      "symbol": "EXC",
+      "score": 32.2,
+      "price": 50.67,
+      "entry_low": 46.61,
+      "entry_high": 52.19,
+      "gap_pct": 6.54,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 47.56,
+        "open_today": 50.67,
+        "high_pm": 50.67,
+        "low_pm": 47.51
+      }
+    },
+    {
+      "symbol": "FE",
+      "score": 31.7,
+      "price": 51.72,
+      "entry_low": 47.41,
+      "entry_high": 53.27,
+      "gap_pct": 6.91,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 48.38,
+        "open_today": 51.72,
+        "high_pm": 51.72,
+        "low_pm": 48.04
+      }
+    },
+    {
+      "symbol": "IRDM",
+      "score": 29.9,
+      "price": 54.07,
+      "entry_low": 50.08,
+      "entry_high": 55.69,
+      "gap_pct": 5.8,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 51.1,
+        "open_today": 54.07,
+        "high_pm": 54.07,
+        "low_pm": 51
+      }
+    },
+    {
+      "symbol": "LIN",
+      "score": 25.0,
+      "price": 538.23,
+      "entry_low": 529.71,
+      "entry_high": 554.38,
+      "gap_pct": -0.42,
+      "volume_premarket": 1913394,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 540.52,
+        "open_today": 538.23,
+        "high_pm": 548.2,
+        "low_pm": 535.36
+      }
+    },
+    {
+      "symbol": "LLY",
+      "score": 26.2,
+      "price": 1235.56,
+      "entry_low": 1176.06,
+      "entry_high": 1272.63,
+      "gap_pct": 2.96,
+      "volume_premarket": 2899521,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 1200.06,
+        "open_today": 1235.56,
+        "high_pm": 1249.45,
+        "low_pm": 1223.0
+      }
+    },
+    {
+      "symbol": "LNT",
+      "score": 39.0,
+      "price": 77.65,
+      "entry_low": 75.05,
+      "entry_high": 79.98,
+      "gap_pct": 1.4,
+      "volume_premarket": 1982688,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 76.58,
+        "open_today": 77.65,
+        "high_pm": 78.81,
+        "low_pm": 76.73
+      }
+    },
+    {
+      "symbol": "LULU",
+      "score": 25.0,
+      "price": 115.07,
+      "entry_low": 113.33,
+      "entry_high": 118.52,
+      "gap_pct": -0.49,
+      "volume_premarket": 2411963,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 115.64,
+        "open_today": 115.07,
+        "high_pm": 118.81,
+        "low_pm": 113.5
+      }
+    },
+    {
+      "symbol": "LUMN",
+      "score": 28.9,
+      "price": 6.44,
+      "entry_low": 6.35,
+      "entry_high": 6.63,
+      "gap_pct": -0.62,
+      "volume_premarket": 12926053,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 6.48,
+        "open_today": 6.44,
+        "high_pm": 6.54,
+        "low_pm": 6.25
+      }
+    },
+    {
+      "symbol": "LYB",
+      "score": 53.5,
+      "price": 54.6,
+      "entry_low": 51.91,
+      "entry_high": 56.24,
+      "gap_pct": 3.08,
+      "volume_premarket": 7391711,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 52.97,
+        "open_today": 54.6,
+        "high_pm": 54.76,
+        "low_pm": 52.93
+      }
+    },
+    {
+      "symbol": "MA",
+      "score": 25.0,
+      "price": 531.62,
+      "entry_low": 522.44,
+      "entry_high": 547.57,
+      "gap_pct": -0.28,
+      "volume_premarket": 3506271,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 533.1,
+        "open_today": 531.62,
+        "high_pm": 543.65,
+        "low_pm": 530.0
+      }
+    },
+    {
+      "symbol": "MUR",
+      "score": 30.3,
+      "price": 38.71,
+      "entry_low": 32.21,
+      "entry_high": 39.87,
+      "gap_pct": 17.78,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 32.87,
+        "open_today": 38.71,
+        "high_pm": 38.71,
+        "low_pm": 32.14
+      }
+    },
+    {
+      "symbol": "NI",
+      "score": 32.4,
+      "price": 51.38,
+      "entry_low": 46.55,
+      "entry_high": 52.92,
+      "gap_pct": 8.17,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 47.5,
+        "open_today": 51.38,
+        "high_pm": 51.38,
+        "low_pm": 47.39
+      }
+    },
+    {
+      "symbol": "NKE",
+      "score": 28.8,
+      "price": 45.1,
+      "entry_low": 42.34,
+      "entry_high": 46.45,
+      "gap_pct": 4.4,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 43.2,
+        "open_today": 45.1,
+        "high_pm": 45.1,
+        "low_pm": 42.89
       }
     },
     {
       "symbol": "OXY",
-      "score": 73.9,
-      "price": 51.52,
-      "entry_low": 51.0,
-      "entry_high": 52.55,
-      "gap_pct": 1.23,
-      "daily_change_pct": 5.55,
-      "volume_today": 11112836,
-      "market_cap": 51402719232,
-      "sector": "Energy",
-      "source": "yfinance_intraday",
-      "screen_date": "2026-07-07",
-      "metrics": {
-        "close_prev": 48.81,
-        "open_today": 49.41,
-        "high_today": 51.88,
-        "low_today": 49.38,
-        "close_today": 51.52,
-        "intraday_range_pct": 5.04,
-        "close_to_high_pct": -0.68
+      "score": 29.4,
+      "price": 53.85,
+      "entry_low": 50.63,
+      "entry_high": 55.47,
+      "gap_pct": 4.23,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 51.66,
+        "open_today": 53.85,
+        "high_pm": 53.85,
+        "low_pm": 49.45
+      }
+    },
+    {
+      "symbol": "PYPL",
+      "score": 30.4,
+      "price": 47.67,
+      "entry_low": 44.74,
+      "entry_high": 49.1,
+      "gap_pct": 4.42,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 45.65,
+        "open_today": 47.67,
+        "high_pm": 47.67,
+        "low_pm": 45.32
+      }
+    },
+    {
+      "symbol": "RRC",
+      "score": 27.6,
+      "price": 40.79,
+      "entry_low": 37.1,
+      "entry_high": 42.01,
+      "gap_pct": 7.74,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 37.86,
+        "open_today": 40.79,
+        "high_pm": 40.79,
+        "low_pm": 37.43
+      }
+    },
+    {
+      "symbol": "SO",
+      "score": 27.2,
+      "price": 97.29,
+      "entry_low": 94.07,
+      "entry_high": 100.21,
+      "gap_pct": 1.35,
+      "volume_premarket": 6492940,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 95.99,
+        "open_today": 97.29,
+        "high_pm": 99.26,
+        "low_pm": 96.82
+      }
+    },
+    {
+      "symbol": "SOFI",
+      "score": 35.6,
+      "price": 17.75,
+      "entry_low": 18.24,
+      "entry_high": 18.28,
+      "gap_pct": -4.62,
+      "volume_premarket": 77188768,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 18.61,
+        "open_today": 17.75,
+        "high_pm": 18.75,
+        "low_pm": 17.7
+      }
+    },
+    {
+      "symbol": "SPCE",
+      "score": 26.5,
+      "price": 2.57,
+      "entry_low": 2.64,
+      "entry_high": 2.65,
+      "gap_pct": -4.46,
+      "volume_premarket": 17449391,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 2.69,
+        "open_today": 2.57,
+        "high_pm": 2.71,
+        "low_pm": 2.51
+      }
+    },
+    {
+      "symbol": "SQM",
+      "score": 41.0,
+      "price": 73.4,
+      "entry_low": 72.05,
+      "entry_high": 75.6,
+      "gap_pct": -0.16,
+      "volume_premarket": 791555,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 73.52,
+        "open_today": 73.4,
+        "high_pm": 73.44,
+        "low_pm": 71.5
+      }
+    },
+    {
+      "symbol": "SRE",
+      "score": 29.0,
+      "price": 94.59,
+      "entry_low": 91.09,
+      "entry_high": 97.43,
+      "gap_pct": 1.76,
+      "volume_premarket": 2541864,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 92.95,
+        "open_today": 94.59,
+        "high_pm": 95.5,
+        "low_pm": 93.45
+      }
+    },
+    {
+      "symbol": "SYF",
+      "score": 39.7,
+      "price": 75.52,
+      "entry_low": 75.51,
+      "entry_high": 77.79,
+      "gap_pct": -1.99,
+      "volume_premarket": 2670800,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 77.05,
+        "open_today": 75.52,
+        "high_pm": 77.72,
+        "low_pm": 75.45
+      }
+    },
+    {
+      "symbol": "SYK",
+      "score": 25.6,
+      "price": 329.74,
+      "entry_low": 318.24,
+      "entry_high": 339.63,
+      "gap_pct": 1.54,
+      "volume_premarket": 2471545,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 324.73,
+        "open_today": 329.74,
+        "high_pm": 333.99,
+        "low_pm": 324.54
+      }
+    },
+    {
+      "symbol": "T",
+      "score": 38.6,
+      "price": 21.09,
+      "entry_low": 20.17,
+      "entry_high": 21.72,
+      "gap_pct": 2.48,
+      "volume_premarket": 66229747,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 20.58,
+        "open_today": 21.09,
+        "high_pm": 21.27,
+        "low_pm": 20.86
+      }
+    },
+    {
+      "symbol": "TPG",
+      "score": 32.1,
+      "price": 46.75,
+      "entry_low": 41.58,
+      "entry_high": 48.15,
+      "gap_pct": 10.19,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 42.42,
+        "open_today": 46.75,
+        "high_pm": 46.75,
+        "low_pm": 42.19
+      }
+    },
+    {
+      "symbol": "UDR",
+      "score": 30.1,
+      "price": 44.63,
+      "entry_low": 40.39,
+      "entry_high": 45.97,
+      "gap_pct": 8.3,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 41.21,
+        "open_today": 44.63,
+        "high_pm": 44.63,
+        "low_pm": 41.21
+      }
+    },
+    {
+      "symbol": "VZ",
+      "score": 29.3,
+      "price": 44.97,
+      "entry_low": 41.69,
+      "entry_high": 46.32,
+      "gap_pct": 5.71,
+      "volume_premarket": 0,
+      "market_cap": 0,
+      "sector": "Unknown",
+      "source": "premarket",
+      "pm_metrics": {
+        "close_prev": 42.54,
+        "open_today": 44.97,
+        "high_pm": 44.97,
+        "low_pm": 42.42
       }
     }
   ]
