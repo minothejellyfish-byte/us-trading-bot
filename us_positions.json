@@ -1,68 +1,33 @@
 {
   "date": "2026-07-09",
-  "time": "10:30:04",
+  "time": "10:59:51",
   "positions": {
     "ABBV": {
       "symbol": "ABBV",
-      "entry_price": 251.226129,
       "qty": -1,
-      "entry_time": "2026-07-09T10:30:04.103115-04:00",
-      "peak_price": 252.735,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 251.226129,
-        "market_value": -252.735,
-        "unrealized_pl": -1.508871,
-        "unrealized_plpc": -0.00601,
-        "current_price": 252.735,
-        "qty": -1
-      }
+      "avg_entry_price": 251.226129,
+      "market_value": -252.15,
+      "unrealized_pl": -0.923871,
+      "unrealized_plpc": -0.00368,
+      "current_price": 252.15
     },
     "ALLY": {
       "symbol": "ALLY",
-      "entry_price": 44.99,
       "qty": 670,
-      "entry_time": "2026-07-09T10:30:04.103159-04:00",
-      "peak_price": 44.965,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 44.99,
-        "market_value": 30126.55,
-        "unrealized_pl": -16.75,
-        "unrealized_plpc": -0.00056,
-        "current_price": 44.965,
-        "qty": 670
-      }
+      "avg_entry_price": 44.99,
+      "market_value": 30190.2,
+      "unrealized_pl": 46.9,
+      "unrealized_plpc": 0.00156,
+      "current_price": 45.06
     },
     "CG": {
       "symbol": "CG",
-      "entry_price": 43.559753,
       "qty": 485,
-      "entry_time": "2026-07-09T10:30:04.103179-04:00",
-      "peak_price": 43.83,
-      "closed": false,
-      "signal": "alpaca-sync",
-      "order_id": "unknown",
-      "cycle": 1,
-      "max_cycles": 2,
-      "alpaca_data": {
-        "avg_entry_price": 43.559753,
-        "market_value": 21257.55,
-        "unrealized_pl": 131.069795,
-        "unrealized_plpc": 0.0062,
-        "current_price": 43.83,
-        "qty": 485
-      }
+      "avg_entry_price": 43.559753,
+      "market_value": 21400.625,
+      "unrealized_pl": 274.144795,
+      "unrealized_plpc": 0.01298,
+      "current_price": 44.125
     }
-  },
-  "count": 3,
-  "source": "alpaca-api"
+  }
 }
