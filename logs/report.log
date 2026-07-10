@@ -657,3 +657,72 @@ Traceback (most recent call last):
     "best_trade": f"{best_trade['symbol']} +${best_trade['pnl']:.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade['symbol']} ${best_trade['pnl']:.2f}" if best_trade else "None"),
                                               ~~~~~~~~~~^^^^^^^
 KeyError: 'pnl'
+2026-07-10 23:10:01 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:10:01 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:10:01 [INFO] get_alpaca_trades: querying 2026-07-10 (2026-07-10T04:56:00Z to 2026-07-11T04:55:59Z)
+2026-07-10 23:10:02 [INFO] get_alpaca_trades: found 2 filled orders
+2026-07-10 23:10:02 [WARNING] reconcile_trades: 2 Alpaca fills missing from local file
+2026-07-10 23:10:02 [INFO]   Added missing trade: SELL 485 CG @ $44.76
+2026-07-10 23:10:02 [INFO]   Added missing trade: SELL 670 ALLY @ $45.50
+2026-07-10 23:10:02 [INFO] reconcile_trades: wrote 50 trades to /home/mino/us-exec/us_trades.json
+2026-07-10 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-10 (2026-07-10T04:56:00Z to 2026-07-11T04:55:59Z)
+2026-07-10 23:10:03 [INFO] get_alpaca_trades: found 2 filled orders
+2026-07-10 23:10:03 [INFO] get_daily_pnl: 2026-07-10 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-10 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:10:04 [INFO] sync_capital: cash=$103,398.21 equity=$103,150.13
+2026-07-10 23:10:04 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 10 of 10 — Friday, Jul 10
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 ...
+2026-07-10 23:10:04 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 10 of 10 — Friday, Jul 10
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 ...
+2026-07-10 23:10:04 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-10', 'alpaca_count': 2, 'local_count': 2, 'missing_found': 2, 'corrections_made': 2, 'in_sync': False}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $103398.21
+Stats built from: local-fallback | P&L=$0.00 | Trades=2
+[2026-07-10T16:10:04.685725-04:00] Daily report sent: True
+2026-07-10 23:15:08 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:15:08 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:15:08 [INFO] get_alpaca_trades: querying 2026-07-10 (2026-07-10T04:56:00Z to 2026-07-11T04:55:59Z)
+2026-07-10 23:15:09 [INFO] get_alpaca_trades: found 2 filled orders
+2026-07-10 23:15:09 [INFO] reconcile_trades: local file in sync with Alpaca
+2026-07-10 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:15:09 [INFO] get_alpaca_trades: querying 2026-07-10 (2026-07-10T04:56:00Z to 2026-07-11T04:55:59Z)
+2026-07-10 23:15:09 [INFO] get_alpaca_trades: found 2 filled orders
+2026-07-10 23:15:09 [INFO] get_daily_pnl: 2026-07-10 — P&L=$+0.00 (0W/0L, 0.0% WR)
+2026-07-10 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:15:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-10 23:15:10 [INFO] sync_capital: cash=$103,398.21 equity=$103,150.13
+2026-07-10 23:15:10 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 10 of 10 — Friday, Jul 10
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 ...
+2026-07-10 23:15:10 [INFO] [TELEGRAM] ⚪ US Paper Trading Report
+
+📅 Day 10 of 10 — Friday, Jul 10
+
+💰 P&L: $0.00 (0.00%)
+📈 Win Rate: 0.0%
+🎯 ...
+2026-07-10 23:15:10 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-10', 'alpaca_count': 2, 'local_count': 2, 'missing_found': 0, 'corrections_made': 0, 'in_sync': True}
+Alpaca P&L: $0.00 (0W/0L)
+Alpaca capital: $103398.21
+Stats built from: local-fallback | P&L=$0.00 | Trades=2
+[2026-07-10T16:15:10.695861-04:00] Daily report sent: True
