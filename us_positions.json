@@ -1,15 +1,28 @@
 {
   "date": "2026-07-10",
-  "time": "11:59:05",
+  "time": "12:30:03",
   "positions": {
     "ABBV": {
       "symbol": "ABBV",
+      "entry_price": 251.226129,
       "qty": -1,
-      "avg_entry_price": 251.226129,
-      "market_value": -246.56,
-      "unrealized_pl": 4.666129,
-      "unrealized_plpc": 0.01857,
-      "current_price": 246.56
+      "entry_time": "2026-07-10T12:30:03.765049-04:00",
+      "peak_price": 246.115,
+      "closed": false,
+      "signal": "alpaca-sync",
+      "order_id": "unknown",
+      "cycle": 1,
+      "max_cycles": 2,
+      "alpaca_data": {
+        "avg_entry_price": 251.226129,
+        "market_value": -246.115,
+        "unrealized_pl": 5.111129,
+        "unrealized_plpc": 0.02034,
+        "current_price": 246.115,
+        "qty": -1
+      }
     }
-  }
+  },
+  "count": 1,
+  "source": "alpaca-api"
 }
