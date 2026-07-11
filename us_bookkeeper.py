@@ -243,6 +243,81 @@ def get_position(symbol: str) -> Optional[Dict]:
     Called by us_poller.py for single-position lookup.
     Returns None if symbol not found.
     """
+def _find_prior_buy(symbol: str, qty: int, lookback_days: int = 7) -> Optional[Dict]:
+    """Search Alpaca history for a matching BUY order."""
+    trader = _get_trader()
+    if not trader:
+        return None
+    
+    end_date = date.today()
+    start_date = end_date - timedelta(days=lookback_days)
+    
+    start_dt = datetime(start_date.year, start_date.month, start_date.day, 0, 0, 0, tzinfo=ET)
+    end_dt = datetime(end_date.year, end_date.month, end_date.day, 23, 59, 59, tzinfo=ET)
+    
+    start_utc = start_dt.astimezone(UTC)
+    end_utc = end_dt.astimezone(UTC)
+    
+    after = start_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+    until = end_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+    
+    try:
+        if trader.api and hasattr(trader.api, "list_orders"):
+            orders = trader.api.list_orders(
+                status="closed",
+                after=after,
+                until=until,
+                limit=500,
+            )
+            for o in orders:
+                if (o.symbol.upper() == symbol.upper() and 
+                    o.side.upper() == "BUY" and
+                    int(float(o.filled_qty)) == qty and
+                    o.filled_avg_price is not None):
+                    return {
+                        "id": o.id,
+                        "symbol": o.symbol,
+                        "price": round(float(o.filled_avg_price), 2),
+                        "filled_at": o.filled_at.isoformat() if o.filled_at else None,
+                        "qty": int(float(o.filled_qty)),
+                    }
+        else:
+            url = f"{trader.base_url}/v2/orders"
+            params = {
+                "status": "closed",
+                "after": after,
+                "until": until,
+                "limit": 500,
+            }
+            resp = trader.session.get(url, params=params)
+            resp.raise_for_status()
+            for o in resp.json():
+                filled_qty = o.get("filled_qty")
+                if filled_qty is None:
+                    continue
+                try:
+                    filled_qty = int(float(filled_qty))
+                except (ValueError, TypeError):
+                    continue
+                if (o.get("symbol", "").upper() == symbol.upper() and 
+                    o.get("side", "").upper() == "BUY" and
+                    filled_qty == qty and
+                    o.get("filled_avg_price") is not None):
+                    return {
+                        "id": o.get("id", ""),
+                        "symbol": o.get("symbol", ""),
+                        "price": round(float(o.get("filled_avg_price", 0)), 2),
+                        "filled_at": o.get("filled_at") or o.get("created_at"),
+                        "qty": filled_qty,
+                    }
+    except Exception as e:
+        log.warning(f"_find_prior_buy failed for {symbol}: {e}")
+    
+    return None
+
+
+def get_position(symbol: str) -> Optional[Dict]:
+    """Get single position by symbol."""
     positions = get_positions()
     return positions.get(symbol)
 
@@ -389,6 +464,7 @@ def reconcile_trades(date_str: Optional[str] = None) -> Dict:
     
     # Build lookup of local trades by (symbol, side, qty, price, date)
     local_keys = set()
+    corrections_made = 0
     for t in local_trades:
         if t.get("date") == target_date:
             key = (
@@ -403,6 +479,8 @@ def reconcile_trades(date_str: Optional[str] = None) -> Dict:
     local_ids = {t.get("id", "") for t in local_trades}
     
     missing = []
+    unmatched_sells = []  # SELL orders with no matching BUY in Alpaca today
+    
     for at in alpaca_trades:
         if at["id"] in local_ids:
             continue
@@ -412,33 +490,100 @@ def reconcile_trades(date_str: Optional[str] = None) -> Dict:
         if key in local_keys:
             continue
         
+        # For SELLs, try to find a matching BUY from prior days or today
+        if at["side"].upper() == "SELL":
+            # Look for any BUY in local trades for this symbol
+            buy_found = False
+            for t in local_trades:
+                if (t.get("symbol", "").upper() == at["symbol"].upper() and 
+                    t.get("side", "").upper() == "BUY" and
+                    t.get("qty", 0) == at["qty"] and
+                    t.get("entry_price") is not None and
+                    t.get("exit_price") is None):  # Unclosed BUY
+                    # Update the BUY to close it
+                    t["exit_price"] = at["price"]
+                    t["exit_time"] = at["filled_at"]
+                    t["exit_id"] = at["id"]
+                    # Calculate P&L
+                    entry = t["entry_price"]
+                    exit_p = at["price"]
+                    qty = at["qty"]
+                    t["gross_pnl"] = round((exit_p - entry) * qty, 2)
+                    t["net_pnl"] = t["gross_pnl"]  # Spread cost tracked separately
+                    t["pnl_pct"] = round(((exit_p - entry) / entry) * 100, 2) if entry else 0.0
+                    t["duration_min"] = 0  # Could calculate from times
+                    buy_found = True
+                    corrections_made += 1
+                    log.info(f"  Matched SELL to prior BUY: {at['side']} {at['qty']} {at['symbol']} @ ${at['price']:.2f}")
+                    break
+            
+            if not buy_found:
+                # Check if there's a prior-day BUY in Alpaca history
+                prior_buy = _find_prior_buy(at["symbol"], at["qty"])
+                if prior_buy:
+                    # Create a complete paired trade
+                    trade_entry = {
+                        "id": prior_buy["id"],
+                        "symbol": at["symbol"],
+                        "side": "BUY",
+                        "qty": at["qty"],
+                        "entry_price": prior_buy["price"],
+                        "exit_price": at["price"],
+                        "price": at["price"],
+                        "entry_time": prior_buy["filled_at"],
+                        "exit_time": at["filled_at"],
+                        "filled_at": at["filled_at"],
+                        "date": at["date"],
+                        "source": "alpaca-reconciliation",
+                        "signal": "",
+                        "regime": "",
+                        "notes": f"Paired from prior-day BUY {prior_buy['id'][:8]}...",
+                        "gross_pnl": round((at["price"] - prior_buy["price"]) * at["qty"], 2),
+                        "net_pnl": round((at["price"] - prior_buy["price"]) * at["qty"], 2),
+                        "pnl_pct": round(((at["price"] - prior_buy["price"]) / prior_buy["price"]) * 100, 2) if prior_buy["price"] else 0.0,
+                        "duration_min": 0,
+                    }
+                    local_trades.append(trade_entry)
+                    corrections_made += 1
+                    log.info(f"  Created paired trade from prior-day BUY: {at['side']} {at['qty']} {at['symbol']} @ ${at['price']:.2f}")
+                else:
+                    unmatched_sells.append(at)
+                    log.warning(f"  Unmatched SELL (no BUY found): {at['side']} {at['qty']} {at['symbol']} @ ${at['price']:.2f}")
+            continue
+        
+        # For BUYs, just add them
         missing.append(at)
     
-    corrections_made = 0
-    if missing:
-        log.warning(f"reconcile_trades: {len(missing)} Alpaca fills missing from local file")
-        for m in missing:
-            trade_entry = {
-                "id": m["id"],
-                "symbol": m["symbol"],
-                "side": m["side"],
-                "qty": m["qty"],
-                "entry_price": m["price"] if m["side"] == "BUY" else None,
-                "exit_price": m["price"] if m["side"] == "SELL" else None,
-                "price": m["price"],
-                "entry_time": m["filled_at"] if m["side"] == "BUY" else None,
-                "exit_time": m["filled_at"] if m["side"] == "SELL" else None,
-                "filled_at": m["filled_at"],
-                "date": m["date"],
-                "source": "alpaca-reconciliation",
-                "signal": "",
-                "regime": "",
-                "notes": "Added by bookkeeper reconciliation",
-            }
-            local_trades.append(trade_entry)
-            corrections_made += 1
-            log.info(f"  Added missing trade: {m['side']} {m['qty']} {m['symbol']} @ ${m['price']:.2f}")
-        
+    # Add unmatched BUYs
+    for m in missing:
+        trade_entry = {
+            "id": m["id"],
+            "symbol": m["symbol"],
+            "side": m["side"],
+            "qty": m["qty"],
+            "entry_price": m["price"] if m["side"] == "BUY" else None,
+            "exit_price": m["price"] if m["side"] == "SELL" else None,
+            "price": m["price"],
+            "entry_time": m["filled_at"] if m["side"] == "BUY" else None,
+            "exit_time": m["filled_at"] if m["side"] == "SELL" else None,
+            "filled_at": m["filled_at"],
+            "date": m["date"],
+            "source": "alpaca-reconciliation",
+            "signal": "",
+            "regime": "",
+            "notes": "Added by bookkeeper reconciliation",
+        }
+        local_trades.append(trade_entry)
+        corrections_made += 1
+        log.info(f"  Added missing trade: {m['side']} {m['qty']} {m['symbol']} @ ${m['price']:.2f}")
+    
+    # Log unmatched sells summary
+    if unmatched_sells:
+        log.warning(f"reconcile_trades: {len(unmatched_sells)} unmatched SELL orders skipped")
+        for us in unmatched_sells:
+            log.warning(f"  Skipped unmatched SELL: {us['qty']} {us['symbol']} @ ${us['price']:.2f}")
+    
+    if corrections_made > 0 or unmatched_sells:
         # Save updated trades
         _atomic_write(TRADES_FILE, {"trades": local_trades})
         log.info(f"reconcile_trades: wrote {len(local_trades)} trades to {TRADES_FILE}")
