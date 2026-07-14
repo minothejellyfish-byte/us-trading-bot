@@ -18517,3 +18517,260 @@ AttributeError: 'dict' object has no attribute 'append'
   return pd.Timestamp(val, unit='s', tz=NY)
 2026-07-14 16:30:10,228 [WARNING] Position ABBV has invalid quantity -1, skipping
 2026-07-14 16:30:10,623 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:30:12 [INFO] Order submitted: buy 679 CG @ market → pending_new
+2026-07-14 16:30:12,153 [INFO] Order submitted: buy 679 CG @ market → pending_new
+2026-07-14 16:30:12,550 [INFO] Bought CG: 679@44.17 cycle=1/3
+2026-07-14 16:30:12,553 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:30:23,528 [INFO] Buy detected: CG (bookkeeper confirmed: 679 @ $44.17)
+2026-07-14 16:30:34,120 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:30:34,586 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:30:35,040 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:30:36 [INFO] Order submitted: buy 679 CG @ market → pending_new
+2026-07-14 16:30:36,165 [INFO] Order submitted: buy 679 CG @ market → pending_new
+2026-07-14 16:30:46,530 [INFO] Bought CG: 679@44.17 cycle=1/3
+2026-07-14 16:30:46,533 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:30:56,534 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:30:56,886 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:30:57,679 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:30:58 [INFO] Order submitted: buy 473 CNP @ market → pending_new
+2026-07-14 16:30:58,969 [INFO] Order submitted: buy 473 CNP @ market → pending_new
+2026-07-14 16:30:59,377 [INFO] Bought CNP: 473@44.35 cycle=1/3
+2026-07-14 16:30:59,382 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:31:09,384 [INFO] Buy detected: CNP (bookkeeper confirmed: 473 @ $44.35)
+2026-07-14 16:31:09,781 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:31:10,252 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:31:11,533 [INFO] v4.9 drop score: ABBV = 28.1
+2026-07-14 16:31:12,003 [INFO] v4.9 drop score: CG = 51.8
+2026-07-14 16:31:12,645 [INFO] v4.9 drop score: CNP = 51.5
+2026-07-14 16:31:13,415 [INFO] Position upgrade: ABBV(score=0, drop=28.1) → TPG(score=50). Current P&L: -1.3%
+2026-07-14 16:31:13,830 [ERROR] Invalid sell quantity for ABBV: qty=-1
+2026-07-14 16:31:13,831 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-14 16:31:14,284 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:31:17 [INFO] Order submitted: buy 454 CNX @ market → pending_new
+2026-07-14 16:31:17,536 [INFO] Order submitted: buy 454 CNX @ market → pending_new
+2026-07-14 16:31:17,953 [INFO] Bought CNX: 454@32.40 cycle=1/3
+2026-07-14 16:31:17,955 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:31:27,956 [INFO] Buy detected: CNX (bookkeeper confirmed: 454 @ $32.40)
+2026-07-14 16:31:28,327 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:31:28,664 [WARNING] Position ABBV has invalid entry price, skipping
+2026-07-14 16:31:29,040 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:31:29,379 [INFO] VWAP entry blocked for CG: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:31:30 [INFO] Order submitted: buy 676 CNP @ market → pending_new
+2026-07-14 16:31:30,515 [INFO] Order submitted: buy 676 CNP @ market → pending_new
+2026-07-14 16:31:30,927 [INFO] Bought CNP: 676@44.35 cycle=1/3
+2026-07-14 16:31:30,930 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:31:40,931 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:31:41,283 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:31:42,108 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:31:42,461 [INFO] VWAP entry blocked for CG: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:31:44 [INFO] Order submitted: buy 646 CNX @ market → pending_new
+2026-07-14 16:31:44,772 [INFO] Order submitted: buy 646 CNX @ market → pending_new
+2026-07-14 16:31:45,205 [INFO] Bought CNX: 646@32.49 cycle=1/3
+2026-07-14 16:31:45,208 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:31:55,209 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:31:55,664 [WARNING] Position ABBV has invalid quantity -1, skipping
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:31:57,834 [INFO] v4.9 drop score: ABBV = 28.1
+2026-07-14 16:31:58,240 [INFO] v4.9 drop score: CNP = 52.0
+2026-07-14 16:31:59,789 [INFO] v4.9 drop score: CNX = 51.0
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:32:00,511 [INFO] Position upgrade: ABBV(score=0, drop=28.1) → TPG(score=50). Current P&L: -1.3%
+2026-07-14 16:32:00,894 [ERROR] Invalid sell quantity for ABBV: qty=-1
+2026-07-14 16:32:00,895 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-14 16:32:01,336 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:32:01,734 [INFO] VWAP entry blocked for CG: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-14 16:32:13 [INFO] Order submitted: buy 293 CSX @ market → pending_new
+2026-07-14 16:32:13,021 [INFO] Order submitted: buy 293 CSX @ market → pending_new
+2026-07-14 16:32:20,892 [INFO] Bought CSX: 293@50.15 cycle=1/3
+2026-07-14 16:32:20,895 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 1244, in slow_poll
+    log_trade(symbol, "BUY", qty, price, signal="gap_up", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 53, in log_trade
+    trades.append(trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:32:30,896 [INFO] Buy detected: CG (bookkeeper confirmed: 1082 @ $44.19)
+2026-07-14 16:32:31,266 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:32:31,632 [WARNING] Position ABBV has invalid quantity -1, skipping
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:32:33,917 [INFO] v4.9 drop score: ABBV = 24.9
+2026-07-14 16:32:34,306 [INFO] v4.9 drop score: CG = 51.2
+2026-07-14 16:32:36,368 [INFO] v4.9 drop score: CNX = 43.8
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:32:37,055 [INFO] Position upgrade BLOCKED: ABBV down -2.3% > 2%, not switching underwater position
+2026-07-14 16:32:37,055 [INFO] Slow poll done.
+2026-07-14 16:33:37,060 [INFO] Buy detected: CNP (bookkeeper confirmed: 947 @ $44.48)
+2026-07-14 16:33:37,438 [INFO] Buy detected: CSX (bookkeeper confirmed: 26 @ $50.28)
+2026-07-14 16:37:37,849 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:37:38,759 [WARNING] Position ABBV has invalid quantity -1, skipping
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:37:41,651 [INFO] v4.9 drop score: ABBV = 24.3
+2026-07-14 16:37:42,008 [INFO] v4.9 drop score: CG = 52.8
+2026-07-14 16:37:42,365 [INFO] v4.9 drop score: CNP = 54.8
+2026-07-14 16:37:43,563 [INFO] v4.9 drop score: CNX = 48.7
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:37:43,997 [INFO] v4.9 drop score: CSX = 47.2
+2026-07-14 16:37:44,695 [INFO] Position upgrade BLOCKED: ABBV down -2.5% > 2%, not switching underwater position
+2026-07-14 16:37:44,695 [INFO] Slow poll done.
+2026-07-14 16:42:44,719 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:42:45,548 [WARNING] Position ABBV has invalid quantity -1, skipping
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:42:48,459 [INFO] v4.9 drop score: ABBV = 29.7
+2026-07-14 16:42:48,813 [INFO] v4.9 drop score: CG = 61.8
+2026-07-14 16:42:49,172 [INFO] v4.9 drop score: CNP = 55.8
+2026-07-14 16:42:50,382 [INFO] v4.9 drop score: CNX = 44.3
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:42:50,742 [INFO] v4.9 drop score: CSX = 60.8
+2026-07-14 16:42:51,447 [INFO] Position upgrade BLOCKED: ABBV down -2.6% > 2%, not switching underwater position
+2026-07-14 16:42:51,447 [INFO] Slow poll done.
+2026-07-14 16:47:51,472 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:47:52,247 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:47:54,122 [INFO] v4.9 drop score: ABBV = 23.9
+2026-07-14 16:47:54,498 [INFO] v4.9 drop score: CG = 62.6
+2026-07-14 16:47:54,863 [INFO] v4.9 drop score: CNP = 48.1
+2026-07-14 16:47:55,218 [INFO] v4.9 drop score: CNX = 40.7
+2026-07-14 16:47:55,576 [INFO] v4.9 drop score: CSX = 52.6
+2026-07-14 16:47:56,308 [INFO] Position upgrade BLOCKED: ABBV down -2.5% > 2%, not switching underwater position
+2026-07-14 16:47:56,308 [INFO] Slow poll done.
+2026-07-14 16:52:56,335 [INFO] Regime stale (>30min) — reclassifying
+2026-07-14 16:52:59,074 [INFO] Regime: NEUTRAL — SPY +0.7% over 5 days, VIX 16.7 (moderate), 82% sector breadth
+2026-07-14 16:52:59,074 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:52:59,840 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:53:01,731 [INFO] v4.9 drop score: ABBV = 20.5
+2026-07-14 16:53:02,132 [INFO] v4.9 drop score: CG = 68.5
+2026-07-14 16:53:02,500 [INFO] v4.9 drop score: CNP = 62.5
+2026-07-14 16:53:02,860 [INFO] v4.9 drop score: CNX = 39.5
+2026-07-14 16:53:03,233 [INFO] v4.9 drop score: CSX = 48.6
+2026-07-14 16:53:03,957 [INFO] Position upgrade BLOCKED: ABBV down -2.5% > 2%, not switching underwater position
+2026-07-14 16:53:03,958 [INFO] Slow poll done.
+2026-07-14 16:58:03,984 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:58:04,847 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:58:05 [INFO] Order submitted: sell 1358 CG @ market → pending_new
+2026-07-14 16:58:05,902 [INFO] Order submitted: sell 1358 CG @ market → pending_new
+2026-07-14 16:58:06,377 [INFO] Sold CG: 1358 — 🎯 Target +2% | Entry: 44.19 | Now: 45.11
+2026-07-14 16:58:06,381 [ERROR] slow_poll error: 'dict' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_poller.py", line 1382, in main
+    slow_poll()
+  File "/home/mino/us-exec/us_poller.py", line 841, in slow_poll
+    close_trade(symbol, price, f"Target +{int(win_pct*100)}%", regime=regime_name)
+  File "/home/mino/us-exec/us_trade_logger.py", line 121, in close_trade
+    trades.append(closed_trade)
+    ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+
+2026-07-14 16:58:16,381 [INFO] Sell detected (scratch): CG pct=-100.0%
+2026-07-14 16:58:16,382 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:58:16,748 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:58:18,221 [INFO] v4.9 drop score: ABBV = 25.8
+2026-07-14 16:58:18,574 [INFO] v4.9 drop score: CNP = 52.0
+2026-07-14 16:58:18,932 [INFO] v4.9 drop score: CNX = 31.3
+2026-07-14 16:58:19,286 [INFO] v4.9 drop score: CSX = 39.6
+2026-07-14 16:58:20,027 [INFO] Position upgrade BLOCKED: ABBV down -2.3% > 2%, not switching underwater position
+2026-07-14 16:58:20,027 [INFO] Slow poll done.
+2026-07-14 17:00:01,849 [INFO] Received signal 15 — shutting down
+2026-07-14 17:00:01,849 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
