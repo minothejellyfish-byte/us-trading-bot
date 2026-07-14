@@ -792,3 +792,82 @@ Alpaca P&L: $0.00 (0W/0L)
 Alpaca capital: $103398.00
 Stats built from: local-fallback | P&L=$0.00 | Trades=0
 [2026-07-13T16:15:14.309737-04:00] Daily report sent: True
+2026-07-14 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-14 (2026-07-14T04:56:00Z to 2026-07-15T04:55:59Z)
+2026-07-14 23:10:03 [INFO] get_alpaca_trades: found 8 filled orders
+2026-07-14 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:03 [WARNING]   Unmatched SELL (no BUY found): SELL 1358 CG @ $45.08
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 293 CSX @ $50.23
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 646 CNX @ $32.59
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 676 CNP @ $44.48
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 454 CNX @ $32.58
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 473 CNP @ $44.51
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 679 CG @ $44.19
+2026-07-14 23:10:03 [INFO]   Added missing trade: BUY 679 CG @ $44.19
+2026-07-14 23:10:03 [WARNING] reconcile_trades: 1 unmatched SELL orders skipped
+2026-07-14 23:10:03 [WARNING]   Skipped unmatched SELL: 1358 CG @ $45.08
+2026-07-14 23:10:03 [INFO] reconcile_trades: wrote 34 trades to /home/mino/us-exec/us_trades.json
+2026-07-14 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:03 [INFO] get_alpaca_trades: querying 2026-07-14 (2026-07-14T04:56:00Z to 2026-07-15T04:55:59Z)
+2026-07-14 23:10:04 [INFO] get_alpaca_trades: found 8 filled orders
+2026-07-14 23:10:04 [INFO] get_daily_pnl: 2026-07-14 — P&L=$+1208.62 (2W/0L, 100.0% WR)
+2026-07-14 23:10:04 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:04 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:10:04 [INFO] sync_capital: cash=$2,921.40 equity=$103,231.44
+2026-07-14 23:10:05 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 9 of 10 — Tuesday, Jul 14
+
+💰 P&L: $1208.62 (1.21%)
+📈 Win Rate: 100....
+2026-07-14 23:10:05 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 9 of 10 — Tuesday, Jul 14
+
+💰 P&L: $1208.62 (1.21%)
+📈 Win Rate: 100....
+2026-07-14 23:10:05 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-14', 'alpaca_count': 8, 'local_count': 7, 'missing_found': 7, 'corrections_made': 7, 'in_sync': False}
+Alpaca P&L: $1208.62 (2W/0L)
+Alpaca capital: $2921.40
+Stats built from: alpaca-api | P&L=$1208.62 | Trades=2
+[2026-07-14T16:10:05.724704-04:00] Daily report sent: True
+2026-07-14 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:05 [INFO] get_alpaca_trades: querying 2026-07-14 (2026-07-14T04:56:00Z to 2026-07-15T04:55:59Z)
+2026-07-14 23:15:05 [INFO] get_alpaca_trades: found 8 filled orders
+2026-07-14 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:05 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:06 [WARNING]   Unmatched SELL (no BUY found): SELL 1358 CG @ $45.08
+2026-07-14 23:15:06 [WARNING] reconcile_trades: 1 unmatched SELL orders skipped
+2026-07-14 23:15:06 [WARNING]   Skipped unmatched SELL: 1358 CG @ $45.08
+2026-07-14 23:15:06 [INFO] reconcile_trades: wrote 34 trades to /home/mino/us-exec/us_trades.json
+2026-07-14 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:06 [INFO] get_alpaca_trades: querying 2026-07-14 (2026-07-14T04:56:00Z to 2026-07-15T04:55:59Z)
+2026-07-14 23:15:06 [INFO] get_alpaca_trades: found 8 filled orders
+2026-07-14 23:15:06 [INFO] get_daily_pnl: 2026-07-14 — P&L=$+1208.62 (2W/0L, 100.0% WR)
+2026-07-14 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:06 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 23:15:07 [INFO] sync_capital: cash=$2,921.40 equity=$103,231.44
+2026-07-14 23:15:07 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 9 of 10 — Tuesday, Jul 14
+
+💰 P&L: $1208.62 (1.21%)
+📈 Win Rate: 100....
+2026-07-14 23:15:07 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 9 of 10 — Tuesday, Jul 14
+
+💰 P&L: $1208.62 (1.21%)
+📈 Win Rate: 100....
+2026-07-14 23:15:08 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation: {'date': '2026-07-14', 'alpaca_count': 8, 'local_count': 7, 'missing_found': 0, 'corrections_made': 0, 'in_sync': True}
+Alpaca P&L: $1208.62 (2W/0L)
+Alpaca capital: $2921.40
+Stats built from: alpaca-api | P&L=$1208.62 | Trades=2
+[2026-07-14T16:15:08.247012-04:00] Daily report sent: True
