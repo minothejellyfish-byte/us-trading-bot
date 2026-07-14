@@ -131,7 +131,13 @@ def load_trades() -> List[Dict]:
     if not os.path.exists(TRADES_FILE):
         return []
     with open(TRADES_FILE) as f:
-        return json.load(f)
+        data = json.load(f)
+        # Handle both {"trades": [...]} and raw list formats
+        if isinstance(data, dict):
+            return data.get("trades", [])
+        elif isinstance(data, list):
+            return data
+        return []
 
 
 def get_daily_summary(day: date = None) -> Dict:
