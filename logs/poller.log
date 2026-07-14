@@ -18504,3 +18504,16 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-13 17:00:01,694 [INFO] Received signal 15 — shutting down
 2026-07-13 17:00:01,695 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
 2026-07-14 09:30:03,013 [INFO] Outside market hours (02:30:03.013431) — not starting daemon.
+2026-07-14 16:30:08,258 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-14 16:30:08,258 [INFO] Poller starting in daemon mode
+2026-07-14 16:30:08,258 [INFO] US Price poller started.
+2026-07-14 16:30:08,693 [INFO] Buy detected: ABBV (bookkeeper confirmed: -1 @ $251.23)
+2026-07-14 16:30:09,177 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-14 16:30:09 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-14 16:30:09,447 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-14 16:30:10,228 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-14 16:30:10,623 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
