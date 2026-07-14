@@ -43,8 +43,8 @@ from us_bookkeeper import reconcile_trades, get_daily_pnl, sync_capital
 
 def load_json(path: str, default: dict = None) -> dict:
     """Load and validate JSON file with path sanitization."""
-    sanitized_path = os.path.normpath(path)
-    if not os.path.commonpath([BASE_DIR, sanitized_path]) == BASE_DIR:
+    sanitized_path = os.path.normpath(os.path.join(BASE_DIR, path))
+    if not os.path.commonpath([os.path.normpath(BASE_DIR), sanitized_path]) == os.path.normpath(BASE_DIR):
         raise ValueError(f"Path traversal attempt blocked: {path}")
     
     if not os.path.exists(sanitized_path):
@@ -63,7 +63,7 @@ def load_json(path: str, default: dict = None) -> dict:
 
 def get_local_trades(today: str) -> List[Dict]:
     """Get today's trades from local file (fallback)."""
-    trades_data = load_json(TRADES_FILE, {"trades": []})
+    trades_data = load_json("us_trades.json", {"trades": []})
     return [t for t in trades_data.get("trades", []) if t.get("date") == today]
 
 
@@ -111,12 +111,13 @@ def get_daily_stats() -> Dict:
         # Fallback to local file
         source = "local-fallback"
         trades = get_local_trades(today)
-        total_pnl = sum(t.get("pnl", 0) for t in trades)
-        wins = len([t for t in trades if t.get("pnl", 0) > 0])
-        losses = len([t for t in trades if t.get("pnl", 0) < 0])
+        # Local trades use 'net_pnl' not 'pnl'
+        total_pnl = sum(t.get("net_pnl", t.get("pnl", 0)) for t in trades)
+        wins = len([t for t in trades if t.get("net_pnl", t.get("pnl", 0)) > 0])
+        losses = len([t for t in trades if t.get("net_pnl", t.get("pnl", 0)) < 0])
         total = len(trades)
         win_rate = (wins / total * 100) if total > 0 else 0
-        sorted_trades = sorted(trades, key=lambda t: t.get("pnl", 0), reverse=True)
+        sorted_trades = sorted(trades, key=lambda t: t.get("net_pnl", t.get("pnl", 0)), reverse=True)
         best_trade = sorted_trades[0] if sorted_trades else None
         worst_trade = sorted_trades[-1] if sorted_trades else None
     
@@ -132,7 +133,7 @@ def get_daily_stats() -> Dict:
     # Cumulative (always from local file for historical data)
     all_trades_data = load_json(TRADES_FILE, {"trades": []})
     all_trades = all_trades_data.get("trades", [])
-    cumulative_pnl = sum(t.get("pnl", 0) for t in all_trades)
+    cumulative_pnl = sum(t.get("net_pnl", t.get("pnl", 0)) for t in all_trades)
     
     # Build result
     stats = {

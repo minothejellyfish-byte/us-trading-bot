@@ -603,7 +603,10 @@ def reconcile_trades(date_str: Optional[str] = None) -> Dict:
 # ── 6. get_daily_pnl ────────────────────────────────────────────────────────
 
 def get_daily_pnl(date_str: Optional[str] = None) -> Dict:
-    """Calculate realized P&L from Alpaca fills for the day. Return dict with stats."""
+    """Calculate realized P&L from Alpaca fills for the day. Return dict with stats.
+    
+    Handles multi-day holds by looking up prior-day BUYs via _find_prior_buy().
+    """
     target_date = date_str or date.today().isoformat()
     
     # Get Alpaca fills for the day
@@ -633,9 +636,22 @@ def get_daily_pnl(date_str: Optional[str] = None) -> Dict:
         sell_qty = sell["qty"]
         sell_price = sell["price"]
         
+        # Try today's buys first; if none, look up prior-day buy
         if sym not in buys or not buys[sym]:
-            # Sell without matching buy (could be from prior day)
-            continue
+            prior_buy = _find_prior_buy(sym, sell_qty)
+            if prior_buy:
+                # Create a synthetic buy entry for matching
+                buys[sym] = [{
+                    "symbol": sym,
+                    "side": "BUY",
+                    "qty": prior_buy["qty"],
+                    "price": prior_buy["price"],
+                    "filled_at": prior_buy["filled_at"],
+                }]
+                log.info(f"  Found prior-day BUY for {sym}: {prior_buy['qty']} @ ${prior_buy['price']:.2f}")
+            else:
+                log.warning(f"  SELL with no matching BUY (today or prior): {sell_qty} {sym}")
+                continue
         
         remaining_qty = sell_qty
         while remaining_qty > 0 and buys[sym]:
