@@ -123,17 +123,36 @@ def get_daily_stats() -> Dict:
     
     # Capital
     if capital_data:
-        current_capital = capital_data.get("cash", 100000.0)
+        # Use portfolio_value (equity) as the meaningful capital figure,
+        # not cash which is just idle buying power
+        current_capital = capital_data.get("portfolio_value", 
+                          capital_data.get("equity", 
+                          capital_data.get("cash", 100000.0)))
+        cash_balance = capital_data.get("cash", 0)
     else:
-        capital_data_local = load_json(CAPITAL_FILE, {"cash": 100000.0})
-        current_capital = capital_data_local.get("cash", 100000.0)
+        capital_data_local = load_json("us_capital.json", {"cash": 100000.0, "equity": 100000.0, "portfolio_value": 100000.0})
+        current_capital = capital_data_local.get("portfolio_value",
+                          capital_data_local.get("equity",
+                          capital_data_local.get("cash", 100000.0)))
+        cash_balance = capital_data_local.get("cash", 0)
     
     initial_capital = 100000.0
     
     # Cumulative (always from local file for historical data)
-    all_trades_data = load_json(TRADES_FILE, {"trades": []})
+    all_trades_data = load_json("us_trades.json", {"trades": []})
     all_trades = all_trades_data.get("trades", [])
     cumulative_pnl = sum(t.get("net_pnl", t.get("pnl", 0)) for t in all_trades)
+    
+    # Unrealized PnL from open positions
+    unrealized_pnl = 0.0
+    try:
+        positions_data = load_json("us_positions.json", {"positions": {}})
+        for p in positions_data.get("positions", {}).values():
+            alpaca_data = p.get("alpaca_data", {})
+            if alpaca_data:
+                unrealized_pnl += float(alpaca_data.get("unrealized_pl", 0))
+    except Exception:
+        pass
     
     # Build result
     stats = {
@@ -144,10 +163,12 @@ def get_daily_stats() -> Dict:
         "total_trades": total,
         "wins": wins,
         "losses": losses,
-        "best_trade": f"{best_trade.get('symbol', 'N/A')} +${best_trade.get('pnl', 0):.2f}" if best_trade and best_trade.get('pnl', 0) >= 0 else (f"{best_trade.get('symbol', 'N/A')} ${best_trade.get('pnl', 0):.2f}" if best_trade else "None"),
-        "worst_trade": f"{worst_trade.get('symbol', 'N/A')} ${worst_trade.get('pnl', 0):.2f}" if worst_trade else "None",
+        "best_trade": f"{best_trade.get('symbol', 'N/A')} +${best_trade.get('pnl', best_trade.get('net_pnl', 0)):.2f}" if best_trade and best_trade.get('pnl', best_trade.get('net_pnl', 0)) >= 0 else (f"{best_trade.get('symbol', 'N/A')} ${best_trade.get('pnl', best_trade.get('net_pnl', 0)):.2f}" if best_trade else "None"),
+        "worst_trade": f"{worst_trade.get('symbol', 'N/A')} ${worst_trade.get('pnl', worst_trade.get('net_pnl', 0)):.2f}" if worst_trade else "None",
         "cumulative_pnl": round(cumulative_pnl, 2),
+        "unrealized_pnl": round(unrealized_pnl, 2),
         "current_capital": round(current_capital, 2),
+        "cash_balance": round(cash_balance, 2),
         "initial_capital": initial_capital,
         "source": source,
         "reconciliation": reconciliation,
@@ -187,14 +208,16 @@ def send_daily_report_sync():
 
 📅 Day {stats['day']} of 10 — {date.today().strftime('%A, %b %d')}
 
-💰 P&L: ${stats['total_pnl']:.2f} ({stats['pnl_pct']:.2f}%)
+💰 Realized P&L: ${stats['total_pnl']:.2f} ({stats['pnl_pct']:.2f}%)
+📊 Unrealized P&L: ${stats['unrealized_pnl']:+.2f}
 📈 Win Rate: {stats['win_rate']:.1f}%
 🎯 Trades: {stats['total_trades']} ({stats['wins']}W / {stats['losses']}L)
 🏆 Best: {stats['best_trade']}
 💩 Worst: {stats['worst_trade']}
 
-📊 Cumulative: ${stats['cumulative_pnl']:.2f}
-💰 Current Capital: ${stats['current_capital']:.2f} (Started: ${stats['initial_capital']:.2f})
+💰 Portfolio Value: ${stats['current_capital']:.2f} (Started: ${stats['initial_capital']:.2f})
+💵 Cash Balance: ${stats['cash_balance']:.2f}
+📊 Cumulative Realized: ${stats['cumulative_pnl']:+.2f}
 {source_emoji} Source: {source_text}{recon_text}
 
 —
