@@ -140,7 +140,11 @@ def get_daily_stats() -> Dict:
     
     # Cumulative (always from local file for historical data)
     all_trades_data = load_json("us_trades.json", {"trades": []})
-    all_trades = all_trades_data.get("trades", [])
+    # Handle both dict {"trades": [...]} and list [...] formats
+    if isinstance(all_trades_data, list):
+        all_trades = all_trades_data
+    else:
+        all_trades = all_trades_data.get("trades", [])
     cumulative_pnl = sum(t.get("net_pnl", t.get("pnl", 0)) for t in all_trades)
     
     # Unrealized PnL from open positions

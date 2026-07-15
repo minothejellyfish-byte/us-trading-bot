@@ -871,3 +871,33 @@ Alpaca P&L: $1208.62 (2W/0L)
 Alpaca capital: $2921.40
 Stats built from: alpaca-api | P&L=$1208.62 | Trades=2
 [2026-07-14T16:15:08.247012-04:00] Daily report sent: True
+2026-07-15 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-15 (2026-07-15T04:56:00Z to 2026-07-16T04:55:59Z)
+2026-07-15 23:10:02 [INFO] get_alpaca_trades: found 5 filled orders
+2026-07-15 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:03 [WARNING]   SELL with no matching BUY (today or prior): 1100 CNX
+2026-07-15 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:03 [INFO]   Found prior-day BUY for CSX: 293 @ $50.23
+2026-07-15 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:04 [WARNING]   SELL with no matching BUY (today or prior): 1149 CNP
+2026-07-15 23:10:04 [INFO] get_daily_pnl: 2026-07-15 — P&L=$+446.29 (1W/1L, 50.0% WR)
+2026-07-15 23:10:04 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:04 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 23:10:05 [INFO] sync_capital: cash=$104,447.65 equity=$104,203.54
+Reconciliation failed: 'list' object has no attribute 'get'
+Alpaca P&L: $446.29 (1W/1L)
+Alpaca capital: $104447.65
+Traceback (most recent call last):
+  File "/home/mino/us-exec/us_daily_report.py", line 233, in <module>
+    send_daily_report_sync()
+  File "/home/mino/us-exec/us_daily_report.py", line 183, in send_daily_report_sync
+    stats = get_daily_stats()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/mino/us-exec/us_daily_report.py", line 143, in get_daily_stats
+    all_trades = all_trades_data.get("trades", [])
+                 ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
