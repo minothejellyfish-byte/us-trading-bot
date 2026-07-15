@@ -19033,3 +19033,37 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-15 18:56:54,651 [WARNING] Position ABBV has invalid quantity -1, skipping
 2026-07-15 18:56:55,015 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
 2026-07-15 18:56:56,486 [INFO] Slow poll done.
+2026-07-15 19:01:56,841 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 19:01:57,823 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 19:01:58,261 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-15 19:01:59,706 [INFO] Slow poll done.
+2026-07-15 19:06:59,728 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 19:07:00,713 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 19:07:01,077 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-15 19:07:02,416 [INFO] Slow poll done.
+2026-07-15 19:12:02,439 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 19:12:03,292 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 19:12:03,718 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-15 19:12:05,091 [INFO] Slow poll done.
+2026-07-15 19:17:05,114 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 19:17:06,097 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 19:17:06,659 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-15 19:17:08,093 [INFO] Slow poll done.
+2026-07-15 19:22:08,115 [INFO] Regime stale (>30min) — reclassifying
+2026-07-15 19:22:10,448 [INFO] Regime: NEUTRAL — SPY -0.1% over 5 days, VIX 16.3 (moderate), 64% sector breadth
+2026-07-15 19:22:10,448 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 19:22:11,459 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 19:22:12,030 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-15 19:22:13,379 [INFO] Slow poll done.
+2026-07-15 19:27:13,402 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 19:27:14,290 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 19:27:14,702 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-15 19:27:15,936 [INFO] Slow poll done.
