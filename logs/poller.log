@@ -18774,3 +18774,109 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-14 16:58:20,027 [INFO] Slow poll done.
 2026-07-14 17:00:01,849 [INFO] Received signal 15 — shutting down
 2026-07-14 17:00:01,849 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-07-15 16:30:07,999 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-15 16:30:07,999 [INFO] Poller starting in daemon mode
+2026-07-15 16:30:08,000 [INFO] US Price poller started.
+2026-07-15 16:30:08,450 [INFO] Buy detected: ABBV (bookkeeper confirmed: -1 @ $251.23)
+2026-07-15 16:30:08,864 [INFO] Buy detected: CNP (bookkeeper confirmed: 1149 @ $44.49)
+2026-07-15 16:30:09,403 [INFO] Buy detected: CNX (bookkeeper confirmed: 1100 @ $32.59)
+2026-07-15 16:30:09,793 [INFO] Buy detected: CSX (bookkeeper confirmed: 293 @ $50.23)
+2026-07-15 16:30:10,149 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 16:30:10 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-15 16:30:10,497 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:30:11,470 [WARNING] Position ABBV has invalid quantity -1, skipping
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:30:15,990 [INFO] v4.9 drop score: ABBV = 29.3
+2026-07-15 16:30:17,345 [INFO] v4.9 drop score: CNP = 38.6
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:30:17,989 [INFO] v4.9 drop score: CNX = 55.9
+2026-07-15 16:30:18,384 [INFO] v4.9 drop score: CSX = 39.1
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:30:20,725 [INFO] Position upgrade BLOCKED: ABBV down -2.8% > 2%, not switching underwater position
+2026-07-15 16:30:20,725 [INFO] Slow poll done.
+2026-07-15 16:35:11,256 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:35:12,431 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 16:35:14 [INFO] Order submitted: sell 1149 CNP @ market → pending_new
+2026-07-15 16:35:14,585 [INFO] Order submitted: sell 1149 CNP @ market → pending_new
+2026-07-15 16:35:14,910 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-15 16:35:17,237 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-15 16:35:19,549 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-15 16:35:19,551 [INFO] Sold CNP: 1149 — ⏱ Time stop | Time stop loss: -1.5% (<= -1.5%) | NEUTRAL: Early entry → exit by 14:30
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:35:20 [INFO] Order submitted: sell 293 CSX @ market → pending_new
+2026-07-15 16:35:20,462 [INFO] Order submitted: sell 293 CSX @ market → pending_new
+2026-07-15 16:35:20,794 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-15 16:35:23,135 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-15 16:35:25,483 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-15 16:35:25,484 [INFO] Sold CSX: 293 — ⏱ Time stop | Time stop loss: -1.6% (<= -1.5%) | NEUTRAL: Early entry → exit by 14:30
+2026-07-15 16:35:26,065 [INFO] v4.9 drop score: ABBV = 32.4
+2026-07-15 16:35:27,357 [INFO] v4.9 drop score: CNP = 36.8
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:35:27,714 [INFO] v4.9 drop score: CNX = 63.4
+2026-07-15 16:35:28,074 [INFO] v4.9 drop score: CSX = 36.7
+2026-07-15 16:35:29,351 [INFO] Position upgrade BLOCKED: TPG OUTSIDE zone [41.63-44.44], price=$45.15
+2026-07-15 16:35:29,351 [INFO] Slow poll done.
+2026-07-15 16:40:19,375 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:40:20,395 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 16:40:21,351 [INFO] Cycle check failed for AAPL: Cycle limit reached (4/3) for NEUTRAL
+2026-07-15 16:40:21,718 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-15 16:40:22,122 [INFO] Cycle check failed for ACN: Cycle limit reached (3/3) for NEUTRAL
+2026-07-15 16:40:22,517 [INFO] Cycle check failed for ADBE: Cycle limit reached (3/3) for NEUTRAL
+2026-07-15 16:40:22,518 [INFO] Slow poll done.
+2026-07-15 16:45:22,542 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 16:45:23,691 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 16:45:24,636 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-15 16:45:25,003 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.62% over 5 bars (entry blocked — not rising)
+2026-07-15 16:45:25,399 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-15 16:45:37 [INFO] Order submitted: buy 133 ADBE @ market → pending_new
+2026-07-15 16:45:37,201 [INFO] Order submitted: buy 133 ADBE @ market → pending_new
+2026-07-15 16:45:37,692 [INFO] Bought ADBE: 133@225.20 cycle=1/3
+2026-07-15 16:45:37,696 [INFO] Slow poll done.
+2026-07-15 16:45:47,698 [INFO] Buy detected: ADBE (bookkeeper confirmed: 133 @ $225.20)
+2026-07-15 16:50:28,137 [INFO] Regime stale (>30min) — reclassifying
+2026-07-15 16:50:30,826 [INFO] Regime: NEUTRAL — SPY +0.2% over 5 days, VIX 16.0 (moderate), 64% sector breadth
+2026-07-15 16:50:30,826 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-15 16:50:31,856 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 16:50:33,153 [INFO] v4.9 drop score: ABBV = 26.2
+2026-07-15 16:50:33,533 [INFO] v4.9 drop score: ADBE = 61.5
+2026-07-15 16:50:33,901 [INFO] v4.9 drop score: CNX = 53.2
+2026-07-15 16:50:34,275 [INFO] Position upgrade BLOCKED: TPG OUTSIDE zone [41.63-44.44], price=$44.72
+2026-07-15 16:50:34,275 [INFO] Slow poll done.
+2026-07-15 16:55:34,301 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-15 16:55:35,303 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-15 16:55:36,563 [INFO] v4.9 drop score: ABBV = 31.0
+2026-07-15 16:55:36,917 [INFO] v4.9 drop score: ADBE = 72.0
+2026-07-15 16:55:37,269 [INFO] v4.9 drop score: CNX = 51.4
+2026-07-15 16:55:37,618 [INFO] Position upgrade BLOCKED: TPG OUTSIDE zone [41.63-44.44], price=$45.03
+2026-07-15 16:55:37,618 [INFO] Slow poll done.
