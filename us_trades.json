@@ -549,5 +549,41 @@
     "signal": "vwap_reclaim",
     "regime": "NEUTRAL",
     "notes": ""
+  },
+  {
+    "id": "unknown",
+    "symbol": "CNX",
+    "qty": 1100,
+    "entry_price": 32.59,
+    "entry_time": "2026-07-15T10:00:03.649296-04:00",
+    "entry_signal": "alpaca-sync",
+    "exit_price": 32.82,
+    "exit_time": "2026-07-15T10:00:41.162151-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $32.75",
+    "exit_regime": "NEUTRAL",
+    "gross_pnl": 256.3,
+    "spread_cost": 71.95,
+    "net_pnl": 184.35,
+    "pnl_pct": 0.72,
+    "duration_min": 0.6,
+    "date": "2026-07-15"
+  },
+  {
+    "id": "unknown",
+    "symbol": "ADBE",
+    "qty": 133,
+    "entry_price": 225.21,
+    "entry_time": "2026-07-15T10:20:11.881599-04:00",
+    "entry_signal": "alpaca-sync",
+    "exit_price": 230.43,
+    "exit_time": "2026-07-15T10:20:55.810518-04:00",
+    "exit_reason": "Target +2%",
+    "exit_regime": "NEUTRAL",
+    "gross_pnl": 693.6,
+    "spread_cost": 60.6,
+    "net_pnl": 633.0,
+    "pnl_pct": 2.32,
+    "duration_min": 0.7,
+    "date": "2026-07-15"
   }
 ]
