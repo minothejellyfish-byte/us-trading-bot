@@ -19844,3 +19844,39 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-16 22:28:53,400 [WARNING] Position ABBV has invalid quantity -1, skipping
 2026-07-16 22:28:53,400 [INFO] Entry cutoff passed — no new entries
 2026-07-16 22:28:53,400 [INFO] Slow poll done.
+2026-07-16 22:33:53,818 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-16 22:33:54,751 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 22:33:54,752 [INFO] Entry cutoff passed — no new entries
+2026-07-16 22:33:54,752 [INFO] Slow poll done.
+2026-07-16 22:38:54,775 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 22:38:55,835 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 22:38:55,836 [INFO] Entry cutoff passed — no new entries
+2026-07-16 22:38:55,836 [INFO] Slow poll done.
+2026-07-16 22:43:55,860 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 22:43:56,693 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 22:43:56,694 [INFO] Entry cutoff passed — no new entries
+2026-07-16 22:43:56,694 [INFO] Slow poll done.
+2026-07-16 22:48:57,251 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 22:48:58,049 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 22:48:58,050 [INFO] Hard close active — no new entries
+2026-07-16 22:48:58,050 [INFO] Slow poll done.
+2026-07-16 22:53:58,073 [INFO] Regime stale (>30min) — reclassifying
+2026-07-16 22:54:00,803 [INFO] Regime: NEUTRAL — SPY -0.7% over 5 days, VIX 17.0 (moderate), 82% sector breadth
+2026-07-16 22:54:00,803 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-16 22:54:01,671 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 22:54:01,672 [INFO] Hard close active — no new entries
+2026-07-16 22:54:01,672 [INFO] Slow poll done.
+2026-07-16 22:59:02,197 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 22:59:02,997 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 22:59:02,998 [INFO] Hard close active — no new entries
+2026-07-16 22:59:02,998 [INFO] Slow poll done.
+2026-07-16 23:00:01,567 [INFO] Received signal 15 — shutting down
+2026-07-16 23:00:01,567 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
