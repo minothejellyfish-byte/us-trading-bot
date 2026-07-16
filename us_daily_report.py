@@ -63,7 +63,10 @@ def load_json(path: str, default: dict = None) -> dict:
 
 def get_local_trades(today: str) -> List[Dict]:
     """Get today's trades from local file (fallback)."""
-    trades_data = load_json("us_trades.json", {"trades": []})
+    trades_data = load_json("us_trades.json", [])
+    # Handle both formats: list (new) and dict with 'trades' key (old)
+    if isinstance(trades_data, list):
+        return [t for t in trades_data if t.get("date") == today]
     return [t for t in trades_data.get("trades", []) if t.get("date") == today]
 
 
