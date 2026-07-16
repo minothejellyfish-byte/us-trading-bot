@@ -25120,3 +25120,9 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 54    BIIB     46.1     $195.23    1.71     % 0.5    x
 55    GE       33.4     $356.62    0.82     % 0.5    x
 ============================================================
+2026-07-16 17:00:02 [INFO] US Mid-Screen: Early Momentum (midscreen1)
+2026-07-16 17:00:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-16 17:00:02 [INFO] Step 1: Checking existing picks...
+2026-07-16 17:00:02 [INFO] Found 51 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
