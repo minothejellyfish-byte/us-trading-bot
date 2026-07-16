@@ -19362,3 +19362,49 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-16 16:55:35,558 [INFO] Cycle check failed for ACN: ACN is blocked for today
 2026-07-16 16:55:35,957 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
 2026-07-16 16:55:35,957 [INFO] Slow poll done.
+2026-07-16 17:00:36,362 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-16 17:00:37,479 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 17:00:38,189 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-16 17:00:39,127 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-16 17:00:39,668 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-16 17:00:39,668 [INFO] Slow poll done.
+2026-07-16 17:05:39,688 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 17:05:40,817 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 17:05:41,572 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-16 17:05:42,323 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-16 17:05:42,929 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-16 17:05:42,930 [INFO] Slow poll done.
+2026-07-16 17:10:42,953 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 17:10:44,177 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 17:10:44,943 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-16 17:10:45,663 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.08% over 5 bars (entry blocked — not rising)
+2026-07-16 17:10:46,221 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-16 17:10:46,222 [INFO] Slow poll done.
+2026-07-16 17:15:46,245 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 17:15:47,081 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 17:15:47,498 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-16 17:15:48,327 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.08% over 5 bars (entry blocked — not rising)
+2026-07-16 17:15:48,884 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-16 17:15:48,885 [INFO] Slow poll done.
+2026-07-16 17:20:48,909 [INFO] Regime stale (>30min) — reclassifying
+2026-07-16 17:20:51,270 [INFO] Regime: NEUTRAL — SPY -0.2% over 5 days, VIX 16.1 (moderate), 64% sector breadth
+2026-07-16 17:20:51,270 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-16 17:20:52,109 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 17:20:52,533 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-16 17:20:53,312 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.05% over 5 bars (entry blocked — not rising)
+2026-07-16 17:20:54,137 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-16 17:20:54,137 [INFO] Slow poll done.
+2026-07-16 17:25:54,161 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-16 17:25:55,196 [WARNING] Position ABBV has invalid quantity -1, skipping
+2026-07-16 17:25:55,679 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-07-16 17:25:56,463 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.12% over 5 bars (entry blocked — not rising)
+2026-07-16 17:25:56,893 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-07-16 17:25:56,893 [INFO] Slow poll done.
