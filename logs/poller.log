@@ -19880,3 +19880,12 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-16 22:59:02,998 [INFO] Slow poll done.
 2026-07-16 23:00:01,567 [INFO] Received signal 15 — shutting down
 2026-07-16 23:00:01,567 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-07-17 16:30:10,079 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-17 16:30:10,079 [INFO] Poller starting in daemon mode
+2026-07-17 16:30:10,079 [INFO] US Price poller started.
+2026-07-17 16:30:10,664 [INFO] Buy detected: ABBV (bookkeeper confirmed: -1 @ $251.23)
+2026-07-17 16:30:11,036 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-17 16:30:11 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-17 16:30:11,272 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
