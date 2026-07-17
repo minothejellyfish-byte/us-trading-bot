@@ -215,8 +215,8 @@
     "status": "active"
   },
   "CNP": {
-    "cycle_count": 2,
-    "last_entry": "2026-07-14T09:31:29.762565-04:00",
+    "cycle_count": 3,
+    "last_entry": "2026-07-17T09:35:23.697251-04:00",
     "last_exit": "",
     "scratch_count": 0,
     "win_count": 0,
@@ -232,13 +232,19 @@
         "entry_price": 44.355,
         "qty": 676,
         "cycle_n": 2
+      },
+      {
+        "entry_time": "2026-07-17T09:35:23.697274-04:00",
+        "entry_price": 43.95,
+        "qty": 682,
+        "cycle_n": 3
       }
     ],
     "status": "active"
   },
   "CNX": {
-    "cycle_count": 2,
-    "last_entry": "2026-07-14T09:31:43.969141-04:00",
+    "cycle_count": 3,
+    "last_entry": "2026-07-17T09:35:27.135165-04:00",
     "last_exit": "",
     "scratch_count": 0,
     "win_count": 0,
@@ -254,6 +260,12 @@
         "entry_price": 32.4900016784668,
         "qty": 646,
         "cycle_n": 2
+      },
+      {
+        "entry_time": "2026-07-17T09:35:27.135192-04:00",
+        "entry_price": 33.650001525878906,
+        "qty": 624,
+        "cycle_n": 3
       }
     ],
     "status": "active"
@@ -275,19 +287,28 @@
     "status": "active"
   },
   "ASTS": {
-    "cycle_count": 1,
-    "last_entry": "2026-07-17T09:30:13.131158-04:00",
-    "last_exit": "",
+    "cycle_count": 2,
+    "last_entry": "2026-07-17T09:45:40.725107-04:00",
+    "last_exit": "2026-07-17T09:55:51.327206-04:00",
     "scratch_count": 0,
-    "win_count": 0,
+    "win_count": 1,
     "entries": [
       {
         "entry_time": "2026-07-17T09:30:13.131185-04:00",
         "entry_price": 54.54,
         "qty": 550,
         "cycle_n": 1
+      },
+      {
+        "entry_time": "2026-07-17T09:45:40.725131-04:00",
+        "entry_price": 55.13,
+        "qty": 544,
+        "cycle_n": 2,
+        "exit_time": "2026-07-17T09:55:51.327232-04:00",
+        "exit_price": 56.63,
+        "pnl_pct": 0.021505292941490527
       }
     ],
-    "status": "active"
+    "status": "cooling"
   }
 }

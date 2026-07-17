@@ -19912,3 +19912,84 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-17 16:30:18,851 [ERROR] ['CNX']: possibly delisted; no price data found  (period=1d)
 2026-07-17 16:30:18,854 [WARNING] All price sources failed for CNX
 2026-07-17 16:30:18,855 [INFO] Slow poll done.
+2026-07-17 16:30:29,459 [INFO] Buy detected: ASTS (bookkeeper confirmed: 550 @ $54.54)
+2026-07-17 16:33:59,886 [INFO] Buy detected: ASTS (bookkeeper confirmed: 550 @ $55.78)
+2026-07-17 16:35:20,380 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 16:35:21,752 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-17 16:35:23,345 [INFO] Cycle check failed for CG: Cycle limit reached (3/3) for NEUTRAL
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 16:35:24 [INFO] Order submitted: buy 682 CNP @ market → pending_new
+2026-07-17 16:35:24,833 [INFO] Order submitted: buy 682 CNP @ market → pending_new
+2026-07-17 16:35:25,226 [INFO] Bought CNP: 682@43.95 cycle=1/3
+2026-07-17 16:35:25,230 [INFO] VWAP entry blocked for CNP: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-17 16:35:37 [INFO] Order submitted: buy 624 CNX @ market → pending_new
+2026-07-17 16:35:37,908 [INFO] Order submitted: buy 624 CNX @ market → pending_new
+2026-07-17 16:35:38,312 [INFO] Bought CNX: 624@33.65 cycle=1/3
+2026-07-17 16:35:38,320 [INFO] VWAP entry blocked for CNX: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-17 16:35:38,320 [INFO] Slow poll done.
+2026-07-17 16:35:48,322 [INFO] Buy detected: CNP (bookkeeper confirmed: 682 @ $43.95)
+2026-07-17 16:35:48,778 [INFO] Buy detected: CNX (bookkeeper confirmed: 624 @ $33.65)
+2026-07-17 16:40:29,175 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 16:40:32,425 [INFO] v4.9 drop score: ASTS = 42.7
+2026-07-17 16:40:32,828 [INFO] v4.9 drop score: CNP = 57.4
+2026-07-17 16:40:34,620 [INFO] v4.9 drop score: CNX = 57.9
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 16:40:35,375 [INFO] Position upgrade: ASTS(score=27, drop=42.7) → MC(score=44). Current P&L: -0.7%
+2026-07-17 16:40:36 [INFO] Order submitted: sell 550 ASTS @ market → pending_new
+2026-07-17 16:40:36,386 [INFO] Order submitted: sell 550 ASTS @ market → pending_new
+2026-07-17 16:40:36,774 [INFO] Sold ASTS: 550 — 🔄 Position upgrade — switching to better momentum pick
+2026-07-17 16:40:36,776 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-17 16:40:37,287 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-17 16:40:38,610 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-07-17 16:40:38,610 [INFO] Slow poll done.
+2026-07-17 16:40:48,611 [INFO] Sell detected (scratch): ASTS pct=-100.0%
+2026-07-17 16:45:38,633 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 16:45:40,335 [INFO] VWAP entry blocked for ALLY: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-17 16:45:41 [INFO] Order submitted: buy 544 ASTS @ market → pending_new
+2026-07-17 16:45:41,973 [INFO] Order submitted: buy 544 ASTS @ market → pending_new
+2026-07-17 16:45:42,401 [INFO] Bought ASTS: 544@55.13 cycle=1/3
+2026-07-17 16:45:42,411 [INFO] Slow poll done.
+2026-07-17 16:45:52,413 [INFO] Buy detected: ASTS (bookkeeper confirmed: 544 @ $55.13)
+2026-07-17 16:50:42,982 [INFO] Regime stale (>30min) — reclassifying
+2026-07-17 16:50:45,986 [INFO] Regime: NEUTRAL — SPY -0.8% over 5 days, VIX 19.4 (moderate), 82% sector breadth
+2026-07-17 16:50:45,986 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 16:50:48,102 [INFO] v4.9 drop score: ASTS = 67.3
+2026-07-17 16:50:48,526 [INFO] v4.9 drop score: CNP = 52.1
+2026-07-17 16:50:48,935 [INFO] v4.9 drop score: CNX = 60.0
+2026-07-17 16:50:49,307 [INFO] Position upgrade BLOCKED: MC OUTSIDE zone [68.64-71.33], price=$68.49
+2026-07-17 16:50:49,307 [INFO] Slow poll done.
+2026-07-17 16:55:49,331 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-17 16:55:50 [INFO] Order submitted: sell 544 ASTS @ market → pending_new
+2026-07-17 16:55:50,811 [INFO] Order submitted: sell 544 ASTS @ market → pending_new
+2026-07-17 16:55:51,323 [INFO] Sold ASTS: 544 — 🎯 Target +2% | Entry: 55.44 | Now: 56.63
+2026-07-17 16:55:52,759 [INFO] v4.9 drop score: ASTS = 67.7
+2026-07-17 16:55:53,307 [INFO] v4.9 drop score: CNP = 61.3
+2026-07-17 16:55:53,833 [INFO] v4.9 drop score: CNX = 61.3
+2026-07-17 16:55:54,225 [INFO] Position upgrade BLOCKED: MC VWAP falling in NEUTRAL regime (slope=-0.1064%)
+2026-07-17 16:55:54,225 [INFO] Slow poll done.

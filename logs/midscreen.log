@@ -27846,3 +27846,9 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 55    BAX      46.2     $23.18     4.63     % 0.5    x
 56    PLD      45.2     $149.19    4.03     % 0.6    x
 ============================================================
+2026-07-17 17:00:02 [INFO] US Mid-Screen: Early Momentum (midscreen1)
+2026-07-17 17:00:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-17 17:00:02 [INFO] Step 1: Checking existing picks...
+2026-07-17 17:00:02 [INFO] Found 30 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)

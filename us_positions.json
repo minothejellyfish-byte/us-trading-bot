@@ -1,38 +1,50 @@
 {
+  "date": "2026-07-17",
+  "time": "10:00:03",
   "positions": {
-    "ABBV": {
-      "symbol": "ABBV",
-      "entry_price": 251.226129,
-      "qty": -1,
-      "entry_time": "2026-07-17T09:29:57.614708-04:00",
-      "peak_price": 256.9355,
+    "CNP": {
+      "symbol": "CNP",
+      "entry_price": 44.0,
+      "qty": 682,
+      "entry_time": "2026-07-17T09:59:11.511406-04:00",
+      "peak_price": 44.04,
       "closed": false,
       "signal": "alpaca-sync",
       "order_id": "unknown",
       "cycle": 1,
       "max_cycles": 2,
       "alpaca_data": {
-        "avg_entry_price": 251.226129,
-        "market_value": -256.9355,
-        "unrealized_pl": -5.709371,
-        "unrealized_plpc": -0.02273,
-        "current_price": 256.9355,
-        "qty": -1
+        "avg_entry_price": 44.0,
+        "market_value": 30004.59,
+        "unrealized_pl": -3.41,
+        "unrealized_plpc": -0.00011,
+        "current_price": 43.995,
+        "qty": 682
       },
-      "current_price": 256.9355
+      "current_price": 43.995
     },
-    "ASTS": {
-      "symbol": "ASTS",
-      "entry_price": 54.54,
-      "qty": 550,
-      "entry_time": "2026-07-17T09:30:14.323413-04:00",
-      "peak_price": 54.54,
+    "CNX": {
+      "symbol": "CNX",
+      "entry_price": 33.79,
+      "qty": 624,
+      "entry_time": "2026-07-17T09:59:11.511517-04:00",
+      "peak_price": 34.06,
       "closed": false,
-      "signal": "auto",
-      "order_id": "?",
+      "signal": "alpaca-sync",
+      "order_id": "unknown",
       "cycle": 1,
-      "max_cycles": 3
+      "max_cycles": 2,
+      "alpaca_data": {
+        "avg_entry_price": 33.79,
+        "market_value": 21253.44,
+        "unrealized_pl": 168.48,
+        "unrealized_plpc": 0.00799,
+        "current_price": 34.06,
+        "qty": 624
+      },
+      "current_price": 34.06
     }
   },
-  "updated_at": "2026-07-17T09:30:14.323700-04:00"
+  "count": 2,
+  "source": "alpaca-api"
 }
