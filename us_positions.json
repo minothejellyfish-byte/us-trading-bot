@@ -1,6 +1,4 @@
 {
-  "date": "2026-07-17",
-  "time": "09:30:03",
   "positions": {
     "ABBV": {
       "symbol": "ABBV",
@@ -22,8 +20,19 @@
         "qty": -1
       },
       "current_price": 256.9355
+    },
+    "ASTS": {
+      "symbol": "ASTS",
+      "entry_price": 54.54,
+      "qty": 550,
+      "entry_time": "2026-07-17T09:30:14.323413-04:00",
+      "peak_price": 54.54,
+      "closed": false,
+      "signal": "auto",
+      "order_id": "?",
+      "cycle": 1,
+      "max_cycles": 3
     }
   },
-  "count": 1,
-  "source": "alpaca-api"
+  "updated_at": "2026-07-17T09:30:14.323700-04:00"
 }
