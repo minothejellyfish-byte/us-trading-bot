@@ -20031,3 +20031,51 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-17 17:26:13,050 [INFO] Cycle check failed for ASTS: Cooldown: 30/45 min since last exit
 2026-07-17 17:26:13,428 [INFO] Cycle check failed for CG: CG is blocked for today
 2026-07-17 17:26:13,428 [INFO] Slow poll done.
+2026-07-17 17:31:13,813 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 17:31:15 [INFO] Order submitted: sell 682 CNP @ market → pending_new
+2026-07-17 17:31:15,232 [INFO] Order submitted: sell 682 CNP @ market → pending_new
+2026-07-17 17:31:15,676 [INFO] Sold CNP: 682 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $43.99
+2026-07-17 17:31:16,524 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:31:17,699 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:31:17,700 [INFO] Slow poll done.
+2026-07-17 17:36:17,722 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-17 17:36:18,887 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:36:19,616 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:36:19,990 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:36:19,991 [INFO] Slow poll done.
+2026-07-17 17:41:20,014 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-17 17:41:21 [INFO] Order submitted: sell 624 CNX @ market → pending_new
+2026-07-17 17:41:21,517 [INFO] Order submitted: sell 624 CNX @ market → pending_new
+2026-07-17 17:41:21,940 [INFO] Sold CNX: 624 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $33.87
+2026-07-17 17:41:22,333 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:41:23,120 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-17 17:41:23,504 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:41:23,505 [INFO] Slow poll done.
+2026-07-17 17:46:23,526 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-17 17:46:24,352 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:46:25,137 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-17 17:46:25,498 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:46:25,896 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:46:25,897 [INFO] Slow poll done.
+2026-07-17 17:51:25,919 [INFO] Regime stale (>30min) — reclassifying
+2026-07-17 17:51:28,329 [INFO] Regime: NEUTRAL — SPY -0.5% over 5 days, VIX 18.1 (moderate), 82% sector breadth
+2026-07-17 17:51:28,329 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-17 17:51:29,141 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:51:29,912 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-17 17:51:30,307 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:51:30,712 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:51:30,713 [INFO] Slow poll done.
+2026-07-17 17:56:30,734 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-17 17:56:31,677 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-17 17:56:32,471 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:56:32,907 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:56:33,350 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-17 17:56:33,351 [INFO] Slow poll done.

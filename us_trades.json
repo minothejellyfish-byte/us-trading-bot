@@ -651,5 +651,41 @@
     "pnl_pct": 2.15,
     "duration_min": 0.7,
     "date": "2026-07-17"
+  },
+  {
+    "id": "unknown",
+    "symbol": "CNP",
+    "qty": 682,
+    "entry_price": 44.0,
+    "entry_time": "2026-07-17T10:30:26.857704-04:00",
+    "entry_signal": "alpaca-sync",
+    "exit_price": 43.83,
+    "exit_time": "2026-07-17T10:31:15.678238-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $43.99",
+    "exit_regime": "NEUTRAL",
+    "gross_pnl": -115.94,
+    "spread_cost": 59.9,
+    "net_pnl": -175.84,
+    "pnl_pct": -0.39,
+    "duration_min": 0.8,
+    "date": "2026-07-17"
+  },
+  {
+    "id": "unknown",
+    "symbol": "CNX",
+    "qty": 624,
+    "entry_price": 33.79,
+    "entry_time": "2026-07-17T10:40:31.000240-04:00",
+    "entry_signal": "alpaca-sync",
+    "exit_price": 33.81,
+    "exit_time": "2026-07-17T10:41:21.940768-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $33.87",
+    "exit_regime": "NEUTRAL",
+    "gross_pnl": 12.48,
+    "spread_cost": 42.18,
+    "net_pnl": -29.7,
+    "pnl_pct": 0.06,
+    "duration_min": 0.8,
+    "date": "2026-07-17"
   }
 ]
