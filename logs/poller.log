@@ -20675,3 +20675,31 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-20 20:56:13,442 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
 2026-07-20 20:56:14,660 [INFO] VWAP entry blocked for SQM: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
 2026-07-20 20:56:14,661 [INFO] Slow poll done.
+2026-07-20 21:01:15,095 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-20 21:01:16,317 [INFO] VWAP entry blocked for SQM: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-20 21:01:16,317 [INFO] Slow poll done.
+2026-07-20 21:06:16,337 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-20 21:06:17,532 [INFO] VWAP entry blocked for SQM: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-20 21:06:17,533 [INFO] Slow poll done.
+2026-07-20 21:11:17,553 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-20 21:11:18,948 [INFO] VWAP entry blocked for SQM: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-20 21:11:18,948 [INFO] Slow poll done.
+2026-07-20 21:16:18,971 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-20 21:16:20,233 [INFO] VWAP entry blocked for SQM: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-20 21:16:20,233 [INFO] Slow poll done.
+2026-07-20 21:21:20,257 [INFO] Regime stale (>30min) — reclassifying
+2026-07-20 21:21:22,525 [INFO] Regime: NEUTRAL — SPY -0.9% over 5 days, VIX 17.9 (moderate), 45% sector breadth
+2026-07-20 21:21:22,525 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-20 21:21:23,705 [INFO] VWAP entry blocked for SQM: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-20 21:21:23,706 [INFO] Slow poll done.
+2026-07-20 21:26:23,728 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-20 21:26:24,981 [INFO] VWAP entry blocked for SQM: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-20 21:26:24,982 [INFO] Slow poll done.
