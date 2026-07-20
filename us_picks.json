@@ -3,16 +3,47 @@
   "time": "09:25:26",
   "timezone": "America/New_York",
   "mode": "premarket",
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "universe_size": 194,
   "screened_count": 0,
-  "picks": [],
-  "last_midscreen": "10:06:05",
-  "midscreen_count": 0,
+  "picks": [
+    {
+      "symbol": "ISRG",
+      "score": 15.5,
+      "price": 349.02,
+      "entry_low": 346.42,
+      "entry_high": 349.9,
+      "change_pct": 1.04,
+      "volume": 2285265,
+      "avg_volume": 3339610,
+      "rel_volume": 0.66,
+      "vwap": 348.52,
+      "above_vwap": true,
+      "source": "midscreen",
+      "time": "11:31:06"
+    },
+    {
+      "symbol": "SQM",
+      "score": 15.4,
+      "price": 67.72,
+      "entry_low": 67.38,
+      "entry_high": 68.06,
+      "change_pct": -2.99,
+      "volume": 481227,
+      "avg_volume": 937615,
+      "rel_volume": 0.51,
+      "vwap": 67.79,
+      "above_vwap": false,
+      "source": "midscreen",
+      "time": "11:35:06"
+    }
+  ],
+  "last_midscreen": "11:36:05",
+  "midscreen_count": 3,
   "validation": {
-    "valid_count": 0,
+    "valid_count": 1,
     "removed_count": 0,
     "removed_symbols": [],
-    "new_count": 0
+    "new_count": 2
   }
 }
