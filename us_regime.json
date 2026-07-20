@@ -1,23 +1,23 @@
 {
-  "regime": "NEUTRAL",
+  "regime": "DEFENSIVE",
   "params": {
-    "strategy": "Standard",
-    "max_positions": 3,
-    "position_pct": 0.3,
-    "alt_position_pct": 0.3,
-    "target_pct": 0.02,
-    "trail_trigger": 0.02,
-    "trail_stop": 0.03,
-    "hard_stop": 0.05,
-    "time_stop_mins": 30,
-    "time_stop_pct": 0.01,
-    "midscreen": true
+    "strategy": "Conservative",
+    "max_positions": 2,
+    "position_pct": 0.2,
+    "alt_position_pct": 0.2,
+    "target_pct": 0.015,
+    "trail_trigger": 0.015,
+    "trail_stop": 0.02,
+    "hard_stop": 0.04,
+    "time_stop_mins": 20,
+    "time_stop_pct": 0.005,
+    "midscreen": false
   },
-  "reason": "SPY -0.8% over 5 days, VIX 17.7 (moderate), 55% sector breadth",
-  "spy_5d_change": -0.8,
-  "spy_10d_change": -0.25,
-  "vix": 17.66,
-  "sector_breadth": 54.5,
-  "top_sectors": "Energy (2.2%), Consumer Staples (1.6%), Real Estate (1.5%)",
-  "classified_at": "2026-07-20T19:50:51.818557"
+  "reason": "SPY -1.0% over 5 days, VIX 18.1 (elevated fear), 36% sector breadth",
+  "spy_5d_change": -1.03,
+  "spy_10d_change": -0.48,
+  "vix": 18.06,
+  "sector_breadth": 36.4,
+  "top_sectors": "Energy (2.2%), Real Estate (1.5%), Consumer Staples (1.5%)",
+  "classified_at": "2026-07-20T20:21:01.952502"
 }
