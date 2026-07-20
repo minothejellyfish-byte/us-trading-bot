@@ -20703,3 +20703,31 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-20 21:26:23,728 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
 2026-07-20 21:26:24,981 [INFO] VWAP entry blocked for SQM: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
 2026-07-20 21:26:24,982 [INFO] Slow poll done.
+2026-07-20 21:31:25,375 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-20 21:31:26,210 [INFO] Entry cutoff passed — no new entries
+2026-07-20 21:31:26,210 [INFO] Slow poll done.
+2026-07-20 21:36:26,231 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-20 21:36:27,065 [INFO] Entry cutoff passed — no new entries
+2026-07-20 21:36:27,065 [INFO] Slow poll done.
+2026-07-20 21:41:27,088 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-20 21:41:27,906 [INFO] Entry cutoff passed — no new entries
+2026-07-20 21:41:27,906 [INFO] Slow poll done.
+2026-07-20 21:46:27,928 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-20 21:46:28,709 [INFO] Entry cutoff passed — no new entries
+2026-07-20 21:46:28,709 [INFO] Slow poll done.
+2026-07-20 21:51:28,731 [INFO] Regime stale (>30min) — reclassifying
+2026-07-20 21:51:31,682 [INFO] Regime: DEFENSIVE — SPY -1.2% over 5 days, VIX 18.1 (elevated fear), 36% sector breadth
+2026-07-20 21:51:31,682 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-20 21:51:32,497 [INFO] Entry cutoff passed — no new entries
+2026-07-20 21:51:32,497 [INFO] Slow poll done.
+2026-07-20 21:56:32,521 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-20 21:56:33,337 [INFO] Entry cutoff passed — no new entries
+2026-07-20 21:56:33,337 [INFO] Slow poll done.
