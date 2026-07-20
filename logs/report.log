@@ -1027,3 +1027,29 @@ Alpaca P&L: $181.52 (1W/3L)
 Alpaca capital: $104375.10
 Stats built from: alpaca-api | P&L=$181.52 | Trades=4
 [2026-07-17T16:15:06.691336-04:00] Daily report sent: True
+2026-07-20 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-20 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-20 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-20 (2026-07-20T04:56:00Z to 2026-07-21T04:55:59Z)
+2026-07-20 23:10:03 [INFO] get_alpaca_trades: found 2 filled orders
+2026-07-20 23:10:03 [INFO] get_daily_pnl: 2026-07-20 — P&L=$+309.40 (1W/0L, 100.0% WR)
+2026-07-20 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-20 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-20 23:10:03 [INFO] sync_capital: cash=$104,684.08 equity=$104,684.08
+2026-07-20 23:10:03 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 12 of 10 — Monday, Jul 20
+
+💰 Realized P&L: $309.40 (0.31%)
+📊 Unreal...
+2026-07-20 23:10:03 [INFO] [TELEGRAM] 🟢 US Paper Trading Report
+
+📅 Day 12 of 10 — Monday, Jul 20
+
+💰 Realized P&L: $309.40 (0.31%)
+📊 Unreal...
+2026-07-20 23:10:04 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation failed: 'list' object has no attribute 'get'
+Alpaca P&L: $309.40 (1W/0L)
+Alpaca capital: $104684.08
+Stats built from: alpaca-api | P&L=$309.40 | Trades=1
+[2026-07-20T16:10:04.272657-04:00] Daily report sent: True
