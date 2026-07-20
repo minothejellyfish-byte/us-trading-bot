@@ -30516,3 +30516,14 @@ Picks: 0
 Rank  Symbol   Score    Price      Change%    Vol(x)  
 ------------------------------------------------------------
 ============================================================
+2026-07-20 18:30:02 [INFO] US Mid-Screen: Mid-Morning (midscreen2)
+2026-07-20 18:30:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-20 18:30:02 [INFO] Step 1: Checking existing picks...
+2026-07-20 18:30:02 [INFO] Found 0 existing picks
+2026-07-20 18:30:02 [INFO] Validation: 0 valid, 0 removed
+2026-07-20 18:30:02 [INFO] Step 2: Finding new momentum plays...
+2026-07-20 18:30:02 [INFO] Starting mid-screen at 11:30 ET with regime: NEUTRAL
+2026-07-20 18:30:02 [INFO] Universe: 194 Sharia-compliant stocks
+2026-07-20 18:30:02 [INFO] Screening 100 stocks...
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
