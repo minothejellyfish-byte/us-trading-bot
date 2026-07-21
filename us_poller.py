@@ -810,6 +810,31 @@ def slow_poll():
             except Exception:
                 pass
         
+        # ── HARD CLOSE (15:45 ET) ───────────────────────────────────────────────
+        # Force-close all open positions at 15:45 regardless of profit/loss
+        hard_close_key = "hard_close"
+        if now_time >= HARD_CLOSE_TIME:
+            with _alerted_lock:
+                hard_close_alerted = hard_close_key in _alerted
+            
+            if not hard_close_alerted:
+                tg_send(f"⏰ 15:45 HARD CLOSE — selling {symbol}")
+            
+            result = auto_sell(symbol, qty, f"⏰ 15:45 hard close")
+            if result:
+                close_trade(symbol, price, f"Hard close 15:45", regime=regime_name)
+                _record_cycle_exit(symbol, price, gain_pct)
+            
+            with _alerted_lock:
+                _alerted.add(hard_close_key)
+            
+            # Mark position as stale so bookkeeper can clean up
+            pos["closed"] = True
+            pos["close_price"] = price
+            pos["close_time"] = now.isoformat()
+            updated = True
+            continue  # Skip remaining checks for this position
+        
         # Hard stop
         with _alerted_lock:
             hard_stop_allowed = key_stop not in _alerted
