@@ -771,5 +771,23 @@
     "signal": "gap_up",
     "regime": "DEFENSIVE",
     "notes": ""
+  },
+  {
+    "id": "unknown",
+    "symbol": "CSX",
+    "qty": 320,
+    "entry_price": 50.17,
+    "entry_time": "2026-07-22T09:59:55.909296-04:00",
+    "entry_signal": "alpaca-sync",
+    "exit_price": 49.97,
+    "exit_time": "2026-07-22T10:00:34.969720-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $50.06",
+    "exit_regime": "DEFENSIVE",
+    "gross_pnl": -64.0,
+    "spread_cost": 32.04,
+    "net_pnl": -96.04,
+    "pnl_pct": -0.4,
+    "duration_min": 0.7,
+    "date": "2026-07-22"
   }
 ]
