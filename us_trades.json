@@ -801,5 +801,23 @@
     "signal": "breakout",
     "regime": "NEUTRAL",
     "notes": ""
+  },
+  {
+    "id": "unknown",
+    "symbol": "ABBV",
+    "qty": 116,
+    "entry_price": 257.41,
+    "entry_time": "2026-07-23T12:57:04.201821-04:00",
+    "entry_signal": "alpaca-sync",
+    "exit_price": 255.96,
+    "exit_time": "2026-07-23T12:57:28.733198-04:00",
+    "exit_reason": "Time stop: Time stop loss: -0.6% (<= -0.5%) | DEFENSIVE: Mid entry \u2192 exit after 1 hour",
+    "exit_regime": "DEFENSIVE",
+    "gross_pnl": -168.2,
+    "spread_cost": 59.55,
+    "net_pnl": -227.75,
+    "pnl_pct": -0.56,
+    "duration_min": 0.4,
+    "date": "2026-07-23"
   }
 ]
