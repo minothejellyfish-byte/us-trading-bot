@@ -22094,3 +22094,57 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-23 17:25:46,907 [INFO] VWAP entry blocked for ACN: DEFENSIVE: VWAP flat: -0.02% over 5 bars (entry blocked — need strong rise)
 2026-07-23 17:25:47,289 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
 2026-07-23 17:25:47,289 [INFO] Slow poll done.
+2026-07-23 17:30:47,691 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-23 17:30:48,580 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:30:49,072 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:30:49,464 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:30:49,840 [INFO] VWAP entry blocked for ACN: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:30:50,209 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:30:50,210 [INFO] Slow poll done.
+2026-07-23 17:35:50,232 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-23 17:35:51,267 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:35:51,949 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:35:52,307 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:35:52,681 [INFO] VWAP entry blocked for ACN: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:35:53,070 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:35:53,070 [INFO] Slow poll done.
+2026-07-23 17:40:53,091 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-23 17:40:53,912 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:40:54,298 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:40:54,757 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:40:55,188 [INFO] VWAP entry blocked for ACN: DEFENSIVE: VWAP flat: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:40:55,621 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:40:55,622 [INFO] Slow poll done.
+2026-07-23 17:45:55,644 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-23 17:45:56,518 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:45:56,988 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:45:57,423 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:45:57,857 [INFO] VWAP entry blocked for ACN: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:45:58,324 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-23 17:45:58,324 [INFO] Slow poll done.
+2026-07-23 17:50:58,345 [INFO] Regime stale (>30min) — reclassifying
+2026-07-23 17:51:01,167 [INFO] Regime: NEUTRAL — SPY -0.6% over 5 days, VIX 19.2 (moderate), 45% sector breadth
+2026-07-23 17:51:01,167 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-23 17:51:01,962 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-23 17:51:02,704 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-23 17:51:03,119 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-23 17:51:03,526 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-23 17:51:03,526 [INFO] Slow poll done.
+2026-07-23 17:56:03,545 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-23 17:56:04,431 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-23 17:56:06 [INFO] Order submitted: buy 116 ABBV @ market → pending_new
+2026-07-23 17:56:06,142 [INFO] Order submitted: buy 116 ABBV @ market → pending_new
+2026-07-23 17:56:06,524 [INFO] Bought ABBV: 116@257.32 cycle=1/3
+2026-07-23 17:56:06,931 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-23 17:56:07,331 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-07-23 17:56:07,728 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-23 17:56:07,728 [INFO] Slow poll done.
+2026-07-23 17:56:17,732 [INFO] Buy detected: ABBV (bookkeeper confirmed: 116 @ $257.41)
