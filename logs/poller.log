@@ -23055,3 +23055,55 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-24 20:57:59,387 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
 2026-07-24 20:57:59,813 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
 2026-07-24 20:57:59,814 [INFO] Slow poll done.
+2026-07-24 21:03:00,197 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-24 21:03:01,180 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:03:01,741 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-24 21:03:02,130 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:03:02,516 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:03:03,039 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:03:03,040 [INFO] Slow poll done.
+2026-07-24 21:08:03,061 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-24 21:08:03,934 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:08:04,537 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-24 21:08:04,953 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:08:05,362 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:08:05,801 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:08:05,802 [INFO] Slow poll done.
+2026-07-24 21:13:05,822 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-24 21:13:06,821 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:13:07,230 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-24 21:13:07,616 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:13:08,023 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:13:08,495 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:13:08,496 [INFO] Slow poll done.
+2026-07-24 21:18:08,517 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-24 21:18:09,466 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:18:09,920 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-24 21:18:10,305 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:18:10,693 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:18:11,359 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:18:11,359 [INFO] Slow poll done.
+2026-07-24 21:23:11,380 [INFO] Regime stale (>30min) — reclassifying
+2026-07-24 21:23:13,697 [INFO] Regime: NEUTRAL — SPY -0.3% over 5 days, VIX 18.0 (moderate), 73% sector breadth
+2026-07-24 21:23:13,697 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-24 21:23:14,573 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:23:15,047 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-24 21:23:15,549 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:23:16,053 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:23:16,609 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:23:16,609 [INFO] Slow poll done.
+2026-07-24 21:28:16,628 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-24 21:28:17,504 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:28:17,926 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-24 21:28:18,353 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:28:18,770 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-24 21:28:19,297 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-24 21:28:19,298 [INFO] Slow poll done.
