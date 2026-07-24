@@ -9405,3 +9405,683 @@ Rank  Symbol   Score    Price      Gap%     Sector
 47    UDR      49.8     $39.54     -0.08  % Unknown
 48    VZ       24.8     $46.52     5.07   % Unknown
 ============================================================
+2026-07-24 16:20:05 [INFO] Regime: NEUTRAL — SPY -0.7% over 5 days, VIX 18.9 (moderate), 45% sector breadth
+2026-07-24 16:20:05 [INFO] Starting AFTER-MARKET screen at 09:20 ET with regime: NEUTRAL
+2026-07-24 16:20:05 [INFO] Universe: 194 Sharia-compliant stocks
+2026-07-24 16:20:05 [INFO] Screening 194 stocks with Twelve Data batch API...
+2026-07-24 16:20:06 [INFO]   ✅ AAPL: Twelve Data (gap=-1.30%, price=321.66)
+2026-07-24 16:20:06 [INFO]   ✅ ABBV: Twelve Data (gap=1.43%, price=256.92001)
+2026-07-24 16:20:06 [INFO]   ✅ ABT: Twelve Data (gap=0.18%, price=100.75)
+2026-07-24 16:20:06 [INFO]   ✅ ACN: Twelve Data (gap=-0.96%, price=138.74001)
+2026-07-24 16:20:06 [INFO]   ✅ ADBE: Twelve Data (gap=-2.83%, price=212.17)
+2026-07-24 16:20:06 [INFO]   ✅ AEE: Twelve Data (gap=1.12%, price=113.27)
+2026-07-24 16:20:06 [INFO]   ✅ AEP: Twelve Data (gap=1.39%, price=134.92)
+2026-07-24 16:20:06 [INFO]   ✅ AES: Twelve Data (gap=-0.20%, price=14.83)
+2026-07-24 16:23:07 [INFO]   ✅ TECH: Twelve Data (gap=-0.01%, price=71.77)
+2026-07-24 16:23:07 [INFO]   ✅ TGT: Twelve Data (gap=-2.49%, price=134.48)
+2026-07-24 16:23:07 [INFO]   ✅ TJX: Twelve Data (gap=-1.24%, price=153.48)
+2026-07-24 16:23:07 [INFO]   ✅ TMO: Twelve Data (gap=8.71%, price=572.32001)
+2026-07-24 16:23:07 [INFO]   ✅ TMUS: Twelve Data (gap=-10.75%, price=170.42)
+2026-07-24 16:23:07 [INFO]   ✅ TPG: Twelve Data (gap=0.57%, price=42.029999)
+2026-07-24 16:23:07 [INFO]   ✅ TXN: Twelve Data (gap=-3.13%, price=284.98999)
+2026-07-24 16:23:07 [INFO]   ✅ UDR: Twelve Data (gap=-0.15%, price=39.48)
+2026-07-24 16:23:33 [INFO]   ⚠️ AAPL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ AAPL: score=25.0, gap=-1.30%, vol=40795222, price=$321.66
+2026-07-24 16:23:33 [INFO]   ✅ AAPL: score=25.0, gap=-1.3%, vol=40795222
+2026-07-24 16:23:33 [INFO]   ⚠️ ABBV: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ ABBV: score=25.6, gap=1.43%, vol=4423377, price=$256.92
+2026-07-24 16:23:33 [INFO]   ✅ ABBV: score=25.6, gap=1.43%, vol=4423377
+2026-07-24 16:23:33 [INFO]   ⚠️ ABT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ ABT: score=25.1, gap=0.18%, vol=9948873, price=$100.75
+2026-07-24 16:23:33 [INFO]   ✅ ABT: score=25.1, gap=0.18%, vol=9948873
+2026-07-24 16:23:33 [INFO]   ⚠️ ACN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ ACN: score=25.0, gap=-0.96%, vol=9111210, price=$138.74
+2026-07-24 16:23:33 [INFO]   ✅ ACN: score=25.0, gap=-0.96%, vol=9111210
+2026-07-24 16:23:33 [INFO]   ⚠️ ADBE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ ADBE: score=25.0, gap=-2.83%, vol=4284129, price=$212.17
+2026-07-24 16:23:33 [INFO]   ✅ ADBE: score=25.0, gap=-2.83%, vol=4284129
+2026-07-24 16:23:33 [INFO]   ⚠️ AEE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ AEE: score=25.4, gap=1.12%, vol=886415, price=$113.27
+2026-07-24 16:23:33 [INFO]   ✅ AEE: score=25.4, gap=1.12%, vol=886415
+2026-07-24 16:23:33 [INFO]   ⚠️ AEP: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ AEP: score=25.6, gap=1.39%, vol=3416810, price=$134.92
+2026-07-24 16:23:33 [INFO]   ✅ AEP: score=25.6, gap=1.39%, vol=3416810
+2026-07-24 16:23:33 [INFO]   ⚠️ AES: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:33 [INFO]   ✅ AES: score=33.9, gap=-0.20%, vol=5007757, price=$14.83
+2026-07-24 16:23:33 [INFO]   ✅ AES: score=33.9, gap=-0.2%, vol=5007757
+2026-07-24 16:23:34 [INFO]   ✅ AFRM: Alpaca IEX (gap=6.66%, price=75.96)
+2026-07-24 16:23:34 [INFO]   ⚠️ AFRM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:34 [INFO]   ❌ AFRM: score=17.1 below threshold 25
+2026-07-24 16:23:35 [INFO]   ✅ AIV: Alpaca IEX (gap=17.27%, price=3.09)
+2026-07-24 16:23:35 [INFO]   ⚠️ AIV: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:35 [INFO]   ❌ AIV: score=8.8 below threshold 25
+2026-07-24 16:23:35 [INFO]   Progress: 10/194 screened, 8 picks, 0 failures
+2026-07-24 16:23:36 [INFO]   ✅ ALB: Alpaca IEX (gap=5.28%, price=123.06)
+2026-07-24 16:23:36 [INFO]   ⚠️ ALB: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:36 [INFO]   ❌ ALB: score=2.1 below threshold 25
+2026-07-24 16:23:37 [INFO]   ✅ ALLY: Alpaca IEX (gap=5.31%, price=46.31)
+2026-07-24 16:23:37 [INFO]   ⚠️ ALLY: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:37 [INFO]   ✅ ALLY: score=29.9, gap=5.31%, vol=0, price=$46.31
+2026-07-24 16:23:37 [INFO]   ✅ ALLY: score=29.9, gap=5.31%, vol=0
+2026-07-24 16:23:39 [INFO]   ✅ AMAT: Alpaca IEX (gap=4.67%, price=589.38)
+2026-07-24 16:23:39 [INFO]   ⚠️ AMAT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:39 [INFO]   ❌ AMAT: score=1.9 below threshold 25
+2026-07-24 16:23:40 [INFO]   ✅ AMD: Alpaca IEX (gap=6.69%, price=575.61)
+2026-07-24 16:23:40 [INFO]   ⚠️ AMD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:40 [INFO]   ❌ AMD: score=2.7 below threshold 25
+2026-07-24 16:23:41 [INFO]   ✅ AMGN: Alpaca IEX (gap=5.48%, price=391.86)
+2026-07-24 16:23:41 [INFO]   ⚠️ AMGN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:41 [INFO]   ❌ AMGN: score=2.2 below threshold 25
+2026-07-24 16:23:42 [INFO]   ✅ AMT: Alpaca IEX (gap=5.84%, price=174.3)
+2026-07-24 16:23:42 [INFO]   ⚠️ AMT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:42 [INFO]   ❌ AMT: score=2.3 below threshold 25
+2026-07-24 16:23:43 [INFO]   ✅ APD: Alpaca IEX (gap=5.99%, price=311.85)
+2026-07-24 16:23:43 [INFO]   ⚠️ APD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:43 [INFO]   ❌ APD: score=2.4 below threshold 25
+2026-07-24 16:23:44 [INFO]   ✅ APO: Alpaca IEX (gap=6.26%, price=126.44)
+2026-07-24 16:23:44 [INFO]   ⚠️ APO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:44 [INFO]   ❌ APO: score=2.5 below threshold 25
+2026-07-24 16:23:46 [INFO]   ✅ ARES: Alpaca IEX (gap=15.02%, price=139.5)
+2026-07-24 16:23:46 [INFO]   ⚠️ ARES: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:46 [INFO]   ❌ ARES: score=6.0 below threshold 25
+2026-07-24 16:23:47 [INFO]   ✅ ASH: Alpaca IEX (gap=26.65%, price=84.36)
+2026-07-24 16:23:47 [INFO]   ⚠️ ASH: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:47 [INFO]   ❌ ASH: score=20.0 below threshold 25
+2026-07-24 16:23:47 [INFO]   Progress: 20/194 screened, 9 picks, 0 failures
+2026-07-24 16:23:48 [INFO]   ✅ ASTS: Alpaca IEX (gap=5.17%, price=62.28)
+2026-07-24 16:23:48 [INFO]   ⚠️ ASTS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:48 [INFO]   ❌ ASTS: score=24.7 below threshold 25
+2026-07-24 16:23:49 [INFO]   ✅ AVB: Alpaca IEX (gap=6.96%, price=204.05)
+2026-07-24 16:23:49 [INFO]   ⚠️ AVB: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:49 [INFO]   ❌ AVB: score=2.8 below threshold 25
+2026-07-24 16:23:50 [INFO]   ✅ AVGO: Alpaca IEX (gap=4.34%, price=409.65)
+2026-07-24 16:23:50 [INFO]   ⚠️ AVGO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:50 [INFO]   ❌ AVGO: score=1.7 below threshold 25
+2026-07-24 16:23:51 [INFO]   ✅ BAX: Alpaca IEX (gap=8.49%, price=23.52)
+2026-07-24 16:23:51 [INFO]   ⚠️ BAX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:51 [INFO]   ❌ BAX: score=17.5 below threshold 25
+2026-07-24 16:23:53 [INFO]   ✅ BDX: Alpaca IEX (gap=6.75%, price=163.28)
+2026-07-24 16:23:53 [INFO]   ⚠️ BDX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:53 [INFO]   ❌ BDX: score=2.7 below threshold 25
+2026-07-24 16:23:54 [INFO]   ✅ BIIB: Alpaca IEX (gap=6.27%, price=213.15)
+2026-07-24 16:23:54 [INFO]   ⚠️ BIIB: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:54 [INFO]   ❌ BIIB: score=2.5 below threshold 25
+2026-07-24 16:23:55 [INFO]   ✅ BLK: Alpaca IEX (gap=7.07%, price=1109.85)
+2026-07-24 16:23:55 [INFO]   ⚠️ BLK: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:55 [INFO]   ❌ BLK: score=2.8 below threshold 25
+2026-07-24 16:23:56 [INFO]   ✅ BMY: Alpaca IEX (gap=5.30%, price=64.79)
+2026-07-24 16:23:56 [INFO]   ⚠️ BMY: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:56 [INFO]   ❌ BMY: score=23.2 below threshold 25
+2026-07-24 16:23:57 [INFO]   ✅ BURL: Alpaca IEX (gap=5.55%, price=358.05)
+2026-07-24 16:23:57 [INFO]   ⚠️ BURL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:57 [INFO]   ❌ BURL: score=2.2 below threshold 25
+2026-07-24 16:23:58 [INFO]   ✅ BX: Alpaca IEX (gap=5.85%, price=131.78)
+2026-07-24 16:23:58 [INFO]   ⚠️ BX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:23:58 [INFO]   ❌ BX: score=2.3 below threshold 25
+2026-07-24 16:23:58 [INFO]   Progress: 30/194 screened, 9 picks, 0 failures
+2026-07-24 16:24:00 [INFO]   ✅ BXP: Alpaca IEX (gap=9.01%, price=73.94)
+2026-07-24 16:24:00 [INFO]   ⚠️ BXP: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:00 [INFO]   ❌ BXP: score=19.2 below threshold 25
+2026-07-24 16:24:01 [INFO]   ✅ CAT: Alpaca IEX (gap=5.43%, price=942.38)
+2026-07-24 16:24:01 [INFO]   ⚠️ CAT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:01 [INFO]   ❌ CAT: score=2.2 below threshold 25
+2026-07-24 16:24:02 [INFO]   ✅ CCI: Alpaca IEX (gap=7.29%, price=80.03)
+2026-07-24 16:24:02 [INFO]   ⚠️ CCI: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:02 [INFO]   ❌ CCI: score=14.9 below threshold 25
+2026-07-24 16:24:03 [INFO]   ✅ CDNS: Alpaca IEX (gap=8.33%, price=358.02)
+2026-07-24 16:24:03 [INFO]   ⚠️ CDNS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:03 [INFO]   ❌ CDNS: score=3.3 below threshold 25
+2026-07-24 16:24:04 [INFO]   ✅ CF: Alpaca IEX (gap=6.09%, price=134.4)
+2026-07-24 16:24:04 [INFO]   ⚠️ CF: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:04 [INFO]   ❌ CF: score=2.4 below threshold 25
+2026-07-24 16:24:05 [INFO]   ✅ CG: Alpaca IEX (gap=10.04%, price=48.88)
+2026-07-24 16:24:05 [INFO]   ⚠️ CG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:05 [INFO]   ✅ CG: score=33.3, gap=10.04%, vol=0, price=$48.88
+2026-07-24 16:24:05 [INFO]   ✅ CG: score=33.3, gap=10.04%, vol=0
+2026-07-24 16:24:07 [INFO]   ✅ CHTR: Alpaca IEX (gap=-7.83%, price=116.61)
+2026-07-24 16:24:07 [INFO]   ❌ CHTR: gap=-7.83% outside range [-5.0%-50.0%]
+2026-07-24 16:24:08 [INFO]   ✅ CMCSA: Alpaca IEX (gap=2.92%, price=22.57)
+2026-07-24 16:24:08 [INFO]   ⚠️ CMCSA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:08 [INFO]   ❌ CMCSA: score=14.7 below threshold 25
+2026-07-24 16:24:09 [INFO]   ✅ CMS: Alpaca IEX (gap=6.76%, price=79.16)
+2026-07-24 16:24:09 [INFO]   ⚠️ CMS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:09 [INFO]   ❌ CMS: score=15.2 below threshold 25
+2026-07-24 16:24:10 [INFO]   ✅ CNP: Alpaca IEX (gap=7.13%, price=47.36)
+2026-07-24 16:24:10 [INFO]   ⚠️ CNP: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:10 [INFO]   ✅ CNP: score=31.3, gap=7.13%, vol=0, price=$47.36
+2026-07-24 16:24:10 [INFO]   ✅ CNP: score=31.3, gap=7.13%, vol=0
+2026-07-24 16:24:10 [INFO]   Progress: 40/194 screened, 11 picks, 0 failures
+2026-07-24 16:24:11 [INFO]   ✅ CNX: Alpaca IEX (gap=17.99%, price=40.6)
+2026-07-24 16:24:11 [INFO]   ⚠️ CNX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:11 [INFO]   ✅ CNX: score=31.6, gap=17.99%, vol=0, price=$40.60
+2026-07-24 16:24:11 [INFO]   ✅ CNX: score=31.6, gap=17.99%, vol=0
+2026-07-24 16:24:12 [INFO]   ✅ COIN: Alpaca IEX (gap=4.91%, price=169.05)
+2026-07-24 16:24:12 [INFO]   ⚠️ COIN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:12 [INFO]   ❌ COIN: score=2.0 below threshold 25
+2026-07-24 16:24:13 [INFO]   ✅ COP: Alpaca IEX (gap=4.74%, price=125.9)
+2026-07-24 16:24:13 [INFO]   ⚠️ COP: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:13 [INFO]   ❌ COP: score=1.9 below threshold 25
+2026-07-24 16:24:15 [INFO]   ✅ COST: Alpaca IEX (gap=4.94%, price=971.78)
+2026-07-24 16:24:15 [INFO]   ⚠️ COST: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:15 [INFO]   ❌ COST: score=2.0 below threshold 25
+2026-07-24 16:24:16 [INFO]   ✅ CPT: Alpaca IEX (gap=6.10%, price=119.75)
+2026-07-24 16:24:16 [INFO]   ⚠️ CPT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:16 [INFO]   ❌ CPT: score=2.4 below threshold 25
+2026-07-24 16:24:17 [INFO]   ✅ CRM: Alpaca IEX (gap=6.68%, price=167.41)
+2026-07-24 16:24:17 [INFO]   ⚠️ CRM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:17 [INFO]   ❌ CRM: score=2.7 below threshold 25
+2026-07-24 16:24:18 [INFO]   ✅ CRWD: Alpaca IEX (gap=5.81%, price=194.1)
+2026-07-24 16:24:18 [INFO]   ⚠️ CRWD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:18 [INFO]   ❌ CRWD: score=2.3 below threshold 25
+2026-07-24 16:24:19 [INFO]   ✅ CSX: Alpaca IEX (gap=5.80%, price=55.85)
+2026-07-24 16:24:19 [INFO]   ⚠️ CSX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:19 [INFO]   ✅ CSX: score=28.8, gap=5.80%, vol=0, price=$55.85
+2026-07-24 16:24:19 [INFO]   ✅ CSX: score=28.8, gap=5.8%, vol=0
+2026-07-24 16:24:20 [INFO]   ✅ CTVA: Alpaca IEX (gap=6.35%, price=94.5)
+2026-07-24 16:24:20 [INFO]   ⚠️ CTVA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:20 [INFO]   ❌ CTVA: score=5.8 below threshold 25
+2026-07-24 16:24:21 [INFO]   ✅ CVX: Alpaca IEX (gap=4.65%, price=203.47)
+2026-07-24 16:24:21 [INFO]   ⚠️ CVX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:21 [INFO]   ❌ CVX: score=1.9 below threshold 25
+2026-07-24 16:24:21 [INFO]   Progress: 50/194 screened, 13 picks, 0 failures
+2026-07-24 16:24:23 [INFO]   ✅ D: Alpaca IEX (gap=6.06%, price=75.77)
+2026-07-24 16:24:23 [INFO]   ⚠️ D: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:23 [INFO]   ❌ D: score=17.0 below threshold 25
+2026-07-24 16:24:24 [INFO]   ✅ DDOG: Alpaca IEX (gap=6.21%, price=259.62)
+2026-07-24 16:24:24 [INFO]   ⚠️ DDOG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:24 [INFO]   ❌ DDOG: score=2.5 below threshold 25
+2026-07-24 16:24:25 [INFO]   ✅ DE: Alpaca IEX (gap=5.85%, price=645.75)
+2026-07-24 16:24:25 [INFO]   ⚠️ DE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:25 [INFO]   ❌ DE: score=2.3 below threshold 25
+2026-07-24 16:24:26 [INFO]   ✅ DECK: Alpaca IEX (gap=0.16%, price=96.49)
+2026-07-24 16:24:26 [INFO]   ⚠️ DECK: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:26 [INFO]   ❌ DECK: score=2.2 below threshold 25
+2026-07-24 16:24:27 [INFO]   ✅ DG: Alpaca IEX (gap=6.66%, price=122.84)
+2026-07-24 16:24:27 [INFO]   ⚠️ DG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:27 [INFO]   ❌ DG: score=2.7 below threshold 25
+2026-07-24 16:24:28 [INFO]   ✅ DHR: Alpaca IEX (gap=5.87%, price=203.7)
+2026-07-24 16:24:28 [INFO]   ⚠️ DHR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:28 [INFO]   ❌ DHR: score=2.3 below threshold 25
+2026-07-24 16:24:29 [INFO]   ✅ DIS: Alpaca IEX (gap=5.47%, price=97.97)
+2026-07-24 16:24:29 [INFO]   ⚠️ DIS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:29 [INFO]   ❌ DIS: score=3.4 below threshold 25
+2026-07-24 16:24:31 [INFO]   ✅ DLR: Alpaca IEX (gap=9.58%, price=196.62)
+2026-07-24 16:24:31 [INFO]   ⚠️ DLR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:31 [INFO]   ❌ DLR: score=3.8 below threshold 25
+2026-07-24 16:24:32 [INFO]   ✅ DLTR: Alpaca IEX (gap=7.05%, price=126)
+2026-07-24 16:24:32 [INFO]   ⚠️ DLTR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:32 [INFO]   ❌ DLTR: score=2.8 below threshold 25
+2026-07-24 16:24:33 [INFO]   ✅ DOC: Alpaca IEX (gap=5.75%, price=23.34)
+2026-07-24 16:24:33 [INFO]   ⚠️ DOC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:33 [INFO]   ❌ DOC: score=16.3 below threshold 25
+2026-07-24 16:24:33 [INFO]   Progress: 60/194 screened, 13 picks, 0 failures
+2026-07-24 16:24:34 [INFO]   ✅ DOW: Alpaca IEX (gap=4.95%, price=32.42)
+2026-07-24 16:24:34 [INFO]   ⚠️ DOW: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:34 [INFO]   ❌ DOW: score=21.4 below threshold 25
+2026-07-24 16:24:35 [INFO]   ✅ DUK: Alpaca IEX (gap=5.35%, price=136.18)
+2026-07-24 16:24:35 [INFO]   ⚠️ DUK: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:35 [INFO]   ❌ DUK: score=2.1 below threshold 25
+2026-07-24 16:24:36 [INFO]   ✅ DVN: Alpaca IEX (gap=4.20%, price=47.19)
+2026-07-24 16:24:36 [INFO]   ⚠️ DVN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:36 [INFO]   ✅ DVN: score=30.0, gap=4.20%, vol=0, price=$47.19
+2026-07-24 16:24:36 [INFO]   ✅ DVN: score=30.0, gap=4.2%, vol=0
+2026-07-24 16:24:37 [INFO]   ✅ DXCM: Alpaca IEX (gap=7.07%, price=75.45)
+2026-07-24 16:24:37 [INFO]   ⚠️ DXCM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:37 [INFO]   ❌ DXCM: score=17.6 below threshold 25
+2026-07-24 16:24:39 [INFO]   ✅ ECL: Alpaca IEX (gap=5.86%, price=278.73)
+2026-07-24 16:24:39 [INFO]   ⚠️ ECL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:39 [INFO]   ❌ ECL: score=2.3 below threshold 25
+2026-07-24 16:24:40 [INFO]   ✅ ED: Alpaca IEX (gap=5.30%, price=118.65)
+2026-07-24 16:24:40 [INFO]   ⚠️ ED: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:40 [INFO]   ❌ ED: score=2.1 below threshold 25
+2026-07-24 16:24:41 [INFO]   ✅ EFX: Alpaca IEX (gap=10.11%, price=183.75)
+2026-07-24 16:24:41 [INFO]   ⚠️ EFX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:41 [INFO]   ❌ EFX: score=4.0 below threshold 25
+2026-07-24 16:24:42 [INFO]   ✅ EMN: Alpaca IEX (gap=7.46%, price=72.95)
+2026-07-24 16:24:42 [INFO]   ⚠️ EMN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:42 [INFO]   ❌ EMN: score=19.2 below threshold 25
+2026-07-24 16:24:43 [INFO]   ✅ EOG: Alpaca IEX (gap=4.79%, price=152.46)
+2026-07-24 16:24:43 [INFO]   ⚠️ EOG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:43 [INFO]   ❌ EOG: score=1.9 below threshold 25
+2026-07-24 16:24:44 [INFO]   ✅ EQIX: Alpaca IEX (gap=8.20%, price=1118.25)
+2026-07-24 16:24:44 [INFO]   ⚠️ EQIX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:44 [INFO]   ❌ EQIX: score=3.3 below threshold 25
+2026-07-24 16:24:44 [INFO]   Progress: 70/194 screened, 14 picks, 0 failures
+2026-07-24 16:24:45 [INFO]   ✅ EQR: Alpaca IEX (gap=6.43%, price=72.7)
+2026-07-24 16:24:45 [INFO]   ⚠️ EQR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:45 [INFO]   ❌ EQR: score=19.0 below threshold 25
+2026-07-24 16:24:47 [INFO]   ✅ EQT: Alpaca IEX (gap=5.23%, price=56.18)
+2026-07-24 16:24:47 [INFO]   ⚠️ EQT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:47 [INFO]   ✅ EQT: score=28.4, gap=5.23%, vol=0, price=$56.18
+2026-07-24 16:24:47 [INFO]   ✅ EQT: score=28.4, gap=5.23%, vol=0
+2026-07-24 16:24:48 [INFO]   ✅ ES: Alpaca IEX (gap=6.25%, price=79.27)
+2026-07-24 16:24:48 [INFO]   ⚠️ ES: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:48 [INFO]   ❌ ES: score=14.9 below threshold 25
+2026-07-24 16:24:49 [INFO]   ✅ ETR: Alpaca IEX (gap=7.86%, price=124.95)
+2026-07-24 16:24:49 [INFO]   ⚠️ ETR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:49 [INFO]   ❌ ETR: score=3.1 below threshold 25
+2026-07-24 16:24:50 [INFO]   ✅ ETSY: Alpaca IEX (gap=6.54%, price=86.16)
+2026-07-24 16:24:50 [INFO]   ⚠️ ETSY: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:50 [INFO]   ❌ ETSY: score=10.9 below threshold 25
+2026-07-24 16:24:51 [INFO]   ✅ EW: Alpaca IEX (gap=12.21%, price=93.98)
+2026-07-24 16:24:51 [INFO]   ⚠️ EW: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:51 [INFO]   ❌ EW: score=8.5 below threshold 25
+2026-07-24 16:24:52 [INFO]   ✅ EXC: Alpaca IEX (gap=5.48%, price=49.85)
+2026-07-24 16:24:52 [INFO]   ⚠️ EXC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:52 [INFO]   ✅ EXC: score=32.1, gap=5.48%, vol=0, price=$49.85
+2026-07-24 16:24:52 [INFO]   ✅ EXC: score=32.1, gap=5.48%, vol=0
+2026-07-24 16:24:53 [INFO]   ✅ EXR: Alpaca IEX (gap=6.33%, price=154.59)
+2026-07-24 16:24:53 [INFO]   ⚠️ EXR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:53 [INFO]   ❌ EXR: score=2.5 below threshold 25
+2026-07-24 16:24:55 [INFO]   ✅ FANG: Alpaca IEX (gap=5.25%, price=216.3)
+2026-07-24 16:24:55 [INFO]   ⚠️ FANG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:55 [INFO]   ❌ FANG: score=2.1 below threshold 25
+2026-07-24 16:24:56 [INFO]   ✅ FCX: Alpaca IEX (gap=4.93%, price=66.63)
+2026-07-24 16:24:56 [INFO]   ⚠️ FCX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:56 [INFO]   ❌ FCX: score=22.0 below threshold 25
+2026-07-24 16:24:56 [INFO]   Progress: 80/194 screened, 16 picks, 0 failures
+2026-07-24 16:24:57 [INFO]   ✅ FDX: Alpaca IEX (gap=5.41%, price=332.7)
+2026-07-24 16:24:57 [INFO]   ⚠️ FDX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:57 [INFO]   ❌ FDX: score=2.2 below threshold 25
+2026-07-24 16:24:58 [INFO]   ✅ FE: Alpaca IEX (gap=6.04%, price=52.47)
+2026-07-24 16:24:58 [INFO]   ⚠️ FE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:58 [INFO]   ✅ FE: score=30.9, gap=6.04%, vol=0, price=$52.47
+2026-07-24 16:24:58 [INFO]   ✅ FE: score=30.9, gap=6.04%, vol=0
+2026-07-24 16:24:59 [INFO]   ✅ FICO: Alpaca IEX (gap=7.09%, price=1291.49)
+2026-07-24 16:24:59 [INFO]   ⚠️ FICO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:24:59 [INFO]   ❌ FICO: score=2.8 below threshold 25
+2026-07-24 16:25:00 [INFO]   ✅ FMC: Alpaca IEX (gap=18.31%, price=13.83)
+2026-07-24 16:25:00 [INFO]   ⚠️ FMC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:00 [INFO]   ❌ FMC: score=15.6 below threshold 25
+2026-07-24 16:25:01 [INFO]   ✅ FTNT: Alpaca IEX (gap=5.91%, price=160.44)
+2026-07-24 16:25:01 [INFO]   ⚠️ FTNT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:01 [INFO]   ❌ FTNT: score=2.4 below threshold 25
+2026-07-24 16:25:03 [INFO]   ✅ GE: Alpaca IEX (gap=5.86%, price=369.6)
+2026-07-24 16:25:03 [INFO]   ⚠️ GE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:03 [INFO]   ❌ GE: score=2.3 below threshold 25
+2026-07-24 16:25:04 [INFO]   ✅ GILD: Alpaca IEX (gap=5.58%, price=138.17)
+2026-07-24 16:25:04 [INFO]   ⚠️ GILD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:04 [INFO]   ❌ GILD: score=2.2 below threshold 25
+2026-07-24 16:25:05 [INFO]   ✅ GOOG: Alpaca IEX (gap=0.44%, price=319.68)
+2026-07-24 16:25:05 [INFO]   ⚠️ GOOG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:05 [INFO]   ❌ GOOG: score=0.2 below threshold 25
+2026-07-24 16:25:06 [INFO]   ✅ GOOGL: Alpaca IEX (gap=1.64%, price=322.95)
+2026-07-24 16:25:06 [INFO]   ⚠️ GOOGL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:06 [INFO]   ❌ GOOGL: score=0.7 below threshold 25
+2026-07-24 16:25:07 [INFO]   ✅ GS: Alpaca IEX (gap=6.22%, price=1140.3)
+2026-07-24 16:25:07 [INFO]   ⚠️ GS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:07 [INFO]   ❌ GS: score=2.5 below threshold 25
+2026-07-24 16:25:07 [INFO]   Progress: 90/194 screened, 17 picks, 0 failures
+2026-07-24 16:25:08 [INFO]   ✅ GSAT: Alpaca IEX (gap=5.51%, price=83.48)
+2026-07-24 16:25:08 [INFO]   ⚠️ GSAT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:08 [INFO]   ❌ GSAT: score=12.1 below threshold 25
+2026-07-24 16:25:09 [INFO]   ✅ HON: Alpaca IEX (gap=5.83%, price=260.4)
+2026-07-24 16:25:09 [INFO]   ⚠️ HON: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:09 [INFO]   ❌ HON: score=2.3 below threshold 25
+2026-07-24 16:25:10 [INFO]   ✅ HOOD: Alpaca IEX (gap=4.27%, price=105.93)
+2026-07-24 16:25:10 [INFO]   ⚠️ HOOD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:10 [INFO]   ❌ HOOD: score=1.7 below threshold 25
+2026-07-24 16:25:12 [INFO]   ✅ IBM: Alpaca IEX (gap=5.62%, price=218.18)
+2026-07-24 16:25:12 [INFO]   ⚠️ IBM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:12 [INFO]   ❌ IBM: score=2.2 below threshold 25
+2026-07-24 16:25:13 [INFO]   ✅ IFF: Alpaca IEX (gap=7.44%, price=79.27)
+2026-07-24 16:25:13 [INFO]   ⚠️ IFF: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:13 [INFO]   ❌ IFF: score=15.4 below threshold 25
+2026-07-24 16:25:14 [INFO]   ✅ INTC: Alpaca IEX (gap=7.89%, price=107.94)
+2026-07-24 16:25:14 [INFO]   ⚠️ INTC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:14 [INFO]   ❌ INTC: score=3.2 below threshold 25
+2026-07-24 16:25:15 [INFO]   ✅ IQV: Alpaca IEX (gap=9.90%, price=227.85)
+2026-07-24 16:25:15 [INFO]   ⚠️ IQV: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:15 [INFO]   ❌ IQV: score=4.0 below threshold 25
+2026-07-24 16:25:16 [INFO]   ✅ IRDM: Alpaca IEX (gap=5.27%, price=50.16)
+2026-07-24 16:25:16 [INFO]   ⚠️ IRDM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:16 [INFO]   ✅ IRDM: score=32.0, gap=5.27%, vol=0, price=$50.16
+2026-07-24 16:25:16 [INFO]   ✅ IRDM: score=32.0, gap=5.27%, vol=0
+2026-07-24 16:25:17 [INFO]   ✅ ISRG: Alpaca IEX (gap=5.73%, price=351.05)
+2026-07-24 16:25:17 [INFO]   ⚠️ ISRG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:17 [INFO]   ❌ ISRG: score=2.3 below threshold 25
+2026-07-24 16:25:19 [INFO]   ✅ JNJ: Alpaca IEX (gap=5.64%, price=274)
+2026-07-24 16:25:19 [INFO]   ⚠️ JNJ: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:19 [INFO]   ❌ JNJ: score=2.3 below threshold 25
+2026-07-24 16:25:19 [INFO]   Progress: 100/194 screened, 18 picks, 0 failures
+2026-07-24 16:25:20 [INFO]   ✅ KKR: Alpaca IEX (gap=5.71%, price=101.48)
+2026-07-24 16:25:20 [INFO]   ⚠️ KKR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:20 [INFO]   ❌ KKR: score=2.3 below threshold 25
+2026-07-24 16:25:21 [INFO]   ✅ KLAC: Alpaca IEX (gap=4.34%, price=228.27)
+2026-07-24 16:25:21 [INFO]   ⚠️ KLAC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:21 [INFO]   ❌ KLAC: score=1.7 below threshold 25
+2026-07-24 16:25:22 [INFO]   ✅ KO: Alpaca IEX (gap=5.48%, price=85.53)
+2026-07-24 16:25:22 [INFO]   ⚠️ KO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:22 [INFO]   ❌ KO: score=10.9 below threshold 25
+2026-07-24 16:25:23 [INFO]   ✅ LHX: Alpaca IEX (gap=5.69%, price=316.58)
+2026-07-24 16:25:23 [INFO]   ⚠️ LHX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:23 [INFO]   ❌ LHX: score=2.3 below threshold 25
+2026-07-24 16:25:24 [INFO]   ✅ LIN: Alpaca IEX (gap=6.02%, price=536.8)
+2026-07-24 16:25:24 [INFO]   ⚠️ LIN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:24 [INFO]   ❌ LIN: score=2.4 below threshold 25
+2026-07-24 16:25:26 [INFO]   ✅ LLY: Alpaca IEX (gap=5.39%, price=1249.5)
+2026-07-24 16:25:26 [INFO]   ⚠️ LLY: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:26 [INFO]   ❌ LLY: score=2.2 below threshold 25
+2026-07-24 16:25:27 [INFO]   ✅ LNT: Alpaca IEX (gap=6.07%, price=78.93)
+2026-07-24 16:25:27 [INFO]   ⚠️ LNT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:27 [INFO]   ❌ LNT: score=15.1 below threshold 25
+2026-07-24 16:25:28 [INFO]   ✅ LRCX: Alpaca IEX (gap=3.77%, price=331.82)
+2026-07-24 16:25:28 [INFO]   ⚠️ LRCX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:28 [INFO]   ❌ LRCX: score=1.5 below threshold 25
+2026-07-24 16:25:29 [INFO]   ✅ LULU: Alpaca IEX (gap=6.22%, price=117.55)
+2026-07-24 16:25:29 [INFO]   ⚠️ LULU: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:29 [INFO]   ❌ LULU: score=2.5 below threshold 25
+2026-07-24 16:25:30 [INFO]   ✅ LUMN: Alpaca IEX (gap=14.79%, price=7.49)
+2026-07-24 16:25:30 [INFO]   ⚠️ LUMN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:30 [INFO]   ❌ LUMN: score=10.4 below threshold 25
+2026-07-24 16:25:30 [INFO]   Progress: 110/194 screened, 18 picks, 0 failures
+2026-07-24 16:25:31 [INFO]   ✅ LYB: Alpaca IEX (gap=5.38%, price=65.05)
+2026-07-24 16:25:31 [INFO]   ⚠️ LYB: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:31 [INFO]   ❌ LYB: score=23.1 below threshold 25
+2026-07-24 16:25:33 [INFO]   ✅ MA: Alpaca IEX (gap=5.36%, price=558.46)
+2026-07-24 16:25:33 [INFO]   ⚠️ MA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:33 [INFO]   ❌ MA: score=2.1 below threshold 25
+2026-07-24 16:25:34 [INFO]   ✅ MAA: Alpaca IEX (gap=6.66%, price=141.58)
+2026-07-24 16:25:34 [INFO]   ⚠️ MAA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:34 [INFO]   ❌ MAA: score=2.7 below threshold 25
+2026-07-24 16:25:35 [INFO]   ✅ MC: Alpaca IEX (gap=18.14%, price=77.52)
+2026-07-24 16:25:35 [INFO]   ⚠️ MC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:35 [INFO]   ❌ MC: score=20.7 below threshold 25
+2026-07-24 16:25:36 [INFO]   ✅ MCD: Alpaca IEX (gap=5.43%, price=277.1)
+2026-07-24 16:25:36 [INFO]   ⚠️ MCD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:36 [INFO]   ❌ MCD: score=2.2 below threshold 25
+2026-07-24 16:25:37 [INFO]   ✅ MDT: Alpaca IEX (gap=6.10%, price=87.02)
+2026-07-24 16:25:37 [INFO]   ⚠️ MDT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:37 [INFO]   ❌ MDT: score=10.2 below threshold 25
+2026-07-24 16:25:39 [INFO]   ✅ META: Alpaca IEX (gap=4.62%, price=633.9)
+2026-07-24 16:25:39 [INFO]   ⚠️ META: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:39 [INFO]   ❌ META: score=1.8 below threshold 25
+2026-07-24 16:25:40 [INFO]   ✅ MOS: Alpaca IEX (gap=5.79%, price=23.58)
+2026-07-24 16:25:40 [INFO]   ⚠️ MOS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:40 [INFO]   ❌ MOS: score=16.5 below threshold 25
+2026-07-24 16:25:41 [INFO]   ✅ MPC: Alpaca IEX (gap=5.21%, price=328.52)
+2026-07-24 16:25:41 [INFO]   ⚠️ MPC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:41 [INFO]   ❌ MPC: score=2.1 below threshold 25
+2026-07-24 16:25:42 [INFO]   ✅ MRK: Alpaca IEX (gap=5.31%, price=137.43)
+2026-07-24 16:25:42 [INFO]   ⚠️ MRK: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:42 [INFO]   ❌ MRK: score=2.1 below threshold 25
+2026-07-24 16:25:42 [INFO]   Progress: 120/194 screened, 18 picks, 0 failures
+2026-07-24 16:25:43 [INFO]   ✅ MRVL: Alpaca IEX (gap=3.95%, price=217.67)
+2026-07-24 16:25:43 [INFO]   ⚠️ MRVL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:43 [INFO]   ❌ MRVL: score=1.6 below threshold 25
+2026-07-24 16:25:44 [INFO]   ✅ MS: Alpaca IEX (gap=6.29%, price=228.69)
+2026-07-24 16:25:44 [INFO]   ⚠️ MS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:44 [INFO]   ❌ MS: score=2.5 below threshold 25
+2026-07-24 16:25:45 [INFO]   ✅ MSFT: Alpaca IEX (gap=6.09%, price=404.78)
+2026-07-24 16:25:45 [INFO]   ⚠️ MSFT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:45 [INFO]   ❌ MSFT: score=2.4 below threshold 25
+2026-07-24 16:25:47 [INFO]   ✅ MSTR: Alpaca IEX (gap=4.55%, price=97.9)
+2026-07-24 16:25:47 [INFO]   ⚠️ MSTR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:47 [INFO]   ❌ MSTR: score=3.1 below threshold 25
+2026-07-24 16:25:48 [INFO]   ✅ MUR: Alpaca IEX (gap=14.01%, price=44.91)
+2026-07-24 16:25:48 [INFO]   ⚠️ MUR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:48 [INFO]   ✅ MUR: score=32.6, gap=14.01%, vol=0, price=$44.91
+2026-07-24 16:25:48 [INFO]   ✅ MUR: score=32.6, gap=14.01%, vol=0
+2026-07-24 16:25:49 [INFO]   ✅ NEE: Alpaca IEX (gap=5.51%, price=94.77)
+2026-07-24 16:25:49 [INFO]   ⚠️ NEE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:49 [INFO]   ❌ NEE: score=5.3 below threshold 25
+2026-07-24 16:25:50 [INFO]   ✅ NEM: Alpaca IEX (gap=6.98%, price=101.33)
+2026-07-24 16:25:50 [INFO]   ⚠️ NEM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:50 [INFO]   ❌ NEM: score=2.8 below threshold 25
+2026-07-24 16:25:51 [INFO]   ✅ NET: Alpaca IEX (gap=8.01%, price=283.37)
+2026-07-24 16:25:51 [INFO]   ⚠️ NET: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:51 [INFO]   ❌ NET: score=3.2 below threshold 25
+2026-07-24 16:25:53 [INFO]   ✅ NFLX: Alpaca IEX (gap=5.13%, price=72.4)
+2026-07-24 16:25:53 [INFO]   ⚠️ NFLX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:53 [INFO]   ❌ NFLX: score=18.6 below threshold 25
+2026-07-24 16:25:54 [INFO]   ✅ NI: Alpaca IEX (gap=5.61%, price=49.35)
+2026-07-24 16:25:54 [INFO]   ⚠️ NI: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:54 [INFO]   ✅ NI: score=31.9, gap=5.61%, vol=0, price=$49.35
+2026-07-24 16:25:54 [INFO]   ✅ NI: score=31.9, gap=5.61%, vol=0
+2026-07-24 16:25:54 [INFO]   Progress: 130/194 screened, 20 picks, 0 failures
+2026-07-24 16:25:55 [INFO]   ✅ NKE: Alpaca IEX (gap=5.49%, price=43.23)
+2026-07-24 16:25:55 [INFO]   ⚠️ NKE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:55 [INFO]   ✅ NKE: score=28.1, gap=5.49%, vol=0, price=$43.23
+2026-07-24 16:25:55 [INFO]   ✅ NKE: score=28.1, gap=5.49%, vol=0
+2026-07-24 16:25:56 [INFO]   ✅ NSC: Alpaca IEX (gap=6.29%, price=370.65)
+2026-07-24 16:25:56 [INFO]   ⚠️ NSC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:56 [INFO]   ❌ NSC: score=2.5 below threshold 25
+2026-07-24 16:25:57 [INFO]   ✅ NTR: Alpaca IEX (gap=14.78%, price=78.66)
+2026-07-24 16:25:57 [INFO]   ⚠️ NTR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:57 [INFO]   ❌ NTR: score=18.7 below threshold 25
+2026-07-24 16:25:58 [INFO]   ✅ NVDA: Alpaca IEX (gap=4.68%, price=218.53)
+2026-07-24 16:25:58 [INFO]   ⚠️ NVDA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:58 [INFO]   ❌ NVDA: score=1.9 below threshold 25
+2026-07-24 16:25:59 [INFO]   ✅ O: Alpaca IEX (gap=5.44%, price=68.25)
+2026-07-24 16:25:59 [INFO]   ⚠️ O: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:25:59 [INFO]   ❌ O: score=21.2 below threshold 25
+2026-07-24 16:26:01 [INFO]   ✅ ORCL: Alpaca IEX (gap=7.03%, price=128.49)
+2026-07-24 16:26:01 [INFO]   ⚠️ ORCL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:01 [INFO]   ❌ ORCL: score=2.8 below threshold 25
+2026-07-24 16:26:02 [INFO]   ✅ OXY: Alpaca IEX (gap=4.37%, price=60.13)
+2026-07-24 16:26:02 [INFO]   ⚠️ OXY: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:02 [INFO]   ✅ OXY: score=25.7, gap=4.37%, vol=0, price=$60.13
+2026-07-24 16:26:02 [INFO]   ✅ OXY: score=25.7, gap=4.37%, vol=0
+2026-07-24 16:26:03 [INFO]   ✅ PANW: Alpaca IEX (gap=6.04%, price=345.45)
+2026-07-24 16:26:03 [INFO]   ⚠️ PANW: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:03 [INFO]   ❌ PANW: score=2.4 below threshold 25
+2026-07-24 16:26:04 [INFO]   ✅ PEG: Alpaca IEX (gap=6.09%, price=84.63)
+2026-07-24 16:26:04 [INFO]   ⚠️ PEG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:04 [INFO]   ❌ PEG: score=11.7 below threshold 25
+2026-07-24 16:26:05 [INFO]   ✅ PEP: Alpaca IEX (gap=5.25%, price=142.02)
+2026-07-24 16:26:05 [INFO]   ⚠️ PEP: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:05 [INFO]   ❌ PEP: score=2.1 below threshold 25
+2026-07-24 16:26:05 [INFO]   Progress: 140/194 screened, 22 picks, 0 failures
+2026-07-24 16:26:06 [INFO]   ✅ PFE: Alpaca IEX (gap=3.72%, price=25.92)
+2026-07-24 16:26:06 [INFO]   ⚠️ PFE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:06 [INFO]   ❌ PFE: score=17.0 below threshold 25
+2026-07-24 16:26:08 [INFO]   ✅ PG: Alpaca IEX (gap=4.58%, price=153.68)
+2026-07-24 16:26:08 [INFO]   ⚠️ PG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:08 [INFO]   ❌ PG: score=1.8 below threshold 25
+2026-07-24 16:26:09 [INFO]   ✅ PJT: Alpaca IEX (gap=25.79%, price=206.34)
+2026-07-24 16:26:09 [INFO]   ⚠️ PJT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:09 [INFO]   ❌ PJT: score=10.3 below threshold 25
+2026-07-24 16:26:10 [INFO]   ✅ PLD: Alpaca IEX (gap=5.82%, price=153.51)
+2026-07-24 16:26:10 [INFO]   ⚠️ PLD: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:10 [INFO]   ❌ PLD: score=2.3 below threshold 25
+2026-07-24 16:26:11 [INFO]   ✅ PLTR: Alpaca IEX (gap=6.12%, price=130.83)
+2026-07-24 16:26:11 [INFO]   ⚠️ PLTR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:11 [INFO]   ❌ PLTR: score=2.4 below threshold 25
+2026-07-24 16:26:12 [INFO]   ✅ PPG: Alpaca IEX (gap=10.81%, price=126)
+2026-07-24 16:26:12 [INFO]   ⚠️ PPG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:12 [INFO]   ❌ PPG: score=4.3 below threshold 25
+2026-07-24 16:26:13 [INFO]   ✅ PSA: Alpaca IEX (gap=9.95%, price=346.54)
+2026-07-24 16:26:13 [INFO]   ⚠️ PSA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:13 [INFO]   ❌ PSA: score=4.0 below threshold 25
+2026-07-24 16:26:14 [INFO]   ✅ PSX: Alpaca IEX (gap=5.09%, price=217.45)
+2026-07-24 16:26:14 [INFO]   ⚠️ PSX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:14 [INFO]   ❌ PSX: score=2.0 below threshold 25
+2026-07-24 16:26:16 [INFO]   ✅ PYPL: Alpaca IEX (gap=4.96%, price=58.79)
+2026-07-24 16:26:16 [INFO]   ⚠️ PYPL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:16 [INFO]   ✅ PYPL: score=26.7, gap=4.96%, vol=0, price=$58.79
+2026-07-24 16:26:16 [INFO]   ✅ PYPL: score=26.7, gap=4.96%, vol=0
+2026-07-24 16:26:17 [INFO]   ✅ QCOM: Alpaca IEX (gap=4.91%, price=179.64)
+2026-07-24 16:26:17 [INFO]   ⚠️ QCOM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:17 [INFO]   ❌ QCOM: score=2.0 below threshold 25
+2026-07-24 16:26:17 [INFO]   Progress: 150/194 screened, 23 picks, 0 failures
+2026-07-24 16:26:18 [INFO]   ✅ REGN: Alpaca IEX (gap=5.65%, price=688.8)
+2026-07-24 16:26:18 [INFO]   ⚠️ REGN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:18 [INFO]   ❌ REGN: score=2.3 below threshold 25
+2026-07-24 16:26:19 [INFO]   ✅ RIOT: Alpaca IEX (gap=13.36%, price=27.07)
+2026-07-24 16:26:19 [INFO]   ⚠️ RIOT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:19 [INFO]   ❌ RIOT: score=21.6 below threshold 25
+2026-07-24 16:26:20 [INFO]   ✅ RKLB: Alpaca IEX (gap=5.62%, price=73.95)
+2026-07-24 16:26:20 [INFO]   ⚠️ RKLB: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:20 [INFO]   ❌ RKLB: score=17.9 below threshold 25
+2026-07-24 16:26:21 [INFO]   ✅ ROST: Alpaca IEX (gap=8.17%, price=251.36)
+2026-07-24 16:26:21 [INFO]   ⚠️ ROST: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:21 [INFO]   ❌ ROST: score=3.3 below threshold 25
+2026-07-24 16:26:23 [INFO]   ✅ RRC: Alpaca IEX (gap=5.97%, price=41.2)
+2026-07-24 16:26:23 [INFO]   ⚠️ RRC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:23 [INFO]   ✅ RRC: score=27.1, gap=5.97%, vol=0, price=$41.20
+2026-07-24 16:26:23 [INFO]   ✅ RRC: score=27.1, gap=5.97%, vol=0
+2026-07-24 16:26:24 [INFO]   ✅ SBUX: Alpaca IEX (gap=5.40%, price=108.82)
+2026-07-24 16:26:24 [INFO]   ⚠️ SBUX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:24 [INFO]   ❌ SBUX: score=2.2 below threshold 25
+2026-07-24 16:26:25 [INFO]   ✅ SCHW: Alpaca IEX (gap=5.29%, price=106.99)
+2026-07-24 16:26:25 [INFO]   ⚠️ SCHW: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:25 [INFO]   ❌ SCHW: score=2.1 below threshold 25
+2026-07-24 16:26:26 [INFO]   ✅ SHW: Alpaca IEX (gap=5.95%, price=328.93)
+2026-07-24 16:26:26 [INFO]   ⚠️ SHW: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:26 [INFO]   ❌ SHW: score=2.4 below threshold 25
+2026-07-24 16:26:27 [INFO]   ✅ SNOW: Alpaca IEX (gap=6.16%, price=281.4)
+2026-07-24 16:26:27 [INFO]   ⚠️ SNOW: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:27 [INFO]   ❌ SNOW: score=2.5 below threshold 25
+2026-07-24 16:26:28 [INFO]   ✅ SNPS: Alpaca IEX (gap=5.95%, price=395.76)
+2026-07-24 16:26:28 [INFO]   ⚠️ SNPS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:28 [INFO]   ❌ SNPS: score=2.4 below threshold 25
+2026-07-24 16:26:28 [INFO]   Progress: 160/194 screened, 24 picks, 0 failures
+2026-07-24 16:26:29 [INFO]   ✅ SO: Alpaca IEX (gap=5.53%, price=101.85)
+2026-07-24 16:26:29 [INFO]   ⚠️ SO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:29 [INFO]   ❌ SO: score=2.2 below threshold 25
+2026-07-24 16:26:31 [INFO]   ✅ SOFI: Alpaca IEX (gap=0.06%, price=16.67)
+2026-07-24 16:26:31 [INFO]   ⚠️ SOFI: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:31 [INFO]   ❌ SOFI: score=10.0 below threshold 25
+2026-07-24 16:26:32 [INFO]   ✅ SPCE: Alpaca IEX (gap=14.84%, price=2.98)
+2026-07-24 16:26:32 [INFO]   ⚠️ SPCE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:32 [INFO]   ❌ SPCE: score=7.7 below threshold 25
+2026-07-24 16:26:33 [INFO]   ✅ SQM: Alpaca IEX (gap=18.28%, price=81.97)
+2026-07-24 16:26:33 [INFO]   ⚠️ SQM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:33 [INFO]   ❌ SQM: score=18.1 below threshold 25
+2026-07-24 16:26:34 [INFO]   ✅ SRE: Alpaca IEX (gap=6.51%, price=99.52)
+2026-07-24 16:26:34 [INFO]   ⚠️ SRE: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:34 [INFO]   ❌ SRE: score=2.9 below threshold 25
+2026-07-24 16:26:35 [INFO]   ✅ SYF: Alpaca IEX (gap=6.06%, price=76.13)
+2026-07-24 16:26:35 [INFO]   ⚠️ SYF: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:35 [INFO]   ❌ SYF: score=16.7 below threshold 25
+2026-07-24 16:26:36 [INFO]   ✅ SYK: Alpaca IEX (gap=7.92%, price=344.4)
+2026-07-24 16:26:36 [INFO]   ⚠️ SYK: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:36 [INFO]   ❌ SYK: score=3.2 below threshold 25
+2026-07-24 16:26:37 [INFO]   ✅ T: Alpaca IEX (gap=5.27%, price=24.15)
+2026-07-24 16:26:37 [INFO]   ⚠️ T: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ❌ T: score=16.6 below threshold 25
+2026-07-24 16:26:37 [INFO]   ⚠️ TECH: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ TECH: score=41.9, gap=-0.01%, vol=3113172, price=$71.77
+2026-07-24 16:26:37 [INFO]   ✅ TECH: score=41.9, gap=-0.01%, vol=3113172
+2026-07-24 16:26:37 [INFO]   ⚠️ TGT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ TGT: score=25.0, gap=-2.49%, vol=3201591, price=$134.48
+2026-07-24 16:26:37 [INFO]   ✅ TGT: score=25.0, gap=-2.49%, vol=3201591
+2026-07-24 16:26:37 [INFO]   Progress: 170/194 screened, 26 picks, 0 failures
+2026-07-24 16:26:37 [INFO]   ⚠️ TJX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ TJX: score=25.0, gap=-1.24%, vol=3337724, price=$153.48
+2026-07-24 16:26:37 [INFO]   ✅ TJX: score=25.0, gap=-1.24%, vol=3337724
+2026-07-24 16:26:37 [INFO]   ⚠️ TMO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ TMO: score=28.5, gap=8.71%, vol=5800421, price=$572.32
+2026-07-24 16:26:37 [INFO]   ✅ TMO: score=28.5, gap=8.71%, vol=5800421
+2026-07-24 16:26:37 [INFO]   ❌ TMUS: gap=-10.75% outside range [-5.0%-50.0%]
+2026-07-24 16:26:37 [INFO]   ⚠️ TPG: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ TPG: score=50.4, gap=0.57%, vol=2329678, price=$42.03
+2026-07-24 16:26:37 [INFO]   ✅ TPG: score=50.4, gap=0.57%, vol=2329678
+2026-07-24 16:26:37 [INFO]   ⚠️ TXN: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ TXN: score=25.0, gap=-3.13%, vol=11734143, price=$284.99
+2026-07-24 16:26:37 [INFO]   ✅ TXN: score=25.0, gap=-3.13%, vol=11734143
+2026-07-24 16:26:37 [INFO]   ⚠️ UDR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:37 [INFO]   ✅ UDR: score=48.7, gap=-0.15%, vol=2101129, price=$39.48
+2026-07-24 16:26:37 [INFO]   ✅ UDR: score=48.7, gap=-0.15%, vol=2101129
+2026-07-24 16:26:39 [INFO]   ✅ ULTA: Alpaca IEX (gap=6.29%, price=508.2)
+2026-07-24 16:26:39 [INFO]   ⚠️ ULTA: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:39 [INFO]   ❌ ULTA: score=2.5 below threshold 25
+2026-07-24 16:26:40 [INFO]   ✅ UNH: Alpaca IEX (gap=5.33%, price=446.11)
+2026-07-24 16:26:40 [INFO]   ⚠️ UNH: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:40 [INFO]   ❌ UNH: score=2.1 below threshold 25
+2026-07-24 16:26:41 [INFO]   ✅ UNP: Alpaca IEX (gap=6.27%, price=323.02)
+2026-07-24 16:26:41 [INFO]   ⚠️ UNP: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:41 [INFO]   ❌ UNP: score=2.5 below threshold 25
+2026-07-24 16:26:42 [INFO]   ✅ UPS: Alpaca IEX (gap=6.15%, price=121.07)
+2026-07-24 16:26:42 [INFO]   ⚠️ UPS: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:42 [INFO]   ❌ UPS: score=2.5 below threshold 25
+2026-07-24 16:26:42 [INFO]   Progress: 180/194 screened, 31 picks, 0 failures
+2026-07-24 16:26:43 [INFO]   ✅ V: Alpaca IEX (gap=5.93%, price=372.33)
+2026-07-24 16:26:43 [INFO]   ⚠️ V: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:43 [INFO]   ❌ V: score=2.4 below threshold 25
+2026-07-24 16:26:44 [INFO]   ✅ VLO: Alpaca IEX (gap=4.88%, price=320.23)
+2026-07-24 16:26:44 [INFO]   ⚠️ VLO: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:44 [INFO]   ❌ VLO: score=2.0 below threshold 25
+2026-07-24 16:26:45 [INFO]   ✅ VRTX: Alpaca IEX (gap=5.70%, price=500.12)
+2026-07-24 16:26:45 [INFO]   ⚠️ VRTX: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:45 [INFO]   ❌ VRTX: score=2.3 below threshold 25
+2026-07-24 16:26:47 [INFO]   ✅ VTR: Alpaca IEX (gap=7.25%, price=105)
+2026-07-24 16:26:47 [INFO]   ⚠️ VTR: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:47 [INFO]   ❌ VTR: score=2.9 below threshold 25
+2026-07-24 16:26:48 [INFO]   ✅ VZ: Alpaca IEX (gap=0.16%, price=43.89)
+2026-07-24 16:26:48 [INFO]   ⚠️ VZ: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:48 [INFO]   ✅ VZ: score=26.4, gap=0.16%, vol=0, price=$43.89
+2026-07-24 16:26:48 [INFO]   ✅ VZ: score=26.4, gap=0.16%, vol=0
+2026-07-24 16:26:49 [INFO]   ✅ WAT: Alpaca IEX (gap=5.73%, price=404.25)
+2026-07-24 16:26:49 [INFO]   ⚠️ WAT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:49 [INFO]   ❌ WAT: score=2.3 below threshold 25
+2026-07-24 16:26:50 [INFO]   ✅ WEC: Alpaca IEX (gap=6.61%, price=122.31)
+2026-07-24 16:26:50 [INFO]   ⚠️ WEC: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:50 [INFO]   ❌ WEC: score=2.6 below threshold 25
+2026-07-24 16:26:51 [INFO]   ✅ WELL: Alpaca IEX (gap=6.32%, price=262.56)
+2026-07-24 16:26:51 [INFO]   ⚠️ WELL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:51 [INFO]   ❌ WELL: score=2.5 below threshold 25
+2026-07-24 16:26:52 [INFO]   ✅ WLK: Alpaca IEX (gap=7.05%, price=80.33)
+2026-07-24 16:26:53 [INFO]   ⚠️ WLK: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:53 [INFO]   ❌ WLK: score=14.6 below threshold 25
+2026-07-24 16:26:54 [INFO]   ✅ WMT: Alpaca IEX (gap=5.19%, price=114.02)
+2026-07-24 16:26:54 [INFO]   ⚠️ WMT: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:54 [INFO]   ❌ WMT: score=2.1 below threshold 25
+2026-07-24 16:26:54 [INFO]   Progress: 190/194 screened, 32 picks, 0 failures
+2026-07-24 16:26:55 [INFO]   ✅ XEL: Alpaca IEX (gap=6.56%, price=86.1)
+2026-07-24 16:26:55 [INFO]   ⚠️ XEL: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:55 [INFO]   ❌ XEL: score=11.0 below threshold 25
+2026-07-24 16:26:56 [INFO]   ✅ XOM: Alpaca IEX (gap=4.33%, price=163.65)
+2026-07-24 16:26:56 [INFO]   ⚠️ XOM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:56 [INFO]   ❌ XOM: score=1.7 below threshold 25
+2026-07-24 16:26:57 [INFO]   ✅ YUM: Alpaca IEX (gap=5.63%, price=155.67)
+2026-07-24 16:26:57 [INFO]   ⚠️ YUM: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:57 [INFO]   ❌ YUM: score=2.3 below threshold 25
+2026-07-24 16:26:58 [INFO]   ✅ ZBH: Alpaca IEX (gap=8.84%, price=97.6)
+2026-07-24 16:26:58 [INFO]   ⚠️ ZBH: cap unknown (Alpaca), accepting for paper trading
+2026-07-24 16:26:58 [INFO]   ❌ ZBH: score=5.0 below threshold 25
+2026-07-24 16:26:58 [INFO] Screen complete: 32 picks from 194 screened (0 failures)
+2026-07-24 16:26:58 [INFO] Saved 32 picks to /home/mino/us-exec/us_picks.json
+
+============================================================
+PRE-MARKET SCREEN RESULTS
+Regime: NEUTRAL
+============================================================
+Time: 09:20 ET
+Picks: 32
+
+Rank  Symbol   Score    Price      Gap%     Sector
+------------------------------------------------------------
+1     AAPL     25.0     $321.66    -1.30  % Unknown
+2     ABBV     25.6     $256.92    1.43   % Unknown
+3     ABT      25.1     $100.75    0.18   % Unknown
+4     ACN      25.0     $138.74    -0.96  % Unknown
+5     ADBE     25.0     $212.17    -2.83  % Unknown
+6     AEE      25.4     $113.27    1.12   % Unknown
+7     AEP      25.6     $134.92    1.39   % Unknown
+8     AES      33.9     $14.83     -0.20  % Unknown
+9     ALLY     29.9     $46.31     5.31   % Unknown
+10    CG       33.3     $48.88     10.04  % Unknown
+11    CNP      31.3     $47.36     7.13   % Unknown
+12    CNX      31.6     $40.60     17.99  % Unknown
+13    CSX      28.8     $55.85     5.80   % Unknown
+14    DVN      30.0     $47.19     4.20   % Unknown
+15    EQT      28.4     $56.18     5.23   % Unknown
+16    EXC      32.1     $49.85     5.48   % Unknown
+17    FE       30.9     $52.47     6.04   % Unknown
+18    IRDM     32.0     $50.16     5.27   % Unknown
+19    MUR      32.6     $44.91     14.01  % Unknown
+20    NI       31.9     $49.35     5.61   % Unknown
+21    NKE      28.1     $43.23     5.49   % Unknown
+22    OXY      25.7     $60.13     4.37   % Unknown
+23    PYPL     26.7     $58.79     4.96   % Unknown
+24    RRC      27.1     $41.20     5.97   % Unknown
+25    TECH     41.9     $71.77     -0.01  % Unknown
+26    TGT      25.0     $134.48    -2.49  % Unknown
+27    TJX      25.0     $153.48    -1.24  % Unknown
+28    TMO      28.5     $572.32    8.71   % Unknown
+29    TPG      50.4     $42.03     0.57   % Unknown
+30    TXN      25.0     $284.99    -3.13  % Unknown
+31    UDR      48.7     $39.48     -0.15  % Unknown
+32    VZ       26.4     $43.89     0.16   % Unknown
+============================================================
