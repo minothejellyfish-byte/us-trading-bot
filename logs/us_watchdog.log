@@ -163194,3 +163194,509 @@ error: symbol limit exceeded (405)
 [2026-07-27 09:29:54 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-07-27 09:30:25 EDT] [INFO] --- Component Check ---
+[2026-07-27 09:30:25 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 45728 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-27 09:30:25 EDT] [INFO] ✅ us-poller: OK — 1978997
+1979064
+[2026-07-27 09:30:25 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-27 09:30:25 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-27 09:30:25 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (542.9ms)
+[2026-07-27 09:30:25 EDT] [INFO] --- Tracked Files ---
+[2026-07-27 09:30:25 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-27 09:30:25 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-27 09:30:25 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:30:25 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:30:25 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:30:25 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:30:57 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:30:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:30:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:30:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:31:28 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:31:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:31:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:31:28 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:31:59 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:31:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:31:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:31:59 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:32:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:32:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:32:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:32:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:33:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:33:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:33:01 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:33:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:33:32 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:33:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:33:32 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:33:32 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:34:04 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:34:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:34:04 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:34:04 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:34:35 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:34:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:34:35 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:34:35 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:35:06 EDT] [INFO] --- Component Check ---
+[2026-07-27 09:35:06 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 45728 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-27 09:35:06 EDT] [INFO] ✅ us-poller: OK — 1978997
+1979572
+[2026-07-27 09:35:06 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-27 09:35:06 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-27 09:35:06 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (555.4ms)
+[2026-07-27 09:35:06 EDT] [INFO] --- Tracked Files ---
+[2026-07-27 09:35:06 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-27 09:35:06 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-27 09:35:06 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:35:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:35:06 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:30:10,803 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-07-27 16:30:11,257 [INFO] Cycle check failed for ACN: Cycle limit reached (3/2) for DEFENSIVE
+20
+[2026-07-27 09:35:06 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:35:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:35:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:35:37 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:35:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:36:09 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:36:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:36:09 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:36:09 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:36:40 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:36:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:36:40 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:36:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:37:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:37:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:37:11 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:37:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:37:42 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:37:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:37:42 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:37:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:38:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:38:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:38:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:38:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:38:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:38:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:38:45 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:38:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:39:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:39:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:39:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:39:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:39:47 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:39:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:39:47 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:35:14,887 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:35:15,279 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:35:15,980 [INFO] C
+[2026-07-27 09:39:47 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:40:18 EDT] [INFO] --- Component Check ---
+[2026-07-27 09:40:18 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 45728 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-27 09:40:18 EDT] [INFO] ✅ us-poller: OK — 1978997
+1981437
+[2026-07-27 09:40:18 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-27 09:40:18 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-27 09:40:18 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (554.6ms)
+[2026-07-27 09:40:18 EDT] [INFO] --- Tracked Files ---
+[2026-07-27 09:40:18 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-27 09:40:18 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-27 09:40:18 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:40:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:40:18 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:40:18 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:40:50 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:40:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:40:50 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:40:50 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:41:21 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:41:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:41:21 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:41:21 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:41:52 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:41:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:41:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:41:52 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:42:23 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:42:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:42:23 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:42:23 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:42:54 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:42:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:42:54 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:42:54 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:43:26 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:43:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:43:26 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:43:26 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:43:57 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:43:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:43:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:43:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:44:28 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:44:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:44:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:44:28 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:44:59 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:44:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:44:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:40:17,678 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:40:18,050 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:40:18,606 [INFO] C
+[2026-07-27 09:44:59 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:45:31 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:45:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:45:31 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:45:31 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:46:02 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:46:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:46:02 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:46:02 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:46:33 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:46:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:46:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:46:33 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:47:04 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:47:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:47:04 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:47:04 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:47:36 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:47:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:47:36 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:47:36 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:48:07 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:48:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:48:07 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:48:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:48:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:48:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:48:38 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:48:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:49:09 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:49:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:49:09 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:49:09 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:49:40 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:49:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:49:40 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:49:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:50:12 EDT] [INFO] --- Component Check ---
+[2026-07-27 09:50:12 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 45728 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-27 09:50:12 EDT] [INFO] ✅ us-poller: OK — 1978997
+1982949
+[2026-07-27 09:50:12 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-27 09:50:12 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-27 09:50:12 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (550.4ms)
+[2026-07-27 09:50:12 EDT] [INFO] --- Tracked Files ---
+[2026-07-27 09:50:12 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-27 09:50:12 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-27 09:50:12 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:50:12 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:50:12 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:45:20,268 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:45:20,650 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:45:21,197 [INFO] C
+[2026-07-27 09:50:12 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:50:43 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:50:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:50:43 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:50:43 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:51:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:51:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:51:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:51:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:51:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:51:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:51:45 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:51:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:52:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:52:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:52:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:52:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:52:48 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:52:48 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:52:48 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:52:48 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:53:19 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:53:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:53:19 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:53:19 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:53:50 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:53:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:53:50 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:53:50 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:54:21 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:54:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:54:21 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:54:21 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:54:52 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:54:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:54:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:54:52 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:55:24 EDT] [INFO] --- Component Check ---
+[2026-07-27 09:55:24 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 45728 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-27 09:55:24 EDT] [INFO] ✅ us-poller: OK — 1978997
+1984500
+[2026-07-27 09:55:24 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-27 09:55:24 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-27 09:55:24 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (574.2ms)
+[2026-07-27 09:55:24 EDT] [INFO] --- Tracked Files ---
+[2026-07-27 09:55:24 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-27 09:55:24 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-27 09:55:24 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:55:24 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:55:24 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:50:24,979 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:50:25,346 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:50:25,858 [INFO] C
+[2026-07-27 09:55:24 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:55:55 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:55:55 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:55:55 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:55:55 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:56:26 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:56:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:56:26 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:56:26 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:56:57 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:56:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:56:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:56:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:57:28 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:57:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:57:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:57:28 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:58:00 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:58:00 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:58:00 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:58:00 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:58:31 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:58:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:58:31 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:58:31 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:59:02 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:59:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:59:02 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:59:02 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-27 09:59:33 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-27 09:59:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-27 09:59:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-27 16:55:27,436 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-07-27 16:55:27,809 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-07-27 16:55:28,345 [INFO] C
+[2026-07-27 09:59:33 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
