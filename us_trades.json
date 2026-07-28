@@ -909,5 +909,35 @@
     "pnl_pct": 1.45,
     "duration_min": 212.1,
     "date": "2026-07-27"
+  },
+  {
+    "id": "CG_095033",
+    "symbol": "CG",
+    "side": "BUY",
+    "qty": 435,
+    "price": 45.95,
+    "timestamp": "2026-07-28T09:50:33.813491-04:00",
+    "date": "2026-07-28",
+    "signal": "vwap_reclaim",
+    "regime": "DEFENSIVE",
+    "notes": ""
+  },
+  {
+    "id": "?",
+    "symbol": "CG",
+    "qty": 435,
+    "entry_price": 46.03,
+    "entry_time": "2026-07-28T09:50:33.381794-04:00",
+    "entry_signal": "auto",
+    "exit_price": 45.84,
+    "exit_time": "2026-07-28T09:55:38.259268-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $46.12",
+    "exit_regime": "DEFENSIVE",
+    "gross_pnl": -80.99,
+    "spread_cost": 39.96,
+    "net_pnl": -120.95,
+    "pnl_pct": -0.4,
+    "duration_min": 5.1,
+    "date": "2026-07-28"
   }
 ]

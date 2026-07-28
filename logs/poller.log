@@ -23625,3 +23625,70 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-27 22:58:20,290 [INFO] Slow poll done.
 2026-07-27 23:00:00,298 [INFO] Market closed — poller exiting.
 2026-07-27 23:00:01,003 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-07-28 16:30:10,273 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-28 16:30:10,273 [INFO] Poller starting in daemon mode
+2026-07-28 16:30:10,273 [INFO] US Price poller started.
+2026-07-28 16:30:10,978 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-28 16:30:11 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-28 16:30:11,237 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-28 16:30:12,714 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-07-28 16:30:13,167 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:30:13,869 [INFO] Cycle check failed for CG: Cycle limit reached (3/2) for DEFENSIVE
+2026-07-28 16:30:15,122 [INFO] Cycle check failed for CNP: Cycle limit reached (3/2) for DEFENSIVE
+2026-07-28 16:30:15,545 [INFO] VWAP entry blocked for CNX: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-07-28 16:30:15,545 [INFO] Slow poll done.
+2026-07-28 16:35:17,200 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-28 16:35:18,479 [INFO] Cycle check failed for ALLY: Cycle limit reached (3/2) for DEFENSIVE
+2026-07-28 16:35:19,100 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:35:19,590 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-07-28 16:35:20,020 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-07-28 16:35:20,644 [INFO] Cycle check failed for CNX: Cycle limit reached (3/2) for DEFENSIVE
+2026-07-28 16:35:20,644 [INFO] Slow poll done.
+2026-07-28 16:40:20,665 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-28 16:40:21,985 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-07-28 16:40:22,408 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:40:22,799 [INFO] VWAP entry blocked for CG: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-07-28 16:40:23,179 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-07-28 16:40:23,705 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-07-28 16:40:23,706 [INFO] Slow poll done.
+2026-07-28 16:45:23,725 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-28 16:45:24,951 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-07-28 16:45:25,442 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:45:25,903 [INFO] VWAP entry blocked for CG: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-07-28 16:45:26,397 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-07-28 16:45:27,063 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-07-28 16:45:27,063 [INFO] Slow poll done.
+2026-07-28 16:50:27,085 [INFO] Regime stale (>30min) — reclassifying
+2026-07-28 16:50:29,936 [INFO] Regime: DEFENSIVE — SPY -1.3% over 5 days, VIX 19.0 (elevated fear), 64% sector breadth
+2026-07-28 16:50:29,937 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-28 16:50:30,875 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-07-28 16:50:31,520 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:50:33 [INFO] Order submitted: buy 435 CG @ market → pending_new
+2026-07-28 16:50:33,381 [INFO] Order submitted: buy 435 CG @ market → pending_new
+2026-07-28 16:50:33,812 [INFO] Bought CG: 435@45.95 cycle=1/2
+2026-07-28 16:50:34,275 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-07-28 16:50:34,837 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-07-28 16:50:34,837 [INFO] Slow poll done.
+2026-07-28 16:50:44,841 [INFO] Buy detected: CG (bookkeeper confirmed: 435 @ $45.95)
+2026-07-28 16:55:35,366 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-28 16:55:37 [INFO] Order submitted: sell 435 CG @ market → pending_new
+2026-07-28 16:55:37,690 [INFO] Order submitted: sell 435 CG @ market → pending_new
+2026-07-28 16:55:38,257 [INFO] Sold CG: 435 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $46.12
+2026-07-28 16:55:38,734 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:55:39,194 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-28 16:55:39,629 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-07-28 16:55:40,040 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-07-28 16:55:40,040 [INFO] Slow poll done.
+2026-07-28 16:55:50,041 [INFO] Sell detected (scratch): CG pct=-100.0%
