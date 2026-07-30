@@ -24771,3 +24771,24 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-30 16:30:10,790 [INFO] AlpacaTrader initialized (PAPER)
 /home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
   return pd.Timestamp(val, tz=NY, unit=self._unit)
+2026-07-30 16:30:13,828 [INFO] Cycle check failed for ALLY: Cycle limit reached (3/2) for DEFENSIVE
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-30 16:30:14,420 [INFO] Cycle check failed for ASTS: Cycle limit reached (2/2) for DEFENSIVE
+2026-07-30 16:30:16 [INFO] Order submitted: buy 677 BAX @ market → pending_new
+2026-07-30 16:30:16,912 [INFO] Order submitted: buy 677 BAX @ market → pending_new
+2026-07-30 16:30:17,374 [INFO] Bought BAX: 677@29.50 cycle=1/2
+2026-07-30 16:30:17,386 [INFO] VWAP entry blocked for BAX: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-30 16:30:19,213 [ERROR] $CG: possibly delisted; no price data found  (period=1d)
+2026-07-30 16:30:19,215 [ERROR] 
+1 Failed download:
+2026-07-30 16:30:19,215 [ERROR] ['CG']: possibly delisted; no price data found  (period=1d)
+2026-07-30 16:30:19,218 [WARNING] All price sources failed for CG
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-30 16:30:19,689 [INFO] VWAP entry blocked for CNP: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-07-30 16:30:19,689 [INFO] Slow poll done.
