@@ -24913,3 +24913,53 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-30 17:25:48,274 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.07% over 5 bars (entry blocked — not rising)
 2026-07-30 17:25:48,653 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.08% over 5 bars (entry blocked — not rising)
 2026-07-30 17:25:48,653 [INFO] Slow poll done.
+2026-07-30 17:30:49,079 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-30 17:30:50,749 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-30 17:30:51,830 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.06% over 5 bars (entry blocked — not rising)
+2026-07-30 17:30:52,242 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-07-30 17:30:52,242 [INFO] Slow poll done.
+2026-07-30 17:35:52,266 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-30 17:35:53,701 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-07-30 17:35:54,643 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-30 17:35:55,035 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.06% over 5 bars (entry blocked — not rising)
+2026-07-30 17:35:55,036 [INFO] Slow poll done.
+2026-07-30 17:40:55,058 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-30 17:40:56,365 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-30 17:40:57,171 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-30 17:40:57,550 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-07-30 17:40:57,550 [INFO] Slow poll done.
+2026-07-30 17:45:57,574 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-30 17:45:58,804 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-07-30 17:45:59,656 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-07-30 17:46:00,041 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.10% over 5 bars (entry blocked — not rising)
+2026-07-30 17:46:00,042 [INFO] Slow poll done.
+2026-07-30 17:51:00,064 [INFO] Regime stale (>30min) — reclassifying
+2026-07-30 17:51:02,492 [INFO] Regime: DEFENSIVE — SPY -0.3% over 5 days, VIX 18.3 (elevated fear), 36% sector breadth
+2026-07-30 17:51:02,492 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-30 17:51:03 [INFO] Order submitted: sell 692 BAX @ market → pending_new
+2026-07-30 17:51:03,883 [INFO] Order submitted: sell 692 BAX @ market → pending_new
+2026-07-30 17:51:04,254 [ERROR] tg_send failed (attempt 1/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-30 17:51:06,569 [ERROR] tg_send failed (attempt 2/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-30 17:51:08,897 [ERROR] tg_send failed (attempt 3/3): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage
+2026-07-30 17:51:08,898 [INFO] Sold BAX: 692 — ⏱ Time stop | Time stop loss: -1.3% (<= -1.0%) | DEFENSIVE: Early entry → exit by 13:00
+2026-07-30 17:51:09,310 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:51:09,733 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP rising: +0.04% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:51:10,110 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP rising: +0.05% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:51:10,492 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP falling: -0.08% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:51:10,493 [INFO] Slow poll done.
+2026-07-30 17:51:20,493 [INFO] Sell detected (scratch): BAX pct=-100.0%
+2026-07-30 17:56:00,979 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-30 17:56:01,822 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:56:02,238 [INFO] VWAP entry blocked for ASTS: DEFENSIVE: VWAP rising: +0.04% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:56:02,622 [INFO] VWAP entry blocked for BAX: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:56:02,992 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:56:03,364 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP falling: -0.04% over 5 bars (entry blocked — need strong rise)
+2026-07-30 17:56:03,365 [INFO] Slow poll done.
