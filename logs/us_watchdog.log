@@ -178905,3 +178905,437 @@ error: symbol limit exceeded (405)
 [2026-07-30 09:59:58 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-07-30 10:00:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:00:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:00:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 16:55:28,604 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:00:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:01:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:01:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:01:01 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:01:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:01:32 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:01:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:01:32 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:01:32 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:02:03 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:02:03 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:02:03 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:02:03 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:02:34 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:02:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:02:34 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:02:34 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:03:06 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:03:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:03:06 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:03:06 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:03:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:03:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:03:37 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:03:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:04:08 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:04:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:04:08 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:04:08 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:04:39 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:04:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:04:39 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:04:39 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:05:10 EDT] [INFO] --- Component Check ---
+[2026-07-30 10:05:10 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 44512 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-30 10:05:10 EDT] [INFO] ✅ us-poller: OK — 2343723
+2347064
+[2026-07-30 10:05:10 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-30 10:05:10 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-30 10:05:10 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (554.4ms)
+[2026-07-30 10:05:10 EDT] [INFO] --- Tracked Files ---
+[2026-07-30 10:05:10 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-30 10:05:10 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-30 10:05:10 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-07-30 10:05:10 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:05:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:05:10 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:05:10 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:05:42 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:05:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:05:42 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:05:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:06:13 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:06:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:06:13 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:06:13 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:06:44 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:06:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:06:44 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:06:44 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:07:15 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:07:15 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:07:15 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:07:15 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:07:46 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:07:46 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:07:46 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:07:46 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:08:18 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:08:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:08:18 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:08:18 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:08:49 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:08:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:08:49 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:08:49 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:09:20 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:09:20 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:09:20 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:09:20 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:09:51 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:09:51 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:09:51 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:09:51 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:10:22 EDT] [INFO] --- Component Check ---
+[2026-07-30 10:10:22 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 44512 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-30 10:10:22 EDT] [INFO] ✅ us-poller: OK — 2343723
+2347477
+[2026-07-30 10:10:22 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-30 10:10:22 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-30 10:10:22 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (557.7ms)
+[2026-07-30 10:10:22 EDT] [INFO] --- Tracked Files ---
+[2026-07-30 10:10:22 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-30 10:10:22 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-30 10:10:22 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-07-30 10:10:22 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:10:22 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:10:22 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:00:31,900 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:10:22 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:10:54 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:10:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:10:54 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:10:54 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:11:25 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:11:25 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:11:25 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:11:25 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:11:56 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:11:56 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:11:56 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:11:56 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:12:27 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:12:27 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:12:27 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:12:27 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:12:59 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:12:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:12:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:12:59 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:13:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:13:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:13:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:13:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:14:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:14:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:14:01 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:14:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:14:32 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:14:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:14:32 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:14:32 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:15:03 EDT] [INFO] --- Component Check ---
+[2026-07-30 10:15:03 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 44512 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-30 10:15:03 EDT] [INFO] ✅ us-poller: OK — 2343723
+2347838
+[2026-07-30 10:15:03 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-30 10:15:03 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-30 10:15:03 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (536.2ms)
+[2026-07-30 10:15:03 EDT] [INFO] --- Tracked Files ---
+[2026-07-30 10:15:03 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-30 10:15:03 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-30 10:15:03 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-07-30 10:15:03 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:15:03 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:15:03 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:15:03 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:15:34 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:15:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:15:34 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:05:34,942 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:15:34 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:16:06 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:16:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:16:06 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:16:06 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:16:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:16:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:16:37 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:16:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:17:08 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:17:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:17:08 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:17:08 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:17:39 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:17:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:17:40 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:17:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:18:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:18:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:18:11 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:18:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:18:42 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:18:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:18:42 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:18:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:19:13 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:19:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:19:13 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:19:13 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:19:44 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:19:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:19:44 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:19:44 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:20:16 EDT] [INFO] --- Component Check ---
+[2026-07-30 10:20:16 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 44512 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-30 10:20:16 EDT] [INFO] ✅ us-poller: OK — 2343723
+2348245
+[2026-07-30 10:20:16 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-30 10:20:16 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-30 10:20:16 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (569.3ms)
+[2026-07-30 10:20:16 EDT] [INFO] --- Tracked Files ---
+[2026-07-30 10:20:16 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-30 10:20:16 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-30 10:20:16 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-07-30 10:20:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:20:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:20:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:10:37,890 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:15:40,534 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:20:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:20:47 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:20:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:20:47 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:20:47 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:21:18 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:21:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:21:18 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:21:18 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:21:49 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:21:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:21:49 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:21:49 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:22:21 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:22:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:22:21 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:22:21 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:22:52 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:22:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:22:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:22:52 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:23:23 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:23:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:23:23 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:23:23 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:23:54 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:23:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:23:54 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:23:54 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:24:25 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:24:25 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:24:25 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:24:25 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:24:56 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:24:56 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:24:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:24:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:25:28 EDT] [INFO] --- Component Check ---
+[2026-07-30 10:25:28 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 44512 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-30 10:25:28 EDT] [INFO] ✅ us-poller: OK — 2343723
+2348657
+[2026-07-30 10:25:28 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-30 10:25:28 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-30 10:25:28 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (550.1ms)
+[2026-07-30 10:25:28 EDT] [INFO] --- Tracked Files ---
+[2026-07-30 10:25:28 EDT] [INFO] 📝 Changed: positions, capital
+[2026-07-30 10:25:28 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-30 10:25:28 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-07-30 10:25:28 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:25:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:25:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:25:28 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:25:59 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:25:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:25:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:25:59 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:26:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:26:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:26:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:26:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:27:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:27:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:27:01 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:27:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:27:33 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:27:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:27:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:27:33 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:28:04 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:28:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:28:04 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:28:04 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:28:35 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:28:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:28:35 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:28:35 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:29:07 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:29:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:29:07 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:29:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 10:29:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 10:29:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 10:29:38 EDT] [ALERT] LOG ALERT [poller.log]: 2026-07-30 17:20:45,386 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+2026-07-30 17:25:47,910 [INFO] Cycle check failed for ASTS: ASTS is blocked for today
+[2026-07-30 10:29:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
