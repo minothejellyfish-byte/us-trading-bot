@@ -178386,3 +178386,64 @@ error: symbol limit exceeded (405)
 [2026-07-30 07:00:35 EDT] [INFO] Off-duty (07:00), waiting for 09:25
 [2026-07-30 08:00:05 EDT] [INFO] Off-duty (08:00), waiting for 09:25
 [2026-07-30 08:00:35 EDT] [INFO] Off-duty (08:00), waiting for 09:25
+[2026-07-30 09:00:05 EDT] [INFO] Off-duty (09:00), waiting for 09:25
+[2026-07-30 09:00:35 EDT] [INFO] Off-duty (09:00), waiting for 09:25
+[2026-07-30 09:25:07 EDT] [INFO] --- Component Check ---
+[2026-07-30 09:25:07 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.5 399256 44512 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-07-30 09:25:07 EDT] [INFO] ✅ us-poller: OK — 2342095
+[2026-07-30 09:25:07 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-07-30 09:25:07 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-07-30 09:25:07 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (557.9ms)
+[2026-07-30 09:25:07 EDT] [INFO] --- Tracked Files ---
+[2026-07-30 09:25:07 EDT] [INFO] 📝 Changed: positions, capital, regime
+[2026-07-30 09:25:07 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-07-30 09:25:07 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:25:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:25:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:25:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:25:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:25:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:26:09 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:26:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:26:09 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:26:40 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:26:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:26:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:27:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:27:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:27:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:27:43 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:27:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:27:43 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:28:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:28:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:28:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:28:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:28:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:28:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:29:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:29:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:29:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-07-30 09:29:47 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-07-30 09:29:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-07-30 09:29:47 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
