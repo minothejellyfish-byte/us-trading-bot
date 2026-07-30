@@ -1,17 +1,29 @@
 {
+  "date": "2026-07-30",
+  "time": "10:00:03",
   "positions": {
     "BAX": {
       "symbol": "BAX",
-      "entry_price": 29.5,
-      "qty": 677,
-      "entry_time": "2026-07-30T09:30:16.912742-04:00",
-      "peak_price": 29.5,
+      "entry_price": 28.93,
+      "qty": 692,
+      "entry_time": "2026-07-30T09:40:15.974812-04:00",
+      "peak_price": 28.9,
       "closed": false,
       "signal": "auto",
       "order_id": "?",
       "cycle": 1,
-      "max_cycles": 2
+      "max_cycles": 2,
+      "current_price": 28.83,
+      "alpaca_data": {
+        "avg_entry_price": 28.93,
+        "market_value": 19950.36,
+        "unrealized_pl": -69.2,
+        "unrealized_plpc": -0.00346,
+        "current_price": 28.83,
+        "qty": 692
+      }
     }
   },
-  "updated_at": "2026-07-30T09:30:16.913100-04:00"
+  "count": 1,
+  "source": "alpaca-api"
 }

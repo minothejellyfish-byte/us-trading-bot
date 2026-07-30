@@ -951,5 +951,35 @@
     "signal": "gap_up",
     "regime": "DEFENSIVE",
     "notes": ""
+  },
+  {
+    "id": "?",
+    "symbol": "BAX",
+    "qty": 677,
+    "entry_price": 29.7,
+    "entry_time": "2026-07-30T09:30:16.912742-04:00",
+    "entry_signal": "auto",
+    "exit_price": 29.27,
+    "exit_time": "2026-07-30T09:35:17.002457-04:00",
+    "exit_reason": "Time stop: Time stop loss: -1.4% (<= -1.0%) | DEFENSIVE: Early entry \u2192 exit by 13:00",
+    "exit_regime": "DEFENSIVE",
+    "gross_pnl": -291.11,
+    "spread_cost": 39.92,
+    "net_pnl": -331.03,
+    "pnl_pct": -1.45,
+    "duration_min": 5.0,
+    "date": "2026-07-30"
+  },
+  {
+    "id": "BAX_094016",
+    "symbol": "BAX",
+    "side": "BUY",
+    "qty": 692,
+    "price": 28.9,
+    "timestamp": "2026-07-30T09:40:16.416752-04:00",
+    "date": "2026-07-30",
+    "signal": "gap_up",
+    "regime": "DEFENSIVE",
+    "notes": ""
   }
 ]
