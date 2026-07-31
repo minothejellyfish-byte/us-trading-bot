@@ -1443,3 +1443,32 @@ Alpaca P&L: $-547.75 (0W/2L)
 Alpaca capital: $104319.88
 Stats built from: alpaca-api | P&L=$-547.75 | Trades=2
 [2026-07-30T16:15:06.789275-04:00] Daily report sent: True
+2026-07-31 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 23:10:02 [INFO] get_alpaca_trades: querying 2026-07-31 (2026-07-31T04:56:00Z to 2026-08-01T04:55:59Z)
+2026-07-31 23:10:02 [INFO] get_alpaca_trades: found 9 filled orders
+2026-07-31 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 23:10:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 23:10:03 [INFO]   Found prior-day BUY for AEP: 165 @ $127.96
+2026-07-31 23:10:03 [INFO] get_daily_pnl: 2026-07-31 — P&L=$-119.45 (1W/4L, 20.0% WR)
+2026-07-31 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 23:10:03 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 23:10:03 [INFO] sync_capital: cash=$125,313.73 equity=$104,152.48
+2026-07-31 23:10:03 [INFO] [TELEGRAM] 🔴 US Paper Trading Report
+
+📅 Day 20 of 10 — Friday, Jul 31
+
+💰 Realized P&L: $-119.45 (-0.12%)
+📊 Unre...
+2026-07-31 23:10:03 [INFO] [TELEGRAM] 🔴 US Paper Trading Report
+
+📅 Day 20 of 10 — Friday, Jul 31
+
+💰 Realized P&L: $-119.45 (-0.12%)
+📊 Unre...
+2026-07-31 23:10:04 [INFO] HTTP Request: POST https://api.telegram.org/bot8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws/sendMessage "HTTP/1.1 200 OK"
+Reconciliation failed: 'list' object has no attribute 'get'
+Alpaca P&L: $-119.45 (1W/4L)
+Alpaca capital: $125313.73
+Stats built from: alpaca-api | P&L=$-119.45 | Trades=5
+[2026-07-31T16:10:04.408047-04:00] Daily report sent: True
