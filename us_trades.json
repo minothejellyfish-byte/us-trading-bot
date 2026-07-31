@@ -1071,5 +1071,35 @@
     "pnl_pct": -0.02,
     "duration_min": 4.9,
     "date": "2026-07-31"
+  },
+  {
+    "id": "AEE_100047",
+    "symbol": "AEE",
+    "side": "BUY",
+    "qty": 183,
+    "price": 108.87,
+    "timestamp": "2026-07-31T10:00:47.627813-04:00",
+    "date": "2026-07-31",
+    "signal": "gap_up",
+    "regime": "DEFENSIVE",
+    "notes": ""
+  },
+  {
+    "id": "?",
+    "symbol": "ABBV",
+    "qty": 119,
+    "entry_price": 250.94,
+    "entry_time": "2026-07-31T09:45:31.207147-04:00",
+    "entry_signal": "auto",
+    "exit_price": 251.91,
+    "exit_time": "2026-07-31T10:05:50.148917-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $252.24",
+    "exit_regime": "DEFENSIVE",
+    "gross_pnl": 115.61,
+    "spread_cost": 59.84,
+    "net_pnl": 55.77,
+    "pnl_pct": 0.39,
+    "duration_min": 20.3,
+    "date": "2026-07-31"
   }
 ]

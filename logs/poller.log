@@ -25474,3 +25474,69 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-31 16:55:40,942 [ERROR] Invalid sell quantity for AEP: qty=-165
 2026-07-31 16:55:40,943 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
 2026-07-31 16:55:40,944 [INFO] Slow poll done.
+2026-07-31 17:00:41,472 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-31 17:00:42,739 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 17:00:43,171 [INFO] v4.9 drop score: ABBV = 47.5
+2026-07-31 17:00:43,590 [INFO] v4.9 drop score: AEP = 45.9
+2026-07-31 17:00:44,392 [INFO] Position upgrade: AEP(score=25, drop=45.9) → DVN(score=52). Current P&L: -0.1%
+2026-07-31 17:00:44,836 [ERROR] Invalid sell quantity for AEP: qty=-165
+2026-07-31 17:00:44,836 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-31 17:00:45,222 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:00:47 [INFO] Order submitted: buy 183 AEE @ market → pending_new
+2026-07-31 17:00:47,219 [INFO] Order submitted: buy 183 AEE @ market → pending_new
+2026-07-31 17:00:47,626 [INFO] Bought AEE: 183@108.87 cycle=1/2
+2026-07-31 17:00:47,637 [INFO] VWAP entry blocked for AEE: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:00:47,637 [INFO] Slow poll done.
+2026-07-31 17:00:57,639 [INFO] Buy detected: AEE (bookkeeper confirmed: 183 @ $108.87)
+2026-07-31 17:05:48,256 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-31 17:05:49 [INFO] Order submitted: sell 119 ABBV @ market → pending_new
+2026-07-31 17:05:49,723 [INFO] Order submitted: sell 119 ABBV @ market → pending_new
+2026-07-31 17:05:50,147 [INFO] Sold ABBV: 119 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $252.24
+2026-07-31 17:05:50,852 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 17:05:51,211 [INFO] v4.9 drop score: ABBV = 59.7
+2026-07-31 17:05:51,559 [INFO] v4.9 drop score: AEE = 50.6
+2026-07-31 17:05:51,900 [INFO] v4.9 drop score: AEP = 51.7
+2026-07-31 17:05:52,611 [INFO] Position upgrade: AEE(score=25, drop=50.6) → DVN(score=52). Current P&L: -0.1%
+2026-07-31 17:05:54 [INFO] Order submitted: sell 183 AEE @ market → pending_new
+2026-07-31 17:05:54,733 [INFO] Order submitted: sell 183 AEE @ market → pending_new
+2026-07-31 17:05:55,100 [INFO] Sold AEE: 183 — 🔄 Position upgrade — switching to better momentum pick
+2026-07-31 17:05:55,100 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-31 17:05:55,101 [INFO] Slow poll done.
+2026-07-31 17:06:05,102 [INFO] Sell detected (scratch): AEE pct=-100.0%
+2026-07-31 17:10:55,128 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-31 17:10:55,970 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 17:10:56,374 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP falling: -0.05% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:10:57,254 [INFO] Cycle check failed for AEE: Cycle limit reached (2/2) for DEFENSIVE
+2026-07-31 17:10:57,646 [INFO] VWAP entry blocked for AES: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:10:57,647 [INFO] Slow poll done.
+2026-07-31 17:15:57,669 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-31 17:15:58,494 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 17:15:58,933 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP falling: -0.05% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:15:59,376 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP rising: +0.04% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:15:59,756 [INFO] Cycle check failed for AEE: AEE is blocked for today
+2026-07-31 17:16:00,157 [INFO] VWAP entry blocked for AES: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:16:00,158 [INFO] Slow poll done.
+2026-07-31 17:21:00,180 [INFO] Regime stale (>30min) — reclassifying
+2026-07-31 17:21:03,071 [INFO] Regime: DEFENSIVE — SPY +0.0% over 5 days, VIX 18.2 (elevated fear), 9% sector breadth
+2026-07-31 17:21:03,071 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-07-31 17:21:03,909 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 17:21:04,310 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:21:04,842 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:21:05,197 [INFO] Cycle check failed for AEE: AEE is blocked for today
+2026-07-31 17:21:05,570 [INFO] VWAP entry blocked for AES: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:21:05,570 [INFO] Slow poll done.
+2026-07-31 17:26:05,595 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-31 17:26:06,419 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 17:26:06,847 [INFO] VWAP entry blocked for ABBV: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:26:07,281 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP rising: +0.04% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:26:07,661 [INFO] Cycle check failed for AEE: AEE is blocked for today
+2026-07-31 17:26:08,033 [INFO] VWAP entry blocked for AES: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-07-31 17:26:08,034 [INFO] Slow poll done.
