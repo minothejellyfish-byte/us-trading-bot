@@ -1,23 +1,23 @@
 {
-  "regime": "NEUTRAL",
+  "regime": "DEFENSIVE",
   "params": {
-    "strategy": "Standard",
-    "max_positions": 3,
-    "position_pct": 0.3,
-    "alt_position_pct": 0.3,
-    "target_pct": 0.02,
-    "trail_trigger": 0.02,
-    "trail_stop": 0.03,
-    "hard_stop": 0.05,
-    "time_stop_mins": 30,
-    "time_stop_pct": 0.01,
-    "midscreen": true
+    "strategy": "Conservative",
+    "max_positions": 2,
+    "position_pct": 0.2,
+    "alt_position_pct": 0.2,
+    "target_pct": 0.015,
+    "trail_trigger": 0.015,
+    "trail_stop": 0.02,
+    "hard_stop": 0.04,
+    "time_stop_mins": 20,
+    "time_stop_pct": 0.005,
+    "midscreen": false
   },
-  "reason": "SPY +0.4% over 5 days, VIX 17.2 (moderate), 55% sector breadth",
-  "spy_5d_change": 0.37,
-  "spy_10d_change": -0.22,
-  "vix": 17.2,
-  "sector_breadth": 54.5,
-  "top_sectors": "Consumer Discretionary (2.7%), Consumer Staples (1.6%), Financials (1.2%)",
-  "classified_at": "2026-07-31T16:20:07.668865"
+  "reason": "SPY +0.4% over 5 days, VIX 16.7 (elevated fear), 27% sector breadth",
+  "spy_5d_change": 0.42,
+  "spy_10d_change": 0.01,
+  "vix": 16.66,
+  "sector_breadth": 27.3,
+  "top_sectors": "Consumer Discretionary (4.1%), Energy (1.0%), Technology (0.8%)",
+  "classified_at": "2026-07-31T16:50:37.897650"
 }

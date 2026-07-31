@@ -165697,3 +165697,86 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-07-30 22:58:24,098 [INFO] Slow poll done.
 2026-07-30 23:00:01,861 [INFO] Received signal 15 — shutting down
 2026-07-30 23:00:01,861 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-07-31 16:30:11,947 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-07-31 16:30:11,947 [INFO] Poller starting in daemon mode
+2026-07-31 16:30:11,947 [INFO] US Price poller started.
+2026-07-31 16:30:12,406 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-31 16:30:12,650 [INFO] AlpacaTrader initialized (PAPER)
+2026-07-31 16:30:13,478 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-31 16:30:13,866 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP falling: -0.05% over 5 bars (entry blocked — not rising)
+2026-07-31 16:30:14,323 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.07% over 5 bars (entry blocked — not rising)
+2026-07-31 16:30:16,992 [ERROR] $AEE: possibly delisted; no price data found  (period=1d)
+2026-07-31 16:30:16,993 [ERROR] 
+1 Failed download:
+2026-07-31 16:30:16,993 [ERROR] ['AEE']: possibly delisted; no price data found  (period=1d)
+2026-07-31 16:30:16,998 [WARNING] All price sources failed for AEE
+2026-07-31 16:30:18,577 [ERROR] $AEP: possibly delisted; no price data found  (period=1d)
+2026-07-31 16:30:18,577 [ERROR] 
+1 Failed download:
+2026-07-31 16:30:18,578 [ERROR] ['AEP']: possibly delisted; no price data found  (period=1d)
+2026-07-31 16:30:18,581 [WARNING] All price sources failed for AEP
+2026-07-31 16:30:18,582 [INFO] Slow poll done.
+2026-07-31 16:35:19,083 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-31 16:35:19,954 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-31 16:35:20,350 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-07-31 16:35:20,816 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-31 16:35:22,401 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:35:22,401 [INFO] VWAP entry blocked for AEE: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-31 16:35:23,639 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:35:23,639 [INFO] VWAP entry blocked for AEP: NEUTRAL: VWAP falling: -0.14% over 5 bars (entry blocked — not rising)
+2026-07-31 16:35:23,640 [WARNING] Breakout check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:35:23,640 [INFO] Slow poll done.
+2026-07-31 16:40:23,659 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-31 16:40:24,566 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-31 16:40:24,945 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP falling: -0.06% over 5 bars (entry blocked — not rising)
+2026-07-31 16:40:25,325 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-07-31 16:40:27,184 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:40:27,184 [INFO] VWAP entry blocked for AEE: NEUTRAL: VWAP falling: -0.07% over 5 bars (entry blocked — not rising)
+2026-07-31 16:40:27,185 [WARNING] Breakout check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:40:28,581 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:40:28,581 [INFO] VWAP entry blocked for AEP: NEUTRAL: VWAP falling: -0.03% over 5 bars (entry blocked — not rising)
+2026-07-31 16:40:28,582 [WARNING] Breakout check failed: float() argument must be a string or a real number, not 'Series'
+2026-07-31 16:40:28,582 [INFO] Slow poll done.
+2026-07-31 16:45:28,603 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-07-31 16:45:29,571 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-07-31 16:45:31,206 [INFO] Order submitted: buy 119 ABBV @ market → pending_new
+2026-07-31 16:45:31,582 [INFO] Bought ABBV: 119@250.79 cycle=1/3
+2026-07-31 16:45:31,943 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.03% over 5 bars (entry blocked — not rising)
+2026-07-31 16:45:32,310 [INFO] VWAP entry blocked for AEE: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-31 16:45:33,496 [INFO] Order submitted: buy 165 AEP @ market → pending_new
+2026-07-31 16:45:33,931 [INFO] Bought AEP: 165@127.52 cycle=1/3
+2026-07-31 16:45:33,938 [INFO] VWAP entry blocked for AEP: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-07-31 16:45:33,938 [INFO] Slow poll done.
+2026-07-31 16:45:43,943 [INFO] Buy detected: ABBV (bookkeeper confirmed: 119 @ $250.79)
+2026-07-31 16:45:44,338 [INFO] Buy detected: AEP (bookkeeper confirmed: 165 @ $127.52)
+2026-07-31 16:50:34,732 [INFO] Regime stale (>30min) — reclassifying
+2026-07-31 16:50:37,897 [INFO] Regime: DEFENSIVE — SPY +0.4% over 5 days, VIX 16.7 (elevated fear), 27% sector breadth
+2026-07-31 16:50:37,898 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-31 16:50:39,643 [INFO] Order submitted: sell 165 AEP @ market → pending_new
+2026-07-31 16:50:40,124 [INFO] Sold AEP: 165 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $127.87
+2026-07-31 16:50:40,509 [INFO] v4.9 drop score: ABBV = 56.5
+2026-07-31 16:50:40,877 [INFO] v4.9 drop score: AEP = 45.8
+2026-07-31 16:50:41,598 [INFO] Position upgrade: AEP(score=25, drop=45.8) → DVN(score=52). Current P&L: -0.1%
+2026-07-31 16:50:42,198 [INFO] Order submitted: sell 165 AEP @ market → pending_new
+2026-07-31 16:50:42,618 [INFO] Sold AEP: 165 — 🔄 Position upgrade — switching to better momentum pick
+2026-07-31 16:50:42,619 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-31 16:50:43,041 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-07-31 16:50:43,393 [INFO] VWAP entry blocked for ABT: DEFENSIVE: VWAP falling: -1.15% over 5 bars (entry blocked — need strong rise)
+2026-07-31 16:50:44,509 [INFO] Order submitted: buy 183 AEE @ market → pending_new
+2026-07-31 16:50:44,894 [INFO] Bought AEE: 183@108.82 cycle=1/2
+2026-07-31 16:50:44,901 [INFO] VWAP entry blocked for AEE: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-07-31 16:50:44,902 [INFO] Slow poll done.
+2026-07-31 16:50:54,903 [INFO] Sell detected (scratch): AEP pct=-100.0%
+2026-07-31 16:50:54,904 [INFO] Buy detected: AEE (bookkeeper confirmed: 183 @ $108.82)
+2026-07-31 16:55:05,454 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.46)
+2026-07-31 16:55:35,898 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-07-31 16:55:37,838 [INFO] Order submitted: sell 183 AEE @ market → pending_new
+2026-07-31 16:55:38,218 [INFO] Sold AEE: 183 — 📉 VWAP breakdown | VWAP breakdown: 3 bars below VWAP $108.19
+2026-07-31 16:55:38,607 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-07-31 16:55:38,999 [INFO] v4.9 drop score: ABBV = 46.1
+2026-07-31 16:55:39,364 [INFO] v4.9 drop score: AEE = 48.4
+2026-07-31 16:55:39,746 [INFO] v4.9 drop score: AEP = 43.5
+2026-07-31 16:55:40,519 [INFO] Position upgrade: AEP(score=25, drop=43.5) → DVN(score=52). Current P&L: +0.1%
+2026-07-31 16:55:40,942 [ERROR] Invalid sell quantity for AEP: qty=-165
+2026-07-31 16:55:40,943 [ERROR] Position upgrade failed: 'float' object has no attribute 'get'
+2026-07-31 16:55:40,944 [INFO] Slow poll done.
