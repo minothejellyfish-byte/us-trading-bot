@@ -1,23 +1,23 @@
 {
-  "regime": "NEUTRAL",
+  "regime": "DEFENSIVE",
   "params": {
-    "strategy": "Standard",
-    "max_positions": 3,
-    "position_pct": 0.3,
-    "alt_position_pct": 0.3,
-    "target_pct": 0.02,
-    "trail_trigger": 0.02,
-    "trail_stop": 0.03,
-    "hard_stop": 0.05,
-    "time_stop_mins": 30,
-    "time_stop_pct": 0.01,
-    "midscreen": true
+    "strategy": "Conservative",
+    "max_positions": 2,
+    "position_pct": 0.2,
+    "alt_position_pct": 0.2,
+    "target_pct": 0.015,
+    "trail_trigger": 0.015,
+    "trail_stop": 0.02,
+    "hard_stop": 0.04,
+    "time_stop_mins": 20,
+    "time_stop_pct": 0.005,
+    "midscreen": false
   },
-  "reason": "SPY +1.1% over 5 days, VIX 16.0 (moderate), 45% sector breadth",
-  "spy_5d_change": 1.07,
-  "spy_10d_change": 0.67,
-  "vix": 15.98,
-  "sector_breadth": 45.5,
-  "top_sectors": "Consumer Discretionary (4.7%), Energy (2.0%), Technology (0.6%)",
-  "classified_at": "2026-08-03T16:20:07.102205"
+  "reason": "SPY +1.5% over 5 days, VIX 16.1 (elevated fear), 36% sector breadth",
+  "spy_5d_change": 1.49,
+  "spy_10d_change": 0.49,
+  "vix": 16.08,
+  "sector_breadth": 36.4,
+  "top_sectors": "Consumer Discretionary (5.5%), Communication Services (1.8%), Technology (1.7%)",
+  "classified_at": "2026-08-03T16:50:36.710513"
 }
