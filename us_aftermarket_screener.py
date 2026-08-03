@@ -468,8 +468,8 @@ def screen_stock(data: Dict, regime: str = "NEUTRAL", score_threshold: float = 2
             "high_today": round(data["high_today"], 2),
             "low_today": round(data["low_today"], 2),
             "close_today": round(data["close_today"], 2),
-            "intraday_range_pct": round(data["intraday_range_pct"] * 100, 2),
-            "close_to_high_pct": round(data["close_to_high_pct"] * 100, 2)
+            "intraday_range_pct": round(data.get("intraday_range_pct", 0) * 100, 2),
+            "close_to_high_pct": round(data.get("close_to_high_pct", -0.05) * 100, 2)
         }
     }
 
