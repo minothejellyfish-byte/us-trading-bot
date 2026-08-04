@@ -27346,3 +27346,35 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-04 22:29:20,488 [WARNING] Position AEP has invalid quantity -165, skipping
 2026-08-04 22:29:20,489 [INFO] Entry cutoff passed — no new entries
 2026-08-04 22:29:20,489 [INFO] Slow poll done.
+2026-08-04 22:30:50,495 [INFO] Regime stale (>30min) — reclassifying
+2026-08-04 22:30:52,764 [INFO] Regime: NEUTRAL — SPY +5.9% over 5 days, VIX 16.5 (moderate), 55% sector breadth
+2026-08-04 22:34:22,781 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-04 22:34:23,576 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-04 22:34:23,577 [INFO] Entry cutoff passed — no new entries
+2026-08-04 22:34:23,577 [INFO] Slow poll done.
+2026-08-04 22:39:23,599 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-04 22:39:24,491 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-04 22:39:24,491 [INFO] Entry cutoff passed — no new entries
+2026-08-04 22:39:24,492 [INFO] Slow poll done.
+2026-08-04 22:44:24,515 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-04 22:44:25,313 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-04 22:44:25,313 [INFO] Entry cutoff passed — no new entries
+2026-08-04 22:44:25,313 [INFO] Slow poll done.
+2026-08-04 22:49:25,749 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-04 22:49:26,601 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-04 22:49:26,601 [INFO] Hard close active — no new entries
+2026-08-04 22:49:26,601 [INFO] Slow poll done.
+2026-08-04 22:54:26,624 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-04 22:54:27,403 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-04 22:54:27,403 [INFO] Hard close active — no new entries
+2026-08-04 22:54:27,403 [INFO] Slow poll done.
+2026-08-04 22:59:27,843 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-04 22:59:28,648 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-04 22:59:28,648 [INFO] Hard close active — no new entries
+2026-08-04 22:59:28,648 [INFO] Slow poll done.
+2026-08-04 23:00:01,531 [INFO] Received signal 15 — shutting down
+2026-08-04 23:00:01,532 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
