@@ -167353,3 +167353,16 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-04 22:59:28,648 [INFO] Slow poll done.
 2026-08-04 23:00:01,531 [INFO] Received signal 15 — shutting down
 2026-08-04 23:00:01,532 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-05 16:30:09,432 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-05 16:30:09,433 [INFO] Poller starting in daemon mode
+2026-08-05 16:30:09,433 [INFO] US Price poller started.
+2026-08-05 16:30:09,856 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-05 16:30:10,206 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-05 16:30:10,438 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-05 16:30:11,216 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 16:30:12,218 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-05 16:30:13,136 [INFO] Cycle check failed for ABBV: Cycle limit reached (3/3) for NEUTRAL
+2026-08-05 16:30:13,594 [INFO] Cycle check failed for ABT: Cycle limit reached (4/3) for NEUTRAL
+2026-08-05 16:30:13,957 [INFO] Cycle check failed for ACN: Cycle limit reached (3/3) for NEUTRAL
+2026-08-05 16:30:14,319 [INFO] Cycle check failed for ADBE: Cycle limit reached (3/3) for NEUTRAL
+2026-08-05 16:30:14,319 [INFO] Slow poll done.
