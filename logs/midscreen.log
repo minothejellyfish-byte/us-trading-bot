@@ -47685,3 +47685,9 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 33    PLD      30.4     $140.22    0.85     % 0.7    x
 34    RIOT     22.2     $22.25     3.20     % 0.8    x
 ============================================================
+2026-08-05 20:30:02 [INFO] US Mid-Screen: Afternoon (rescreen)
+2026-08-05 20:30:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-05 20:30:02 [INFO] Step 1: Checking existing picks...
+2026-08-05 20:30:02 [INFO] Found 34 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
