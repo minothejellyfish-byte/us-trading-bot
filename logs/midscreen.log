@@ -45585,3 +45585,22 @@ $ADBE: possibly delisted; no price data found  (period=2d)
 2026-08-05 17:00:36 [INFO]   ✅ CG: Still valid (change=-0.2%, vol=479237)
 /home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
   return pd.Timestamp(val, unit='s', tz=NY)
+$CNP: possibly delisted; no price data found  (period=20d)
+2026-08-05 17:00:47 [INFO]   ✅ CNP: Still valid (change=-1.7%, vol=423176)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-05 17:00:50 [INFO]   ✅ CNX: Still valid (change=-1.0%, vol=19102)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-05 17:00:51 [INFO]   ✅ CSX: Still valid (change=-0.5%, vol=450924)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-05 17:00:52 [INFO]   ✅ DVN: Still valid (change=-2.7%, vol=1197730)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-05 17:00:53 [INFO]   ✅ EQT: Still valid (change=-0.8%, vol=286170)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-05 17:00:54 [INFO]   ✅ EXC: Still valid (change=-1.0%, vol=347594)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
