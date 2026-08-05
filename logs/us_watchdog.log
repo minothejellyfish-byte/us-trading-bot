@@ -212078,3 +212078,22 @@ error: symbol limit exceeded (405)
 [2026-08-05 10:29:44 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-08-05 10:30:16 EDT] [INFO] --- Component Check ---
+[2026-08-05 10:30:16 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 39772 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-05 10:30:16 EDT] [INFO] ✅ us-poller: OK — 2961528
+2967620
+[2026-08-05 10:30:16 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-05 10:30:16 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-05 10:30:16 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (564.4ms)
+[2026-08-05 10:30:16 EDT] [INFO] --- Tracked Files ---
+[2026-08-05 10:30:16 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-05 10:30:16 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-05 10:30:16 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-05 10:30:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-05 10:30:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-05 10:30:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-05 17:20:59,966 [INFO] Cycle check failed for ADBE: ADBE is blocked for today
+2026-08-05 17:26:01,662 [INFO] Cycle check failed for ABBV: ABBV is blocked for today
+2026-08-05 17:26:03,177 [INF
+[2026-08-05 10:30:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
