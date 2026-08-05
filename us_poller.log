@@ -167454,3 +167454,38 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-05 17:26:02,485 [INFO] VWAP entry blocked for ACN: TRENDING: VWAP falling: -0.03% over 5 bars (entry blocked — falling)
 2026-08-05 17:26:03,177 [INFO] Cycle check failed for ADBE: ADBE is blocked for today
 2026-08-05 17:26:03,177 [INFO] Slow poll done.
+2026-08-05 17:31:03,582 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-05 17:31:04,394 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 17:31:06,928 [INFO] Slow poll done.
+2026-08-05 17:36:06,952 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-05 17:36:07,768 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 17:36:09,166 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.05% over 5 bars (entry blocked — falling)
+2026-08-05 17:36:09,542 [INFO] VWAP entry blocked for ACN: TRENDING: VWAP falling: -0.07% over 5 bars (entry blocked — falling)
+2026-08-05 17:36:10,319 [INFO] Slow poll done.
+2026-08-05 17:41:10,341 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-05 17:41:11,132 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 17:41:12,286 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.03% over 5 bars (entry blocked — falling)
+2026-08-05 17:41:13,307 [INFO] Slow poll done.
+2026-08-05 17:46:13,328 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-05 17:46:14,230 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 17:46:15,395 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.03% over 5 bars (entry blocked — falling)
+2026-08-05 17:46:15,774 [INFO] VWAP entry blocked for ACN: TRENDING: VWAP falling: -0.04% over 5 bars (entry blocked — falling)
+2026-08-05 17:46:16,200 [INFO] Slow poll done.
+2026-08-05 17:51:16,223 [INFO] Regime stale (>30min) — reclassifying
+2026-08-05 17:51:28,525 [ERROR] $XLV: possibly delisted; no price data found  (period=15d)
+2026-08-05 17:51:29,520 [INFO] Regime: NEUTRAL — SPY +4.4% over 5 days, VIX 16.6 (moderate), 60% sector breadth
+2026-08-05 17:51:29,520 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-05 17:51:30,284 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 17:51:30,641 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-05 17:51:31,360 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-08-05 17:51:31,711 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP falling: -0.09% over 5 bars (entry blocked — not rising)
+2026-08-05 17:51:32,107 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-05 17:51:32,107 [INFO] Slow poll done.
+2026-08-05 17:56:22,128 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-05 17:56:27,925 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-05 17:56:28,307 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-05 17:56:28,703 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-08-05 17:56:29,074 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.02% over 5 bars (entry blocked — not rising)
+2026-08-05 17:56:29,462 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-05 17:56:29,864 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-05 17:56:29,865 [INFO] Slow poll done.
