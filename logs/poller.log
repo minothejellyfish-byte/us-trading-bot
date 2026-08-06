@@ -28094,3 +28094,43 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-06 17:26:16,213 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.08% over 5 bars (entry blocked — falling)
 2026-08-06 17:26:16,603 [INFO] Cycle check failed for ABT: ABT is blocked for today
 2026-08-06 17:26:16,971 [INFO] Slow poll done.
+2026-08-06 17:31:17,382 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-06 17:31:18,572 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-06 17:31:19,350 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.19% over 5 bars (entry blocked — falling)
+2026-08-06 17:31:19,713 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.05% over 5 bars (entry blocked — falling)
+2026-08-06 17:31:20,143 [INFO] Slow poll done.
+2026-08-06 17:36:20,168 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-06 17:36:21,463 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-06 17:36:22,182 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.16% over 5 bars (entry blocked — falling)
+2026-08-06 17:36:22,667 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.03% over 5 bars (entry blocked — falling)
+2026-08-06 17:36:23,029 [INFO] Slow poll done.
+2026-08-06 17:41:23,053 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-06 17:41:24,549 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-06 17:41:25,282 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.10% over 5 bars (entry blocked — falling)
+2026-08-06 17:41:25,689 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.05% over 5 bars (entry blocked — falling)
+2026-08-06 17:41:26,129 [INFO] Slow poll done.
+2026-08-06 17:46:26,152 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-06 17:46:27,375 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-06 17:46:28,204 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.22% over 5 bars (entry blocked — falling)
+2026-08-06 17:46:28,794 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.04% over 5 bars (entry blocked — falling)
+2026-08-06 17:46:29,194 [INFO] Slow poll done.
+2026-08-06 17:51:29,219 [INFO] Regime stale (>30min) — reclassifying
+2026-08-06 17:51:31,795 [INFO] Regime: TRENDING — SPY +3.8% over 5 days, VIX 15.9 (low fear), 64% sector breadth
+2026-08-06 17:51:31,796 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-06 17:51:32,934 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-06 17:51:33,678 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.07% over 5 bars (entry blocked — falling)
+2026-08-06 17:51:34,221 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.04% over 5 bars (entry blocked — falling)
+2026-08-06 17:51:34,581 [INFO] Slow poll done.
+2026-08-06 17:56:34,605 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-06 17:56:35,762 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-06 17:56:36,508 [INFO] VWAP entry blocked for ABBV: TRENDING: VWAP falling: -0.05% over 5 bars (entry blocked — falling)
+2026-08-06 17:56:36,962 [INFO] VWAP entry blocked for ABT: TRENDING: VWAP falling: -0.02% over 5 bars (entry blocked — falling)
+2026-08-06 17:56:37,405 [INFO] Slow poll done.
