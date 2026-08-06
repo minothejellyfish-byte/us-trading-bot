@@ -1113,5 +1113,47 @@
     "signal": "gap_up",
     "regime": "NEUTRAL",
     "notes": ""
+  },
+  {
+    "id": "ABBV_093527",
+    "symbol": "ABBV",
+    "side": "BUY",
+    "qty": 160,
+    "price": 248.82,
+    "timestamp": "2026-08-06T09:35:27.859095-04:00",
+    "date": "2026-08-06",
+    "signal": "gap_up",
+    "regime": "TRENDING",
+    "notes": ""
+  },
+  {
+    "id": "ADBE_094034",
+    "symbol": "ADBE",
+    "side": "BUY",
+    "qty": 98,
+    "price": 253.27,
+    "timestamp": "2026-08-06T09:40:34.144347-04:00",
+    "date": "2026-08-06",
+    "signal": "gap_up",
+    "regime": "TRENDING",
+    "notes": ""
+  },
+  {
+    "id": "?",
+    "symbol": "ABBV",
+    "qty": 160,
+    "entry_price": 247.72,
+    "entry_time": "2026-08-06T09:35:27.521805-04:00",
+    "entry_signal": "auto",
+    "exit_price": 245.6,
+    "exit_time": "2026-08-06T09:55:50.925584-04:00",
+    "exit_reason": "VWAP breakdown: VWAP breakdown: 3 bars below VWAP $248.62",
+    "exit_regime": "TRENDING",
+    "gross_pnl": -339.2,
+    "spread_cost": 78.93,
+    "net_pnl": -418.13,
+    "pnl_pct": -0.86,
+    "duration_min": 20.4,
+    "date": "2026-08-06"
   }
 ]
