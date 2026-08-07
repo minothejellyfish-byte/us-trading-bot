@@ -168235,3 +168235,10 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-06 22:59:49,880 [INFO] Slow poll done.
 2026-08-06 23:00:01,053 [INFO] Received signal 15 — shutting down
 2026-08-06 23:00:01,053 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-07 16:30:17,067 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-07 16:30:17,068 [INFO] Poller starting in daemon mode
+2026-08-07 16:30:17,068 [INFO] US Price poller started.
+2026-08-07 16:30:17,480 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-07 16:30:17,875 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-08-07 16:30:18,108 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-07 16:30:18,980 [WARNING] Position AEP has invalid quantity -165, skipping
