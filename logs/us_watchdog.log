@@ -222528,3 +222528,524 @@ error: symbol limit exceeded (405)
 [2026-08-07 09:59:56 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-08-07 10:00:27 EDT] [INFO] --- Component Check ---
+[2026-08-07 10:00:27 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 34664 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-07 10:00:27 EDT] [INFO] ✅ us-poller: OK — 3140526
+3143508
+[2026-08-07 10:00:27 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-07 10:00:27 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-07 10:00:27 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (549.9ms)
+[2026-08-07 10:00:27 EDT] [INFO] --- Tracked Files ---
+[2026-08-07 10:00:27 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-07 10:00:27 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-07 10:00:27 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-07 10:00:27 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:00:27 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:00:27 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 16:55:56,235 [INFO] Cycle check failed for CG: Cycle limit reached (4/3) for NEUTRAL
+2026-08-07 16:55:56,672 [INFO] Cycle check failed for CNP: Cycle limit reached (3/3) for NEUTRAL
+2026-08
+[2026-08-07 10:00:27 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:00:59 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:00:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:00:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 16:55:56,235 [INFO] Cycle check failed for CG: Cycle limit reached (4/3) for NEUTRAL
+2026-08-07 16:55:56,672 [INFO] Cycle check failed for CNP: Cycle limit reached (3/3) for NEUTRAL
+2026-08
+[2026-08-07 10:00:59 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:01:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:01:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:01:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:01:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:02:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:02:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:02:01 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:02:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:02:32 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:02:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:02:32 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:02:32 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:03:04 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:03:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:03:04 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:03:04 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:03:35 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:03:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:03:35 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:03:35 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:04:06 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:04:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:04:06 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:04:06 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:04:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:04:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:04:37 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:04:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:05:08 EDT] [INFO] --- Component Check ---
+[2026-08-07 10:05:08 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 34664 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-07 10:05:08 EDT] [INFO] ✅ us-poller: OK — 3140526
+3143958
+[2026-08-07 10:05:08 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-07 10:05:08 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-07 10:05:08 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (574.6ms)
+[2026-08-07 10:05:08 EDT] [INFO] --- Tracked Files ---
+[2026-08-07 10:05:08 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-07 10:05:08 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-07 10:05:08 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-07 10:05:08 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:05:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:05:08 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:05:08 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:05:39 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:05:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:05:39 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:00:59,796 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:01:00,235 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:01:01,226 [INFO] Cyc
+[2026-08-07 10:05:39 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:06:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:06:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:06:11 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:06:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:06:42 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:06:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:06:42 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:06:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:07:13 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:07:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:07:13 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:07:13 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:07:44 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:07:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:07:44 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:07:44 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:08:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:08:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:08:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:08:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:08:47 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:08:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:08:47 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:08:47 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:09:18 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:09:18 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:09:18 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:09:18 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:09:49 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:09:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:09:49 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:09:49 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:10:21 EDT] [INFO] --- Component Check ---
+[2026-08-07 10:10:21 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 34664 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-07 10:10:21 EDT] [INFO] ✅ us-poller: OK — 3140526
+3144602
+[2026-08-07 10:10:21 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-07 10:10:21 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-07 10:10:21 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (532.2ms)
+[2026-08-07 10:10:21 EDT] [INFO] --- Tracked Files ---
+[2026-08-07 10:10:21 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-07 10:10:21 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-07 10:10:21 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-07 10:10:21 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:10:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:10:21 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:10:21 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:10:52 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:10:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:10:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:06:02,803 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:06:03,227 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:06:03,988 [INFO] Cyc
+[2026-08-07 10:10:52 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:11:23 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:11:23 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:11:23 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:11:23 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:11:54 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:11:54 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:11:54 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:11:54 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:12:26 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:12:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:12:26 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:12:26 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:12:57 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:12:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:12:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:12:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:13:28 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:13:28 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:13:28 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:13:28 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:13:59 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:13:59 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:13:59 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:13:59 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:14:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:14:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:14:30 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:14:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:15:02 EDT] [INFO] --- Component Check ---
+[2026-08-07 10:15:02 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 34664 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-07 10:15:02 EDT] [INFO] ✅ us-poller: OK — 3140526
+3144962
+[2026-08-07 10:15:02 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-07 10:15:02 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-07 10:15:02 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (543.8ms)
+[2026-08-07 10:15:02 EDT] [INFO] --- Tracked Files ---
+[2026-08-07 10:15:02 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-07 10:15:02 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-07 10:15:02 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:15:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:15:02 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:15:02 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:15:33 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:15:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:15:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:15:33 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:16:04 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:16:04 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:16:04 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:11:05,690 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:11:06,122 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:11:06,898 [INFO] Cyc
+[2026-08-07 10:16:04 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:16:35 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:16:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:16:36 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:16:36 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:17:07 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:17:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:17:07 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:17:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:17:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:17:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:17:38 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:17:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:18:09 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:18:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:18:09 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:18:09 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:18:40 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:18:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:18:40 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:18:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:19:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:19:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:19:11 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:19:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:19:43 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:19:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:19:43 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:19:43 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:20:14 EDT] [INFO] --- Component Check ---
+[2026-08-07 10:20:14 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 34664 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-07 10:20:14 EDT] [INFO] ✅ us-poller: OK — 3140526
+3145389
+[2026-08-07 10:20:14 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-07 10:20:14 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-07 10:20:14 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (585.7ms)
+[2026-08-07 10:20:14 EDT] [INFO] --- Tracked Files ---
+[2026-08-07 10:20:14 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-07 10:20:14 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-07 10:20:14 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-07 10:20:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:20:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:20:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:20:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:20:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:20:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:20:45 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:16:08,562 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:16:08,929 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:16:09,731 [INFO] Cyc
+[2026-08-07 10:20:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:21:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:21:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:21:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:21:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:21:47 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:21:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:21:47 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:21:47 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:22:19 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:22:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:22:19 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:22:19 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:22:50 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:22:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:22:50 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:22:50 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:23:21 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:23:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:23:21 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:23:21 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:23:52 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:23:52 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:23:52 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:23:52 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:24:24 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:24:24 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:24:24 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:24:24 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:24:55 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:24:55 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:24:55 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:24:55 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:25:26 EDT] [INFO] --- Component Check ---
+[2026-08-07 10:25:26 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.4 399256 34664 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-07 10:25:26 EDT] [INFO] ✅ us-poller: OK — 3140526
+3145792
+[2026-08-07 10:25:26 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-07 10:25:26 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-07 10:25:26 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (526.7ms)
+[2026-08-07 10:25:26 EDT] [INFO] --- Tracked Files ---
+[2026-08-07 10:25:26 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-07 10:25:26 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-07 10:25:26 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-07 10:25:26 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:25:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:25:26 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:25:26 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:25:57 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:25:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:25:57 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:21:14,023 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:21:14,430 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:21:15,367 [INFO] Cyc
+[2026-08-07 10:25:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:26:33 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:26:33 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:26:33 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:26:33 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:27:05 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:27:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:27:05 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:27:05 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:27:36 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:27:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:27:36 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:27:36 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:28:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:28:14 EDT] [ALERT] CRITICAL: Alpaca API HTTP_000
+[2026-08-07 10:28:14 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:28:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:28:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:28:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:28:45 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:28:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:29:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:29:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:29:16 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:29:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-07 10:29:47 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-07 10:29:47 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-07 10:29:47 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-07 17:26:16,960 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-07 17:26:17,328 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-07 17:26:18,175 [INFO] Cyc
+[2026-08-07 10:29:47 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
