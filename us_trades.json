@@ -1245,5 +1245,23 @@
     "signal": "vwap_reclaim",
     "regime": "TRENDING",
     "notes": ""
+  },
+  {
+    "id": "?",
+    "symbol": "CSX",
+    "qty": 496,
+    "entry_price": 50.41,
+    "entry_time": "2026-08-07T11:01:45.631048-04:00",
+    "entry_signal": "auto",
+    "exit_price": 50.48,
+    "exit_time": "2026-08-07T14:04:05.415781-04:00",
+    "exit_reason": "Time stop: Time stop: held 182 min (>= 180 min) | TRENDING: No hard time stop, max 3 hours",
+    "exit_regime": "TRENDING",
+    "gross_pnl": 33.06,
+    "spread_cost": 50.04,
+    "net_pnl": -16.98,
+    "pnl_pct": 0.13,
+    "duration_min": 182.3,
+    "date": "2026-08-07"
   }
 ]
