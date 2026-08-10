@@ -53336,3 +53336,15 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 32    D        36.3     $67.56     1.13     % 0.5    x
 33    AIV      33.0     $2.67      0.75     % 0.6    x
 ============================================================
+2026-08-10 17:00:02 [INFO] US Mid-Screen: Early Momentum (midscreen1)
+2026-08-10 17:00:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-10 17:00:02 [INFO] Step 1: Checking existing picks...
+2026-08-10 17:00:02 [INFO] Found 32 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-10 17:00:04 [INFO]   ✅ AAPL: Still valid (change=-2.3%, vol=8528296)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-10 17:00:05 [INFO]   ✅ ABBV: Still valid (change=-0.0%, vol=189409)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
