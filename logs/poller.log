@@ -30127,3 +30127,61 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-11 20:58:43,113 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
 2026-08-11 20:58:43,495 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
 2026-08-11 20:58:43,495 [INFO] Slow poll done.
+2026-08-11 21:03:43,843 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-11 21:03:44,748 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 21:03:45,121 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:03:45,500 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:03:45,886 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:03:46,328 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:03:46,808 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:03:46,809 [INFO] Slow poll done.
+2026-08-11 21:08:46,832 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-11 21:08:47,775 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 21:08:48,166 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:08:48,554 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:08:49,193 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:08:49,699 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:08:50,488 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:08:50,488 [INFO] Slow poll done.
+2026-08-11 21:13:50,511 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-11 21:13:51,361 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 21:13:51,753 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:13:52,134 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:13:52,653 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:13:53,026 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:13:53,410 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:13:53,411 [INFO] Slow poll done.
+2026-08-11 21:18:53,434 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-11 21:18:54,296 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 21:18:54,687 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:18:55,088 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:18:55,554 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:18:55,951 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:18:56,355 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:18:56,355 [INFO] Slow poll done.
+2026-08-11 21:23:56,378 [INFO] Regime stale (>30min) — reclassifying
+2026-08-11 21:23:59,075 [INFO] Regime: NEUTRAL — SPY +0.1% over 5 days, VIX 15.3 (moderate), 45% sector breadth
+2026-08-11 21:23:59,075 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-11 21:23:59,899 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 21:24:00,285 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:24:00,663 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:24:01,216 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:24:01,598 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:24:01,993 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:24:01,993 [INFO] Slow poll done.
+2026-08-11 21:29:02,015 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-11 21:29:02,905 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 21:29:03,314 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:29:03,694 [INFO] VWAP entry blocked for ABBV: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:29:04,232 [INFO] VWAP entry blocked for ABT: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 21:29:04,627 [INFO] VWAP entry blocked for ACN: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:29:05,028 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-11 21:29:05,028 [INFO] Slow poll done.
