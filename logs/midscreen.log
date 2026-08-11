@@ -57359,3 +57359,13 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 52    HON      20.0     $233.96    -3.69    % 0.5    x
 53    BX       18.9     $145.84    2.95     % 0.5    x
 ============================================================
+2026-08-11 20:30:02 [INFO] US Mid-Screen: Afternoon (rescreen)
+2026-08-11 20:30:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-11 20:30:02 [INFO] Step 1: Checking existing picks...
+2026-08-11 20:30:02 [INFO] Found 53 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-11 20:30:04 [INFO]   ✅ AAPL: Still valid (change=-0.5%, vol=11253656)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-11 20:30:05 [INFO]   ✅ ABBV: Still valid (change=0.4%, vol=1440032)
