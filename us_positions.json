@@ -1,7 +1,28 @@
 {
   "date": "2026-08-11",
-  "time": "10:55:02",
+  "time": "11:30:03",
   "positions": {
+    "ACN": {
+      "symbol": "ACN",
+      "entry_price": 179.46,
+      "qty": 167,
+      "entry_time": "2026-08-11T11:01:33.476963-04:00",
+      "peak_price": 179.57,
+      "closed": false,
+      "signal": "auto",
+      "order_id": "?",
+      "cycle": 1,
+      "max_cycles": 3,
+      "current_price": 179.57,
+      "alpaca_data": {
+        "avg_entry_price": 179.46,
+        "market_value": 29988.19,
+        "unrealized_pl": 18.37,
+        "unrealized_plpc": 0.00061,
+        "current_price": 179.57,
+        "qty": 167
+      }
+    },
     "AEP": {
       "symbol": "AEP",
       "entry_price": 127.53,
@@ -15,15 +36,15 @@
       "max_cycles": 2,
       "alpaca_data": {
         "avg_entry_price": 127.53,
-        "market_value": -20192.7,
-        "unrealized_pl": 849.75,
-        "unrealized_plpc": 0.04038,
-        "current_price": 122.38,
+        "market_value": -20258.7,
+        "unrealized_pl": 783.75,
+        "unrealized_plpc": 0.03725,
+        "current_price": 122.78,
         "qty": -165
       },
-      "current_price": 122.38
+      "current_price": 122.78
     }
   },
-  "count": 1,
+  "count": 2,
   "source": "alpaca-api"
 }
