@@ -169119,3 +169119,58 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-10 22:59:13,693 [INFO] Slow poll done.
 2026-08-10 23:00:01,263 [INFO] Received signal 15 — shutting down
 2026-08-10 23:00:01,263 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-11 16:30:17,884 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-11 16:30:17,885 [INFO] Poller starting in daemon mode
+2026-08-11 16:30:17,885 [INFO] US Price poller started.
+2026-08-11 16:30:18,262 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-11 16:30:28,710 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-11 16:30:28,987 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-11 16:30:30,193 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 16:30:30,676 [INFO] Cycle check failed for AAPL: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-11 16:30:31,129 [INFO] Cycle check failed for ABBV: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-11 16:30:31,511 [INFO] Cycle check failed for ABT: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-11 16:30:31,914 [INFO] Cycle check failed for ACN: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-11 16:30:32,425 [INFO] Cycle check failed for ADBE: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-11 16:30:32,425 [INFO] Slow poll done.
+2026-08-11 16:35:23,759 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-11 16:35:24,871 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 16:35:25,391 [INFO] Cycle check failed for AAPL: AAPL is blocked for today
+2026-08-11 16:35:25,914 [INFO] Cycle check failed for ABBV: ABBV is blocked for today
+2026-08-11 16:35:26,352 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-08-11 16:35:26,813 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-08-11 16:35:27,626 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP flat: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-11 16:35:27,627 [INFO] Slow poll done.
+2026-08-11 16:40:27,648 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-11 16:40:29,048 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 16:40:29,451 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-11 16:40:29,839 [INFO] Cycle check failed for ABBV: ABBV is blocked for today
+2026-08-11 16:40:30,428 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-08-11 16:40:30,916 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-08-11 16:40:31,340 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-08-11 16:40:31,340 [INFO] Slow poll done.
+2026-08-11 16:45:31,361 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-11 16:45:32,372 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 16:45:33,009 [INFO] VWAP entry blocked for AAPL: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-11 16:45:33,615 [INFO] Cycle check failed for ABBV: ABBV is blocked for today
+2026-08-11 16:45:34,283 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-08-11 16:45:34,638 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-08-11 16:45:35,011 [INFO] VWAP entry blocked for ADBE: DEFENSIVE: VWAP falling: -0.06% over 5 bars (entry blocked — need strong rise)
+2026-08-11 16:45:35,012 [INFO] Slow poll done.
+2026-08-11 16:50:35,034 [INFO] Regime stale (>30min) — reclassifying
+2026-08-11 16:50:38,030 [INFO] Regime: NEUTRAL — SPY +0.4% over 5 days, VIX 15.5 (moderate), 64% sector breadth
+2026-08-11 16:50:38,031 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-11 16:50:39,007 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 16:50:39,408 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 16:50:39,770 [INFO] Cycle check failed for ABBV: ABBV is blocked for today
+2026-08-11 16:50:41,021 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-08-11 16:50:41,389 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-08-11 16:50:41,849 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.13% over 5 bars (entry blocked — not rising)
+2026-08-11 16:50:41,849 [INFO] Slow poll done.
+2026-08-11 16:55:41,869 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-11 16:55:42,726 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-11 16:55:43,157 [INFO] VWAP entry blocked for AAPL: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-11 16:55:43,552 [INFO] Cycle check failed for ABBV: ABBV is blocked for today
+2026-08-11 16:55:43,925 [INFO] Cycle check failed for ABT: ABT is blocked for today
+2026-08-11 16:55:44,356 [INFO] Cycle check failed for ACN: ACN is blocked for today
+2026-08-11 16:55:44,912 [INFO] VWAP entry blocked for ADBE: NEUTRAL: VWAP falling: -0.07% over 5 bars (entry blocked — not rising)
+2026-08-11 16:55:44,913 [INFO] Slow poll done.
