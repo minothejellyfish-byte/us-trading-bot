@@ -1,1 +1,29 @@
-{"positions": {}, "updated_at": "2026-08-12T07:00:01+03:00"}
+{
+  "date": "2026-08-12",
+  "time": "09:30:03",
+  "positions": {
+    "AEP": {
+      "symbol": "AEP",
+      "entry_price": 127.53,
+      "qty": -165,
+      "entry_time": "2026-08-12T09:00:03.648376-04:00",
+      "peak_price": 123.83,
+      "closed": false,
+      "signal": "alpaca-sync",
+      "order_id": "unknown",
+      "cycle": 1,
+      "max_cycles": 2,
+      "alpaca_data": {
+        "avg_entry_price": 127.53,
+        "market_value": -20422.875,
+        "unrealized_pl": 619.575,
+        "unrealized_plpc": 0.02944,
+        "current_price": 123.775,
+        "qty": -165
+      },
+      "current_price": 123.775
+    }
+  },
+  "count": 1,
+  "source": "alpaca-api"
+}
