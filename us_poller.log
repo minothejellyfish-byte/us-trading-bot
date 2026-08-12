@@ -170248,3 +170248,31 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-12 22:29:26,967 [WARNING] Position AEP has invalid quantity -165, skipping
 2026-08-12 22:29:26,967 [INFO] Entry cutoff passed — no new entries
 2026-08-12 22:29:26,967 [INFO] Slow poll done.
+2026-08-12 22:34:27,453 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-12 22:34:28,389 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-12 22:34:28,390 [INFO] Entry cutoff passed — no new entries
+2026-08-12 22:34:28,390 [INFO] Slow poll done.
+2026-08-12 22:39:28,411 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-12 22:39:29,311 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-12 22:39:29,311 [INFO] Entry cutoff passed — no new entries
+2026-08-12 22:39:29,311 [INFO] Slow poll done.
+2026-08-12 22:44:29,333 [INFO] Regime stale (>30min) — reclassifying
+2026-08-12 22:44:32,029 [INFO] Regime: NEUTRAL — SPY +0.5% over 5 days, VIX 14.5 (moderate), 73% sector breadth
+2026-08-12 22:44:32,029 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-12 22:44:32,824 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-12 22:44:32,824 [INFO] Entry cutoff passed — no new entries
+2026-08-12 22:44:32,824 [INFO] Slow poll done.
+2026-08-12 22:49:33,268 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-12 22:49:34,118 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-12 22:49:34,119 [INFO] Hard close active — no new entries
+2026-08-12 22:49:34,119 [INFO] Slow poll done.
+2026-08-12 22:54:34,141 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-12 22:54:35,033 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-12 22:54:35,033 [INFO] Hard close active — no new entries
+2026-08-12 22:54:35,033 [INFO] Slow poll done.
+2026-08-12 22:59:35,418 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-12 22:59:36,254 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-12 22:59:36,254 [INFO] Hard close active — no new entries
+2026-08-12 22:59:36,254 [INFO] Slow poll done.
+2026-08-12 23:00:01,297 [INFO] Received signal 15 — shutting down
+2026-08-12 23:00:01,298 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
