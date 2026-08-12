@@ -31,6 +31,7 @@ import yfinance as yf
 import requests  # For Alpaca API
 import pandas as pd
 import numpy as np
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FutureTimeoutError
 
 from us_sharia_universe import get_sharia_universe
 from us_market_regime import classify_premarket
@@ -655,20 +656,47 @@ def run_premarket_screen(max_stocks: int = None, top_n: int = 10, regime: str = 
     
     log.info(f"Screening {len(screen_universe)} stocks with Twelve Data batch API...")
     
-    # Fetch all data in batches
-    premarket_data = get_premarket_data_twelve_data_batch(screen_universe)
+    # Fetch all data in batches — hard timeout 90s to avoid hanging
+    premarket_data = {}
+    try:
+        with ThreadPoolExecutor(max_workers=1) as executor:
+            future = executor.submit(get_premarket_data_twelve_data_batch, screen_universe)
+            premarket_data = future.result(timeout=90)
+        log.info(f"Twelve Data batch returned {len(premarket_data)} results")
+    except FutureTimeoutError:
+        log.warning("Twelve Data batch timed out after 90s — falling back to Alpaca IEX")
+    except Exception as e:
+        log.warning(f"Twelve Data batch failed: {e}")
     
     picks = []
     screened = 0
     failures = 0
     
+    # Build list of tickers that need fallback
+    missing_tickers = [t for t in screen_universe if t not in premarket_data]
+    
+    # Parallel Alpaca IEX fallback (max 5 concurrent to respect rate limits)
+    alpaca_results = {}
+    if missing_tickers:
+        log.info(f"Fetching {len(missing_tickers)} tickers via Alpaca IEX (5 workers)...")
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            future_to_ticker = {executor.submit(get_premarket_data_alpaca, t): t for t in missing_tickers}
+            for future in as_completed(future_to_ticker):
+                ticker = future_to_ticker[future]
+                try:
+                    data = future.result()
+                    if data:
+                        alpaca_results[ticker] = data
+                except Exception as e:
+                    log.debug(f"Alpaca error for {ticker}: {e}")
+    
+    # Merge results
+    premarket_data.update(alpaca_results)
+    
     for ticker in screen_universe:
         data = premarket_data.get(ticker)
         if not data:
-            # Fallback to individual Alpaca
-            data = get_premarket_data_alpaca(ticker)
-            if not data:
-                failures += 1
+            failures += 1
         screened += 1
         
         if data:
