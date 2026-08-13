@@ -170288,3 +170288,12 @@ AttributeError: 'dict' object has no attribute 'append'
 1 Failed download:
 2026-08-13 16:30:11,970 [ERROR] ['ALLY']: possibly delisted; no price data found  (period=1d)
 2026-08-13 16:30:11,974 [WARNING] All price sources failed for ALLY
+2026-08-13 16:30:13,454 [ERROR] $CG: possibly delisted; no price data found  (period=1d)
+2026-08-13 16:30:13,459 [ERROR] 
+1 Failed download:
+2026-08-13 16:30:13,459 [ERROR] ['CG']: possibly delisted; no price data found  (period=1d)
+2026-08-13 16:30:13,461 [WARNING] All price sources failed for CG
+2026-08-13 16:30:13,849 [INFO] VWAP entry blocked for CNP: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-08-13 16:30:14,238 [INFO] VWAP entry blocked for CNX: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-08-13 16:30:14,625 [INFO] Cycle check failed for CSX: Cycle limit reached (3/3) for NEUTRAL
+2026-08-13 16:30:14,625 [INFO] Slow poll done.
