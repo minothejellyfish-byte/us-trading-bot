@@ -31088,3 +31088,60 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-13 16:55:37,683 [INFO] Cycle check failed for CNP: CNP is blocked for today
 2026-08-13 16:55:38,530 [INFO] Cycle check failed for CSX: CSX is blocked for today
 2026-08-13 16:55:38,530 [INFO] Slow poll done.
+2026-08-13 17:00:39,262 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-13 17:00:40,164 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 17:00:40,809 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-13 17:00:41,283 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-13 17:00:41,750 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-13 17:00:42,639 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-13 17:00:42,640 [INFO] Slow poll done.
+2026-08-13 17:05:42,662 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-13 17:05:43,508 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 17:05:43,879 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-13 17:05:44,339 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-13 17:05:44,730 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-13 17:05:45,133 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-08-13 17:05:45,551 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-13 17:05:45,551 [INFO] Slow poll done.
+2026-08-13 17:10:45,575 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-13 17:10:46,404 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 17:10:46,868 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-13 17:10:47,334 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-13 17:10:47,731 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-13 17:10:48,128 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP falling: -0.03% over 5 bars (entry blocked — not rising)
+2026-08-13 17:10:48,489 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-13 17:10:48,490 [INFO] Slow poll done.
+2026-08-13 17:15:48,511 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-13 17:15:49,267 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 17:15:49,636 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-13 17:15:50,080 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-13 17:15:50,425 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-13 17:15:50,791 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
+2026-08-13 17:15:51,237 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-13 17:15:51,237 [INFO] Slow poll done.
+2026-08-13 17:20:51,261 [INFO] Regime stale (>30min) — reclassifying
+2026-08-13 17:20:54,025 [INFO] Regime: NEUTRAL — SPY +0.7% over 5 days, VIX 14.7 (moderate), 82% sector breadth
+2026-08-13 17:20:54,025 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-13 17:20:54,866 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 17:20:55,271 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-13 17:20:55,740 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-13 17:20:56,158 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-13 17:20:56,541 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-13 17:20:56,937 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-13 17:20:56,937 [INFO] Slow poll done.
+2026-08-13 17:25:56,961 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-13 17:25:57,802 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 17:25:58,199 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-13 17:25:58,752 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-13 17:25:59,162 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-13 17:25:59,578 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-13 17:25:59,958 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-13 17:25:59,958 [INFO] Slow poll done.
