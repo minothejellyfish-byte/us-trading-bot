@@ -170276,3 +170276,15 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-12 22:59:36,254 [INFO] Slow poll done.
 2026-08-12 23:00:01,297 [INFO] Received signal 15 — shutting down
 2026-08-12 23:00:01,298 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-13 16:30:07,772 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-13 16:30:07,773 [INFO] Poller starting in daemon mode
+2026-08-13 16:30:07,773 [INFO] US Price poller started.
+2026-08-13 16:30:08,304 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-13 16:30:08,703 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-13 16:30:08,937 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-13 16:30:09,853 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-13 16:30:11,967 [ERROR] $ALLY: possibly delisted; no price data found  (period=1d)
+2026-08-13 16:30:11,970 [ERROR] 
+1 Failed download:
+2026-08-13 16:30:11,970 [ERROR] ['ALLY']: possibly delisted; no price data found  (period=1d)
+2026-08-13 16:30:11,974 [WARNING] All price sources failed for ALLY
