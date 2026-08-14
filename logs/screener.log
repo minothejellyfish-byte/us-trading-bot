@@ -18952,3 +18952,509 @@ Rank  Symbol   Score    Price      Gap%     Sector
 16    UDR      27.3     $40.21     8.03   % Unknown
 17    VZ       31.8     $49.46     5.28   % Unknown
 ============================================================
+2026-08-14 16:20:05 [INFO] Regime: NEUTRAL — SPY +0.6% over 5 days, VIX 14.5 (moderate), 82% sector breadth
+2026-08-14 16:20:05 [INFO] Starting AFTER-MARKET screen at 09:20 ET with regime: NEUTRAL
+2026-08-14 16:20:05 [INFO] Universe: 194 Sharia-compliant stocks
+2026-08-14 16:20:05 [INFO] Screening 194 stocks with Twelve Data batch API...
+2026-08-14 16:20:06 [INFO]   ✅ AAPL: Twelve Data (gap=1.00%, price=305.26001)
+2026-08-14 16:20:06 [INFO]   ✅ ABBV: Twelve Data (gap=0.83%, price=250.82001)
+2026-08-14 16:20:06 [INFO]   ✅ ABT: Twelve Data (gap=0.32%, price=111.27)
+2026-08-14 16:20:06 [INFO]   ✅ ACN: Twelve Data (gap=-0.92%, price=178.49001)
+2026-08-14 16:20:06 [INFO]   ✅ ADBE: Twelve Data (gap=4.54%, price=270.48999)
+2026-08-14 16:20:06 [INFO]   ✅ AEE: Twelve Data (gap=0.28%, price=109.12)
+2026-08-14 16:20:06 [INFO]   ✅ AEP: Twelve Data (gap=0.59%, price=125.38)
+2026-08-14 16:20:06 [INFO]   ✅ AES: Twelve Data (gap=0.14%, price=14.73)
+2026-08-14 16:21:06 [INFO]   ✅ DIS: Twelve Data (gap=1.53%, price=104.8)
+2026-08-14 16:21:06 [INFO]   ✅ DLR: Twelve Data (gap=0.26%, price=197.58)
+2026-08-14 16:21:06 [INFO]   ✅ DLTR: Twelve Data (gap=0.72%, price=129.53)
+2026-08-14 16:21:06 [INFO]   ✅ DOC: Twelve Data (gap=0.73%, price=20.81)
+2026-08-14 16:21:06 [INFO]   ✅ DOW: Twelve Data (gap=-0.69%, price=30.36)
+2026-08-14 16:21:06 [INFO]   ✅ DUK: Twelve Data (gap=0.81%, price=124.49)
+2026-08-14 16:21:06 [INFO]   ✅ DVN: Twelve Data (gap=-1.05%, price=44.39)
+2026-08-14 16:21:06 [INFO]   ✅ DXCM: Twelve Data (gap=0.75%, price=91.48)
+2026-08-14 16:23:06 [INFO]   ✅ TECH: Twelve Data (gap=-0.08%, price=72.17)
+2026-08-14 16:23:06 [INFO]   ✅ TGT: Twelve Data (gap=0.98%, price=155.50999)
+2026-08-14 16:23:06 [INFO]   ✅ TJX: Twelve Data (gap=0.79%, price=153.81)
+2026-08-14 16:23:06 [INFO]   ✅ TMO: Twelve Data (gap=-1.18%, price=595.89001)
+2026-08-14 16:23:06 [INFO]   ✅ TMUS: Twelve Data (gap=3.53%, price=183.38)
+2026-08-14 16:23:06 [INFO]   ✅ TPG: Twelve Data (gap=8.51%, price=55.21)
+2026-08-14 16:23:06 [INFO]   ✅ TXN: Twelve Data (gap=-1.14%, price=273.42999)
+2026-08-14 16:23:06 [INFO]   ✅ UDR: Twelve Data (gap=1.91%, price=37.94)
+2026-08-14 16:23:31 [WARNING] Twelve Data batch timed out after 90s — falling back to Alpaca IEX
+2026-08-14 16:23:31 [INFO] Fetching 194 tickers via Alpaca IEX (5 workers)...
+2026-08-14 16:23:32 [INFO]   ✅ AAPL: Alpaca IEX (gap=4.96%, price=320.45)
+2026-08-14 16:23:32 [INFO]   ✅ ABT: Alpaca IEX (gap=5.32%, price=117.18)
+2026-08-14 16:23:32 [INFO]   ✅ ACN: Alpaca IEX (gap=5.15%, price=187.69)
+2026-08-14 16:23:32 [INFO]   ✅ ABBV: Alpaca IEX (gap=5.35%, price=264.18)
+2026-08-14 16:23:32 [INFO]   ✅ ADBE: Alpaca IEX (gap=5.03%, price=284.08)
+2026-08-14 16:23:33 [INFO]   ✅ AEE: Alpaca IEX (gap=6.06%, price=115.75)
+2026-08-14 16:23:33 [INFO]   ✅ AIV: Alpaca IEX (gap=20.00%, price=3.12)
+2026-08-14 16:23:34 [INFO]   ✅ AFRM: Alpaca IEX (gap=6.36%, price=83.27)
+2026-08-14 16:23:34 [INFO]   ✅ AEP: Alpaca IEX (gap=5.09%, price=131.78)
+2026-08-14 16:23:34 [INFO]   ✅ AES: Alpaca IEX (gap=5.16%, price=15.49)
+2026-08-14 16:23:34 [INFO]   ✅ ALB: Alpaca IEX (gap=6.29%, price=138.6)
+2026-08-14 16:23:35 [INFO]   ✅ ALLY: Alpaca IEX (gap=6.33%, price=47.43)
+2026-08-14 16:23:35 [INFO]   ✅ AMD: Alpaca IEX (gap=6.53%, price=514.5)
+2026-08-14 16:23:35 [INFO]   ✅ AMAT: Alpaca IEX (gap=-1.67%, price=526.78)
+2026-08-14 16:23:35 [INFO]   ✅ AMGN: Alpaca IEX (gap=5.52%, price=440.88)
+2026-08-14 16:23:36 [INFO]   ✅ AMT: Alpaca IEX (gap=5.28%, price=183.39)
+2026-08-14 16:23:36 [INFO]   ✅ APD: Alpaca IEX (gap=5.36%, price=322.13)
+2026-08-14 16:23:36 [INFO]   ✅ APO: Alpaca IEX (gap=5.96%, price=152.1)
+2026-08-14 16:23:36 [INFO]   ✅ ASH: Alpaca IEX (gap=17.45%, price=86.07)
+2026-08-14 16:23:36 [INFO]   ✅ ARES: Alpaca IEX (gap=5.38%, price=157.5)
+2026-08-14 16:23:37 [INFO]   ✅ ASTS: Alpaca IEX (gap=5.58%, price=75.48)
+2026-08-14 16:23:37 [INFO]   ✅ AVB: Alpaca IEX (gap=6.55%, price=196.11)
+2026-08-14 16:23:37 [INFO]   ✅ AVGO: Alpaca IEX (gap=4.34%, price=435.9)
+2026-08-14 16:23:37 [INFO]   ✅ BDX: Alpaca IEX (gap=5.22%, price=191.42)
+2026-08-14 16:23:37 [INFO]   ✅ BAX: Alpaca IEX (gap=7.36%, price=29.04)
+2026-08-14 16:23:38 [INFO]   ✅ BIIB: Alpaca IEX (gap=5.20%, price=221.66)
+2026-08-14 16:23:38 [INFO]   ✅ BLK: Alpaca IEX (gap=5.62%, price=1249.5)
+2026-08-14 16:23:38 [INFO]   ✅ BMY: Alpaca IEX (gap=5.34%, price=68.1)
+2026-08-14 16:23:38 [INFO]   ✅ BURL: Alpaca IEX (gap=6.35%, price=378)
+2026-08-14 16:23:38 [INFO]   ✅ BX: Alpaca IEX (gap=4.83%, price=156.56)
+2026-08-14 16:23:39 [INFO]   ✅ BXP: Alpaca IEX (gap=8.01%, price=74.72)
+2026-08-14 16:23:39 [INFO]   ✅ CAT: Alpaca IEX (gap=5.14%, price=898.8)
+2026-08-14 16:23:39 [INFO]   ✅ CCI: Alpaca IEX (gap=5.04%, price=79.54)
+2026-08-14 16:23:40 [INFO]   ✅ CDNS: Alpaca IEX (gap=6.24%, price=343.98)
+2026-08-14 16:23:40 [INFO]   ✅ CF: Alpaca IEX (gap=4.96%, price=122.84)
+2026-08-14 16:23:40 [INFO]   ✅ CG: Alpaca IEX (gap=6.03%, price=54.48)
+2026-08-14 16:23:40 [INFO]   ✅ CHTR: Alpaca IEX (gap=7.34%, price=168)
+2026-08-14 16:23:41 [INFO]   ✅ CMCSA: Alpaca IEX (gap=4.75%, price=27.44)
+2026-08-14 16:23:41 [INFO]   ✅ CMS: Alpaca IEX (gap=5.87%, price=74.65)
+2026-08-14 16:23:41 [INFO]   ✅ CNP: Alpaca IEX (gap=5.95%, price=42.9)
+2026-08-14 16:23:41 [INFO]   ✅ CNX: Alpaca IEX (gap=15.96%, price=41.02)
+2026-08-14 16:23:42 [INFO]   ✅ COP: Alpaca IEX (gap=5.47%, price=131.54)
+2026-08-14 16:23:42 [INFO]   ✅ COIN: Alpaca IEX (gap=2.92%, price=158.4)
+2026-08-14 16:23:42 [INFO]   ✅ COST: Alpaca IEX (gap=4.81%, price=1008)
+2026-08-14 16:23:42 [INFO]   ✅ CPT: Alpaca IEX (gap=12.01%, price=123.77)
+2026-08-14 16:23:43 [INFO]   ✅ CRM: Alpaca IEX (gap=4.71%, price=210.81)
+2026-08-14 16:23:43 [INFO]   ✅ CSX: Alpaca IEX (gap=5.75%, price=53.01)
+2026-08-14 16:23:43 [INFO]   ✅ CRWD: Alpaca IEX (gap=4.94%, price=236.67)
+2026-08-14 16:23:43 [INFO]   ✅ CVX: Alpaca IEX (gap=5.42%, price=208.43)
+2026-08-14 16:23:43 [INFO]   ✅ CTVA: Alpaca IEX (gap=6.06%, price=80.33)
+2026-08-14 16:23:44 [INFO]   ✅ D: Alpaca IEX (gap=5.35%, price=72.21)
+2026-08-14 16:23:44 [INFO]   ✅ DDOG: Alpaca IEX (gap=4.87%, price=264.6)
+2026-08-14 16:23:44 [INFO]   ✅ DE: Alpaca IEX (gap=5.94%, price=648.9)
+2026-08-14 16:23:44 [INFO]   ✅ DECK: Alpaca IEX (gap=5.64%, price=98.6)
+2026-08-14 16:23:44 [INFO]   ✅ DG: Alpaca IEX (gap=6.57%, price=130.19)
+2026-08-14 16:23:45 [INFO]   ✅ DHR: Alpaca IEX (gap=5.50%, price=215.13)
+2026-08-14 16:23:45 [INFO]   ✅ DLR: Alpaca IEX (gap=6.87%, price=211.16)
+2026-08-14 16:23:45 [INFO]   ✅ DIS: Alpaca IEX (gap=5.17%, price=110.23)
+2026-08-14 16:23:45 [INFO]   ✅ DLTR: Alpaca IEX (gap=5.39%, price=136.5)
+2026-08-14 16:23:45 [INFO]   ✅ DOC: Alpaca IEX (gap=5.57%, price=21.97)
+2026-08-14 16:23:46 [INFO]   ✅ DOW: Alpaca IEX (gap=5.60%, price=32.04)
+2026-08-14 16:23:46 [INFO]   ✅ DUK: Alpaca IEX (gap=4.24%, price=129.78)
+2026-08-14 16:23:46 [INFO]   ✅ DVN: Alpaca IEX (gap=5.72%, price=46.94)
+2026-08-14 16:23:47 [INFO]   ✅ DXCM: Alpaca IEX (gap=5.46%, price=96.5)
+2026-08-14 16:23:47 [INFO]   ✅ ECL: Alpaca IEX (gap=6.41%, price=294)
+2026-08-14 16:23:47 [INFO]   ✅ ED: Alpaca IEX (gap=5.58%, price=114.45)
+2026-08-14 16:23:47 [INFO]   ✅ EFX: Alpaca IEX (gap=8.79%, price=201.91)
+2026-08-14 16:23:48 [INFO]   ✅ EMN: Alpaca IEX (gap=8.27%, price=79.85)
+2026-08-14 16:23:48 [INFO]   ✅ EQIX: Alpaca IEX (gap=5.61%, price=1133.99)
+2026-08-14 16:23:48 [INFO]   ✅ EOG: Alpaca IEX (gap=6.20%, price=150.15)
+2026-08-14 16:23:48 [INFO]   ✅ EQR: Alpaca IEX (gap=6.03%, price=69.93)
+2026-08-14 16:23:49 [INFO]   ✅ EQT: Alpaca IEX (gap=5.78%, price=57.21)
+2026-08-14 16:23:49 [INFO]   ✅ ES: Alpaca IEX (gap=5.53%, price=76.2)
+2026-08-14 16:23:49 [INFO]   ✅ ETR: Alpaca IEX (gap=6.12%, price=113.39)
+2026-08-14 16:23:49 [INFO]   ✅ ETSY: Alpaca IEX (gap=6.35%, price=85.79)
+2026-08-14 16:23:50 [INFO]   ✅ EW: Alpaca IEX (gap=6.06%, price=98.16)
+2026-08-14 16:23:50 [INFO]   ✅ EXC: Alpaca IEX (gap=5.37%, price=48.06)
+2026-08-14 16:23:50 [INFO]   ✅ EXR: Alpaca IEX (gap=11.06%, price=165.89)
+2026-08-14 16:23:50 [INFO]   ✅ FANG: Alpaca IEX (gap=7.29%, price=214.1)
+2026-08-14 16:23:50 [INFO]   ✅ FCX: Alpaca IEX (gap=5.55%, price=70.54)
+2026-08-14 16:23:51 [INFO]   ✅ FDX: Alpaca IEX (gap=5.18%, price=357)
+2026-08-14 16:23:51 [INFO]   ✅ FE: Alpaca IEX (gap=5.93%, price=49.63)
+2026-08-14 16:23:51 [INFO]   ✅ FICO: Alpaca IEX (gap=5.43%, price=1170.83)
+2026-08-14 16:23:51 [INFO]   ✅ FMC: Alpaca IEX (gap=14.38%, price=11.61)
+2026-08-14 16:23:51 [INFO]   ✅ FTNT: Alpaca IEX (gap=5.08%, price=173.88)
+2026-08-14 16:23:52 [INFO]   ✅ GE: Alpaca IEX (gap=5.55%, price=380.6)
+2026-08-14 16:23:52 [INFO]   ✅ GILD: Alpaca IEX (gap=5.31%, price=145.41)
+2026-08-14 16:23:52 [INFO]   ✅ GOOG: Alpaca IEX (gap=0.94%, price=347.2)
+2026-08-14 16:23:52 [INFO]   ✅ GOOGL: Alpaca IEX (gap=0.36%, price=347.6)
+2026-08-14 16:23:53 [INFO]   ✅ GS: Alpaca IEX (gap=5.16%, price=1096.2)
+2026-08-14 16:23:53 [INFO]   ✅ GSAT: Alpaca IEX (gap=5.52%, price=87.19)
+2026-08-14 16:23:53 [INFO]   ✅ HON: Alpaca IEX (gap=5.45%, price=246.75)
+2026-08-14 16:23:53 [INFO]   ✅ HOOD: Alpaca IEX (gap=4.14%, price=103.48)
+2026-08-14 16:23:54 [INFO]   ✅ IBM: Alpaca IEX (gap=5.01%, price=248.84)
+2026-08-14 16:23:54 [INFO]   ✅ IFF: Alpaca IEX (gap=6.31%, price=89.36)
+2026-08-14 16:23:54 [INFO]   ✅ INTC: Alpaca IEX (gap=5.71%, price=110.6)
+2026-08-14 16:23:55 [INFO]   ✅ IRDM: Alpaca IEX (gap=7.04%, price=53.28)
+2026-08-14 16:23:55 [INFO]   ✅ IQV: Alpaca IEX (gap=8.65%, price=262.5)
+2026-08-14 16:23:55 [INFO]   ✅ ISRG: Alpaca IEX (gap=4.97%, price=421.32)
+2026-08-14 16:23:55 [INFO]   ✅ JNJ: Alpaca IEX (gap=4.96%, price=275.1)
+2026-08-14 16:23:56 [INFO]   ✅ KKR: Alpaca IEX (gap=5.41%, price=121.56)
+2026-08-14 16:23:56 [INFO]   ✅ KO: Alpaca IEX (gap=5.04%, price=91.87)
+2026-08-14 16:23:56 [INFO]   ✅ KLAC: Alpaca IEX (gap=4.88%, price=219.44)
+2026-08-14 16:23:56 [INFO]   ✅ LHX: Alpaca IEX (gap=6.60%, price=307.43)
+2026-08-14 16:23:56 [INFO]   ✅ LIN: Alpaca IEX (gap=5.13%, price=502.64)
+2026-08-14 16:23:57 [INFO]   ✅ LLY: Alpaca IEX (gap=4.54%, price=1263.99)
+2026-08-14 16:23:57 [INFO]   ✅ LNT: Alpaca IEX (gap=7.11%, price=75.22)
+2026-08-14 16:23:57 [INFO]   ✅ LRCX: Alpaca IEX (gap=4.47%, price=352.19)
+2026-08-14 16:23:57 [INFO]   ✅ LULU: Alpaca IEX (gap=5.36%, price=125.99)
+2026-08-14 16:23:57 [INFO]   ✅ LUMN: Alpaca IEX (gap=14.75%, price=7.35)
+2026-08-14 16:23:58 [INFO]   ✅ LYB: Alpaca IEX (gap=7.67%, price=67.19)
+2026-08-14 16:23:58 [INFO]   ✅ MA: Alpaca IEX (gap=5.32%, price=597.52)
+2026-08-14 16:23:58 [INFO]   ✅ MAA: Alpaca IEX (gap=7.97%, price=144.92)
+2026-08-14 16:23:58 [INFO]   ✅ MC: Alpaca IEX (gap=16.23%, price=81.8)
+2026-08-14 16:23:59 [INFO]   ✅ MCD: Alpaca IEX (gap=5.01%, price=285.88)
+2026-08-14 16:24:09 [WARNING]   ❌ MRK: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Read timed out. (read timeout=10)
+2026-08-14 16:24:09 [WARNING]   ❌ META: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Read timed out. (read timeout=10)
+2026-08-14 16:24:09 [WARNING]   ❌ MPC: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/quotes/latest?symbols=MPC (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7658d1afe930>, 'Connection to data.alpaca.markets timed out. (connect timeout=10)'))
+2026-08-14 16:24:09 [WARNING]   ❌ MOS: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Read timed out. (read timeout=10)
+2026-08-14 16:24:09 [WARNING]   ❌ MDT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Read timed out. (read timeout=10)
+2026-08-14 16:24:09 [WARNING]   ❌ MSTR: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MSTR/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad0a10>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2026-08-14 16:24:09 [WARNING]   ❌ MRVL: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MRVL/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aff380>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2026-08-14 16:24:09 [WARNING]   ❌ MUR: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MUR/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afd940>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2026-08-14 16:24:09 [WARNING]   ❌ MSFT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MSFT/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1a83260>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2026-08-14 16:24:09 [WARNING]   ❌ NEE: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NEE/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1b2c9e0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NET: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NET/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aafc50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NEM: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NEM/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aad790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NFLX: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NFLX/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3c20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ MS: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/MS/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afd190>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2026-08-14 16:24:09 [WARNING]   ❌ NI: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NI/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1f470b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NKE: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NKE/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afcb90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NSC: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NSC/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3260>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NVDA: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NVDA/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aac6b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ OXY: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/OXY/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1910>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ O: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/O/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afcb90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ NTR: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/NTR/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PANW: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PANW/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1c65b20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ ORCL: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/ORCL/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2120>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PEP: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PEP/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aaf8f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PEG: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PEG/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2ba0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PFE: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PFE/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad37a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PG: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PG/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afdf40>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PLD: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PLD/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1affc20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PLTR: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PLTR/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3f50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PPG: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PPG/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aaf080>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PJT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PJT/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aaf680>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PSA: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PSA/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aff9b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PSX: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PSX/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad37d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ PYPL: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/PYPL/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2d50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ RKLB: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/RKLB/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afd3a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ QCOM: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/QCOM/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3020>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ RIOT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/RIOT/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3260>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ RRC: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/RRC/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afd4f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SBUX: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SBUX/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1affc20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ REGN: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/REGN/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1c14110>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ ROST: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/ROST/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1160>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SCHW: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SCHW/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1910>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SHW: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SHW/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3b90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SNOW: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SNOW/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afd3d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SNPS: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SNPS/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2c90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SO: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SO/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad28d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SQM: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SQM/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aff470>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SOFI: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SOFI/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad22a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SYF: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SYF/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SPCE: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SPCE/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afeff0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SYK: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SYK/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad0710>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ SRE: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/SRE/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad0560>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ T: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/T/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2120>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TGT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TGT/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afd370>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TECH: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TECH/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad0da0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TJX: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TJX/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3260>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TMUS: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TMUS/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2c90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TMO: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TMO/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3c20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TPG: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TPG/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad18e0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ UDR: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/UDR/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad22a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ UNH: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/UNH/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2960>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ TXN: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/TXN/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad04d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ ULTA: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/ULTA/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad13d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ UNP: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/UNP/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ VLO: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/VLO/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2c60>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ UPS: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/UPS/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3260>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ VRTX: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/VRTX/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ V: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/V/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1610>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ VTR: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/VTR/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3f50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ VZ: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/VZ/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad0dd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ WAT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/WAT/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3260>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ WLK: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/WLK/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ WEC: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/WEC/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad1460>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ WELL: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/WELL/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad2a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ WMT: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/WMT/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad3f50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ XEL: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/XEL/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1aae000>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ YUM: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/YUM/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afe180>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ ZBH: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/ZBH/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1ad0560>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [WARNING]   ❌ XOM: Alpaca error: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/XOM/bars?timeframe=1Day&start=2026-08-13T00%3A00%3A00-04%3A00&end=2026-08-13T23%3A59%3A00-04%3A00&limit=10&feed=iex (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7658d1afca70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2026-08-14 16:24:09 [INFO]   ⚠️ AAPL: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AAPL: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ABBV: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ABBV: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ABT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ABT: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ACN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ACN: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ADBE: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ADBE: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AEE: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AEE: score=2.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AEP: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AEP: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AES: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AES: score=11.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AFRM: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AFRM: score=12.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AIV: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AIV: score=9.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 10/194 screened, 0 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ ALB: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ALB: score=2.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ALLY: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ ALLY: score=31.0, gap=6.33%, vol=0, price=$47.43
+2026-08-14 16:24:09 [INFO]   ✅ ALLY: score=31.0, gap=6.33%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ AMAT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AMAT: score=0.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AMD: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AMD: score=2.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AMGN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AMGN: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AMT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AMT: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ APD: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ APD: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ APO: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ APO: score=2.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ARES: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ARES: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ASH: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ASH: score=15.3 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 20/194 screened, 1 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ ASTS: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ASTS: score=16.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AVB: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AVB: score=2.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ AVGO: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ AVGO: score=1.7 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BAX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BAX: score=20.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BDX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BDX: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BIIB: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BIIB: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BLK: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BLK: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BMY: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BMY: score=21.3 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BURL: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BURL: score=2.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ BX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BX: score=1.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 30/194 screened, 1 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ BXP: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ BXP: score=18.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CAT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CAT: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CCI: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CCI: score=14.3 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CDNS: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CDNS: score=2.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CF: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CF: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ CG: score=29.7, gap=6.03%, vol=0, price=$54.48
+2026-08-14 16:24:09 [INFO]   ✅ CG: score=29.7, gap=6.03%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ CHTR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CHTR: score=2.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CMCSA: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CMCSA: score=18.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CMS: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CMS: score=17.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CNP: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ CNP: score=28.1, gap=5.95%, vol=0, price=$42.90
+2026-08-14 16:24:09 [INFO]   ✅ CNP: score=28.1, gap=5.95%, vol=0
+2026-08-14 16:24:09 [INFO]   Progress: 40/194 screened, 3 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ CNX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ CNX: score=31.0, gap=15.96%, vol=0, price=$41.02
+2026-08-14 16:24:09 [INFO]   ✅ CNX: score=31.0, gap=15.96%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ COIN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ COIN: score=1.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ COP: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ COP: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ COST: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ COST: score=1.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CPT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CPT: score=4.8 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CRM: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CRM: score=1.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CRWD: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CRWD: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CSX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ CSX: score=30.5, gap=5.75%, vol=0, price=$53.01
+2026-08-14 16:24:09 [INFO]   ✅ CSX: score=30.5, gap=5.75%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ CTVA: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CTVA: score=14.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ CVX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ CVX: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 50/194 screened, 5 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ D: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ D: score=18.8 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DDOG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DDOG: score=1.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DE: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DE: score=2.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DECK: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DECK: score=3.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DG: score=2.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DHR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DHR: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DIS: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DIS: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DLR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DLR: score=2.7 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DLTR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DLTR: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DOC: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DOC: score=15.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 60/194 screened, 5 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ DOW: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DOW: score=21.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DUK: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DUK: score=1.7 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ DVN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ DVN: score=30.5, gap=5.72%, vol=0, price=$46.94
+2026-08-14 16:24:09 [INFO]   ✅ DVN: score=30.5, gap=5.72%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ DXCM: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ DXCM: score=4.3 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ECL: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ECL: score=2.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ED: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ED: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EFX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EFX: score=3.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EMN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EMN: score=15.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EOG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EOG: score=2.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EQIX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EQIX: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 70/194 screened, 6 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ EQR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EQR: score=20.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EQT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ EQT: score=28.0, gap=5.78%, vol=0, price=$57.21
+2026-08-14 16:24:09 [INFO]   ✅ EQT: score=28.0, gap=5.78%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ ES: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ES: score=16.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ETR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ETR: score=2.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ ETSY: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ETSY: score=11.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EW: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EW: score=3.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ EXC: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ EXC: score=31.0, gap=5.37%, vol=0, price=$48.06
+2026-08-14 16:24:09 [INFO]   ✅ EXC: score=31.0, gap=5.37%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ EXR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ EXR: score=4.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ FANG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ FANG: score=2.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ FCX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ FCX: score=19.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 80/194 screened, 8 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ FDX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ FDX: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ FE: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ FE: score=32.2, gap=5.93%, vol=0, price=$49.63
+2026-08-14 16:24:09 [INFO]   ✅ FE: score=32.2, gap=5.93%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ FICO: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ FICO: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ FMC: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ FMC: score=12.7 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ FTNT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ FTNT: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ GE: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ GE: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ GILD: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ GILD: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ GOOG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ GOOG: score=0.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ GOOGL: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ GOOGL: score=0.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ GS: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ GS: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 90/194 screened, 9 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ GSAT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ GSAT: score=9.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ HON: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ HON: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ HOOD: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ HOOD: score=1.7 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ IBM: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ IBM: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ IFF: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ IFF: score=8.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ INTC: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ INTC: score=2.3 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ IQV: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ IQV: score=3.5 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ IRDM: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ✅ IRDM: score=30.8, gap=7.04%, vol=0, price=$53.28
+2026-08-14 16:24:09 [INFO]   ✅ IRDM: score=30.8, gap=7.04%, vol=0
+2026-08-14 16:24:09 [INFO]   ⚠️ ISRG: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ ISRG: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ JNJ: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ JNJ: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 100/194 screened, 10 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ KKR: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ KKR: score=2.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ KLAC: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ KLAC: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ KO: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ KO: score=6.9 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LHX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LHX: score=2.6 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LIN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LIN: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LLY: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LLY: score=1.8 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LNT: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LNT: score=17.7 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LRCX: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LRCX: score=1.8 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LULU: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LULU: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ LUMN: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LUMN: score=10.3 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 110/194 screened, 10 picks, 0 failures
+2026-08-14 16:24:09 [INFO]   ⚠️ LYB: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ LYB: score=22.8 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ MA: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ MA: score=2.1 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ MAA: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ MAA: score=3.2 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ MC: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ MC: score=17.4 below threshold 25
+2026-08-14 16:24:09 [INFO]   ⚠️ MCD: cap unknown (Alpaca), accepting for paper trading
+2026-08-14 16:24:09 [INFO]   ❌ MCD: score=2.0 below threshold 25
+2026-08-14 16:24:09 [INFO]   Progress: 120/194 screened, 10 picks, 5 failures
+2026-08-14 16:24:09 [INFO]   Progress: 130/194 screened, 10 picks, 15 failures
+2026-08-14 16:24:09 [INFO]   Progress: 140/194 screened, 10 picks, 25 failures
+2026-08-14 16:24:09 [INFO]   Progress: 150/194 screened, 10 picks, 35 failures
+2026-08-14 16:24:09 [INFO]   Progress: 160/194 screened, 10 picks, 45 failures
+2026-08-14 16:24:09 [INFO]   Progress: 170/194 screened, 10 picks, 55 failures
+2026-08-14 16:24:09 [INFO]   Progress: 180/194 screened, 10 picks, 65 failures
+2026-08-14 16:24:09 [INFO]   Progress: 190/194 screened, 10 picks, 75 failures
+2026-08-14 16:24:09 [INFO] Screen complete: 10 picks from 194 screened (79 failures)
+2026-08-14 16:24:09 [INFO] Saved 10 picks to /home/mino/us-exec/us_picks.json
+
+============================================================
+PRE-MARKET SCREEN RESULTS
+Regime: NEUTRAL
+============================================================
+Time: 09:20 ET
+Picks: 10
+
+Rank  Symbol   Score    Price      Gap%     Sector
+------------------------------------------------------------
+1     ALLY     31.0     $47.43     6.33   % Unknown
+2     CG       29.7     $54.48     6.03   % Unknown
+3     CNP      28.1     $42.90     5.95   % Unknown
+4     CNX      31.0     $41.02     15.96  % Unknown
+5     CSX      30.5     $53.01     5.75   % Unknown
+6     DVN      30.5     $46.94     5.72   % Unknown
+7     EQT      28.0     $57.21     5.78   % Unknown
+8     EXC      31.0     $48.06     5.37   % Unknown
+9     FE       32.2     $49.63     5.93   % Unknown
+10    IRDM     30.8     $53.28     7.04   % Unknown
+============================================================
