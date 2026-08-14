@@ -170970,3 +170970,40 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-14 17:25:59,631 [INFO] Cycle check failed for CNX: CNX is blocked for today
 2026-08-14 17:26:00,003 [INFO] Cycle check failed for CSX: CSX is blocked for today
 2026-08-14 17:26:00,003 [INFO] Slow poll done.
+2026-08-14 17:31:00,402 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 17:31:01,424 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 17:31:13,289 [INFO] Order submitted: buy 666 ALLY @ market → pending_new
+2026-08-14 17:31:13,648 [INFO] Bought ALLY: 666@45.01 cycle=1/3
+2026-08-14 17:31:14,187 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-14 17:31:15,379 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-14 17:31:16,694 [INFO] Slow poll done.
+2026-08-14 17:31:26,697 [INFO] Buy detected: ALLY (bookkeeper confirmed: 666 @ $45.01)
+2026-08-14 17:36:07,156 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 17:36:11,568 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 17:36:12,435 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-08-14 17:36:13,645 [INFO] Slow poll done.
+2026-08-14 17:41:13,668 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 17:41:14,497 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 17:41:15,323 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.05% over 5 bars (entry blocked — not rising)
+2026-08-14 17:41:15,713 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-14 17:41:16,501 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-08-14 17:41:16,501 [INFO] Slow poll done.
+2026-08-14 17:46:16,526 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 17:46:17,364 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 17:46:18,242 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.02% over 5 bars (entry blocked — not rising)
+2026-08-14 17:46:18,610 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-08-14 17:46:19,380 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.02% over 5 bars (entry blocked — not rising)
+2026-08-14 17:46:19,380 [INFO] Slow poll done.
+2026-08-14 17:51:19,404 [INFO] Regime stale (>30min) — reclassifying
+2026-08-14 17:51:21,766 [INFO] Regime: NEUTRAL — SPY +0.5% over 5 days, VIX 14.6 (moderate), 73% sector breadth
+2026-08-14 17:51:21,767 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 17:51:22,620 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 17:51:23,556 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.02% over 5 bars (entry blocked — not rising)
+2026-08-14 17:51:24,739 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-14 17:51:24,739 [INFO] Slow poll done.
+2026-08-14 17:56:24,765 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 17:56:26,025 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 17:56:27,588 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-14 17:56:28,157 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-14 17:56:29,185 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: +0.01% over 5 bars (entry blocked — not rising)
+2026-08-14 17:56:29,185 [INFO] Slow poll done.
