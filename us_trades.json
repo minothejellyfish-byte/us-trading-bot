@@ -1395,5 +1395,23 @@
     "signal": "breakout",
     "regime": "NEUTRAL",
     "notes": ""
+  },
+  {
+    "id": "?",
+    "symbol": "ALLY",
+    "qty": 666,
+    "entry_price": 45.0,
+    "entry_time": "2026-08-14T10:31:13.289958-04:00",
+    "entry_signal": "auto",
+    "exit_price": 44.8,
+    "exit_time": "2026-08-14T14:03:59.456061-04:00",
+    "exit_reason": "Time stop: Time stop: held 213 min (>= 210 min) | NEUTRAL: Early entry \u2192 exit by 14:30",
+    "exit_regime": "NEUTRAL",
+    "gross_pnl": -129.87,
+    "spread_cost": 59.81,
+    "net_pnl": -189.68,
+    "pnl_pct": -0.43,
+    "duration_min": 212.8,
+    "date": "2026-08-14"
   }
 ]
