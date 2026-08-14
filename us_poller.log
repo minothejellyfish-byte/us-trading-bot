@@ -171333,3 +171333,31 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-14 22:29:38,983 [WARNING] Position AEP has invalid quantity -165, skipping
 2026-08-14 22:29:38,984 [INFO] Entry cutoff passed — no new entries
 2026-08-14 22:29:38,984 [INFO] Slow poll done.
+2026-08-14 22:31:39,020 [ERROR] $^VIX: possibly delisted; no price data found  (period=2d)
+2026-08-14 22:31:39,021 [INFO] Regime shift: NEUTRAL → DEFENSIVE (VIX spike)
+2026-08-14 22:34:39,035 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-14 22:34:39,799 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 22:34:39,800 [INFO] Entry cutoff passed — no new entries
+2026-08-14 22:34:39,800 [INFO] Slow poll done.
+2026-08-14 22:39:39,823 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-14 22:39:40,711 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 22:39:40,711 [INFO] Entry cutoff passed — no new entries
+2026-08-14 22:39:40,712 [INFO] Slow poll done.
+2026-08-14 22:44:40,733 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-14 22:44:41,651 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 22:44:41,651 [INFO] Entry cutoff passed — no new entries
+2026-08-14 22:44:41,651 [INFO] Slow poll done.
+2026-08-14 22:49:42,066 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-14 22:49:47,006 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 22:49:47,006 [INFO] Hard close active — no new entries
+2026-08-14 22:49:47,007 [INFO] Slow poll done.
+2026-08-14 22:54:47,029 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-14 22:54:47,912 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 22:54:47,912 [INFO] Hard close active — no new entries
+2026-08-14 22:54:47,913 [INFO] Slow poll done.
+2026-08-14 22:59:48,342 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-14 22:59:49,267 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 22:59:49,267 [INFO] Hard close active — no new entries
+2026-08-14 22:59:49,267 [INFO] Slow poll done.
+2026-08-14 23:00:01,818 [INFO] Received signal 15 — shutting down
+2026-08-14 23:00:01,818 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
