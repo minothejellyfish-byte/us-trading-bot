@@ -170860,3 +170860,63 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-13 22:59:35,711 [INFO] Slow poll done.
 2026-08-13 23:00:01,066 [INFO] Received signal 15 — shutting down
 2026-08-13 23:00:01,066 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-14 16:30:08,153 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-14 16:30:08,153 [INFO] Poller starting in daemon mode
+2026-08-14 16:30:08,154 [INFO] US Price poller started.
+2026-08-14 16:30:08,579 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-14 16:30:08,924 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 16:30:09,157 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-14 16:30:11,811 [ERROR] $AEP: possibly delisted; no price data found  (period=1d)
+2026-08-14 16:30:11,816 [ERROR] 
+1 Failed download:
+2026-08-14 16:30:11,816 [ERROR] ['AEP']: possibly delisted; no price data found  (period=1d)
+2026-08-14 16:30:11,820 [WARNING] All price sources failed for AEP
+2026-08-14 16:30:11,821 [WARNING] Failed to fetch price for AEP, skipping position monitoring
+2026-08-14 16:30:12,341 [INFO] Cycle check failed for ALLY: Cycle limit reached (4/3) for NEUTRAL
+2026-08-14 16:30:12,805 [INFO] Cycle check failed for CG: Cycle limit reached (4/3) for NEUTRAL
+2026-08-14 16:30:13,516 [INFO] Cycle check failed for CNP: Cycle limit reached (3/3) for NEUTRAL
+2026-08-14 16:30:13,988 [INFO] Cycle check failed for CNX: Cycle limit reached (3/3) for NEUTRAL
+2026-08-14 16:30:14,426 [INFO] Cycle check failed for CSX: Cycle limit reached (3/3) for NEUTRAL
+2026-08-14 16:30:14,426 [INFO] Slow poll done.
+2026-08-14 16:35:14,821 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 16:35:16,689 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 16:35:17,514 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-14 16:35:18,301 [INFO] VWAP entry blocked for CG: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-08-14 16:35:18,661 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-14 16:35:19,027 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-14 16:35:19,452 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-14 16:35:19,452 [INFO] Slow poll done.
+2026-08-14 16:40:19,474 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 16:40:21,298 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 16:40:21,898 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-14 16:40:22,493 [INFO] VWAP entry blocked for CG: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-08-14 16:40:22,859 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-14 16:40:23,318 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-14 16:40:23,824 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-14 16:40:23,824 [INFO] Slow poll done.
+2026-08-14 16:45:23,848 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 16:45:24,836 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 16:45:25,216 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-14 16:45:25,790 [INFO] VWAP entry blocked for CG: NEUTRAL: Insufficient data (entry blocked — not rising)
+2026-08-14 16:45:26,218 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-14 16:45:26,807 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-14 16:45:27,242 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-14 16:45:27,242 [INFO] Slow poll done.
+2026-08-14 16:50:27,267 [INFO] Regime stale (>30min) — reclassifying
+2026-08-14 16:50:29,519 [INFO] Regime: NEUTRAL — SPY +0.6% over 5 days, VIX 14.5 (moderate), 73% sector breadth
+2026-08-14 16:50:29,520 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 16:50:30,429 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 16:50:30,838 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-14 16:50:31,220 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.08% over 5 bars (entry blocked — not rising)
+2026-08-14 16:50:31,626 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-14 16:50:32,101 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP falling: -0.07% over 5 bars (entry blocked — not rising)
+2026-08-14 16:50:32,675 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-14 16:50:32,675 [INFO] Slow poll done.
+2026-08-14 16:55:32,698 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-14 16:55:33,512 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-14 16:55:33,883 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-14 16:55:34,257 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.22% over 5 bars (entry blocked — not rising)
+2026-08-14 16:55:34,619 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-14 16:55:35,156 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-14 16:55:35,808 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-14 16:55:35,809 [INFO] Slow poll done.
