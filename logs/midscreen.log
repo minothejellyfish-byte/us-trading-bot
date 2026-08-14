@@ -61630,3 +61630,9 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 9     FE       32.2     $47.01     0.36     % 0.0    x
 10    IRDM     30.8     $49.69     -0.19    % 0.0    x
 ============================================================
+2026-08-14 18:30:02 [INFO] US Mid-Screen: Mid-Morning (midscreen2)
+2026-08-14 18:30:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-14 18:30:02 [INFO] Step 1: Checking existing picks...
+2026-08-14 18:30:02 [INFO] Found 10 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
