@@ -171695,3 +171695,56 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-18 16:30:10,747 [INFO] Poller starting in daemon mode
 2026-08-18 16:30:10,747 [INFO] US Price poller started.
 2026-08-18 16:30:11,174 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-18 16:30:21,543 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-18 16:30:21,794 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-18 16:30:22,620 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-18 16:30:22,977 [INFO] Cycle check failed for ALLY: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-18 16:30:24,828 [ERROR] $CG: possibly delisted; no price data found  (period=1d)
+2026-08-18 16:30:24,829 [ERROR] 
+1 Failed download:
+2026-08-18 16:30:24,830 [ERROR] ['CG']: possibly delisted; no price data found  (period=1d)
+2026-08-18 16:30:24,837 [WARNING] All price sources failed for CG
+2026-08-18 16:30:25,205 [INFO] Cycle check failed for CNP: Cycle limit reached (3/2) for DEFENSIVE
+2026-08-18 16:30:25,939 [INFO] Cycle check failed for CSX: Cycle limit reached (3/2) for DEFENSIVE
+2026-08-18 16:30:25,939 [INFO] Slow poll done.
+2026-08-18 16:35:16,347 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-18 16:35:17,220 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-18 16:35:17,609 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-18 16:35:19,610 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-08-18 16:35:19,610 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.22% over 5 bars (entry blocked — need strong rise)
+2026-08-18 16:35:19,611 [WARNING] Breakout check failed: float() argument must be a string or a real number, not 'Series'
+2026-08-18 16:35:20,067 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-18 16:35:20,863 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-18 16:35:20,863 [INFO] Slow poll done.
+2026-08-18 16:40:20,886 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-18 16:40:21,679 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-18 16:40:22,032 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-18 16:40:22,438 [INFO] VWAP entry blocked for CG: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-18 16:40:22,800 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-18 16:40:23,559 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-18 16:40:23,559 [INFO] Slow poll done.
+2026-08-18 16:45:23,583 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-18 16:45:24,415 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-18 16:45:24,797 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-18 16:45:25,187 [INFO] VWAP entry blocked for CG: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-18 16:45:25,606 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-18 16:45:26,394 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-18 16:45:26,394 [INFO] Slow poll done.
+2026-08-18 16:50:26,417 [INFO] Regime stale (>30min) — reclassifying
+2026-08-18 16:50:29,198 [INFO] Regime: NEUTRAL — SPY -0.3% over 5 days, VIX 15.8 (moderate), 55% sector breadth
+2026-08-18 16:50:29,199 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-18 16:50:30,078 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-18 16:50:30,495 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-18 16:50:30,874 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.24% over 5 bars (entry blocked — not rising)
+2026-08-18 16:50:31,296 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-18 16:50:31,783 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP falling: -0.02% over 5 bars (entry blocked — not rising)
+2026-08-18 16:50:32,129 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-18 16:50:32,129 [INFO] Slow poll done.
+2026-08-18 16:55:32,152 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-18 16:55:32,940 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-18 16:55:33,278 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-18 16:55:33,669 [INFO] VWAP entry blocked for CG: NEUTRAL: VWAP falling: -0.35% over 5 bars (entry blocked — not rising)
+2026-08-18 16:55:34,029 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-18 16:55:34,443 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP falling: -0.05% over 5 bars (entry blocked — not rising)
+2026-08-18 16:55:34,825 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-18 16:55:34,825 [INFO] Slow poll done.
