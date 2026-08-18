@@ -64465,3 +64465,10 @@ Rank  Symbol   Score    Price      Change%    Vol(x)
 4     CNX      27.7     $35.58     -0.48    % 0.0    x
 5     CSX      25.0     $50.54     0.00     % 0.0    x
 ============================================================
+2026-08-18 18:30:02 [INFO] US Mid-Screen: Mid-Morning (midscreen2)
+2026-08-18 18:30:02 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-18 18:30:02 [INFO] Step 1: Checking existing picks...
+2026-08-18 18:30:02 [INFO] Found 5 existing picks
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-18 18:30:04 [INFO]   ✅ ALLY: Still valid (change=0.3%, vol=304291)
