@@ -19528,3 +19528,261 @@ Picks: 0
 Rank  Symbol   Score    Price      Gap%     Sector
 ------------------------------------------------------------
 ============================================================
+2026-08-18 16:20:04 [INFO] Regime: DEFENSIVE — SPY +nan% over 5 days, VIX 15.8 (elevated fear), 0% sector breadth
+2026-08-18 16:20:04 [INFO] Starting AFTER-MARKET screen at 09:20 ET with regime: DEFENSIVE
+2026-08-18 16:20:04 [INFO] Universe: 194 Sharia-compliant stocks
+2026-08-18 16:20:04 [INFO] Screening 194 stocks with Twelve Data batch API...
+2026-08-18 16:20:06 [INFO]   ✅ AAPL: Twelve Data (gap=-0.11%, price=305.59)
+2026-08-18 16:20:06 [INFO]   ✅ ABBV: Twelve Data (gap=0.35%, price=250.33)
+2026-08-18 16:20:06 [INFO]   ✅ ABT: Twelve Data (gap=-0.79%, price=110.37)
+2026-08-18 16:20:06 [INFO]   ✅ ACN: Twelve Data (gap=-3.91%, price=169.98)
+2026-08-18 16:20:06 [INFO]   ✅ ADBE: Twelve Data (gap=-3.78%, price=254.039993)
+2026-08-18 16:20:06 [INFO]   ✅ AEE: Twelve Data (gap=-0.25%, price=109.47)
+2026-08-18 16:20:06 [INFO]   ✅ AEP: Twelve Data (gap=0.74%, price=126.53)
+2026-08-18 16:20:06 [INFO]   ✅ AES: Twelve Data (gap=0.20%, price=14.76)
+2026-08-18 16:21:07 [INFO]   ✅ DIS: Twelve Data (gap=-3.14%, price=103.5)
+2026-08-18 16:21:07 [INFO]   ✅ DLR: Twelve Data (gap=-1.12%, price=197.91)
+2026-08-18 16:21:07 [INFO]   ✅ DLTR: Twelve Data (gap=0.12%, price=129.53999)
+2026-08-18 16:21:07 [INFO]   ✅ DOC: Twelve Data (gap=-1.01%, price=20.58)
+2026-08-18 16:21:07 [INFO]   ✅ DOW: Twelve Data (gap=0.87%, price=31.34)
+2026-08-18 16:21:07 [INFO]   ✅ DUK: Twelve Data (gap=-0.27%, price=123.58)
+2026-08-18 16:21:07 [INFO]   ✅ DVN: Twelve Data (gap=3.75%, price=47.57)
+2026-08-18 16:21:07 [INFO]   ✅ DXCM: Twelve Data (gap=-1.10%, price=88.76)
+2026-08-18 16:23:05 [INFO]   ✅ TECH: Twelve Data (gap=-0.01%, price=72.39)
+2026-08-18 16:23:05 [INFO]   ✅ TGT: Twelve Data (gap=-2.25%, price=151.0099945)
+2026-08-18 16:23:05 [INFO]   ✅ TJX: Twelve Data (gap=-0.83%, price=150.85001)
+2026-08-18 16:23:05 [INFO]   ✅ TMO: Twelve Data (gap=-0.47%, price=585.51001)
+2026-08-18 16:23:05 [INFO]   ✅ TMUS: Twelve Data (gap=-1.36%, price=180.12)
+2026-08-18 16:23:05 [INFO]   ✅ TPG: Twelve Data (gap=-2.38%, price=51.77)
+2026-08-18 16:23:05 [INFO]   ✅ TXN: Twelve Data (gap=1.19%, price=282.91)
+2026-08-18 16:23:05 [INFO]   ✅ UDR: Twelve Data (gap=-1.85%, price=37.24)
+2026-08-18 16:23:31 [WARNING] Twelve Data batch timed out after 90s — falling back to Alpaca IEX
+2026-08-18 16:23:31 [INFO] Fetching 194 tickers via Alpaca IEX (5 workers)...
+2026-08-18 16:23:32 [INFO]   ✅ AAPL: Alpaca IEX (gap=5.36%, price=322.05)
+2026-08-18 16:23:32 [INFO]   ✅ ABT: Alpaca IEX (gap=6.41%, price=117.46)
+2026-08-18 16:23:32 [INFO]   ✅ ADBE: Alpaca IEX (gap=7.00%, price=271.83)
+2026-08-18 16:23:32 [INFO]   ✅ ACN: Alpaca IEX (gap=7.53%, price=182.7)
+2026-08-18 16:23:32 [INFO]   ✅ ABBV: Alpaca IEX (gap=6.26%, price=266.07)
+2026-08-18 16:23:33 [INFO]   ✅ AEE: Alpaca IEX (gap=5.73%, price=115.75)
+2026-08-18 16:23:33 [INFO]   ✅ AEP: Alpaca IEX (gap=5.74%, price=133.8)
+2026-08-18 16:23:33 [INFO]   ✅ AES: Alpaca IEX (gap=4.94%, price=15.5)
+2026-08-18 16:23:33 [INFO]   ✅ AIV: Alpaca IEX (gap=6.31%, price=2.78)
+2026-08-18 16:23:33 [INFO]   ✅ AFRM: Alpaca IEX (gap=0.78%, price=75.11)
+2026-08-18 16:23:34 [INFO]   ✅ ALB: Alpaca IEX (gap=3.42%, price=138.6)
+2026-08-18 16:23:34 [INFO]   ✅ ALLY: Alpaca IEX (gap=6.24%, price=46.33)
+2026-08-18 16:23:34 [INFO]   ✅ AMAT: Alpaca IEX (gap=-0.19%, price=534.23)
+2026-08-18 16:23:34 [INFO]   ✅ AMGN: Alpaca IEX (gap=5.90%, price=444.09)
+2026-08-18 16:23:34 [INFO]   ✅ AMD: Alpaca IEX (gap=1.43%, price=513.45)
+2026-08-18 16:23:35 [INFO]   ✅ AMT: Alpaca IEX (gap=6.70%, price=183.74)
+2026-08-18 16:23:36 [INFO]   ✅ APO: Alpaca IEX (gap=4.68%, price=140.81)
+2026-08-18 16:23:36 [INFO]   ✅ APD: Alpaca IEX (gap=7.17%, price=322.29)
+2026-08-18 16:23:36 [INFO]   ✅ ASH: Alpaca IEX (gap=18.35%, price=87.78)
+2026-08-18 16:23:36 [INFO]   ✅ ARES: Alpaca IEX (gap=6.60%, price=150.6)
+2026-08-18 16:23:36 [INFO]   ✅ ASTS: Alpaca IEX (gap=1.36%, price=72.14)
+2026-08-18 16:23:37 [INFO]   ✅ BAX: Alpaca IEX (gap=6.41%, price=27.57)
+2026-08-18 16:23:37 [INFO]   ✅ AVGO: Alpaca IEX (gap=2.91%, price=403.95)
+2026-08-18 16:23:37 [INFO]   ✅ BDX: Alpaca IEX (gap=6.01%, price=193.2)
+2026-08-18 16:23:37 [INFO]   ✅ BIIB: Alpaca IEX (gap=6.00%, price=221.55)
+2026-08-18 16:23:38 [INFO]   ✅ BLK: Alpaca IEX (gap=6.63%, price=1223.25)
+2026-08-18 16:23:38 [INFO]   ✅ BMY: Alpaca IEX (gap=5.82%, price=68.41)
+2026-08-18 16:23:38 [INFO]   ✅ BURL: Alpaca IEX (gap=6.58%, price=359.1)
+2026-08-18 16:23:38 [INFO]   ✅ BX: Alpaca IEX (gap=4.63%, price=147.11)
+2026-08-18 16:23:39 [INFO]   ✅ BXP: Alpaca IEX (gap=7.36%, price=71.6)
+2026-08-18 16:23:39 [INFO]   ✅ CAT: Alpaca IEX (gap=2.81%, price=906.49)
+2026-08-18 16:23:39 [INFO]   ✅ CCI: Alpaca IEX (gap=6.47%, price=79.28)
+2026-08-18 16:23:39 [INFO]   ✅ CF: Alpaca IEX (gap=6.96%, price=125.99)
+2026-08-18 16:23:39 [INFO]   ✅ CDNS: Alpaca IEX (gap=5.54%, price=341.25)
+2026-08-18 16:23:40 [INFO]   ✅ CG: Alpaca IEX (gap=7.87%, price=52.34)
+2026-08-18 16:23:40 [INFO]   ✅ CHTR: Alpaca IEX (gap=7.12%, price=154.28)
+2026-08-18 16:23:40 [INFO]   ✅ CMCSA: Alpaca IEX (gap=6.33%, price=27.2)
+2026-08-18 16:23:40 [INFO]   ✅ CMS: Alpaca IEX (gap=8.98%, price=77.79)
+2026-08-18 16:23:40 [INFO]   ✅ CNP: Alpaca IEX (gap=7.26%, price=43.58)
+2026-08-18 16:23:41 [INFO]   ✅ CNX: Alpaca IEX (gap=21.09%, price=42.78)
+2026-08-18 16:23:41 [INFO]   ✅ COIN: Alpaca IEX (gap=3.41%, price=155.71)
+2026-08-18 16:23:41 [INFO]   ✅ COP: Alpaca IEX (gap=6.41%, price=135.77)
+2026-08-18 16:23:41 [INFO]   ✅ COST: Alpaca IEX (gap=6.23%, price=1013.25)
+2026-08-18 16:23:41 [INFO]   ✅ CPT: Alpaca IEX (gap=14.32%, price=123.77)
+2026-08-18 16:23:42 [INFO]   ✅ CRM: Alpaca IEX (gap=6.16%, price=202.81)
+2026-08-18 16:23:42 [INFO]   ✅ CRWD: Alpaca IEX (gap=4.79%, price=224.18)
+2026-08-18 16:23:43 [INFO]   ✅ CSX: Alpaca IEX (gap=5.85%, price=53.55)
+2026-08-18 16:23:43 [INFO]   ✅ CVX: Alpaca IEX (gap=6.15%, price=215.2)
+2026-08-18 16:23:43 [INFO]   ✅ CTVA: Alpaca IEX (gap=6.04%, price=80.61)
+2026-08-18 16:23:43 [INFO]   ✅ D: Alpaca IEX (gap=5.89%, price=72.85)
+2026-08-18 16:23:43 [INFO]   ✅ DDOG: Alpaca IEX (gap=5.45%, price=260.9)
+2026-08-18 16:23:44 [INFO]   ✅ DE: Alpaca IEX (gap=6.34%, price=638.14)
+2026-08-18 16:23:44 [INFO]   ✅ DECK: Alpaca IEX (gap=5.96%, price=95.55)
+2026-08-18 16:23:44 [INFO]   ✅ DG: Alpaca IEX (gap=6.59%, price=127.98)
+2026-08-18 16:23:44 [INFO]   ✅ DHR: Alpaca IEX (gap=5.72%, price=214.26)
+2026-08-18 16:23:45 [INFO]   ✅ DIS: Alpaca IEX (gap=5.72%, price=109.41)
+2026-08-18 16:23:45 [INFO]   ✅ DLR: Alpaca IEX (gap=5.04%, price=207.9)
+2026-08-18 16:23:45 [INFO]   ✅ DLTR: Alpaca IEX (gap=6.20%, price=137.55)
+2026-08-18 16:23:45 [INFO]   ✅ DOC: Alpaca IEX (gap=5.34%, price=21.69)
+2026-08-18 16:23:46 [INFO]   ✅ DUK: Alpaca IEX (gap=5.77%, price=130.73)
+2026-08-18 16:23:50 [INFO]   ✅ GOOG: Alpaca IEX (gap=0.25%, price=342.3)
+2026-08-18 16:23:51 [INFO]   ✅ INTC: Alpaca IEX (gap=0.61%, price=104.11)
+2026-08-18 16:24:04 [INFO]   ⚠️ AAPL: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AAPL: score=1.6 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ABBV: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ABBV: score=1.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ABT: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ABT: score=1.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ACN: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ACN: score=2.3 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ADBE: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ADBE: score=2.1 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AEE: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AEE: score=1.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AEP: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AEP: score=1.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AES: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AES: score=9.2 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AFRM: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AFRM: score=12.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AIV: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AIV: score=3.3 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 10/194 screened, 0 picks, 0 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ ALB: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ALB: score=1.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ALLY: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ✅ ALLY: score=25.0, gap=6.24%, vol=0, price=$46.33
+2026-08-18 16:24:04 [INFO]   ✅ ALLY: score=25.0, gap=6.24%, vol=0
+2026-08-18 16:24:04 [INFO]   ⚠️ AMAT: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AMAT: score=0.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AMD: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AMD: score=0.4 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AMGN: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AMGN: score=1.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AMT: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AMT: score=2.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ APD: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ APD: score=2.2 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ APO: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ APO: score=1.4 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ARES: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ARES: score=2.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ ASH: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ASH: score=11.6 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 20/194 screened, 1 picks, 0 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ ASTS: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ ASTS: score=14.3 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ AVGO: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ AVGO: score=0.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BAX: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BAX: score=15.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BDX: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BDX: score=1.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BIIB: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BIIB: score=1.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BLK: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BLK: score=2.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BMY: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BMY: score=17.5 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BURL: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BURL: score=2.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ BX: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BX: score=1.4 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 30/194 screened, 1 picks, 1 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ BXP: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ BXP: score=16.4 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CAT: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CAT: score=0.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CCI: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CCI: score=12.3 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CDNS: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CDNS: score=1.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CF: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CF: score=2.1 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CG: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ✅ CG: score=26.2, gap=7.87%, vol=0, price=$52.34
+2026-08-18 16:24:04 [INFO]   ✅ CG: score=26.2, gap=7.87%, vol=0
+2026-08-18 16:24:04 [INFO]   ⚠️ CHTR: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CHTR: score=2.1 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CMCSA: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CMCSA: score=15.5 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CMS: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CMS: score=13.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CNP: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ✅ CNP: score=24.0, gap=7.26%, vol=0, price=$43.58
+2026-08-18 16:24:04 [INFO]   ✅ CNP: score=24.0, gap=7.26%, vol=0
+2026-08-18 16:24:04 [INFO]   Progress: 40/194 screened, 3 picks, 1 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ CNX: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ✅ CNX: score=27.7, gap=21.09%, vol=0, price=$42.78
+2026-08-18 16:24:04 [INFO]   ✅ CNX: score=27.7, gap=21.09%, vol=0
+2026-08-18 16:24:04 [INFO]   ⚠️ COIN: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ COIN: score=1.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ COP: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ COP: score=1.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ COST: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ COST: score=1.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CPT: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CPT: score=4.3 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CRM: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CRM: score=1.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CRWD: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CRWD: score=1.4 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CSX: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ✅ CSX: score=25.0, gap=5.85%, vol=0, price=$53.55
+2026-08-18 16:24:04 [INFO]   ✅ CSX: score=25.0, gap=5.85%, vol=0
+2026-08-18 16:24:04 [INFO]   ⚠️ CTVA: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CTVA: score=11.5 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ CVX: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ CVX: score=1.8 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 50/194 screened, 5 picks, 1 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ D: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ D: score=15.3 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DDOG: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DDOG: score=1.6 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DE: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DE: score=1.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DECK: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DECK: score=4.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DG: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DG: score=2.0 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DHR: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DHR: score=1.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DIS: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DIS: score=1.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DLR: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DLR: score=1.5 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DLTR: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DLTR: score=1.9 below threshold 20
+2026-08-18 16:24:04 [INFO]   ⚠️ DOC: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DOC: score=12.4 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 60/194 screened, 5 picks, 1 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ DUK: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ DUK: score=1.7 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 70/194 screened, 5 picks, 10 failures
+2026-08-18 16:24:04 [INFO]   Progress: 80/194 screened, 5 picks, 20 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ GOOG: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ GOOG: score=0.1 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 90/194 screened, 5 picks, 29 failures
+2026-08-18 16:24:04 [INFO]   ⚠️ INTC: cap unknown (Alpaca), accepting for paper trading
+2026-08-18 16:24:04 [INFO]   ❌ INTC: score=0.2 below threshold 20
+2026-08-18 16:24:04 [INFO]   Progress: 100/194 screened, 5 picks, 38 failures
+2026-08-18 16:24:04 [INFO]   Progress: 110/194 screened, 5 picks, 48 failures
+2026-08-18 16:24:04 [INFO]   Progress: 120/194 screened, 5 picks, 58 failures
+2026-08-18 16:24:04 [INFO]   Progress: 130/194 screened, 5 picks, 68 failures
+2026-08-18 16:24:04 [INFO]   Progress: 140/194 screened, 5 picks, 78 failures
+2026-08-18 16:24:04 [INFO]   Progress: 150/194 screened, 5 picks, 88 failures
+2026-08-18 16:24:04 [INFO]   Progress: 160/194 screened, 5 picks, 98 failures
+2026-08-18 16:24:04 [INFO]   Progress: 170/194 screened, 5 picks, 108 failures
+2026-08-18 16:24:04 [INFO]   Progress: 180/194 screened, 5 picks, 118 failures
+2026-08-18 16:24:04 [INFO]   Progress: 190/194 screened, 5 picks, 128 failures
+2026-08-18 16:24:04 [INFO] Screen complete: 5 picks from 194 screened (132 failures)
+2026-08-18 16:24:04 [INFO] Saved 5 picks to /home/mino/us-exec/us_picks.json
+
+============================================================
+PRE-MARKET SCREEN RESULTS
+Regime: DEFENSIVE
+============================================================
+Time: 09:20 ET
+Picks: 5
+
+Rank  Symbol   Score    Price      Gap%     Sector
+------------------------------------------------------------
+1     ALLY     25.0     $46.33     6.24   % Unknown
+2     CG       26.2     $52.34     7.87   % Unknown
+3     CNP      24.0     $43.58     7.26   % Unknown
+4     CNX      27.7     $42.78     21.09  % Unknown
+5     CSX      25.0     $53.55     5.85   % Unknown
+============================================================
