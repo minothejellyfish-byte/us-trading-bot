@@ -287294,3 +287294,405 @@ error: symbol limit exceeded (405)
 [2026-08-18 15:00:04 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-08-18 15:00:35 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:00:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:00:35 EDT] [ALERT] WARNING: AEP held 6.0h
+[2026-08-18 15:00:35 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:01:07 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:01:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:01:07 EDT] [ALERT] WARNING: AEP held 6.0h
+[2026-08-18 15:01:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:01:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:01:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:01:38 EDT] [ALERT] WARNING: AEP held 6.0h
+[2026-08-18 15:01:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:02:09 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:02:09 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:02:09 EDT] [ALERT] WARNING: AEP held 6.0h
+[2026-08-18 15:02:09 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:02:40 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:02:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:02:40 EDT] [ALERT] WARNING: AEP held 6.0h
+[2026-08-18 15:02:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:03:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:03:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:03:11 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:03:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:03:43 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:03:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:03:43 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:03:43 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:04:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:04:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:04:14 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:04:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:04:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:04:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:04:45 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:04:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:05:16 EDT] [INFO] --- Component Check ---
+[2026-08-18 15:05:16 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.2 399256 22352 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-18 15:05:16 EDT] [INFO] ✅ us-poller: OK — 56797
+87588
+[2026-08-18 15:05:16 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-18 15:05:16 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-18 15:05:16 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (552.9ms)
+[2026-08-18 15:05:16 EDT] [INFO] --- Tracked Files ---
+[2026-08-18 15:05:16 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-18 15:05:16 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-18 15:05:16 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-18 15:05:16 EDT] [WARNING] ⏰ AEP held 6.1h
+[2026-08-18 15:05:16 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:05:16 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:05:16 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:05:16 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:05:48 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:05:48 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:05:48 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:05:48 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:06:19 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:06:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:06:19 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:06:19 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:06:50 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:06:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:06:50 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:06:50 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:07:21 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:07:21 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:07:21 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:07:21 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:07:53 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:07:53 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:07:53 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:07:53 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:08:24 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:08:24 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:08:24 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:08:24 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:08:55 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:08:55 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:08:55 EDT] [ALERT] WARNING: AEP held 6.1h
+[2026-08-18 15:08:55 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:09:26 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:09:26 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:09:26 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:09:26 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:09:58 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:09:58 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:09:58 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:09:58 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:10:29 EDT] [INFO] --- Component Check ---
+[2026-08-18 15:10:29 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.2 399256 22352 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-18 15:10:29 EDT] [INFO] ✅ us-poller: OK — 56797
+87992
+[2026-08-18 15:10:29 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-18 15:10:29 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-18 15:10:29 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (566.8ms)
+[2026-08-18 15:10:29 EDT] [INFO] --- Tracked Files ---
+[2026-08-18 15:10:29 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-18 15:10:29 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-18 15:10:29 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-18 15:10:29 EDT] [WARNING] ⏰ AEP held 6.2h
+[2026-08-18 15:10:29 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:10:29 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:10:29 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:10:29 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:11:00 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:11:00 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:11:00 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:11:00 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:11:31 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:11:31 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:11:31 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:11:31 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:12:02 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:12:02 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:12:02 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:12:02 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:12:34 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:12:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:12:34 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:12:34 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:13:05 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:13:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:13:05 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:13:05 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:13:36 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:13:36 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:13:36 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:13:36 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:14:07 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:14:07 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:14:07 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:14:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:14:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:14:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:14:38 EDT] [ALERT] WARNING: AEP held 6.2h
+[2026-08-18 15:14:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:15:10 EDT] [INFO] --- Component Check ---
+[2026-08-18 15:15:10 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.2 399256 22352 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-18 15:15:10 EDT] [INFO] ✅ us-poller: OK — 56797
+88362
+[2026-08-18 15:15:10 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-18 15:15:10 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-18 15:15:10 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (542.0ms)
+[2026-08-18 15:15:10 EDT] [INFO] --- Tracked Files ---
+[2026-08-18 15:15:10 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-18 15:15:10 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-18 15:15:10 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-18 15:15:10 EDT] [WARNING] ⏰ AEP held 6.3h
+[2026-08-18 15:15:10 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:15:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:15:10 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:15:10 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:15:41 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:15:41 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:15:41 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:15:41 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:16:12 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:16:12 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:16:12 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:16:12 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:16:44 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:16:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:16:44 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:16:44 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:17:15 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:17:15 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:17:15 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:17:15 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:17:46 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:17:46 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:17:46 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:17:46 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:18:17 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:18:17 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:18:17 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:18:17 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:18:49 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:18:49 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:18:49 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:18:49 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:19:20 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:19:20 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:19:20 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:19:20 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:19:51 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:19:51 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:19:51 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:19:51 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:20:22 EDT] [INFO] --- Component Check ---
+[2026-08-18 15:20:22 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.2 399256 22352 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-18 15:20:22 EDT] [INFO] ✅ us-poller: OK — 56797
+88770
+[2026-08-18 15:20:22 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-18 15:20:22 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-18 15:20:22 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (539.3ms)
+[2026-08-18 15:20:22 EDT] [INFO] --- Tracked Files ---
+[2026-08-18 15:20:22 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-18 15:20:22 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-18 15:20:22 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-18 15:20:22 EDT] [WARNING] ⏰ AEP held 6.3h
+[2026-08-18 15:20:22 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:20:22 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:20:22 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:20:22 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:20:53 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:20:53 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:20:53 EDT] [ALERT] WARNING: AEP held 6.3h
+[2026-08-18 15:20:53 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:21:25 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:21:25 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:21:25 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:21:25 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:21:56 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:21:56 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:21:56 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:21:56 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:22:27 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:22:27 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:22:27 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:22:27 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:22:58 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:22:58 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:22:58 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:22:58 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:23:30 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:23:30 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:23:30 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:23:30 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:24:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:24:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:24:01 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:24:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:24:32 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:24:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:24:32 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:24:32 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:25:03 EDT] [INFO] --- Component Check ---
+[2026-08-18 15:25:03 EDT] [INFO] ✅ us-bot: OK — mino        5220  0.0  0.2 399256 22352 ?        Ssl  Jul11   5:28 /usr/bin/pyth
+[2026-08-18 15:25:03 EDT] [INFO] ✅ us-poller: OK — 56797
+89135
+[2026-08-18 15:25:03 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-18 15:25:03 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-18 15:25:03 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (548.4ms)
+[2026-08-18 15:25:03 EDT] [INFO] --- Tracked Files ---
+[2026-08-18 15:25:03 EDT] [INFO] 📝 Changed: positions, capital
+[2026-08-18 15:25:03 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-18 15:25:03 EDT] [INFO] 📊 Open positions: 1 | Unrealized PnL: $0.00
+[2026-08-18 15:25:03 EDT] [WARNING] ⏰ AEP held 6.4h
+[2026-08-18 15:25:03 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:25:03 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:25:03 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:25:03 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:25:35 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:25:35 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:25:35 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:25:35 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:26:06 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:26:06 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:26:06 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:26:06 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:26:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:26:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:26:37 EDT] [ALERT] WARNING: AEP held 6.4h
+[2026-08-18 15:26:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:27:08 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:27:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:27:08 EDT] [ALERT] WARNING: AEP held 6.5h
+[2026-08-18 15:27:08 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:27:40 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:27:40 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:27:40 EDT] [ALERT] WARNING: AEP held 6.5h
+[2026-08-18 15:27:40 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:28:11 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:28:11 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:28:11 EDT] [ALERT] WARNING: AEP held 6.5h
+[2026-08-18 15:28:11 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:28:42 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:28:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:28:42 EDT] [ALERT] WARNING: AEP held 6.5h
+[2026-08-18 15:28:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:29:13 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:29:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:29:13 EDT] [ALERT] WARNING: AEP held 6.5h
+[2026-08-18 15:29:13 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-18 15:29:45 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-18 15:29:45 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-18 15:29:45 EDT] [ALERT] WARNING: AEP held 6.5h
+[2026-08-18 15:29:45 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
