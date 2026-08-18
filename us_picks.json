@@ -3,14 +3,14 @@
   "time": "09:24:06",
   "timezone": "America/New_York",
   "mode": "premarket",
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "universe_size": 194,
   "screened_count": 5,
   "picks": [
     {
       "symbol": "ALLY",
       "score": 25.0,
-      "price": 46.33,
+      "price": 43.72,
       "entry_low": 42.74,
       "entry_high": 47.72,
       "gap_pct": 6.24,
@@ -23,12 +23,16 @@
         "open_today": 46.33,
         "high_pm": 46.33,
         "low_pm": 43.59
-      }
+      },
+      "change_pct": 0.1,
+      "volume": 76766,
+      "vwap": 43.63,
+      "above_vwap": true
     },
     {
       "symbol": "CG",
       "score": 26.2,
-      "price": 52.34,
+      "price": 47.79,
       "entry_low": 47.55,
       "entry_high": 53.91,
       "gap_pct": 7.87,
@@ -41,12 +45,16 @@
         "open_today": 52.34,
         "high_pm": 52.34,
         "low_pm": 48
-      }
+      },
+      "change_pct": -2.39,
+      "volume": 149716,
+      "vwap": 47.9,
+      "above_vwap": false
     },
     {
       "symbol": "CNP",
       "score": 24.0,
-      "price": 43.58,
+      "price": 41.02,
       "entry_low": 39.82,
       "entry_high": 44.89,
       "gap_pct": 7.26,
@@ -59,12 +67,16 @@
         "open_today": 43.58,
         "high_pm": 43.58,
         "low_pm": 40.41
-      }
+      },
+      "change_pct": 1.0,
+      "volume": 461347,
+      "vwap": 40.93,
+      "above_vwap": true
     },
     {
       "symbol": "CNX",
       "score": 27.7,
-      "price": 42.78,
+      "price": 35.58,
       "entry_low": 34.62,
       "entry_high": 44.06,
       "gap_pct": 21.09,
@@ -77,12 +89,16 @@
         "open_today": 42.78,
         "high_pm": 42.78,
         "low_pm": 34.9
-      }
+      },
+      "change_pct": -0.48,
+      "volume": 48789,
+      "vwap": 35.54,
+      "above_vwap": true
     },
     {
       "symbol": "CSX",
       "score": 25.0,
-      "price": 53.55,
+      "price": 50.48,
       "entry_low": 49.58,
       "entry_high": 55.16,
       "gap_pct": 5.85,
@@ -95,7 +111,19 @@
         "open_today": 53.55,
         "high_pm": 53.55,
         "low_pm": 50.05
-      }
+      },
+      "change_pct": -0.11,
+      "volume": 653321,
+      "vwap": 50.68,
+      "above_vwap": false
     }
-  ]
+  ],
+  "last_midscreen": "10:06:39",
+  "midscreen_count": 0,
+  "validation": {
+    "valid_count": 5,
+    "removed_count": 0,
+    "removed_symbols": [],
+    "new_count": 0
+  }
 }
