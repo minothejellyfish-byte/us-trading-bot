@@ -1,23 +1,23 @@
 {
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Conservative",
-    "max_positions": 2,
-    "position_pct": 0.2,
-    "alt_position_pct": 0.2,
-    "target_pct": 0.015,
-    "trail_trigger": 0.015,
-    "trail_stop": 0.02,
-    "hard_stop": 0.04,
-    "time_stop_mins": 20,
-    "time_stop_pct": 0.005,
-    "midscreen": false
+    "strategy": "Standard",
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
+    "trail_stop": 0.03,
+    "hard_stop": 0.05,
+    "time_stop_mins": 30,
+    "time_stop_pct": 0.01,
+    "midscreen": true
   },
-  "reason": "SPY -1.1% over 5 days, VIX 15.3 (elevated fear), 45% sector breadth",
-  "spy_5d_change": -1.1,
-  "spy_10d_change": 0.1,
-  "vix": 15.29,
-  "sector_breadth": 45.5,
-  "top_sectors": "Energy (5.0%), Healthcare (4.7%), Consumer Staples (1.2%)",
-  "classified_at": "2026-08-19T17:25:59.591648"
+  "reason": "SPY -0.8% over 5 days, VIX 15.2 (moderate), 55% sector breadth",
+  "spy_5d_change": -0.79,
+  "spy_10d_change": 0.41,
+  "vix": 15.23,
+  "sector_breadth": 54.5,
+  "top_sectors": "Energy (4.7%), Healthcare (4.0%), Materials (1.3%)",
+  "classified_at": "2026-08-19T17:56:21.477672"
 }

@@ -172383,3 +172383,47 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-19 17:26:02,023 [INFO] Cycle check failed for CNX: CNX is blocked for today
 2026-08-19 17:26:02,404 [INFO] Cycle check failed for CSX: CSX is blocked for today
 2026-08-19 17:26:02,404 [INFO] Slow poll done.
+2026-08-19 17:31:02,887 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-19 17:31:03,671 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-19 17:31:04,139 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:31:04,506 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:31:04,894 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:31:05,500 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP rising: +0.04% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:31:05,913 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:31:05,914 [INFO] Slow poll done.
+2026-08-19 17:36:05,937 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-19 17:36:06,738 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-19 17:36:07,347 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:36:08,100 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:36:08,856 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:36:08,856 [INFO] Slow poll done.
+2026-08-19 17:41:08,880 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-19 17:41:09,644 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-19 17:41:10,064 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:41:10,796 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:41:11,516 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:41:11,516 [INFO] Slow poll done.
+2026-08-19 17:46:11,539 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-19 17:46:12,351 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-19 17:46:12,715 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: -0.01% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:46:13,103 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP rising: +0.05% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:46:13,697 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:46:14,185 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:46:14,544 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:46:14,545 [INFO] Slow poll done.
+2026-08-19 17:51:14,566 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-19 17:51:15,508 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-19 17:51:16,158 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:51:17,064 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:51:17,482 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:51:17,850 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP flat: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-19 17:51:17,851 [INFO] Slow poll done.
+2026-08-19 17:56:17,874 [INFO] Regime stale (>30min) — reclassifying
+2026-08-19 17:56:21,477 [INFO] Regime: NEUTRAL — SPY -0.8% over 5 days, VIX 15.2 (moderate), 55% sector breadth
+2026-08-19 17:56:21,478 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-19 17:56:22,251 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-19 17:56:22,735 [INFO] VWAP entry blocked for ALLY: NEUTRAL: VWAP flat: +0.00% over 5 bars (entry blocked — not rising)
+2026-08-19 17:56:23,618 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP flat: -0.02% over 5 bars (entry blocked — not rising)
+2026-08-19 17:56:24,007 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-19 17:56:24,419 [INFO] VWAP entry blocked for CSX: NEUTRAL: VWAP flat: -0.01% over 5 bars (entry blocked — not rising)
+2026-08-19 17:56:24,420 [INFO] Slow poll done.
