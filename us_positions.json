@@ -1,6 +1,6 @@
 {
   "date": "2026-08-20",
-  "time": "12:00:03",
+  "time": "12:30:02",
   "positions": {
     "AEP": {
       "symbol": "AEP",
@@ -15,36 +15,15 @@
       "max_cycles": 2,
       "alpaca_data": {
         "avg_entry_price": 127.53,
-        "market_value": -20950.05,
-        "unrealized_pl": 92.4,
-        "unrealized_plpc": 0.00439,
-        "current_price": 126.97,
+        "market_value": -20885.7,
+        "unrealized_pl": 156.75,
+        "unrealized_plpc": 0.00745,
+        "current_price": 126.58,
         "qty": -165
       },
-      "current_price": 126.97
-    },
-    "CSX": {
-      "symbol": "CSX",
-      "entry_price": 51.3,
-      "qty": 389,
-      "entry_time": "2026-08-20T11:01:25.342588-04:00",
-      "peak_price": 51.435,
-      "closed": false,
-      "signal": "auto",
-      "order_id": "?",
-      "cycle": 1,
-      "max_cycles": 2,
-      "current_price": 51.28,
-      "alpaca_data": {
-        "avg_entry_price": 51.3,
-        "market_value": 19947.92,
-        "unrealized_pl": -7.78,
-        "unrealized_plpc": -0.00039,
-        "current_price": 51.28,
-        "qty": 389
-      }
+      "current_price": 126.58
     }
   },
-  "count": 2,
+  "count": 1,
   "source": "alpaca-api"
 }
