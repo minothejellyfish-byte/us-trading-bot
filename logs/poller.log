@@ -34826,3 +34826,37 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-20 21:29:20,852 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
 2026-08-20 21:29:21,238 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
 2026-08-20 21:29:21,239 [INFO] Slow poll done.
+2026-08-20 21:34:21,590 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-20 21:34:22,462 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 21:34:22,462 [INFO] Entry cutoff passed — no new entries
+2026-08-20 21:34:22,462 [INFO] Slow poll done.
+2026-08-20 21:39:22,486 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 21:39:23,405 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 21:39:23,405 [INFO] Entry cutoff passed — no new entries
+2026-08-20 21:39:23,405 [INFO] Slow poll done.
+2026-08-20 21:44:23,427 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 21:44:24,282 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 21:44:24,282 [INFO] Entry cutoff passed — no new entries
+2026-08-20 21:44:24,282 [INFO] Slow poll done.
+2026-08-20 21:49:24,306 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 21:49:25,176 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 21:49:25,176 [INFO] Entry cutoff passed — no new entries
+2026-08-20 21:49:25,176 [INFO] Slow poll done.
+2026-08-20 21:54:25,199 [INFO] Regime stale (>30min) — reclassifying
+2026-08-20 21:54:27,799 [INFO] Regime: DEFENSIVE — SPY -1.6% over 5 days, VIX 16.0 (elevated fear), 27% sector breadth
+2026-08-20 21:54:27,799 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-20 21:54:28,626 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 21:54:28,626 [INFO] Entry cutoff passed — no new entries
+2026-08-20 21:54:28,626 [INFO] Slow poll done.
+2026-08-20 21:59:28,650 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 21:59:29,482 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 21:59:29,482 [INFO] Entry cutoff passed — no new entries
+2026-08-20 21:59:29,482 [INFO] Slow poll done.
