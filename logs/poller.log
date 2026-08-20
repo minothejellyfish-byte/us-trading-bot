@@ -34251,3 +34251,61 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-20 16:55:33,836 [INFO] Cycle check failed for CNX: CNX is blocked for today
 2026-08-20 16:55:34,334 [INFO] Cycle check failed for CSX: Cycle limit reached (3/2) for DEFENSIVE
 2026-08-20 16:55:34,334 [INFO] Slow poll done.
+2026-08-20 17:00:34,708 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-20 17:00:35,599 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 17:00:36,058 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:00:36,502 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.04% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:00:36,960 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-20 17:00:37,570 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-20 17:00:38,135 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.05% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:00:38,135 [INFO] Slow poll done.
+2026-08-20 17:05:38,156 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 17:05:38,936 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 17:05:39,456 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP flat: +0.01% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:05:39,845 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.09% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:05:40,264 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-20 17:05:40,659 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-20 17:05:41,053 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-20 17:05:41,053 [INFO] Slow poll done.
+2026-08-20 17:10:41,076 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 17:10:41,867 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 17:10:42,378 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:10:43,621 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.05% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:10:44,018 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-20 17:10:44,380 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-20 17:10:44,749 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-20 17:10:44,750 [INFO] Slow poll done.
+2026-08-20 17:15:44,774 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 17:15:45,605 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 17:15:46,068 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP falling: -0.17% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:15:46,538 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.24% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:15:46,898 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-20 17:15:47,943 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-20 17:15:48,322 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-20 17:15:48,322 [INFO] Slow poll done.
+2026-08-20 17:20:48,344 [INFO] Regime stale (>30min) — reclassifying
+2026-08-20 17:20:50,685 [INFO] Regime: DEFENSIVE — SPY -1.3% over 5 days, VIX 16.0 (elevated fear), 18% sector breadth
+2026-08-20 17:20:50,685 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-20 17:20:51,579 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 17:20:52,122 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP falling: -0.05% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:20:52,598 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:20:53,005 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-20 17:20:53,643 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-20 17:20:54,036 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-20 17:20:54,036 [INFO] Slow poll done.
+2026-08-20 17:25:54,059 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 17:25:54,850 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 17:25:55,467 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP falling: -0.28% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:25:55,932 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP falling: -0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 17:25:56,289 [INFO] Cycle check failed for CNP: CNP is blocked for today
+2026-08-20 17:25:56,923 [INFO] Cycle check failed for CNX: CNX is blocked for today
+2026-08-20 17:25:57,285 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-20 17:25:57,285 [INFO] Slow poll done.
