@@ -34652,3 +34652,61 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-20 19:58:14,987 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
 2026-08-20 19:58:15,350 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
 2026-08-20 19:58:15,351 [INFO] Slow poll done.
+2026-08-20 20:03:15,736 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-20 20:03:16,534 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 20:03:16,899 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:03:17,268 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:03:17,684 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:03:18,042 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:03:18,460 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:03:18,461 [INFO] Slow poll done.
+2026-08-20 20:08:18,483 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 20:08:19,667 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 20:08:20,054 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:08:20,606 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:08:21,268 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:08:21,689 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:08:22,087 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:08:22,088 [INFO] Slow poll done.
+2026-08-20 20:13:22,111 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 20:13:23,006 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 20:13:23,402 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:13:24,001 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:13:24,455 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:13:24,819 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:13:25,191 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:13:25,191 [INFO] Slow poll done.
+2026-08-20 20:18:25,216 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 20:18:26,144 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 20:18:26,519 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:18:27,161 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:18:27,589 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:18:27,991 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:18:28,372 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:18:28,372 [INFO] Slow poll done.
+2026-08-20 20:23:28,397 [INFO] Regime stale (>30min) — reclassifying
+2026-08-20 20:23:30,516 [INFO] Regime: DEFENSIVE — SPY -1.4% over 5 days, VIX 15.7 (elevated fear), 27% sector breadth
+2026-08-20 20:23:30,516 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-20 20:23:31,310 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 20:23:31,710 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:23:32,219 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:23:32,592 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:23:32,965 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:23:33,379 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:23:33,380 [INFO] Slow poll done.
+2026-08-20 20:28:33,403 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-20 20:28:34,212 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-20 20:28:34,624 [INFO] VWAP entry blocked for ALLY: DEFENSIVE: VWAP rising: +0.03% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:28:35,254 [INFO] VWAP entry blocked for CG: DEFENSIVE: VWAP flat: -0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:28:35,702 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP flat: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:28:36,113 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP falling: -0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:28:36,486 [INFO] VWAP entry blocked for CSX: DEFENSIVE: VWAP rising: +0.02% over 5 bars (entry blocked — need strong rise)
+2026-08-20 20:28:36,487 [INFO] Slow poll done.
