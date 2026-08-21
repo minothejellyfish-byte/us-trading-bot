@@ -34930,3 +34930,96 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-20 22:59:46,418 [INFO] Slow poll done.
 2026-08-20 23:00:01,876 [INFO] Received signal 15 — shutting down
 2026-08-20 23:00:01,876 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-21 16:30:07,886 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-21 16:30:07,886 [INFO] Poller starting in daemon mode
+2026-08-21 16:30:07,886 [INFO] US Price poller started.
+2026-08-21 16:30:08,278 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-21 16:30:08,669 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-21 16:30:08 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-21 16:30:08,899 [INFO] AlpacaTrader initialized (PAPER)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-21 16:30:09,825 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-21 16:30:10,401 [INFO] Cycle check failed for ALLY: Cycle limit reached (4/2) for DEFENSIVE
+2026-08-21 16:30:12,520 [ERROR] $CG: possibly delisted; no price data found  (period=1d)
+2026-08-21 16:30:12,524 [ERROR] 
+1 Failed download:
+2026-08-21 16:30:12,524 [ERROR] ['CG']: possibly delisted; no price data found  (period=1d)
+2026-08-21 16:30:12,528 [WARNING] All price sources failed for CG
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+2026-08-21 16:30:14,241 [INFO] Cycle check failed for CNP: Cycle limit reached (3/2) for DEFENSIVE
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-21 16:30:14,634 [INFO] VWAP entry blocked for CNX: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-21 16:30:15,029 [INFO] Cycle check failed for CSX: Cycle limit reached (3/2) for DEFENSIVE
+2026-08-21 16:30:15,029 [INFO] Slow poll done.
+2026-08-21 16:35:15,710 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-21 16:35:16,522 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-21 16:35:16,919 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-21 16:35:18,318 [INFO] Cycle check failed for CG: Cycle limit reached (4/2) for DEFENSIVE
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+2026-08-21 16:35:19,772 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-08-21 16:35:19,773 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP falling: -0.33% over 5 bars (entry blocked — need strong rise)
+2026-08-21 16:35:19,773 [WARNING] Breakout check failed: float() argument must be a string or a real number, not 'Series'
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-21 16:35:20,350 [INFO] VWAP entry blocked for CNX: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-21 16:35:20,719 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-21 16:35:20,719 [INFO] Slow poll done.
+2026-08-21 16:40:20,743 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-21 16:40:21,916 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-21 16:40:22,302 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-21 16:40:23,809 [INFO] Cycle check failed for CG: CG is blocked for today
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+2026-08-21 16:40:25,161 [WARNING] VWAP reclaim check failed: float() argument must be a string or a real number, not 'Series'
+2026-08-21 16:40:25,161 [INFO] VWAP entry blocked for CNP: DEFENSIVE: VWAP falling: -0.10% over 5 bars (entry blocked — need strong rise)
+2026-08-21 16:40:25,162 [WARNING] Breakout check failed: float() argument must be a string or a real number, not 'Series'
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-21 16:40:25,591 [INFO] VWAP entry blocked for CNX: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-21 16:40:26,002 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-21 16:40:26,002 [INFO] Slow poll done.
+2026-08-21 16:45:26,024 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-21 16:45:27,394 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-21 16:45:27,859 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-21 16:45:28,395 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-21 16:45:28,913 [INFO] VWAP entry blocked for CNP: DEFENSIVE: Insufficient data (entry blocked — need strong rise)
+2026-08-21 16:45:29,486 [INFO] VWAP entry blocked for CNX: DEFENSIVE: VWAP flat: +0.00% over 5 bars (entry blocked — need strong rise)
+2026-08-21 16:45:29,847 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-21 16:45:29,847 [INFO] Slow poll done.
+2026-08-21 16:50:29,872 [INFO] Regime stale (>30min) — reclassifying
+2026-08-21 16:50:32,724 [INFO] Regime: NEUTRAL — SPY -1.0% over 5 days, VIX 15.5 (moderate), 64% sector breadth
+2026-08-21 16:50:32,724 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:147: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, tz=NY, unit=self._unit)
+/home/mino/.local/lib/python3.12/site-packages/alpaca_trade_api/entity.py:103: UserWarning: The 'unit' keyword is only used when the Timestamp input is an integer or float, not str. To specify the storage unit of the output use `ts.as_unit(unit)`
+  return pd.Timestamp(val, unit='s', tz=NY)
+2026-08-21 16:50:33,988 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-21 16:50:34,434 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-21 16:50:35,030 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-21 16:50:36,227 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.45% over 5 bars (entry blocked — not rising)
+2026-08-21 16:50:37,143 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-21 16:50:37,143 [INFO] Slow poll done.
+2026-08-21 16:55:37,167 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-21 16:55:38,125 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-21 16:55:38,549 [INFO] Cycle check failed for ALLY: ALLY is blocked for today
+2026-08-21 16:55:39,092 [INFO] Cycle check failed for CG: CG is blocked for today
+2026-08-21 16:55:40,128 [INFO] VWAP entry blocked for CNP: NEUTRAL: VWAP falling: -0.19% over 5 bars (entry blocked — not rising)
+2026-08-21 16:55:40,563 [INFO] VWAP entry blocked for CNX: NEUTRAL: VWAP falling: -0.04% over 5 bars (entry blocked — not rising)
+2026-08-21 16:55:40,936 [INFO] Cycle check failed for CSX: CSX is blocked for today
+2026-08-21 16:55:40,937 [INFO] Slow poll done.
