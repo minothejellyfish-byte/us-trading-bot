@@ -174443,3 +174443,34 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-24 21:28:11,564 [INFO] VWAP entry blocked for AES: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
 2026-08-24 21:28:13,447 [INFO] VWAP entry blocked for HOOD: NEUTRAL: VWAP flat: -0.00% over 5 bars (entry blocked — not rising)
 2026-08-24 21:28:13,448 [INFO] Slow poll done.
+2026-08-24 21:32:55,747 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 21:32:57,539 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 21:32:57,540 [INFO] Entry cutoff passed — no new entries
+2026-08-24 21:32:57,540 [INFO] Slow poll done.
+2026-08-24 21:37:57,561 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 21:38:22,416 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 21:38:22,416 [INFO] Entry cutoff passed — no new entries
+2026-08-24 21:38:22,416 [INFO] Slow poll done.
+2026-08-24 21:43:02,437 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 21:44:18,399 [ERROR] $AEP: possibly delisted; no price data found  (period=1d)
+2026-08-24 21:44:18,401 [ERROR] 
+1 Failed download:
+2026-08-24 21:44:18,401 [ERROR] ['AEP']: possibly delisted; no price data found  (period=1d)
+2026-08-24 21:44:18,404 [WARNING] All price sources failed for AEP
+2026-08-24 21:44:18,404 [WARNING] Failed to fetch price for AEP, skipping position monitoring
+2026-08-24 21:44:18,404 [INFO] Entry cutoff passed — no new entries
+2026-08-24 21:44:18,404 [INFO] Slow poll done.
+2026-08-24 21:48:08,422 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 21:48:12,595 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 21:48:12,595 [INFO] Entry cutoff passed — no new entries
+2026-08-24 21:48:12,595 [INFO] Slow poll done.
+2026-08-24 21:53:12,619 [INFO] Regime stale (>30min) — reclassifying
+2026-08-24 21:53:38,086 [INFO] Regime: NEUTRAL — SPY -0.4% over 5 days, VIX 15.7 (moderate), 64% sector breadth
+2026-08-24 21:53:38,086 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 21:54:03,074 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 21:54:03,074 [INFO] Entry cutoff passed — no new entries
+2026-08-24 21:54:03,074 [INFO] Slow poll done.
+2026-08-24 21:58:13,092 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 21:59:27,444 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 21:59:27,444 [INFO] Entry cutoff passed — no new entries
+2026-08-24 21:59:27,444 [INFO] Slow poll done.
