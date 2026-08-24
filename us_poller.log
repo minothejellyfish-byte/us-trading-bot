@@ -174086,3 +174086,28 @@ AttributeError: 'dict' object has no attribute 'append'
 2026-08-21 22:59:59,800 [INFO] Slow poll done.
 2026-08-21 23:00:01,521 [INFO] Received signal 15 — shutting down
 2026-08-21 23:00:01,522 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-08-24 16:30:07,382 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-08-24 16:30:07,382 [INFO] Poller starting in daemon mode
+2026-08-24 16:30:07,382 [INFO] US Price poller started.
+2026-08-24 16:30:07,919 [INFO] Buy detected: AEP (bookkeeper confirmed: -165 @ $127.53)
+2026-08-24 16:30:08,382 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 16:30:08,631 [INFO] AlpacaTrader initialized (PAPER)
+2026-08-24 16:30:09,430 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 16:30:09,430 [INFO] Slow poll done.
+2026-08-24 16:35:10,831 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 16:35:11,739 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 16:35:11,740 [INFO] Slow poll done.
+2026-08-24 16:40:11,762 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 16:40:13,089 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 16:40:13,089 [INFO] Slow poll done.
+2026-08-24 16:45:13,110 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 16:45:14,530 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 16:45:14,530 [INFO] Slow poll done.
+2026-08-24 16:50:14,554 [INFO] Regime stale (>30min) — reclassifying
+2026-08-24 16:50:17,524 [INFO] Regime: NEUTRAL — SPY -0.6% over 5 days, VIX 15.9 (moderate), 64% sector breadth
+2026-08-24 16:50:17,524 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 16:50:18,491 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 16:50:18,492 [INFO] Slow poll done.
+2026-08-24 16:55:18,515 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-08-24 16:55:19,759 [WARNING] Position AEP has invalid quantity -165, skipping
+2026-08-24 16:55:19,759 [INFO] Slow poll done.
