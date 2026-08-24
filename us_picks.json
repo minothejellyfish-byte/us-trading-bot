@@ -6,13 +6,74 @@
   "regime": "NEUTRAL",
   "universe_size": 194,
   "screened_count": 0,
-  "picks": [],
-  "last_midscreen": "10:06:21",
-  "midscreen_count": 0,
+  "picks": [
+    {
+      "symbol": "WMT",
+      "score": 33.3,
+      "price": 104.84,
+      "entry_low": 104.41,
+      "entry_high": 105.46,
+      "change_pct": 1.1,
+      "volume": 13538681,
+      "avg_volume": 26078630,
+      "rel_volume": 0.51,
+      "vwap": 104.7,
+      "above_vwap": true,
+      "source": "midscreen",
+      "time": "11:30:08"
+    },
+    {
+      "symbol": "COIN",
+      "score": 19.2,
+      "price": 187.24,
+      "entry_low": 186.07,
+      "entry_high": 187.94,
+      "change_pct": 0.4,
+      "volume": 5520734,
+      "avg_volume": 9356385,
+      "rel_volume": 0.58,
+      "vwap": 188.03,
+      "above_vwap": false,
+      "source": "midscreen",
+      "time": "11:31:18"
+    },
+    {
+      "symbol": "CTVA",
+      "score": 12.0,
+      "price": 83.3,
+      "entry_low": 83.19,
+      "entry_high": 84.02,
+      "change_pct": 1.85,
+      "volume": 3618523,
+      "avg_volume": 5012614,
+      "rel_volume": 0.71,
+      "vwap": 83.78,
+      "above_vwap": false,
+      "source": "midscreen",
+      "time": "11:31:13"
+    },
+    {
+      "symbol": "AES",
+      "score": 1.0,
+      "price": 14.76,
+      "entry_low": 14.68,
+      "entry_high": 14.83,
+      "change_pct": -0.1,
+      "volume": 7044606,
+      "avg_volume": 6919359,
+      "rel_volume": 1.01,
+      "vwap": 14.76,
+      "above_vwap": false,
+      "source": "midscreen",
+      "time": "11:30:18"
+    }
+  ],
+  "last_midscreen": "11:36:18",
+  "midscreen_count": 8,
   "validation": {
-    "valid_count": 0,
+    "valid_count": 4,
     "removed_count": 0,
     "removed_symbols": [],
-    "new_count": 0
+    "new_count": 4
   }
 }
