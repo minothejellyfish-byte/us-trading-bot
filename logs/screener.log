@@ -20992,3 +20992,65 @@ Rank  Symbol   Score    Price      Gap%     Sector
 14    RRC      23.3     $43.05     5.83   % Unknown
 15    TPG      24.7     $57.21     10.94  % Unknown
 ============================================================
+2026-08-24 16:20:05 [INFO] Regime: NEUTRAL — SPY -0.9% over 5 days, VIX 15.9 (moderate), 64% sector breadth
+2026-08-24 16:20:05 [INFO] Starting AFTER-MARKET screen at 09:20 ET with regime: NEUTRAL
+2026-08-24 16:20:05 [INFO] Universe: 194 Sharia-compliant stocks
+2026-08-24 16:20:05 [INFO] Screening 194 stocks with Twelve Data batch API...
+2026-08-24 16:20:07 [INFO]   ✅ AAPL: Twelve Data (gap=-0.63%, price=309.35001)
+2026-08-24 16:20:07 [INFO]   ✅ ABBV: Twelve Data (gap=1.20%, price=264.95999)
+2026-08-24 16:20:07 [INFO]   ✅ ABT: Twelve Data (gap=2.19%, price=116.64)
+2026-08-24 16:20:07 [INFO]   ✅ ACN: Twelve Data (gap=2.17%, price=185.28)
+2026-08-24 16:20:07 [INFO]   ✅ ADBE: Twelve Data (gap=1.13%, price=275.29999)
+2026-08-24 16:20:07 [INFO]   ✅ AEE: Twelve Data (gap=-2.45%, price=106.13)
+2026-08-24 16:20:07 [INFO]   ✅ AEP: Twelve Data (gap=-3.79%, price=120.94)
+2026-08-24 16:20:07 [INFO]   ✅ AES: Twelve Data (gap=0.00%, price=14.77)
+2026-08-24 16:22:07 [INFO]   ✅ MAA: Twelve Data (gap=-0.57%, price=131.31)
+2026-08-24 16:22:07 [INFO]   ✅ MC: Twelve Data (gap=2.12%, price=68.29)
+2026-08-24 16:22:07 [INFO]   ✅ MCD: Twelve Data (gap=0.68%, price=270.95001)
+2026-08-24 16:22:07 [INFO]   ✅ MDT: Twelve Data (gap=1.14%, price=93.35)
+2026-08-24 16:22:07 [INFO]   ✅ META: Twelve Data (gap=0.75%, price=549.90002)
+2026-08-24 16:22:07 [INFO]   ✅ MOS: Twelve Data (gap=4.54%, price=24.41)
+2026-08-24 16:22:07 [INFO]   ✅ MPC: Twelve Data (gap=0.70%, price=360.72)
+2026-08-24 16:22:07 [INFO]   ✅ MRK: Twelve Data (gap=2.39%, price=152.55)
+2026-08-24 16:23:07 [INFO]   ✅ TECH: Twelve Data (gap=0.06%, price=72.32)
+2026-08-24 16:23:07 [INFO]   ✅ TGT: Twelve Data (gap=4.54%, price=165.44)
+2026-08-24 16:23:07 [INFO]   ✅ TJX: Twelve Data (gap=-0.11%, price=140.53)
+2026-08-24 16:23:07 [INFO]   ✅ TMO: Twelve Data (gap=0.27%, price=629.27002)
+2026-08-24 16:23:07 [INFO]   ✅ TMUS: Twelve Data (gap=1.00%, price=183.039993)
+2026-08-24 16:23:07 [INFO]   ✅ TPG: Twelve Data (gap=1.61%, price=52.4)
+2026-08-24 16:23:07 [INFO]   ✅ TXN: Twelve Data (gap=-0.47%, price=264.35999)
+2026-08-24 16:23:07 [INFO]   ✅ UDR: Twelve Data (gap=0.21%, price=37.77)
+2026-08-24 16:23:32 [WARNING] Twelve Data batch timed out after 90s — falling back to Alpaca IEX
+2026-08-24 16:23:32 [INFO] Fetching 194 tickers via Alpaca IEX (5 workers)...
+2026-08-24 16:23:56 [INFO]   Progress: 10/194 screened, 0 picks, 10 failures
+2026-08-24 16:23:56 [INFO]   Progress: 20/194 screened, 0 picks, 20 failures
+2026-08-24 16:23:56 [INFO]   Progress: 30/194 screened, 0 picks, 30 failures
+2026-08-24 16:23:56 [INFO]   Progress: 40/194 screened, 0 picks, 40 failures
+2026-08-24 16:23:56 [INFO]   Progress: 50/194 screened, 0 picks, 50 failures
+2026-08-24 16:23:56 [INFO]   Progress: 60/194 screened, 0 picks, 60 failures
+2026-08-24 16:23:56 [INFO]   Progress: 70/194 screened, 0 picks, 70 failures
+2026-08-24 16:23:56 [INFO]   Progress: 80/194 screened, 0 picks, 80 failures
+2026-08-24 16:23:56 [INFO]   Progress: 90/194 screened, 0 picks, 90 failures
+2026-08-24 16:23:56 [INFO]   Progress: 100/194 screened, 0 picks, 100 failures
+2026-08-24 16:23:56 [INFO]   Progress: 110/194 screened, 0 picks, 110 failures
+2026-08-24 16:23:56 [INFO]   Progress: 120/194 screened, 0 picks, 120 failures
+2026-08-24 16:23:56 [INFO]   Progress: 130/194 screened, 0 picks, 130 failures
+2026-08-24 16:23:56 [INFO]   Progress: 140/194 screened, 0 picks, 140 failures
+2026-08-24 16:23:56 [INFO]   Progress: 150/194 screened, 0 picks, 150 failures
+2026-08-24 16:23:56 [INFO]   Progress: 160/194 screened, 0 picks, 160 failures
+2026-08-24 16:23:56 [INFO]   Progress: 170/194 screened, 0 picks, 170 failures
+2026-08-24 16:23:56 [INFO]   Progress: 180/194 screened, 0 picks, 180 failures
+2026-08-24 16:23:56 [INFO]   Progress: 190/194 screened, 0 picks, 190 failures
+2026-08-24 16:23:56 [INFO] Screen complete: 0 picks from 194 screened (194 failures)
+2026-08-24 16:23:56 [INFO] Saved 0 picks to /home/mino/us-exec/us_picks.json
+
+============================================================
+PRE-MARKET SCREEN RESULTS
+Regime: NEUTRAL
+============================================================
+Time: 09:20 ET
+Picks: 0
+
+Rank  Symbol   Score    Price      Gap%     Sector
+------------------------------------------------------------
+============================================================
