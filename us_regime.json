@@ -1,23 +1,23 @@
 {
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Conservative",
-    "max_positions": 2,
-    "position_pct": 0.2,
-    "alt_position_pct": 0.2,
-    "target_pct": 0.015,
-    "trail_trigger": 0.015,
-    "trail_stop": 0.02,
-    "hard_stop": 0.04,
-    "time_stop_mins": 20,
-    "time_stop_pct": 0.005,
-    "midscreen": false
+    "strategy": "Standard",
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
+    "trail_stop": 0.03,
+    "hard_stop": 0.05,
+    "time_stop_mins": 30,
+    "time_stop_pct": 0.01,
+    "midscreen": true
   },
-  "reason": "SPY -0.5% over 5 days, VIX 15.4 (elevated fear), 36% sector breadth",
-  "spy_5d_change": -0.52,
-  "spy_10d_change": -0.96,
-  "vix": 15.45,
-  "sector_breadth": 36.4,
-  "top_sectors": "Materials (2.1%), Communication Services (1.6%), Financials (1.5%)",
-  "classified_at": "2026-08-25T22:25:49.442642"
+  "reason": "SPY -0.4% over 5 days, VIX 15.4 (moderate), 45% sector breadth",
+  "spy_5d_change": -0.4,
+  "spy_10d_change": -0.84,
+  "vix": 15.43,
+  "sector_breadth": 45.5,
+  "top_sectors": "Materials (2.0%), Communication Services (1.7%), Financials (1.4%)",
+  "classified_at": "2026-08-25T22:55:53.297698"
 }
