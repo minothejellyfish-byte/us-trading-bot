@@ -54,14 +54,30 @@ if os.path.exists(_ENV_FILE):
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE = os.path.join(BASE_DIR, "us_exec.log")
 
+class TokenMaskFilter(logging.Filter):
+    """Mask bot tokens in log output to prevent token theft."""
+    TOKEN_PATTERNS = [
+        (r'bot\d{9,10}:[A-Za-z0-9_-]{35,45}', 'bot<TOKEN>'),
+        (r'\d{9,10}:[A-Za-z0-9_-]{35,45}', '<TOKEN>'),
+    ]
+    def filter(self, record):
+        msg = record.getMessage()
+        for pattern, replacement in self.TOKEN_PATTERNS:
+            msg = re.sub(pattern, replacement, msg)
+        record.msg = msg
+        record.args = ()
+        return True
+
+handler_file = logging.FileHandler(LOG_FILE)
+handler_file.addFilter(TokenMaskFilter())
+handler_stream = logging.StreamHandler()
+handler_stream.addFilter(TokenMaskFilter())
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
-    handlers=[
-        logging.FileHandler(LOG_FILE),
-        logging.StreamHandler(),
-    ],
+    handlers=[handler_file, handler_stream],
 )
 log = logging.getLogger("us_bot")
 

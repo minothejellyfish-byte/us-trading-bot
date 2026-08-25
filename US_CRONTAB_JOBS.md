@@ -25,7 +25,7 @@ Last updated: 2026-07-04
 - US Re-screen
 - US Daily P&L Report
 
-**Verification:** `.env` contains `US_BOT_TOKEN=8617061863:AAEPDTEn1UAwsrlsdo4q8hjjjEcq4Fc0Lws` and `US_CHAT_ID=5529987063`.
+**Verification:** `.env` contains `US_BOT_TOKEN=YOUR_NEW_US_BOT_TOKEN` and `US_CHAT_ID=5529987063`.
 
 ---
 
