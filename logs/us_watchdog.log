@@ -9237,3 +9237,63 @@ error: symbol limit exceeded (405)
 [2026-08-27 08:00:02 EDT] [INFO] Off-duty (08:00), waiting for 09:25
 [2026-08-27 08:00:32 EDT] [INFO] Off-duty (08:00), waiting for 09:25
 [2026-08-27 09:00:02 EDT] [INFO] Off-duty (09:00), waiting for 09:25
+[2026-08-27 09:00:32 EDT] [INFO] Off-duty (09:00), waiting for 09:25
+[2026-08-27 09:25:03 EDT] [INFO] --- Component Check ---
+[2026-08-27 09:25:03 EDT] [INFO] ✅ us-bot: OK — mino      770299  0.0  0.0 320088  7016 ?        Ssl  Aug25   0:31 /usr/bin/pyth
+[2026-08-27 09:25:03 EDT] [INFO] ✅ us-poller: OK — 1176369
+[2026-08-27 09:25:03 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-27 09:25:03 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-27 09:25:03 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (555.6ms)
+[2026-08-27 09:25:03 EDT] [INFO] --- Tracked Files ---
+[2026-08-27 09:25:03 EDT] [INFO] 📝 Changed: picks, positions, regime
+[2026-08-27 09:25:03 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-27 09:25:03 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:25:03 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:25:03 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:25:34 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:25:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:25:34 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:26:05 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:26:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:26:05 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:26:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:26:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:26:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:27:08 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:27:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:27:08 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:27:39 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:27:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:27:39 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:28:10 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:28:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:28:10 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:28:42 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:28:42 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:28:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:29:13 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:29:13 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:29:13 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-27 09:29:44 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-27 09:29:44 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-27 09:29:44 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
