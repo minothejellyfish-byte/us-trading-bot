@@ -603,3 +603,29 @@
 2026-08-28 22:26:22,692 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
 2026-08-28 22:26:22,692 [INFO] Entry cutoff passed — no new entries
 2026-08-28 22:26:22,692 [INFO] Slow poll done.
+2026-08-28 22:31:22,711 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-28 22:31:22,711 [INFO] Entry cutoff passed — no new entries
+2026-08-28 22:31:22,711 [INFO] Slow poll done.
+2026-08-28 22:36:23,194 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-28 22:36:23,195 [INFO] Entry cutoff passed — no new entries
+2026-08-28 22:36:23,195 [INFO] Slow poll done.
+2026-08-28 22:41:23,217 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-28 22:41:23,217 [INFO] Entry cutoff passed — no new entries
+2026-08-28 22:41:23,218 [INFO] Slow poll done.
+2026-08-28 22:45:03,233 [INFO] 15:45 — no open positions
+2026-08-28 22:46:23,239 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-28 22:46:23,240 [INFO] Hard close active — no new entries
+2026-08-28 22:46:23,240 [INFO] Slow poll done.
+2026-08-28 22:51:23,261 [INFO] Regime stale (>30min) — reclassifying
+2026-08-28 22:51:26,863 [INFO] Regime: DEFENSIVE — SPY +0.8% over 5 days, VIX 14.5 (elevated fear), 18% sector breadth
+2026-08-28 22:51:26,863 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-28 22:51:26,864 [INFO] Hard close active — no new entries
+2026-08-28 22:51:26,864 [INFO] Slow poll done.
+2026-08-28 22:55:13,171 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-08-28 22:55:15,672 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-08-28 22:55:18,194 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-08-28 22:56:28,200 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-08-28 22:56:28,201 [INFO] Hard close active — no new entries
+2026-08-28 22:56:28,201 [INFO] Slow poll done.
+2026-08-28 23:00:01,982 [INFO] Received signal 15 — shutting down
+2026-08-28 23:00:01,982 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
