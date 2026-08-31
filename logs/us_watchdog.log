@@ -35918,3 +35918,223 @@ error: symbol limit exceeded (405)
 [2026-08-31 16:01:07 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-08-31 16:01:38 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:01:38 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:01:38 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:01:38 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:02:10 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:02:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:02:10 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:02:10 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:02:41 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:02:41 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:02:41 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:02:41 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:03:12 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:03:12 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:03:12 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:03:12 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:03:43 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:03:43 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:03:43 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:03:43 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:04:15 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:04:15 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:04:15 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:04:15 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:04:46 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:04:46 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:04:46 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:04:46 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:05:17 EDT] [INFO] --- Component Check ---
+[2026-08-31 16:05:17 EDT] [INFO] ✅ us-bot: OK — mino      770299  0.0  0.0 320088  7016 ?        Ssl  Aug25   1:19 /usr/bin/pyth
+[2026-08-31 16:05:17 EDT] [INFO] ✅ us-poller: OK — 1581455
+[2026-08-31 16:05:17 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-31 16:05:17 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-31 16:05:17 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (549.2ms)
+[2026-08-31 16:05:17 EDT] [INFO] --- Tracked Files ---
+[2026-08-31 16:05:17 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-31 16:05:17 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:05:17 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:05:17 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:05:17 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:05:48 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:05:48 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:05:48 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:05:48 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:06:19 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:06:19 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:06:19 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:06:19 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:06:50 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:06:50 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:06:50 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:06:50 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:07:22 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:07:22 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:07:22 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:07:22 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:07:53 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:07:53 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:07:53 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:07:53 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:08:24 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:08:24 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:08:24 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:08:24 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:08:56 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:08:56 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:08:56 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:08:56 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:09:27 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:09:27 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:09:27 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:09:27 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:09:58 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:09:58 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:09:58 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:09:58 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:10:29 EDT] [INFO] --- Component Check ---
+[2026-08-31 16:10:29 EDT] [INFO] ✅ us-bot: OK — mino      770299  0.0  0.0 320088  7016 ?        Ssl  Aug25   1:19 /usr/bin/pyth
+[2026-08-31 16:10:29 EDT] [INFO] ✅ us-poller: OK — 1581886
+[2026-08-31 16:10:29 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-31 16:10:29 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-31 16:10:29 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (557.8ms)
+[2026-08-31 16:10:29 EDT] [INFO] --- Tracked Files ---
+[2026-08-31 16:10:29 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-31 16:10:29 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:10:29 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:10:29 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:10:29 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:11:01 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:11:01 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:11:01 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:11:01 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:11:32 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:11:32 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:11:32 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:11:32 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:12:03 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:12:03 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:12:03 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:12:03 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:12:34 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:12:34 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:12:34 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:12:34 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:13:05 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:13:05 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:13:05 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:13:05 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:13:37 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:13:37 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:13:37 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:13:37 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:14:08 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:14:08 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:14:08 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:14:08 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:14:39 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:14:39 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:14:39 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:14:39 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:15:10 EDT] [INFO] --- Component Check ---
+[2026-08-31 16:15:10 EDT] [INFO] ✅ us-bot: OK — mino      770299  0.0  0.0 320088  7016 ?        Ssl  Aug25   1:19 /usr/bin/pyth
+[2026-08-31 16:15:10 EDT] [INFO] ✅ us-poller: OK — 1582273
+[2026-08-31 16:15:10 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-08-31 16:15:10 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-08-31 16:15:10 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (556.0ms)
+[2026-08-31 16:15:10 EDT] [INFO] --- Tracked Files ---
+[2026-08-31 16:15:10 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-08-31 16:15:10 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:15:10 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:15:10 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:15:10 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-08-31 16:15:41 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-08-31 16:15:41 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-08-31 16:15:42 EDT] [ALERT] LOG ALERT [poller.log]: 2026-08-31 22:55:17,261 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-08-31 22:55:24,405 [ERROR] tg_send failed (
+[2026-08-31 16:15:42 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
