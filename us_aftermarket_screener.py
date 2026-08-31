@@ -19,6 +19,7 @@ import json
 import os
 import time
 import logging
+import signal
 from datetime import datetime, date, timedelta
 from typing import List, Dict, Optional
 import pytz
@@ -27,6 +28,29 @@ import yfinance as yf
 import requests
 import pandas as pd
 import numpy as np
+
+
+class TimeoutException(Exception):
+    pass
+
+
+def timeout_handler(signum, frame):
+    raise TimeoutException("Operation timed out")
+
+
+def with_timeout(seconds, func, *args, **kwargs):
+    """Run func with a timeout using SIGALRM."""
+    old_handler = signal.signal(signal.SIGALRM, timeout_handler)
+    signal.alarm(seconds)
+    try:
+        result = func(*args, **kwargs)
+        signal.alarm(0)
+        return result
+    except TimeoutException:
+        log.debug(f"  ⏱ Timeout after {seconds}s for {args[0] if args else 'operation'}")
+        return None
+    finally:
+        signal.signal(signal.SIGALRM, old_handler)
 
 from us_sharia_universe import get_sharia_universe
 from us_market_regime import classify_premarket
@@ -92,7 +116,7 @@ MIN_MKT_CAP = 10_000_000
 
 def get_yfinance_daily(ticker: str) -> Optional[Dict]:
     """Fetch today's trading data via yfinance (1m or 5m)."""
-    try:
+    def _fetch():
         t = yf.Ticker(ticker)
         # Get 5-day 5m data to cover today
         df = t.history(period="5d", interval="5m", prepost=True)
@@ -222,7 +246,9 @@ def get_yfinance_daily(ticker: str) -> Optional[Dict]:
             "source": "yfinance_intraday",
             "date": today_date.isoformat()
         }
-        
+
+    try:
+        return with_timeout(10, _fetch)
     except Exception as e:
         log.debug(f"  ❌ {ticker}: yfinance error: {e}")
         return None
