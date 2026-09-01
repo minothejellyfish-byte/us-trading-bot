@@ -841,3 +841,23 @@
 2026-08-31 22:56:26,751 [INFO] Slow poll done.
 2026-08-31 23:00:01,830 [INFO] Received signal 15 — shutting down
 2026-08-31 23:00:01,831 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-09-01 16:30:22,703 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-09-01 16:30:22,703 [INFO] Poller starting in daemon mode
+2026-09-01 16:30:22,703 [INFO] US Price poller started.
+2026-09-01 16:30:32,943 [ERROR] tg_send failed (attempt 1/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-09-01 16:30:45,172 [ERROR] tg_send failed (attempt 2/3): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=10)
+2026-09-01 16:30:51,908 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-01 16:30:51,909 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-01 16:30:51,909 [INFO] Slow poll done.
+2026-09-01 16:35:52,818 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-01 16:35:52,819 [INFO] Slow poll done.
+2026-09-01 16:40:52,839 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-01 16:40:52,840 [INFO] Slow poll done.
+2026-09-01 16:45:52,860 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-01 16:45:52,861 [INFO] Slow poll done.
+2026-09-01 16:50:52,881 [INFO] Regime stale (>30min) — reclassifying
+2026-09-01 16:50:55,765 [INFO] Regime: DEFENSIVE — SPY -0.5% over 5 days, VIX 15.8 (elevated fear), 18% sector breadth
+2026-09-01 16:50:55,765 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-01 16:50:55,765 [INFO] Slow poll done.
+2026-09-01 16:55:55,788 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-01 16:55:55,788 [INFO] Slow poll done.
