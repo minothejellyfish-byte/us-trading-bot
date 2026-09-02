@@ -1,23 +1,23 @@
 {
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Conservative",
-    "max_positions": 2,
-    "position_pct": 0.2,
-    "alt_position_pct": 0.2,
-    "target_pct": 0.015,
-    "trail_trigger": 0.015,
-    "trail_stop": 0.02,
-    "hard_stop": 0.04,
-    "time_stop_mins": 20,
-    "time_stop_pct": 0.005,
-    "midscreen": false
+    "strategy": "Standard",
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
+    "trail_stop": 0.03,
+    "hard_stop": 0.05,
+    "time_stop_mins": 30,
+    "time_stop_pct": 0.01,
+    "midscreen": true
   },
-  "reason": "SPY -1.2% over 5 days, VIX 16.0 (elevated fear), 27% sector breadth",
-  "spy_5d_change": -1.15,
-  "spy_10d_change": -0.05,
-  "vix": 16.05,
-  "sector_breadth": 27.3,
-  "top_sectors": "Energy (3.3%), Healthcare (1.2%), Communication Services (0.8%)",
-  "classified_at": "2026-09-02T16:50:39.306490"
+  "reason": "SPY -0.8% over 5 days, VIX 15.6 (moderate), 45% sector breadth",
+  "spy_5d_change": -0.81,
+  "spy_10d_change": 0.3,
+  "vix": 15.64,
+  "sector_breadth": 45.5,
+  "top_sectors": "Energy (3.5%), Communication Services (1.1%), Healthcare (0.9%)",
+  "classified_at": "2026-09-02T17:20:42.373411"
 }
