@@ -75725,3 +75725,8 @@ error: symbol limit exceeded (405)
 [2026-09-08 11:30:26 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-09-08 11:30:57 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-09-08 11:30:57 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-09-08 11:30:57 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
