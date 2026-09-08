@@ -1875,3 +1875,30 @@
 2026-09-08 22:26:23,442 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
 2026-09-08 22:26:23,442 [INFO] Entry cutoff passed — no new entries
 2026-09-08 22:26:23,443 [INFO] Slow poll done.
+2026-09-08 22:31:23,465 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-08 22:31:23,466 [INFO] Entry cutoff passed — no new entries
+2026-09-08 22:31:23,466 [INFO] Slow poll done.
+2026-09-08 22:36:23,862 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-08 22:36:23,863 [INFO] Entry cutoff passed — no new entries
+2026-09-08 22:36:23,863 [INFO] Slow poll done.
+2026-09-08 22:41:23,885 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-08 22:41:23,885 [INFO] Entry cutoff passed — no new entries
+2026-09-08 22:41:23,886 [INFO] Slow poll done.
+2026-09-08 22:45:03,900 [INFO] 15:45 — no open positions
+2026-09-08 22:46:23,906 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-08 22:46:23,907 [INFO] Hard close active — no new entries
+2026-09-08 22:46:23,907 [INFO] Slow poll done.
+2026-09-08 22:51:23,928 [INFO] Regime stale (>30min) — reclassifying
+2026-09-08 22:51:26,386 [INFO] Regime: NEUTRAL — SPY +0.5% over 5 days, VIX 15.5 (moderate), 55% sector breadth
+2026-09-08 22:51:26,386 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-08 22:51:26,386 [INFO] Hard close active — no new entries
+2026-09-08 22:51:26,386 [INFO] Slow poll done.
+2026-09-08 22:55:06,771 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-08 22:55:09,123 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-08 22:55:11,464 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-08 22:56:31,472 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-08 22:56:31,473 [INFO] Hard close active — no new entries
+2026-09-08 22:56:31,473 [INFO] Slow poll done.
+2026-09-08 23:00:01,487 [INFO] Market closed — poller exiting.
+2026-09-08 23:00:01,769 [INFO] Received signal 15 — shutting down
+2026-09-08 23:00:01,770 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
