@@ -1902,3 +1902,23 @@
 2026-09-08 23:00:01,487 [INFO] Market closed — poller exiting.
 2026-09-08 23:00:01,769 [INFO] Received signal 15 — shutting down
 2026-09-08 23:00:01,770 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-09-09 16:30:12,089 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-09-09 16:30:12,089 [INFO] Poller starting in daemon mode
+2026-09-09 16:30:12,090 [INFO] US Price poller started.
+2026-09-09 16:30:17,636 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-09 16:30:20,001 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-09 16:30:22,367 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-09 16:30:22,370 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-09 16:30:22,370 [INFO] Slow poll done.
+2026-09-09 16:35:23,669 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-09 16:35:23,670 [INFO] Slow poll done.
+2026-09-09 16:40:23,690 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-09 16:40:23,690 [INFO] Slow poll done.
+2026-09-09 16:45:23,710 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-09 16:45:23,711 [INFO] Slow poll done.
+2026-09-09 16:50:23,733 [INFO] Regime stale (>30min) — reclassifying
+2026-09-09 16:50:26,874 [INFO] Regime: NEUTRAL — SPY -0.2% over 5 days, VIX 16.1 (moderate), 45% sector breadth
+2026-09-09 16:50:26,874 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-09 16:50:26,874 [INFO] Slow poll done.
+2026-09-09 16:55:26,897 [INFO] Slow poll | Regime: NEUTRAL | max_pos: 3 | target: 2.0% | hard_stop: 5.0%
+2026-09-09 16:55:26,897 [INFO] Slow poll done.
