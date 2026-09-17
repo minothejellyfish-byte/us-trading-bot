@@ -122875,3 +122875,17 @@ error: symbol limit exceeded (405)
 [2026-09-17 12:29:43 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-09-17 12:30:14 EDT] [INFO] --- Component Check ---
+[2026-09-17 12:30:14 EDT] [INFO] ✅ us-bot: OK — mino        5230  0.0  1.0 320092 80592 ?        Ssl  Sep06   2:03 /usr/bin/pyth
+[2026-09-17 12:30:14 EDT] [INFO] ✅ us-poller: OK — 1296434
+1314574
+[2026-09-17 12:30:14 EDT] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-09-17 12:30:14 EDT] [INFO] ✅ alpaca-api: OK — {
+[2026-09-17 12:30:14 EDT] [INFO] ❌ Alpaca API: AUTH_FAIL (588.3ms)
+[2026-09-17 12:30:14 EDT] [INFO] --- Tracked Files ---
+[2026-09-17 12:30:14 EDT] [INFO] ⚠️ Missing: order_history, config
+[2026-09-17 12:30:14 EDT] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-09-17 12:30:14 EDT] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-09-17 12:30:14 EDT] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
