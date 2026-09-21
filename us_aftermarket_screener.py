@@ -597,7 +597,8 @@ def main():
     # Send picks to Telegram
     if picks and BOT_TOKEN:
         regime_icon = {"TRENDING": "🚀", "NEUTRAL": "⚖️", "DEFENSIVE": "🛡️"}.get(regime_name, "📊")
-        lines = [f"{emoji_regime} <b>US After-Market Picks</b>\n📅 For {tomorrow.strftime('%Y-%m-%d')} | Regime: {regime_name} | {len(picks)} stocks"]
+        tomorrow = datetime.now(ET).date() + timedelta(days=1)
+        lines = [f"{regime_icon} <b>US After-Market Picks</b>\n📅 For {tomorrow.strftime('%Y-%m-%d')} | Regime: {regime_name} | {len(picks)} stocks"]
         for i, p in enumerate(picks, 1):
             change_emoji = "📈" if p.get('daily_change_pct', 0) > 0 else "📉"
             lines.append(f"{i}. <b>{p['symbol']}</b> ${p['price']:.2f} | Score: {p['score']:.1f} | Day: {change_emoji}{p['daily_change_pct']:+.2f}%")
