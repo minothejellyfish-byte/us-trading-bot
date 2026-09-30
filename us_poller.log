@@ -5084,3 +5084,11 @@
 2026-09-29 22:56:18,386 [INFO] Slow poll done.
 2026-09-29 23:00:01,076 [INFO] Received signal 15 — shutting down
 2026-09-29 23:00:01,076 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-09-30 16:30:08,715 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-09-30 16:30:08,715 [INFO] Poller starting in daemon mode
+2026-09-30 16:30:08,716 [INFO] US Price poller started.
+2026-09-30 16:30:10,848 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-30 16:30:13,186 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-30 16:30:15,529 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-09-30 16:30:15,531 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-09-30 16:30:15,531 [INFO] Slow poll done.
