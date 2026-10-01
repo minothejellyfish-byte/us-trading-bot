@@ -5483,3 +5483,29 @@
 2026-10-01 22:25:56,742 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
 2026-10-01 22:25:56,742 [INFO] Entry cutoff passed — no new entries
 2026-10-01 22:25:56,742 [INFO] Slow poll done.
+2026-10-01 22:30:56,762 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-10-01 22:30:56,763 [INFO] Entry cutoff passed — no new entries
+2026-10-01 22:30:56,763 [INFO] Slow poll done.
+2026-10-01 22:35:57,143 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-10-01 22:35:57,144 [INFO] Entry cutoff passed — no new entries
+2026-10-01 22:35:57,144 [INFO] Slow poll done.
+2026-10-01 22:40:57,165 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-10-01 22:40:57,166 [INFO] Entry cutoff passed — no new entries
+2026-10-01 22:40:57,166 [INFO] Slow poll done.
+2026-10-01 22:45:07,184 [INFO] 15:45 — no open positions
+2026-10-01 22:45:57,187 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-10-01 22:45:57,187 [INFO] Hard close active — no new entries
+2026-10-01 22:45:57,188 [INFO] Slow poll done.
+2026-10-01 22:50:57,208 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-10-01 22:50:57,209 [INFO] Hard close active — no new entries
+2026-10-01 22:50:57,209 [INFO] Slow poll done.
+2026-10-01 22:55:19,251 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-01 22:55:21,549 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-01 22:55:23,942 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-01 22:56:03,946 [INFO] Regime stale (>30min) — reclassifying
+2026-10-01 22:56:06,557 [INFO] Regime: DEFENSIVE — SPY -0.9% over 5 days, VIX 16.3 (elevated fear), 27% sector breadth
+2026-10-01 22:56:06,557 [INFO] Slow poll | Regime: DEFENSIVE | max_pos: 2 | target: 1.5% | hard_stop: 4.0%
+2026-10-01 22:56:06,558 [INFO] Hard close active — no new entries
+2026-10-01 22:56:06,558 [INFO] Slow poll done.
+2026-10-01 23:00:01,204 [INFO] Received signal 15 — shutting down
+2026-10-01 23:00:01,204 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
