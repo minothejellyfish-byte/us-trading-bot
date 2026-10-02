@@ -5509,3 +5509,8 @@
 2026-10-01 22:56:06,558 [INFO] Slow poll done.
 2026-10-01 23:00:01,204 [INFO] Received signal 15 — shutting down
 2026-10-01 23:00:01,204 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
+2026-10-02 16:30:11,897 [INFO] PID written to /home/mino/us-exec/us_poller.pid
+2026-10-02 16:30:11,897 [INFO] Poller starting in daemon mode
+2026-10-02 16:30:11,897 [INFO] US Price poller started.
+2026-10-02 16:30:13,995 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-02 16:30:16,304 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
