@@ -6119,3 +6119,30 @@
 2026-10-06 22:26:21,390 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
 2026-10-06 22:26:21,390 [INFO] Entry cutoff passed — no new entries
 2026-10-06 22:26:21,390 [INFO] Slow poll done.
+2026-10-06 22:31:21,411 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-10-06 22:31:21,412 [INFO] Entry cutoff passed — no new entries
+2026-10-06 22:31:21,412 [INFO] Slow poll done.
+2026-10-06 22:36:21,784 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-10-06 22:36:21,785 [INFO] Entry cutoff passed — no new entries
+2026-10-06 22:36:21,785 [INFO] Slow poll done.
+2026-10-06 22:41:21,806 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-10-06 22:41:21,807 [INFO] Entry cutoff passed — no new entries
+2026-10-06 22:41:21,807 [INFO] Slow poll done.
+2026-10-06 22:45:01,823 [INFO] 15:45 — no open positions
+2026-10-06 22:46:21,829 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-10-06 22:46:21,830 [INFO] Hard close active — no new entries
+2026-10-06 22:46:21,830 [INFO] Slow poll done.
+2026-10-06 22:51:21,852 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-10-06 22:51:21,853 [INFO] Hard close active — no new entries
+2026-10-06 22:51:21,853 [INFO] Slow poll done.
+2026-10-06 22:55:03,932 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-06 22:55:06,445 [ERROR] tg_send failed (attempt 2/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-06 22:55:08,782 [ERROR] tg_send failed (attempt 3/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-06 22:56:28,790 [INFO] Regime stale (>30min) — reclassifying
+2026-10-06 22:56:31,430 [INFO] Regime: TRENDING — SPY +2.2% over 5 days, VIX 15.0 (low fear), 91% sector breadth
+2026-10-06 22:56:31,430 [INFO] Slow poll | Regime: TRENDING | max_pos: 3 | target: 2.5% | hard_stop: 5.0%
+2026-10-06 22:56:31,431 [INFO] Hard close active — no new entries
+2026-10-06 22:56:31,431 [INFO] Slow poll done.
+2026-10-06 23:00:01,444 [INFO] Market closed — poller exiting.
+2026-10-06 23:00:01,590 [INFO] Received signal 15 — shutting down
+2026-10-06 23:00:01,590 [INFO] PID file removed: /home/mino/us-exec/us_poller.pid
