@@ -13,8 +13,8 @@ cd "$REPO_DIR"
 # Ensure log dir exists
 mkdir -p "$REPO_DIR/logs"
 
-# Skip if no changes
-if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+# Skip if no changes (check both staged/unstaged and untracked)
+if git diff --quiet && git diff --cached --quiet && [ -z "$(git status --porcelain)" ]; then
     echo "$(date '+%Y-%m-%d %H:%M:%S') — Nothing to commit" >> "$LOG_FILE"
     exit 0
 fi
@@ -25,8 +25,8 @@ TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S %Z')
 CHANGED_FILES=$(git status --short | wc -l)
 COMMIT_MSG="Auto-commit: $TIMESTAMP ($CHANGED_FILES files changed)"
 
-# Stage all (respect .gitignore)
-git add -A
+# Stage all changes including untracked files (respects .gitignore)
+git add .
 
 # Commit
 git commit -m "$COMMIT_MSG" --quiet >> "$LOG_FILE" 2>&1 || true
