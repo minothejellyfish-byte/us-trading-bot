@@ -1,23 +1,23 @@
 {
-  "regime": "TRENDING",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Aggressive",
+    "strategy": "Standard",
     "max_positions": 3,
-    "position_pct": 0.4,
-    "alt_position_pct": 0.25,
-    "target_pct": 0.025,
-    "trail_trigger": 0.025,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
     "trail_stop": 0.03,
     "hard_stop": 0.05,
     "time_stop_mins": 30,
     "time_stop_pct": 0.01,
     "midscreen": true
   },
-  "reason": "SPY +1.2% over 5 days, VIX 18.6 (low fear), 73% sector breadth",
-  "spy_5d_change": 1.24,
-  "spy_10d_change": 0.8,
-  "vix": 18.65,
-  "sector_breadth": 72.7,
-  "top_sectors": "Industrials (3.3%), Technology (3.0%), Consumer Discretionary (2.7%)",
-  "classified_at": "2026-10-30T16:21:09.049489"
+  "reason": "SPY -0.6% over 5 days, VIX 19.0 (moderate), 82% sector breadth",
+  "spy_5d_change": -0.56,
+  "spy_10d_change": -0.7,
+  "vix": 18.99,
+  "sector_breadth": 81.8,
+  "top_sectors": "Healthcare (4.3%), Utilities (2.1%), Materials (2.0%)",
+  "classified_at": "2026-10-30T17:00:07.875259"
 }
