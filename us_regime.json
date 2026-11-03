@@ -1,18 +1,23 @@
 {
-  "regime": "NEUTRAL",
+  "regime": "DEFENSIVE",
   "params": {
-    "strategy": "Standard",
-    "max_positions": 3,
-    "position_pct": 0.3,
-    "alt_position_pct": 0.3,
-    "target_pct": 0.02,
-    "trail_trigger": 0.02,
-    "trail_stop": 0.03,
-    "hard_stop": 0.05,
-    "time_stop_mins": 30,
-    "time_stop_pct": 0.01,
-    "midscreen": true
+    "strategy": "Conservative",
+    "max_positions": 2,
+    "position_pct": 0.2,
+    "alt_position_pct": 0.2,
+    "target_pct": 0.015,
+    "trail_trigger": 0.015,
+    "trail_stop": 0.02,
+    "hard_stop": 0.04,
+    "time_stop_mins": 20,
+    "time_stop_pct": 0.005,
+    "midscreen": false
   },
-  "reason": "Default \u2014 no data available.",
-  "classified_at": "2026-11-03T16:20:12.562005"
+  "reason": "SPY -2.5% over 5 days, VIX 20.9 (elevated fear), 73% sector breadth",
+  "spy_5d_change": -2.46,
+  "spy_10d_change": -2.55,
+  "vix": 20.85,
+  "sector_breadth": 72.7,
+  "top_sectors": "Real Estate (3.2%), Consumer Staples (3.0%), Healthcare (2.8%)",
+  "classified_at": "2026-11-03T18:05:09.036751"
 }
