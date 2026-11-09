@@ -1,23 +1,23 @@
 {
-  "regime": "DEFENSIVE",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Conservative",
-    "max_positions": 2,
-    "position_pct": 0.2,
-    "alt_position_pct": 0.2,
-    "target_pct": 0.015,
-    "trail_trigger": 0.015,
-    "trail_stop": 0.02,
-    "hard_stop": 0.04,
-    "time_stop_mins": 20,
-    "time_stop_pct": 0.005,
-    "midscreen": false
+    "strategy": "Standard",
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
+    "trail_stop": 0.03,
+    "hard_stop": 0.05,
+    "time_stop_mins": 30,
+    "time_stop_pct": 0.01,
+    "midscreen": true
   },
-  "reason": "SPY -2.2% over 5 days, VIX 23.0 (elevated fear), 27% sector breadth",
-  "spy_5d_change": -2.24,
-  "spy_10d_change": -3.93,
-  "vix": 22.98,
-  "sector_breadth": 27.3,
-  "top_sectors": "Communication Services (4.5%), Real Estate (0.8%), Healthcare (0.1%)",
-  "classified_at": "2026-11-09T16:20:05.604974"
+  "reason": "SPY -0.8% over 5 days, VIX 21.6 (moderate), 73% sector breadth",
+  "spy_5d_change": -0.79,
+  "spy_10d_change": -2.76,
+  "vix": 21.61,
+  "sector_breadth": 72.7,
+  "top_sectors": "Communication Services (5.5%), Consumer Discretionary (3.3%), Real Estate (2.1%)",
+  "classified_at": "2026-11-09T18:05:08.264783"
 }
