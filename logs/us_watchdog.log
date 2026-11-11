@@ -445282,3 +445282,457 @@ error: symbol limit exceeded (405)
 [2026-11-11 13:59:38 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
 ValueError: connection limit exceeded
 error: symbol limit exceeded (405)
+[2026-11-11 14:00:09 EST] [INFO] --- Component Check ---
+[2026-11-11 14:00:09 EST] [INFO] ✅ us-bot: OK — mino        5230  0.0  0.3 320092 24660 ?        Ssl  Sep06  12:11 /usr/bin/pyth
+[2026-11-11 14:00:09 EST] [INFO] ✅ us-poller: OK — 2936827
+[2026-11-11 14:00:09 EST] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-11-11 14:00:09 EST] [INFO] ✅ alpaca-api: OK — {
+[2026-11-11 14:00:09 EST] [INFO] ❌ Alpaca API: AUTH_FAIL (564.1ms)
+[2026-11-11 14:00:09 EST] [INFO] --- Tracked Files ---
+[2026-11-11 14:00:09 EST] [INFO] ⚠️ Missing: order_history, config
+[2026-11-11 14:00:09 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:00:09 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:00:09 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:00:09 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:00:40 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:00:40 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:00:40 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:00:40 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:01:12 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:01:12 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:01:12 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:01:12 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:01:43 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:01:43 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:01:43 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:01:43 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:02:14 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:02:14 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:02:14 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:02:14 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:02:46 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:02:46 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:02:46 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:02:46 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:03:17 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:03:17 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:03:17 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:03:17 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:03:48 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:03:48 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:03:48 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:03:48 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:04:19 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:04:19 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:04:19 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:04:19 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:04:51 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:04:51 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:04:51 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:04:51 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:05:22 EST] [INFO] --- Component Check ---
+[2026-11-11 14:05:22 EST] [INFO] ✅ us-bot: OK — mino        5230  0.0  0.3 320092 24660 ?        Ssl  Sep06  12:11 /usr/bin/pyth
+[2026-11-11 14:05:22 EST] [INFO] ✅ us-poller: OK — 2937338
+[2026-11-11 14:05:22 EST] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-11-11 14:05:22 EST] [INFO] ✅ alpaca-api: OK — {
+[2026-11-11 14:05:22 EST] [INFO] ❌ Alpaca API: AUTH_FAIL (563.0ms)
+[2026-11-11 14:05:22 EST] [INFO] --- Tracked Files ---
+[2026-11-11 14:05:22 EST] [INFO] ⚠️ Missing: order_history, config
+[2026-11-11 14:05:22 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:05:22 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:05:22 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:05:22 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:05:53 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:05:53 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:05:53 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:05:53 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:06:24 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:06:24 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:06:24 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:06:24 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:06:56 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:06:56 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:06:56 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:06:56 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:07:27 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:07:27 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:07:27 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:07:27 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:07:58 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:07:58 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:07:58 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:07:58 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:08:29 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:08:29 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:08:29 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:08:29 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:09:01 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:09:01 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:09:01 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:09:01 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:09:32 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:09:32 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:09:32 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:09:32 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:10:03 EST] [INFO] --- Component Check ---
+[2026-11-11 14:10:03 EST] [INFO] ✅ us-bot: OK — mino        5230  0.0  0.3 320092 24660 ?        Ssl  Sep06  12:11 /usr/bin/pyth
+[2026-11-11 14:10:03 EST] [INFO] ✅ us-poller: OK — 2937724
+[2026-11-11 14:10:03 EST] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-11-11 14:10:03 EST] [INFO] ✅ alpaca-api: OK — {
+[2026-11-11 14:10:03 EST] [INFO] ❌ Alpaca API: AUTH_FAIL (522.7ms)
+[2026-11-11 14:10:03 EST] [INFO] --- Tracked Files ---
+[2026-11-11 14:10:03 EST] [INFO] ⚠️ Missing: order_history, config
+[2026-11-11 14:10:03 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:10:03 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:10:03 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:10:03 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:10:34 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:10:34 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:10:34 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:10:34 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:11:05 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:11:05 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:11:05 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:11:05 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:11:37 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:11:37 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:11:37 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:11:37 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:12:08 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:12:08 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:12:08 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:12:08 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:12:39 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:12:39 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:12:39 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:12:39 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:13:10 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:13:10 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:13:10 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:13:10 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:13:41 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:13:41 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:13:41 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:13:41 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:14:13 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:14:13 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:14:13 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:14:13 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:14:44 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:14:44 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:14:44 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:14:44 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:15:15 EST] [INFO] --- Component Check ---
+[2026-11-11 14:15:15 EST] [INFO] ✅ us-bot: OK — mino        5230  0.0  0.3 320092 24660 ?        Ssl  Sep06  12:11 /usr/bin/pyth
+[2026-11-11 14:15:15 EST] [INFO] ✅ us-poller: OK — 2938149
+[2026-11-11 14:15:15 EST] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-11-11 14:15:15 EST] [INFO] ✅ alpaca-api: OK — {
+[2026-11-11 14:15:15 EST] [INFO] ❌ Alpaca API: AUTH_FAIL (563.5ms)
+[2026-11-11 14:15:15 EST] [INFO] --- Tracked Files ---
+[2026-11-11 14:15:15 EST] [INFO] ⚠️ Missing: order_history, config
+[2026-11-11 14:15:15 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:15:15 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:15:15 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:15:15 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:15:46 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:15:46 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:15:46 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:15:46 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:16:17 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:16:17 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:16:17 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:16:17 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:16:49 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:16:49 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:16:49 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:16:49 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:17:20 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:17:20 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:17:20 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:17:20 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:17:51 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:17:51 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:17:51 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:17:51 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:18:22 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:18:22 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:18:22 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:18:22 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:18:53 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:18:53 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:18:53 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:18:53 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:19:25 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:19:25 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:19:25 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:19:25 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:19:56 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:19:56 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:19:56 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:19:56 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:20:27 EST] [INFO] --- Component Check ---
+[2026-11-11 14:20:27 EST] [INFO] ✅ us-bot: OK — mino        5230  0.0  0.3 320092 24660 ?        Ssl  Sep06  12:11 /usr/bin/pyth
+[2026-11-11 14:20:27 EST] [INFO] ✅ us-poller: OK — 2938572
+[2026-11-11 14:20:27 EST] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-11-11 14:20:27 EST] [INFO] ✅ alpaca-api: OK — {
+[2026-11-11 14:20:27 EST] [INFO] ❌ Alpaca API: AUTH_FAIL (535.5ms)
+[2026-11-11 14:20:27 EST] [INFO] --- Tracked Files ---
+[2026-11-11 14:20:27 EST] [INFO] ⚠️ Missing: order_history, config
+[2026-11-11 14:20:27 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:20:27 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:20:27 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:20:27 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:20:58 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:20:58 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:20:58 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:20:58 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:21:30 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:21:30 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:21:30 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:21:30 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:22:01 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:22:01 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:22:01 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:22:01 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:22:32 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:22:32 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:22:32 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:22:32 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:23:03 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:23:03 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:23:03 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:23:03 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:23:34 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:23:34 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:23:34 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:23:34 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:24:06 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:24:06 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:24:06 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:24:06 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:24:37 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:24:37 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:24:37 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:24:37 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:25:08 EST] [INFO] --- Component Check ---
+[2026-11-11 14:25:08 EST] [INFO] ✅ us-bot: OK — mino        5230  0.0  0.3 320092 24660 ?        Ssl  Sep06  12:11 /usr/bin/pyth
+[2026-11-11 14:25:08 EST] [INFO] ✅ us-poller: OK — 2938958
+[2026-11-11 14:25:08 EST] [INFO] ❌ us-alpaca-ws: FAIL — inactive
+[2026-11-11 14:25:08 EST] [INFO] ✅ alpaca-api: OK — {
+[2026-11-11 14:25:08 EST] [INFO] ❌ Alpaca API: AUTH_FAIL (557.4ms)
+[2026-11-11 14:25:08 EST] [INFO] --- Tracked Files ---
+[2026-11-11 14:25:08 EST] [INFO] ⚠️ Missing: order_history, config
+[2026-11-11 14:25:08 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:25:08 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:25:08 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:25:08 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:25:39 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:25:39 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:25:39 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:25:39 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:26:10 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:26:10 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:26:10 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:26:10 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:26:42 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:26:42 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:26:42 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:26:42 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:27:13 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:27:13 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:27:13 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:27:13 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:27:44 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:27:44 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:27:44 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:27:44 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:28:15 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:28:15 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:28:15 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:28:15 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:28:47 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:28:47 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:28:47 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:28:47 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:29:18 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:29:18 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:29:18 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:29:18 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
+[2026-11-11 14:29:49 EST] [ALERT] CRITICAL: us-alpaca-ws is FAIL
+[2026-11-11 14:29:49 EST] [ALERT] CRITICAL: Alpaca API AUTH_FAIL
+[2026-11-11 14:29:49 EST] [ALERT] LOG ALERT [poller.log]: 2026-10-07 22:55:06,374 [ERROR] tg_send failed (attempt 1/3): 401 Client Error: Unauthorized for url: https://api.telegram.org/bot8901913717:AAFLFkYrsn3tcLIwyVBOoO3rN6j2C8hMnn4/sendMessage
+2026-10-07 
+[2026-11-11 14:29:49 EST] [ALERT] LOG ALERT [ws.log]: raise ValueError(msg[0].get("msg", "auth failed"))
+ValueError: connection limit exceeded
+error: symbol limit exceeded (405)
