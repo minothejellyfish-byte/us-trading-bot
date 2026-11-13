@@ -1,23 +1,23 @@
 {
-  "regime": "TRENDING",
+  "regime": "NEUTRAL",
   "params": {
-    "strategy": "Aggressive",
+    "strategy": "Standard",
     "max_positions": 3,
-    "position_pct": 0.4,
-    "alt_position_pct": 0.25,
-    "target_pct": 0.025,
-    "trail_trigger": 0.025,
+    "position_pct": 0.3,
+    "alt_position_pct": 0.3,
+    "target_pct": 0.02,
+    "trail_trigger": 0.02,
     "trail_stop": 0.03,
     "hard_stop": 0.05,
     "time_stop_mins": 30,
     "time_stop_pct": 0.01,
     "midscreen": true
   },
-  "reason": "SPY +3.0% over 5 days, VIX 18.2 (low fear), 100% sector breadth",
-  "spy_5d_change": 2.97,
-  "spy_10d_change": 0.19,
-  "vix": 18.22,
-  "sector_breadth": 100.0,
-  "top_sectors": "Technology (5.5%), Energy (4.4%), Industrials (4.2%)",
-  "classified_at": "2026-11-13T16:20:05.272206"
+  "reason": "SPY -0.0% over 5 days, VIX 19.0 (moderate), 45% sector breadth",
+  "spy_5d_change": -0.02,
+  "spy_10d_change": 0.05,
+  "vix": 19.03,
+  "sector_breadth": 45.5,
+  "top_sectors": "Energy (3.8%), Communication Services (1.4%), Consumer Staples (1.1%)",
+  "classified_at": "2026-11-13T18:05:07.227554"
 }
