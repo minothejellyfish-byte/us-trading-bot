@@ -431,29 +431,29 @@ def calculate_aftermarket_score(data: Dict, regime: str = "NEUTRAL") -> float:
 
 def screen_stock(data: Dict, regime: str = "NEUTRAL", score_threshold: float = 25) -> Optional[Dict]:
     """Apply after-market filters."""
-    price = data["price_now"]
-    daily_change = data["daily_change_pct"]
-    vol = data["volume_today"]
-    cap = data["market_cap"]
+    price = data.get("price_now", 0)
+    daily_change = data.get("daily_change_pct", 0)
+    vol = data.get("volume_today", 0)
+    cap = data.get("market_cap", 0)
     
     # Price filter
     if price < MIN_PRICE or price > MAX_PRICE:
         return None
     
     # Gap filter: accept -5% to +50%
-    gap = data["gap_pct"]
+    gap = data.get("gap_pct", 0)
     if gap < (MIN_GAP_PCT / 100) or gap > (MAX_GAP_PCT / 100):
-        log.debug(f"  ❌ {data['symbol']}: gap={gap*100:.2f}% outside range")
+        log.debug(f"  ❌ {data.get('symbol', 'UNKNOWN')}: gap={gap*100:.2f}% outside range")
         return None
     
     # Volume filter: require at least 1,000 shares
     if vol < 1000:
-        log.debug(f"  ❌ {data['symbol']}: volume={vol} below 1000")
+        log.debug(f"  ❌ {data.get('symbol', 'UNKNOWN')}: volume={vol} below 1000")
         return None
     
     # Market cap filter (allow unknown)
     if cap > 0 and cap < MIN_MKT_CAP:
-        log.debug(f"  ❌ {data['symbol']}: cap=${cap/1e9:.2f}B below min")
+        log.debug(f"  ❌ {data.get('symbol', 'UNKNOWN')}: cap=${cap/1e9:.2f}B below min")
         return None
     
     # Calculate score
@@ -465,18 +465,18 @@ def screen_stock(data: Dict, regime: str = "NEUTRAL", score_threshold: float = 2
         threshold = max(15, score_threshold - 5)
     
     if score < threshold:
-        log.debug(f"  ❌ {data['symbol']}: score={score:.1f} below {threshold}")
+        log.debug(f"  ❌ {data.get('symbol', 'UNKNOWN')}: score={score:.1f} below {threshold}")
         return None
     
-    log.info(f"  ✅ {data['symbol']}: score={score:.1f}, change={daily_change*100:.2f}%, vol={vol:,}, price=${price:.2f}")
+    log.info(f"  ✅ {data.get('symbol', 'UNKNOWN')}: score={score:.1f}, change={daily_change*100:.2f}%, vol={vol:,}, price=${price:.2f}")
     
     # Entry zone for tomorrow (Monday): based on today's close
     # Tighter zone for continuation plays
-    entry_low = data["close_today"] * 0.99  # 1% below close
-    entry_high = data["close_today"] * 1.02  # 2% above close (for breakout)
+    entry_low = data.get("close_today", price) * 0.99  # 1% below close
+    entry_high = data.get("close_today", price) * 1.02  # 2% above close (for breakout)
     
     return {
-        "symbol": data["symbol"],
+        "symbol": data.get("symbol", "UNKNOWN"),
         "score": round(score, 1),
         "price": round(price, 2),
         "entry_low": round(entry_low, 2),
@@ -485,15 +485,15 @@ def screen_stock(data: Dict, regime: str = "NEUTRAL", score_threshold: float = 2
         "daily_change_pct": round(daily_change * 100, 2),
         "volume_today": vol,
         "market_cap": cap,
-        "sector": data["sector"],
+        "sector": data.get("sector", "Unknown"),
         "source": data.get("source", "unknown"),
         "screen_date": data.get("date", date.today().isoformat()),
         "metrics": {
-            "close_prev": round(data["close_prev"], 2),
-            "open_today": round(data["open_today"], 2),
-            "high_today": round(data["high_today"], 2),
-            "low_today": round(data["low_today"], 2),
-            "close_today": round(data["close_today"], 2),
+            "close_prev": round(data.get("close_prev", 0), 2),
+            "open_today": round(data.get("open_today", 0), 2),
+            "high_today": round(data.get("high_today", 0), 2),
+            "low_today": round(data.get("low_today", 0), 2),
+            "close_today": round(data.get("close_today", 0), 2),
             "intraday_range_pct": round(data.get("intraday_range_pct", 0) * 100, 2),
             "close_to_high_pct": round(data.get("close_to_high_pct", -0.05) * 100, 2)
         }
